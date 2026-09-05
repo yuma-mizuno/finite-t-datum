@@ -1750,7 +1750,7 @@
   },
   "provenance": {
     "verification_kind": "computer-assisted",
-    "source_commit": "fe82d0f7d66dca84a0b7942d1b7548eb4cfd7ef2",
+    "source_commit": "a673713c6f4c4a0223721392863477322299e180",
     "sources": [
       {
         "path": "research/higher_rank/rank6/constant_candidates.json",
