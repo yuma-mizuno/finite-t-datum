@@ -1,0 +1,36 @@
+{
+  "rank": 6,
+  "complete": true,
+  "constant_candidates": 32087,
+  "families": 108,
+  "candidate_scope": "Retained necessary constant pairs after exact hereditary exclusions.",
+  "unresolved_lifts": [],
+  "unresolved_replays": [],
+  "slice_distinctness": "all distinct by terminal cycle lengths and exhaustive orbits within repeated length classes",
+  "scope": "Identity symmetrizer, diagonal leading matrix, indecomposable; rational time rescaling, species shifts, relabeling, sign exchange and slice changes.",
+  "computation_seconds": 8916.440613610997,
+  "time_limit_seconds": null,
+  "enrichment_complete": true,
+  "independent_pulse_replays": 45,
+  "pulse_positions_checked": 2887440,
+  "constant_tasks_zip_sha256": "a8b158640af4fee8d80d7dd04827439a02c61aa5368b5c42831344039732eb82",
+  "pulse_verification_json_sha256": "388ed053ba3901924a2735142b50e818fb63add7eac1a8c912b2287b4152bcde",
+  "original_smt_queries_zip_sha256": "4a28b78515e9ce1546b0f1248f4b3f860369a7cc2d14a04072771ee1e690dad9",
+  "smt_query_archives": [
+    {
+      "file": "smt_queries-01.zip",
+      "bytes": 50313613,
+      "sha256": "8b5f334fb6fa0f62f9cc9469ec21be9bae5cc1373bc74199b1190aba02f869ff"
+    },
+    {
+      "file": "smt_queries-02.zip",
+      "bytes": 50329977,
+      "sha256": "c559fe02c474c7ec14f7303ca3d060179b68ba6832d39016d70c5cef38070138"
+    },
+    {
+      "file": "smt_queries-03.zip",
+      "bytes": 16944640,
+      "sha256": "41daf075a6a338af358f3bae353ec9f3b9e342e1053d4ef39d02e0eaea9f05cd"
+    }
+  ]
+}

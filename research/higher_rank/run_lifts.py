@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 import time
 from lifts import task
+from budget import remaining_seconds, time_limit
 
 HERE=Path(__file__).resolve().parent
 
@@ -22,14 +23,14 @@ def main():
     parser.add_argument('--workers',type=int,default=8)
     parser.add_argument('--timeout',type=int,default=2000)
     parser.add_argument('--arithmetic',choices=['integer','rational'],default='integer')
-    parser.add_argument('--encoding',choices=['multiplicity','sort','flow','principal'],default='multiplicity')
+    parser.add_argument('--encoding',choices=['multiplicity','sort','flow','principal','reduced'],default='multiplicity')
     parser.add_argument('--seconds',type=float,default=3600)
     parser.add_argument('--retry',action='store_true')
     parser.add_argument('--partial',action='store_true',help='Verify resolved candidates while explicitly retaining unresolved cases.')
     args=parser.parse_args();directory=HERE/f'rank{args.rank}'
     ledger=directory/'computation-runs.jsonl'
     previous=[json.loads(line) for line in ledger.read_text().splitlines()] if ledger.exists() else []
-    spent=sum(x['wall_seconds'] for x in previous);remaining=max(0,args.seconds-spent)
+    spent=sum(x['wall_seconds'] for x in previous);remaining=remaining_seconds(directory,spent,args.seconds)
     if not remaining:print('Rank computation budget exhausted.',flush=True);return
     constants=json.loads((directory/'constant_candidates.json').read_text())
     assert constants['enumeration_complete']
@@ -45,7 +46,8 @@ def main():
         assert args.partial or not unresolved, unresolved
         todo=[c for c in todo if c['id'] not in unresolved]
         assert all(families[cid]['coverage_status']=='unsat' for cid,x in witnesses.items() if x['status']=='sat')
-    source_hashes={name:hashlib.sha256((HERE/name).read_bytes()).hexdigest() for name in ('lifts.py','obstructions.py','principal_relations.py','run_lifts.py')}
+    source_hashes={name:hashlib.sha256((HERE/name).read_bytes()).hexdigest() for name in ('lifts.py','obstructions.py','principal_relations.py','run_lifts.py','reduced_encoding.py','finite_extension.py')}
+    source_hashes['rank4_lifts.py']=hashlib.sha256((HERE.parent/'rank4/rank4_lifts.py').read_bytes()).hexdigest()
     start=time.monotonic();deadline=start+remaining
     pool=ProcessPoolExecutor(max_workers=args.workers);pending={};it=iter(todo);completed=0;last=0;terminated=False
     def submit():
@@ -77,7 +79,7 @@ def main():
         else:pool.shutdown()
     target.write_text(''.join(json.dumps(done[k])+'\n' for k in sorted(done)),encoding='utf8',newline='\n')
     report={'rank':args.rank,'stage':args.stage,'wall_seconds':time.monotonic()-start,'previous_wall_seconds':spent,
-            'budget_seconds':args.seconds,'terminated_at_budget':terminated,'tasks_scheduled':len(todo),'tasks_completed':completed,
+            'budget_seconds':time_limit(directory,args.seconds),'terminated_at_budget':terminated,'tasks_scheduled':len(todo),'tasks_completed':completed,
             'status_counts':dict(Counter(x.get(status_key,'error') for x in done.values())),
             'source_sha256':source_hashes['lifts.py'],'source_hashes':source_hashes,
             'unresolved_lift_ids':[cid for cid,x in witnesses.items() if x['status'] not in ('sat','unsat')] if args.stage=='verify' else []}

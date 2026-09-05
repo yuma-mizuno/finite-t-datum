@@ -3,28 +3,38 @@ import itertools as it
 import json
 from pathlib import Path
 import re
+from functools import lru_cache
+
+
+@lru_cache(maxsize=1)
+def labelled_records():
+    records=json.loads((Path(__file__).resolve().parents[2]/'docs/catalogue/catalogue.json').read_text(encoding='utf8'))['records']
+    lookup={n:{} for n in range(3,6)}
+    for record in records:
+        n=record['rank']
+        if n not in lookup:continue
+        for exchange in range(2):
+            for perm in it.permutations(range(n)):
+                # perm maps each lower-record species to a position in S.
+                inverse=[perm.index(i) for i in range(n)]
+                constants=tuple(2*(i==j)-record['datum'][a][inverse[i]][inverse[j]]
+                                for a in (('A_plus_1','A_minus_1') if not exchange else ('A_minus_1','A_plus_1'))
+                                for i in range(n) for j in range(n))
+                lookup[n].setdefault(constants,(record,exchange,perm))
+    return lookup
 
 
 def add_principal_relations(solver,variables,indices,candidate,z3):
-    records=json.loads((Path(__file__).resolve().parents[2]/'docs/catalogue/catalogue.json').read_text(encoding='utf8'))['records']
+    lookup=labelled_records()
     p,m=candidate['N_plus_1'],candidate['N_minus_1'];n=len(p);certificates=[]
-    for size in range(min(n-1,4),2,-1):
+    for size in range(min(n-1,5),2,-1):
         for S in it.combinations(range(n),size):
             external=[k for k in range(n) if k not in S]
             if any(any(p[i][k] for i in S) and any(m[i][k] for i in S) for k in external):continue
-            found=None
-            for record in records:
-                if record['rank']!=size:continue
-                for exchange in range(2):
-                    counts=[p,m] if not exchange else [m,p]
-                    for perm in it.permutations(S):
-                        if all(counts[s][perm[i]][perm[j]]==2*(i==j)-record['datum'][a][i][j]
-                               for s,a in enumerate(('A_plus_1','A_minus_1')) for i in range(size) for j in range(size)):
-                            found=(record,exchange,perm);break
-                    if found:break
-                if found:break
+            constants=tuple(b[i][j] for b in (p,m) for i in S for j in S)
+            found=lookup[size].get(constants)
             if not found:continue
-            record,exchange,perm=found;mapping=[]
+            record,exchange,positions=found;perm=tuple(S[i] for i in positions);mapping=[]
             for name in record['family']['variable_names']:
                 if name.startswith('r'):mapping.append(perm[int(name[1:])]);continue
                 match=re.fullmatch(r'p([01])_(\d)(\d)_(\d+)',name);assert match,name

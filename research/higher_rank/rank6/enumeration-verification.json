@@ -1,0 +1,33 @@
+{
+  "rank": 6,
+  "complete_upper_tasks": 5040,
+  "candidate_count": 32087,
+  "rank_four_control": "exact equality of all 460 parity-compatible reference candidates",
+  "source_sha256": "58c8b5edea7757a20731a8b4436925a8ae85a1262adae943077b2323a3efd978",
+  "constant_file_sha256": "2e8445fbcb29059e6259e008872a63c5d29b66c1d50a8286fdeaf2bebfc6cc3e",
+  "hereditary_pruning_tasks": 4951,
+  "unpruned_tasks_retained": 89,
+  "candidate_scope": "All retained necessary constants after certified hereditary-prefix exclusions; not the unpruned constant set.",
+  "pruning_controls": {
+    "source_sha256": "58c8b5edea7757a20731a8b4436925a8ae85a1262adae943077b2323a3efd978",
+    "principal_table_sha256": "22239a0405de42f284f2efb22317def9c016e675f244c9adc7228a13f3797d76",
+    "controls": [
+      {
+        "rank": 4,
+        "column_bounds_exact_reference_equality": 460,
+        "hereditary_retained_candidates": 255,
+        "all_classified_families_preserved": 37,
+        "completed_tasks": 120,
+        "hereditary_completed_tasks": 120
+      },
+      {
+        "rank": 5,
+        "column_bounds_exact_reference_equality": 4697,
+        "hereditary_retained_candidates": 1671,
+        "all_classified_families_preserved": 55,
+        "completed_tasks": 720,
+        "hereditary_completed_tasks": 720
+      }
+    ]
+  }
+}

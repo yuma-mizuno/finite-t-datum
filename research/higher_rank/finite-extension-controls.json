@@ -1,0 +1,1049 @@
+{
+  "source_sha256": "2df457284b64e66a858103993d424539861505c0a304895af354396fda457451",
+  "controls": [
+    {
+      "rank": 5,
+      "previously_verified_exclusions_reproduced": 398,
+      "known_positive_extension_checks": [
+        {
+          "constant_id": 1,
+          "core": "r4-c02",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 1,
+          "core": "r4-c02",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 1,
+          "core": "r4-c01",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2,
+          "core": "r4-c02",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2,
+          "core": "r4-c02",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 3,
+          "core": "r4-c03",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 3,
+          "core": "r4-c02",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 4,
+          "core": "r4-c04",
+          "normalized_delay": "3",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 5,
+          "core": "r4-c05",
+          "normalized_delay": "6",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 55,
+          "core": "r4-c02",
+          "normalized_delay": "16",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 75,
+          "core": "r4-c07",
+          "normalized_delay": "5",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 76,
+          "core": "r4-c08",
+          "normalized_delay": "8",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 77,
+          "core": "r4-c09",
+          "normalized_delay": "5",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 78,
+          "core": "r4-c10",
+          "normalized_delay": "10",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 79,
+          "core": "r4-c11",
+          "normalized_delay": "7",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 81,
+          "core": "r4-c13",
+          "normalized_delay": "6",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 84,
+          "core": "r4-c14",
+          "normalized_delay": "12",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 85,
+          "core": "r4-c15",
+          "normalized_delay": "9",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 86,
+          "core": "r4-c14",
+          "normalized_delay": "12",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 95,
+          "core": "r4-c01",
+          "normalized_delay": "4",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 96,
+          "core": "r4-c01",
+          "normalized_delay": "6",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 100,
+          "core": "r4-c03",
+          "normalized_delay": "6",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 102,
+          "core": "r4-c02",
+          "normalized_delay": "12",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 103,
+          "core": "r4-c03",
+          "normalized_delay": "9",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 151,
+          "core": "r4-c18",
+          "normalized_delay": "14",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 560,
+          "core": "r4-c20",
+          "normalized_delay": "8",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 564,
+          "core": "r4-c13",
+          "normalized_delay": "4",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 565,
+          "core": "r4-c21",
+          "normalized_delay": "14",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 566,
+          "core": "r4-c22",
+          "normalized_delay": "8",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 571,
+          "core": "r4-c20",
+          "normalized_delay": "18",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 572,
+          "core": "r4-c07",
+          "normalized_delay": "12",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 585,
+          "core": "r4-c14",
+          "normalized_delay": "10",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 586,
+          "core": "r4-c15",
+          "normalized_delay": "7",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 595,
+          "core": "r4-c25",
+          "normalized_delay": "8",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 600,
+          "core": "r4-c22",
+          "normalized_delay": "11",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 607,
+          "core": "r4-c04",
+          "normalized_delay": "11",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 666,
+          "core": "r4-c21",
+          "normalized_delay": "20",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 667,
+          "core": "r4-c13",
+          "normalized_delay": "6",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 670,
+          "core": "r4-c05",
+          "normalized_delay": "20",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 672,
+          "core": "r4-c08",
+          "normalized_delay": "22",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 919,
+          "core": "r4-c14",
+          "normalized_delay": "8",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 1900,
+          "core": "r4-c28",
+          "normalized_delay": "6",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 1911,
+          "core": "r4-c09",
+          "normalized_delay": "13",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 1974,
+          "core": "r4-c13",
+          "normalized_delay": "14",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2111,
+          "core": "r4-c23",
+          "normalized_delay": "12",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2115,
+          "core": "r4-c31",
+          "normalized_delay": "5",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2122,
+          "core": "r4-c11",
+          "normalized_delay": "12",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2134,
+          "core": "r4-c18",
+          "normalized_delay": "22",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2135,
+          "core": "r4-c25",
+          "normalized_delay": "13",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2174,
+          "core": "r4-c10",
+          "normalized_delay": "18",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2508,
+          "core": "r4-c16",
+          "normalized_delay": "10",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 3175,
+          "core": "r4-c26",
+          "normalized_delay": "12",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 3784,
+          "core": "r4-c35",
+          "normalized_delay": "3",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 3784,
+          "core": "r4-c27",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 3941,
+          "core": "r4-c28",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 3942,
+          "core": "r4-c35",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 3942,
+          "core": "r4-c35",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 3942,
+          "core": "r4-c29",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 3961,
+          "core": "r4-c32",
+          "normalized_delay": "8",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 4029,
+          "core": "r4-c24",
+          "normalized_delay": "10",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 4065,
+          "core": "r4-c35",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 4065,
+          "core": "r4-c35",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "previously_verified_exclusions_reproduced": 0,
+      "known_positive_extension_checks": [
+        {
+          "constant_id": 1,
+          "core": "r5-c02",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 1,
+          "core": "r5-c02",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 1,
+          "core": "r5-c01",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2,
+          "core": "r5-c02",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2,
+          "core": "r5-c01",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2,
+          "core": "r5-c01",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 3,
+          "core": "r5-c02",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 3,
+          "core": "r5-c02",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 4,
+          "core": "r5-c03",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 4,
+          "core": "r5-c02",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 5,
+          "core": "r5-c04",
+          "normalized_delay": "3",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 6,
+          "core": "r5-c05",
+          "normalized_delay": "6",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 120,
+          "core": "r5-c02",
+          "normalized_delay": "18",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 158,
+          "core": "r5-c07",
+          "normalized_delay": "5",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 159,
+          "core": "r5-c08",
+          "normalized_delay": "8",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 160,
+          "core": "r5-c09",
+          "normalized_delay": "5",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 161,
+          "core": "r5-c10",
+          "normalized_delay": "10",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 162,
+          "core": "r5-c11",
+          "normalized_delay": "7",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 164,
+          "core": "r5-c12",
+          "normalized_delay": "6",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 165,
+          "core": "r5-c13",
+          "normalized_delay": "12",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 166,
+          "core": "r5-c14",
+          "normalized_delay": "9",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 168,
+          "core": "r5-c17",
+          "normalized_delay": "8",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 175,
+          "core": "r5-c19",
+          "normalized_delay": "14",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 176,
+          "core": "r5-c20",
+          "normalized_delay": "11",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 177,
+          "core": "r5-c19",
+          "normalized_delay": "14",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 195,
+          "core": "r5-c01",
+          "normalized_delay": "8",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 196,
+          "core": "r5-c02",
+          "normalized_delay": "6",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 203,
+          "core": "r5-c02",
+          "normalized_delay": "14",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 204,
+          "core": "r5-c03",
+          "normalized_delay": "11",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 278,
+          "core": "r5-c21",
+          "normalized_delay": "14",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2079,
+          "core": "r5-c22",
+          "normalized_delay": "8",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2080,
+          "core": "r5-c23",
+          "normalized_delay": "4",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2081,
+          "core": "r5-c24",
+          "normalized_delay": "14",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2082,
+          "core": "r5-c25",
+          "normalized_delay": "8",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2083,
+          "core": "r5-c26",
+          "normalized_delay": "18",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2084,
+          "core": "r5-c27",
+          "normalized_delay": "12",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2086,
+          "core": "r5-c23",
+          "normalized_delay": "10",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2091,
+          "core": "r5-c28",
+          "normalized_delay": "22",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2092,
+          "core": "r5-c29",
+          "normalized_delay": "16",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2097,
+          "core": "r5-c16",
+          "normalized_delay": "4",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2103,
+          "core": "r5-c17",
+          "normalized_delay": "6",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2113,
+          "core": "r5-c19",
+          "normalized_delay": "12",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2114,
+          "core": "r5-c20",
+          "normalized_delay": "9",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2119,
+          "core": "r5-c30",
+          "normalized_delay": "8",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2120,
+          "core": "r5-c31",
+          "normalized_delay": "11",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2123,
+          "core": "r5-c32",
+          "normalized_delay": "14",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2129,
+          "core": "r5-c04",
+          "normalized_delay": "14",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2130,
+          "core": "r5-c29",
+          "normalized_delay": "7",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2177,
+          "core": "r5-c33",
+          "normalized_delay": "20",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2179,
+          "core": "r5-c34",
+          "normalized_delay": "6",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2179,
+          "core": "r5-c12",
+          "normalized_delay": "6",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2182,
+          "core": "r5-c35",
+          "normalized_delay": "26",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2188,
+          "core": "r5-c05",
+          "normalized_delay": "26",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 2192,
+          "core": "r5-c36",
+          "normalized_delay": "22",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8029,
+          "core": "r5-c17",
+          "normalized_delay": "6",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8029,
+          "core": "r5-c17",
+          "normalized_delay": "6",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8040,
+          "core": "r5-c39",
+          "normalized_delay": "13",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8042,
+          "core": "r5-c25",
+          "normalized_delay": "19",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8050,
+          "core": "r5-c32",
+          "normalized_delay": "11",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8055,
+          "core": "r5-c28",
+          "normalized_delay": "10",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8120,
+          "core": "r5-c24",
+          "normalized_delay": "34",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8123,
+          "core": "r5-c35",
+          "normalized_delay": "20",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8618,
+          "core": "r5-c22",
+          "normalized_delay": "26",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8619,
+          "core": "r5-c07",
+          "normalized_delay": "17",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8645,
+          "core": "r5-c42",
+          "normalized_delay": "5",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8647,
+          "core": "r5-c43",
+          "normalized_delay": "12",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8652,
+          "core": "r5-c27",
+          "normalized_delay": "17",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8667,
+          "core": "r5-c44",
+          "normalized_delay": "22",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8668,
+          "core": "r5-c45",
+          "normalized_delay": "13",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8671,
+          "core": "r5-c36",
+          "normalized_delay": "30",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8672,
+          "core": "r5-c39",
+          "normalized_delay": "18",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8691,
+          "core": "r5-c08",
+          "normalized_delay": "30",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8692,
+          "core": "r5-c09",
+          "normalized_delay": "18",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8711,
+          "core": "r5-c46",
+          "normalized_delay": "28",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8712,
+          "core": "r5-c43",
+          "normalized_delay": "19",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8717,
+          "core": "r5-c12",
+          "normalized_delay": "10",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8722,
+          "core": "r5-c13",
+          "normalized_delay": "22",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8723,
+          "core": "r5-c14",
+          "normalized_delay": "16",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8798,
+          "core": "r5-c12",
+          "normalized_delay": "10",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8822,
+          "core": "r5-c10",
+          "normalized_delay": "28",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8823,
+          "core": "r5-c11",
+          "normalized_delay": "19",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8912,
+          "core": "r5-c17",
+          "normalized_delay": "4",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 8912,
+          "core": "r5-c16",
+          "normalized_delay": "6",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 9131,
+          "core": "r5-c46",
+          "normalized_delay": "18",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 9159,
+          "core": "r5-c34",
+          "normalized_delay": "12",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 11642,
+          "core": "r5-c44",
+          "normalized_delay": "36",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 11650,
+          "core": "r5-c21",
+          "normalized_delay": "36",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 21345,
+          "core": "r5-c30",
+          "normalized_delay": "21",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 21375,
+          "core": "r5-c33",
+          "normalized_delay": "34",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 21376,
+          "core": "r5-c31",
+          "normalized_delay": "19",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 21382,
+          "core": "r5-c26",
+          "normalized_delay": "26",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 21657,
+          "core": "r5-c47",
+          "normalized_delay": "10",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 22314,
+          "core": "r5-c41",
+          "normalized_delay": "12",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 22379,
+          "core": "r5-c42",
+          "normalized_delay": "9",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 22424,
+          "core": "r5-c45",
+          "normalized_delay": "21",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 25246,
+          "core": "r5-c48",
+          "normalized_delay": "12",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 29451,
+          "core": "r5-c55",
+          "normalized_delay": "3",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 29451,
+          "core": "r5-c49",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 29890,
+          "core": "r5-c38",
+          "normalized_delay": "10",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 29914,
+          "core": "r5-c50",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 29915,
+          "core": "r5-c55",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 29915,
+          "core": "r5-c55",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 29915,
+          "core": "r5-c51",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 29921,
+          "core": "r5-c53",
+          "normalized_delay": "10",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 30493,
+          "core": "r5-c54",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 30494,
+          "core": "r5-c55",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 30494,
+          "core": "r5-c51",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 30494,
+          "core": "r5-c51",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 30641,
+          "core": "r5-c55",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        },
+        {
+          "constant_id": 30641,
+          "core": "r5-c55",
+          "normalized_delay": "2",
+          "matching_pulse_pattern": true
+        }
+      ]
+    }
+  ]
+}

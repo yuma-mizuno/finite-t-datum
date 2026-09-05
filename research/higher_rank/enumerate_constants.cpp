@@ -11,6 +11,7 @@
 #include <numeric>
 #include <set>
 #include <string>
+#include <unordered_set>
 #include <vector>
 using namespace std;
 namespace fs = std::filesystem;
@@ -24,6 +25,10 @@ set<vector<int>> answers,positive_cache;
 unsigned long long nodes[MAX_N+1]{},labelled=0,lp_checks=0;
 int current_upper=-1,current_partner=-1;
 int ordered_limits[MAX_N][MAX_N]{};
+int ordered_distance[MAX_N][MAX_N]{};
+unordered_set<string> principal_constants[MAX_N];
+bool hereditary_pruning=false;
+unsigned long long hereditary_checks=0,hereditary_rejections=0;
 double last_heartbeat=0;
 auto started=chrono::steady_clock::now();
 double seconds(){return chrono::duration<double>(chrono::steady_clock::now()-started).count();}
@@ -83,6 +88,34 @@ bool strong(){
     for(int i=0;i<n;i++)for(int j=0;j<n;j++)if(!reach[i][j])return false;
     return true;
 }
+bool hereditary_prefix(int size){
+    if(!hereditary_pruning||size>=n)return true;
+    for(int k=size;k<n;k++){
+        bool a=false,b=false;
+        for(int i=0;i<size;i++){a|=p[i][k]!=0;b|=m[i][k]!=0;}
+        if(a&&b)return true;
+    }
+    hereditary_checks++;
+    int remaining=(1<<size)-1;
+    while(remaining){
+        int component=remaining&-remaining;
+        for(;;){
+            int next=component;
+            for(int i=0;i<size;i++)if(component>>i&1)
+                for(int j=0;j<size;j++)if((remaining>>j&1)&&(weight(i,j)||weight(j,i)))next|=1<<j;
+            if(next==component)break;
+            component=next;
+        }
+        remaining&=~component;
+        string v;
+        for(const auto& b:{p,m})for(int i=0;i<size;i++)if(component>>i&1)
+            for(int j=0;j<size;j++)if(component>>j&1)v.push_back(char(b[i][j]));
+        if(!principal_constants[__builtin_popcount(unsigned(component))].count(v)){
+            hereditary_rejections++;return false;
+        }
+    }
+    return true;
+}
 vector<int> key(){
     vector<int> perm(n),best;iota(perm.begin(),perm.end(),0);
     do{for(int s=0;s<2;s++){
@@ -135,7 +168,7 @@ void rows(int j);
 struct Linear {Vec coefficients{};Int constant=0,lower=0,upper=0;};
 Int floor_div(Int a,Int b){if(b<0){a=-a;b=-b;}Int q=a/b;if(a%b<0)q--;return q;}
 Int ceil_div(Int a,Int b){return -floor_div(-a,b);}
-void fill_row(int j,int k,const int* limits,const Mat& adj,Int denom,const vector<Linear>& constraints){
+void fill_row(int j,int k,const int* limits,const int* m_limits,const Mat& adj,Int denom,const vector<Linear>& constraints){
     if(k<j){
         Int low=0,high=limits[k];
         for(const auto& c:constraints){
@@ -150,7 +183,7 @@ void fill_row(int j,int k,const int* limits,const Mat& adj,Int denom,const vecto
             else if(lower>0||upper<0)return;
             if(low>high)return;
         }
-        for(int x=int(low);x<=int(high);x++){p[j][k]=x;fill_row(j,k+1,limits,adj,denom,constraints);}
+        for(int x=int(low);x<=int(high);x++){p[j][k]=x;fill_row(j,k+1,limits,m_limits,adj,denom,constraints);}
         p[j][k]=0;return;
     }
     nodes[j]++;
@@ -166,13 +199,14 @@ void fill_row(int j,int k,const int* limits,const Mat& adj,Int denom,const vecto
     bool ok=true;
     for(int i=0;i<j;i++){
         Int x=0;for(int t=0;t<j;t++)x-=adj[i][t]*rhs[t];
-        if(x%denom||x<0||x>limits[i]*denom){ok=false;break;}
+        if(x%denom||x<0||x>m_limits[i]*denom){ok=false;break;}
         m[j][i]=x/denom;
     }
     if(ok&&parity(j)&&cycles_at(j)&&principal(m,j))rows(j+1);
     for(int i=0;i<j;i++)m[j][i]=0;
 }
 void rows(int j){
+    if(!hereditary_prefix(j))return;
     if(j==n){
         if(!strong())return;
         labelled++;auto v=key();
@@ -180,8 +214,20 @@ void rows(int j){
         if(!positive_cache.count(v)&&!positive_ordered())return;
         answers.insert(v);positive_cache.insert(move(v));return;
     }
-    int limits[MAX_N]{};
-    for(int k=0;k<j;k++){limits[k]=ordered_limits[j][k];path_bound(k,j,1<<k,0,1,limits[k]);}
+    int limits[MAX_N]{},m_limits[MAX_N]{};
+    for(int k=0;k<j;k++){
+        int cap=ordered_limits[j][k];path_bound(k,j,1<<k,0,1,cap);
+        // v_i >= 2^{-d(k,i)} v_k. Every individual column sum is < 2v_k.
+        // Multiply by 2^n to keep the strict dyadic inequalities integral.
+        auto column_cap=[&](const Mat& b){
+            Int used=0;
+            for(int i=0;i<n;i++)if(i!=j)used+=b[i][k]*(1<<(n-ordered_distance[k][i]));
+            Int available=(2<<n)-1-used;
+            return min(cap,int(floor_div(available,1<<(n-ordered_distance[k][j]))));
+        };
+        limits[k]=column_cap(p);m_limits[k]=column_cap(m);
+        if(limits[k]<0||m_limits[k]<0)return;
+    }
     Mat a=A(p),adj{};Int denom=det(a,j);if(denom<=0)throw runtime_error("Nonpositive pivot block");
     for(int i=0;i<j;i++)for(int t=0;t<j;t++){
         Mat minor{};
@@ -198,14 +244,14 @@ void rows(int j){
             alpha[i]-=adj[i][t]*base_rhs[t];
             for(int k=0;k<j;k++)beta[i][k]+=adj[i][t]*am[t][k];
         }
-        constraints.push_back({beta[i],alpha[i],0,limits[i]*denom});
+        constraints.push_back({beta[i],alpha[i],0,m_limits[i]*denom});
     }
     Linear leading;leading.constant=(2-p[j][j])*denom;leading.lower=1;
     for(int k=0;k<j;k++)for(int t=0;t<j;t++)leading.coefficients[k]+=adj[k][t]*a[t][j];
     leading.upper=leading.constant;
     for(int k=0;k<j;k++)leading.upper+=max(Int(0),leading.coefficients[k]*limits[k]);
     constraints.push_back(leading);
-    fill_row(j,0,limits,adj,denom,constraints);
+    fill_row(j,0,limits,m_limits,adj,denom,constraints);
 }
 void triangular(int j,Mat b,vector<Mat>& out){
     if(j==n){out.push_back(b);return;}
@@ -220,6 +266,21 @@ int main(int argc,char** argv){
     bound=(1<<n)-1;fs::path directory=argv[2];fs::create_directories(directory);
     int shard=stoi(argv[3]),shards=stoi(argv[4]),only=argc>5?stoi(argv[5]):-1;
     if(shards<1||shard<0||shard>=shards)return 2;
+    if(argc>6){
+        ifstream input(argv[6]);if(!input)throw runtime_error("Missing principal-constant table");
+        int size,value;
+        while(input>>size){
+            if(size<1||size>=MAX_N)throw runtime_error("Invalid principal rank");
+            string v;
+            for(int i=0;i<2*size*size;i++){
+                if(!(input>>value)||value<0||value>63)throw runtime_error("Invalid principal constant");
+                v.push_back(char(value));
+            }
+            principal_constants[size].insert(v);
+        }
+        for(int size=1;size<n;size++)if(principal_constants[size].empty())throw runtime_error("Incomplete principal table");
+        hereditary_pruning=true;
+    }
     vector<Mat> triangle;triangular(0,Mat{},triangle);
     for(int a=0;a<int(triangle.size());a++){
         if(a%shards!=shard||(only>=0&&a!=only))continue;
@@ -228,6 +289,7 @@ int main(int argc,char** argv){
         answers.clear();double before=seconds();
         current_upper=a;
         auto labelled_before=labelled,lp_before=lp_checks;
+        auto hereditary_before=hereditary_checks,rejections_before=hereditary_rejections;
         array<unsigned long long,MAX_N+1> nodes_before{};copy(begin(nodes),end(nodes),nodes_before.begin());
         for(int b=a;b<int(triangle.size());b++){
             current_partner=b;
@@ -245,6 +307,7 @@ int main(int argc,char** argv){
                 int distance[MAX_N][MAX_N];
                 for(int i=0;i<n;i++)for(int j=0;j<n;j++)distance[i][j]=i>=j?0:(weight(i,j)?1:100);
                 for(int k=0;k<n;k++)for(int i=0;i<n;i++)for(int j=0;j<n;j++)distance[i][j]=min(distance[i][j],distance[i][k]+distance[k][j]);
+                for(int i=0;i<n;i++)for(int j=0;j<n;j++)ordered_distance[i][j]=distance[i][j];
                 for(int i=0;i<n;i++)for(int j=0;j<i;j++){
                     if(distance[j][i]>=n)throw runtime_error("Disconnected ordered upper graph");
                     ordered_limits[i][j]=(1<<(distance[j][i]+1))-1;
@@ -255,6 +318,8 @@ int main(int argc,char** argv){
         auto temporary=path;temporary+=".tmp";ofstream out(temporary);
         out<<"{\"rank\":"<<n<<",\"upper_index\":"<<a<<",\"triangular_count\":"<<triangle.size()
            <<",\"completed\":true,\"parity_pruning\":true,\"seconds\":"<<seconds()-before
+           <<",\"ordered_column_pruning\":true,\"hereditary_pruning\":"<<(hereditary_pruning?"true":"false")
+           <<",\"hereditary_checks\":"<<hereditary_checks-hereditary_before<<",\"hereditary_rejections\":"<<hereditary_rejections-rejections_before
            <<",\"labelled\":"<<labelled-labelled_before<<",\"positivity_checks\":"<<lp_checks-lp_before<<",\"row_nodes\":[";
         for(int j=1;j<n;j++){if(j>1)out<<",";out<<nodes[j]-nodes_before[j];}out<<"],\"keys\":[";
         bool first=true;for(auto v:answers){if(!first)out<<",";first=false;out<<"[";for(size_t i=0;i<v.size();i++){if(i)out<<",";out<<v[i];}out<<"]";}

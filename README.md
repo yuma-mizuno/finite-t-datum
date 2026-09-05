@@ -1,11 +1,11 @@
 # Finite T-data
 
-An interactive catalogue of 116 indecomposable finite T-datum families in ranks
-one through five, with exact matrices, admissible lifts, mutation loops,
+An interactive catalogue of 224 indecomposable finite T-datum families in ranks
+one through six, with exact matrices, admissible lifts, mutation loops,
 exponents and reproducible classification certificates.
 
 The scope is identity symmetrizer and diagonal leading matrix. The catalogue
-contains 2 rank-one, 6 rank-two, 16 rank-three, 37 rank-four and 55 rank-five families.
+contains 2 rank-one, 6 rank-two, 16 rank-three, 37 rank-four, 55 rank-five and 108 rank-six families.
 Rank-two completeness is a published result; the higher-rank classifications
 are computer-assisted and depend on the included exact-arithmetic programs
 and solver certificates. A missing family name means that no identification
@@ -23,7 +23,7 @@ The HTML source view on GitHub does not run the interactive document.
 - [Ranks one and two](research/catalogue/lower-ranks-proof.html): proof and references.
 - [Rank-three classification](output/pdf/rank3-classification.pdf).
 - [Rank-four classification](output/pdf/rank4-classification.pdf).
-- [Rank-five classification](research/higher_rank/methods.html).
+- [Rank-five and rank-six classifications](research/higher_rank/methods.html).
 
 ## Reproduce and verify
 
@@ -44,7 +44,8 @@ python docs/catalogue/build_catalogue.py
 Full computation instructions are in the
 [rank-three report](research/rank3/CLASSIFICATION.md),
 [rank-four reproduction guide](research/rank4/REPRODUCE.md),
-[rank-five reproduction guide](research/higher_rank/rank5/README.md), and
+[rank-five reproduction guide](research/higher_rank/rank5/README.md),
+[rank-six reproduction guide](research/higher_rank/rank6/README.md), and
 [family and spectral calculations](research/catalogue/README.md).
 They describe the additional Z3, C++ and SageMath dependencies and distinguish
 verification of stored certificates from rerunning the searches.

@@ -1,0 +1,14 @@
+{
+  "source": "docs/catalogue/catalogue.json",
+  "source_sha256": "94c9aaaad52ca48163af3b631ed87091a43e9dd4fec21892b35e032f6da51ce3",
+  "rank_counts": {
+    "1": 3,
+    "2": 20,
+    "3": 174,
+    "4": 1402,
+    "5": 11920
+  },
+  "sha256": "22239a0405de42f284f2efb22317def9c016e675f244c9adc7228a13f3797d76",
+  "dependency": "Complete simultaneous-positive polynomial-lift classifications in ranks 1 through 5.",
+  "source_commit": "1ceefa8666fc542d9d559c1be0eb663a426a990f"
+}

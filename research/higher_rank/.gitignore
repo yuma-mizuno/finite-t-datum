@@ -2,3 +2,10 @@ bin/
 __pycache__/
 rank*/smt_queries/
 rank*/constant_tasks/
+control-rank4-columns/
+control-rank4-hereditary/
+control-rank5-columns/
+control-rank5-hereditary/
+
+*.log
+rank6/smt_queries.zip

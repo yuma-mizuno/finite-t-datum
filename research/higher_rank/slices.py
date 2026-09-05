@@ -15,7 +15,7 @@ from rank4_slices import equivalence_states
 
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('rank',type=int);args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('rank',type=int);parser.add_argument('--engine',choices=['python','cpp'],default='python');args=parser.parse_args()
     directory=HERE/f'rank{args.rank}';source=directory/'families.jsonl';start=time.monotonic()
     families=[json.loads(x) for x in source.read_text().splitlines()]
     results=[];minima={};groups=defaultdict(list);prepared=[]
@@ -43,11 +43,16 @@ def main():
             s=saved['slice'];signature=json.dumps(s['canonical_signature'])
         else:
             collision=len(groups[lengths])>1
-            states=(equivalence_states(b,word,p)|equivalence_states(tuple(tuple(-x for x in row) for row in b),word,p)) if collision else set()
-            minimum=min(states) if collision else None
+            if collision and args.engine=='cpp':
+                from slice_cpp import orbit
+                result=orbit(b,word,p,directory/'slice_cpp',f'{cid}-{index}')
+                minimum=result['minimum'];state_count=result['states']
+            else:
+                states=(equivalence_states(b,word,p)|equivalence_states(tuple(tuple(-x for x in row) for row in b),word,p)) if collision else set()
+                minimum=min(states) if collision else None;state_count=len(states) if collision else None
             encoding={'terminal_cycle_lengths':lengths,'orbit_minimum':minimum}
             signature=json.dumps(encoding)
-            s.update({'id':cid,'space_index':index,'equivalent_canonical_states_including_sign_exchange':len(states) if collision else None,
+            s.update({'id':cid,'space_index':index,'equivalent_canonical_states_including_sign_exchange':state_count,
                       'canonical_signature':encoding,'signature_sha256':hashlib.sha256(signature.encode()).hexdigest(),
                       'signature_convention':'Catalogue distinctness: terminal cycle lengths; exhaustive cyclic-loop minimum within repeated length classes.',
                       'distinctness':{'terminal_cycle_lengths':lengths,'records_with_same_lengths':groups[lengths],

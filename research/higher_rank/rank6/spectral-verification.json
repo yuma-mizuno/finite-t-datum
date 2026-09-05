@@ -1,0 +1,434 @@
+{
+  "r6-c01": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c02": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c03": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c04": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c05": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c06": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c07": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c08": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c09": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c10": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c11": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c12": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c13": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c14": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c15": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c16": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c17": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c18": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c19": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c20": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c21": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c22": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c23": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c24": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c25": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c26": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c27": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c28": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c29": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c30": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c31": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c32": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c33": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c34": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c35": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c36": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c37": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c38": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c39": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c40": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c41": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c42": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c43": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c44": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c45": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c46": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c47": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c48": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c49": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c50": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c51": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c52": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c53": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c54": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c55": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c56": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c57": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c58": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c59": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c60": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c61": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c62": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c63": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c64": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c65": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c66": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c67": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c68": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c69": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c70": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c71": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c72": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c73": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c74": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c75": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c76": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c77": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c78": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c79": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c80": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c81": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c82": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c83": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c84": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c85": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c86": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c87": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c88": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c89": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c90": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c91": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c92": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c93": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c94": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c95": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c96": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c97": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c98": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c99": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c100": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c101": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c102": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c103": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c104": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c105": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c106": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c107": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "r6-c108": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match"
+  }
+}

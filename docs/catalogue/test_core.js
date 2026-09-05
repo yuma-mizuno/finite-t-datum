@@ -4,10 +4,11 @@ const C=require('./core.js'),data=JSON.parse(fs.readFileSync(path.join(__dirname
 const frozen=JSON.stringify(data);
 const strMatrix=a=>a.map(row=>row.map(terms=>terms.map(([c,p])=>[c,String(p)])));
 const isPermutation=p=>assert.deepEqual([...p].sort((a,b)=>a-b),p.map((_,i)=>i));
-assert.equal(data.records.length,116);
-assert.equal(new Set(data.records.map(r=>r.id)).size,116);
+assert.equal(data.records.length,224);
+assert.equal(new Set(data.records.map(r=>r.id)).size,224);
 assert.deepEqual([1,2,3,4].map(rank=>data.records.filter(r=>r.rank===rank).length),[2,6,16,37]);
 assert.equal(data.records.filter(r=>r.rank===5).length,55);
+assert.equal(data.records.filter(r=>r.rank===6).length,108);
 for(const r of data.records){
   const d=r.datum;
   assert.equal(d.delays.length,r.rank);

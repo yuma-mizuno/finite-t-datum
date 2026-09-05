@@ -21,7 +21,7 @@ from obstructions import obstruction,add_monomial_relations
 
 
 def build_problem(candidate,timeout,arithmetic='integer',encoding='multiplicity'):
-    solver,variables,indices,equations=base_problem(candidate,timeout,arithmetic=arithmetic,encoding='multiplicity' if encoding in ('flow','principal') else encoding)
+    solver,variables,indices,equations=base_problem(candidate,timeout,arithmetic=arithmetic,encoding='structure' if encoding in ('flow','reduced') else 'multiplicity' if encoding=='principal' else encoding)
     if encoding=='flow':
         def contains_ite(e):return z3.is_app_of(e,z3.Z3_OP_ITE) or any(contains_ite(c) for c in e.children())
         plain=[c for c in solver.assertions() if not contains_ite(c)]
@@ -35,9 +35,12 @@ def build_problem(candidate,timeout,arithmetic='integer',encoding='multiplicity'
                 for j,f in enumerate(bb):solver.add(flow[i][j]>=0,z3.Or(flow[i][j]==0,expression(e)==expression(f)))
             for j,f in enumerate(bb):solver.add(z3.Sum([flow[i][j] for i in range(len(aa))])==b[f])
     add_monomial_relations(solver,variables,indices,candidate)
-    if encoding=='principal':
+    if encoding in ('principal','flow','reduced'):
         from principal_relations import add_principal_relations
         add_principal_relations(solver,variables,indices,candidate,z3)
+    if encoding=='reduced':
+        from reduced_encoding import encode
+        encode(solver,variables,equations,z3,sp)
     return solver,variables,indices,equations
 
 
@@ -146,15 +149,17 @@ def constant_check(candidate):
     return {'id':candidate['id'],'status':'verified','positive_left_vector':v,'seconds':time.monotonic()-start}
 
 
-def verify(candidate,witness,family,timeout,directory):
+def verify(candidate,witness,family,timeout,directory,encoding_override=None):
     start=time.monotonic();n=len(candidate['N_plus_1'])
     info=constant_check(candidate)
     arithmetic=(family or witness).get('arithmetic','integer')
-    encoding=(family or witness).get('encoding','multiplicity')
-    if witness.get('analytic_exclusion'):
-        assert obstruction(candidate)==witness['analytic_exclusion']
+    encoding=encoding_override or (family or witness).get('encoding','multiplicity')
+    exclusion=witness.get('analytic_exclusion')
+    if exclusion:assert obstruction(candidate)==exclusion
+    elif witness['status']=='unsat':exclusion=obstruction(candidate)
+    if exclusion:
         solver=z3.Solver();solver.add(z3.BoolVal(False));suffix='analytic_exclusion'
-        info['analytic_exclusion']=witness['analytic_exclusion']
+        info['analytic_exclusion']=exclusion
     else:solver,variables,indices,equations=build_problem(candidate,timeout,arithmetic=arithmetic,encoding=encoding)
     if witness['status']=='sat':
         assert family and family['coverage_status']=='unsat'
@@ -180,12 +185,12 @@ def verify(candidate,witness,family,timeout,directory):
         solver.add(z3.Not(z3.Or(*membership)));suffix='coverage'
     else:
         assert witness['status']=='unsat'
-        if not witness.get('analytic_exclusion'):suffix='exclusion'
+        if not exclusion:suffix='exclusion'
     query=solver.to_smt2();target=Path(directory)/'smt_queries';target.mkdir(exist_ok=True)
     filename=f'{candidate["id"]:06d}_{suffix}.smt2.gz'
     (target/filename).write_bytes(gzip.compress(query.encode(),mtime=0))
     status=solver.check()
-    info.update({'result':str(status),'arithmetic':arithmetic,'query_file':filename,
+    info.update({'result':str(status),'arithmetic':arithmetic,'encoding':encoding,'query_file':filename,
                  'sha256':hashlib.sha256(query.encode()).hexdigest(),'seconds':time.monotonic()-start})
     if status==z3.unknown:info['reason']=solver.reason_unknown()
     return info
@@ -195,7 +200,7 @@ def task(stage,candidate,witness,family,timeout,arithmetic,directory,encoding='m
     try:
         if stage=='lifts':return feasibility(candidate,timeout,arithmetic,encoding)
         if stage=='families':return spaces(candidate,witness,timeout,arithmetic,encoding)
-        if stage=='verify':return verify(candidate,witness,family,timeout,directory)
+        if stage=='verify':return verify(candidate,witness,family,timeout,directory,None if encoding=='multiplicity' else encoding)
         raise ValueError(stage)
     except Exception as exc:
         import traceback

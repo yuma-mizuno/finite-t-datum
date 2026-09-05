@@ -10,10 +10,13 @@ HERE=Path(__file__).resolve().parent
 
 
 def task_data(directory):
+    # A resumed run may have added tasks beyond the older checkpoint archive.
+    paths=list((directory/'constant_tasks').glob('upper-*.json'))
+    if paths:return [json.loads(p.read_text()) for p in paths]
     archive=directory/'constant_tasks.zip'
     if archive.exists():
         with zipfile.ZipFile(archive) as z:return [json.loads(z.read(name)) for name in z.namelist()]
-    return [json.loads(p.read_text()) for p in (directory/'constant_tasks').glob('upper-*.json')]
+    return []
 
 
 def main():
@@ -38,6 +41,13 @@ def main():
             'rank_four_control':'exact equality of all 460 parity-compatible reference candidates',
             'source_sha256':hashlib.sha256((HERE/'enumerate_constants.cpp').read_bytes()).hexdigest(),
             'constant_file_sha256':hashlib.sha256((directory/'constant_candidates.json').read_bytes()).hexdigest()}
+    pruned=sum(x.get('hereditary_pruning',False) for x in items)
+    if pruned:
+        controls=json.loads((HERE/'pruning-controls.json').read_text())
+        assert controls['source_sha256']==report['source_sha256']
+        report.update({'hereditary_pruning_tasks':pruned,'unpruned_tasks_retained':count-pruned,
+                       'candidate_scope':'All retained necessary constants after certified hereditary-prefix exclusions; not the unpruned constant set.',
+                       'pruning_controls':controls})
     (directory/'enumeration-verification.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf8',newline='\n')
     print(json.dumps(report),flush=True)
 

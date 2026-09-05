@@ -5,6 +5,7 @@ import sys
 import hashlib
 import subprocess
 import sympy as sp
+from query_archives import archive_path
 
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[1]
 sys.path.insert(0,str(ROOT/'docs/catalogue'))
@@ -45,20 +46,26 @@ def main(rank):
           'exchange':{k:cert[k] for k in ('vertices','B','mutation_vertices','relabel_old_to_new')},
           'slice':{k:s[k] for k in ('components','vertices','B','mutation_word','relabel_old_to_new','canonical_signature','signature_sha256','distinctness','signature_convention')},
           'provenance':{'verification_kind':'computer-assisted','source_commit':subprocess.check_output(['git','log','-1','--format=%H','--','research/higher_rank'],cwd=ROOT,text=True).strip(),
-             'sources':[source(base+'/'+p,role) for p,role in [('constant_candidates.json','complete parity-compatible constant enumeration'),
+             'sources':[source(base+'/'+p,role) for p,role in [('constant_candidates.json','complete search after necessary constant and hereditary exclusions'),
                          ('families.jsonl','complete lift spaces and exact mutation certificates'),('verification.jsonl','independent replay'),
                          ('slice_signatures.json','slice distinctness')]],
              'manuscript':'research/higher_rank/methods.html','pdf':None,
-             'query_path':base+'/smt_queries.zip','query_member':q['query_file']}}
+             'query_path':archive_path(directory,q['query_file']).relative_to(ROOT).as_posix(),'query_member':q['query_file']}}
         records.append(record)
     assert len(records)==sum(w['status']=='sat' for w in witnesses.values())
     (directory/'base-records.json').write_text(json.dumps(records,indent=2)+'\n',encoding='utf8',newline='\n')
     report={'rank':rank,'complete':complete,'constant_candidates':constants['count'],'families':len(records),
+            'candidate_scope':constants.get('candidate_scope','All parity-compatible necessary constant pairs.'),
             'unresolved_lifts':[cid for cid,w in witnesses.items() if w['status'] not in ('sat','unsat')],
             'unresolved_replays':[cid for cid,q in queries.items() if q['result']!='unsat'],
             'slice_distinctness':'all distinct by terminal cycle lengths and exhaustive orbits within repeated length classes',
             'scope':'Identity symmetrizer, diagonal leading matrix, indecomposable; rational time rescaling, species shifts, relabeling, sign exchange and slice changes.',
             'computation_seconds':sum(x['wall_seconds'] for x in readlines(directory/'computation-runs.jsonl'))}
+    manifest=directory/'smt_queries_manifest.json'
+    if manifest.exists():
+        distribution=json.loads(manifest.read_text())
+        report['smt_query_archives']=[{k:v for k,v in a.items() if k!='members'} for a in distribution['archives']]
+        if distribution.get('original_archive_sha256'):report['original_smt_queries_zip_sha256']=distribution['original_archive_sha256']
     (directory/'classification.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf8',newline='\n')
     print(report)
 

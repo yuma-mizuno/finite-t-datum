@@ -3,18 +3,19 @@ import heapq
 import itertools as it
 import json
 from pathlib import Path
-import signal
 import sys
+import time
 import numpy as np
 from sage.all import ClusterQuiver,matrix,ZZ
 HERE=Path(__file__).resolve().parent
 sys.path.insert(0,str(HERE.parent/'catalogue'))
 from quiver_types import tree_type
 
-def dynkin(initial,limit=12000):
+def dynkin(initial,limit=12000,seconds=20):
+    deadline=time.monotonic()+seconds
     b=np.array(initial,dtype=np.int16);counter=it.count();queue=[(int(abs(b).sum())//2,0,next(counter),b,())];seen={b.tobytes()}
     for _ in range(limit):
-        if not queue:break
+        if not queue or time.monotonic()>=deadline:break
         score,depth,_,b,word=heapq.heappop(queue)
         if score==len(b)-1:
             kind=tree_type(b.tolist())
@@ -31,17 +32,13 @@ def dynkin(initial,limit=12000):
 
 def main(rank):
     directory=HERE/f'rank{rank}';path=directory/'quiver-data.json';results=json.loads(path.read_text());records=json.loads((directory/'base-records.json').read_text())
-    signal.signal(signal.SIGALRM,lambda *_:(_ for _ in ()).throw(TimeoutError()))
     for r in records:
         q=results[r['id']]
         if q['status'].startswith('certified'):continue
-        try:
-            signal.alarm(20);cert=dynkin(r['slice']['B'])
-            if cert:
-                kind,word,target=cert;q.update({'status':'certified-dynkin','label':kind,'mutation_finite':True,'cluster_finite':True,
-                                              'certificate':{'mutation_path':word,'target_B':target,'target_graph':kind}})
-        except TimeoutError:pass
-        finally:signal.alarm(0)
+        cert=dynkin(r['slice']['B'])
+        if cert:
+            kind,word,target=cert;q.update({'status':'certified-dynkin','label':kind,'mutation_finite':True,'cluster_finite':True,
+                                          'certificate':{'mutation_path':word,'target_B':target,'target_graph':kind}})
         path.write_text(json.dumps(results,indent=2)+'\n',encoding='utf8',newline='\n')
         print(r['id'],q['status'],q['label'],flush=True)
 

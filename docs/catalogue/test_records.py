@@ -29,7 +29,7 @@ assert not re.search(r'<script[^>]+src=|<link[^>]+href=',html)
 assert not re.search(r'/\*__[A-Z]+__\*/',html)
 files=list((HERE/'records').glob('*.json'))
 assert len(files)==len(data['records'])
-assert [sum(r['rank']==rank for r in data['records']) for rank in (1,2,3,4,5)]==[2,6,16,37,55]
+assert [sum(r['rank']==rank for r in data['records']) for rank in (1,2,3,4,5,6)]==[2,6,16,37,55,108]
 hashes={}
 with zipfile.ZipFile(ROOT/'research/rank4/smt_queries.zip') as archive:
     archive_names=archive.namelist()

@@ -1,0 +1,160 @@
+{
+  "family_source_sha256": "cf991694413e2ed4b5006d6fd630d6971eb31e72568c9f87c37c586bdc6fdd3d",
+  "slice": {
+    "components": 2,
+    "vertices": 9,
+    "B": [
+      [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        1,
+        1,
+        -1
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        -1,
+        -1,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      2,
+      6,
+      7,
+      4,
+      8
+    ],
+    "relabel_old_to_new": [
+      1,
+      0,
+      3,
+      2,
+      5,
+      4,
+      6,
+      7,
+      8
+    ],
+    "canonical_signature": {
+      "terminal_cycle_lengths": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "53321abb8d3f1034af94eb6855882494efd1cd29f02f7f3f02ce8edb25708895",
+    "signature_convention": "Catalogue distinctness: terminal cycle lengths; exhaustive cyclic-loop minimum within repeated length classes.",
+    "id": 2080,
+    "space_index": 0,
+    "equivalent_canonical_states_including_sign_exchange": null,
+    "distinctness": {
+      "terminal_cycle_lengths": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "records_with_same_lengths": [
+        [
+          2080,
+          0
+        ]
+      ],
+      "method": "unique invariant terminal cycle lengths"
+    }
+  }
+}
