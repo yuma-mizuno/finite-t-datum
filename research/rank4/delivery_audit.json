@@ -1,0 +1,18 @@
+{
+  "degree_two_classes": [
+    1,
+    2,
+    3,
+    28,
+    29,
+    30,
+    31,
+    34,
+    35
+  ],
+  "distinct_slice_classes": 37,
+  "chain_equation_derivation": "symbolically verified",
+  "labels": 21,
+  "unresolved_labels": [],
+  "constant_matrices": 74
+}

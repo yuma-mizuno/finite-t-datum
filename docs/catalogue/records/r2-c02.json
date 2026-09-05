@@ -1,0 +1,657 @@
+{
+  "schema_version": "2.0.0",
+  "id": "r2-c02",
+  "rank": 2,
+  "class_number": 2,
+  "constant_id": null,
+  "scope": {
+    "symmetrizer": "identity",
+    "leading_permutation": "identity",
+    "indecomposable": true
+  },
+  "index_base": 0,
+  "datum": {
+    "delays": [
+      2,
+      6
+    ],
+    "N_plus": [
+      [
+        [],
+        [
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        []
+      ]
+    ],
+    "N_minus": [
+      [
+        [],
+        []
+      ],
+      [
+        [
+          [
+            1,
+            3
+          ]
+        ],
+        []
+      ]
+    ],
+    "A_plus_1": [
+      [
+        2,
+        -1
+      ],
+      [
+        -2,
+        2
+      ]
+    ],
+    "A_minus_1": [
+      [
+        2,
+        0
+      ],
+      [
+        -1,
+        2
+      ]
+    ]
+  },
+  "family": {
+    "parameters": [
+      "lambda",
+      "s1"
+    ],
+    "fixed_shift": {
+      "species": 1,
+      "value": "0"
+    },
+    "dimension": 2,
+    "rref": [
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "1"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "-3",
+        "3"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "-2",
+        "3"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "1",
+        "-2"
+      ]
+    ],
+    "variable_names": [
+      "r0",
+      "r1",
+      "p0_01_0",
+      "p0_10_0",
+      "p0_10_1",
+      "p1_10_0"
+    ],
+    "representative_values": [
+      2,
+      6,
+      1,
+      1,
+      5,
+      3
+    ],
+    "coverage": {
+      "kind": "literature",
+      "reference": "https://arxiv.org/html/2301.13239v2#S1.ThmTheorem5",
+      "statement": "Theorem 1.5 and Lemmas 3.6–3.9"
+    }
+  },
+  "periodicity": {
+    "time_coordinate": "displayed representative",
+    "h_plus": 8,
+    "h_minus": 6,
+    "labelled_period": 14,
+    "positive_negative_permutation": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "negative_negative_permutation": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "exchange": {
+    "vertices": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ]
+    ],
+    "B": [
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "mutation_vertices": [
+      0,
+      2
+    ],
+    "relabel_old_to_new": [
+      1,
+      0,
+      7,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "slice": {
+    "components": 2,
+    "vertices": 4,
+    "B": [
+      [
+        0,
+        1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        -1,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      1
+    ],
+    "relabel_old_to_new": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "canonical_signature": [
+      4,
+      0,
+      1,
+      -1,
+      1,
+      -1,
+      0,
+      1,
+      0,
+      1,
+      -1,
+      0,
+      0,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      3,
+      1,
+      2
+    ],
+    "signature_sha256": "90d32067e88cbf52f6f844ddba3677593dbfbf4a1ee39c6b90f0c832a6963e43",
+    "signature_convention": "Labelled slice encoding; the literature theorem supplies distinctness."
+  },
+  "provenance": {
+    "source_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+    "verification_kind": "literature and exact mutation check",
+    "sources": [
+      {
+        "path": "research/catalogue/lower_ranks.py",
+        "role": "exact lower-rank representatives and mutation certificates",
+        "sha256": "ff5c74fb0be3d765df5c3dc372831208876d2570537b85715e91944dfdd7cd96"
+      },
+      {
+        "path": "research/catalogue/lower-ranks-proof.html",
+        "role": "rank-one proof and rank-two literature reference",
+        "sha256": "70405502648decbaa7de281917bec5a9f0155bf67fb8abf4625ce889ed319597"
+      }
+    ],
+    "manuscript": "research/catalogue/lower-ranks-proof.html",
+    "pdf": null,
+    "query_path": null,
+    "query_member": null,
+    "classification_reference": "https://arxiv.org/html/2301.13239v2#S1.T1",
+    "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+    "enrichment_sources": [
+      {
+        "path": "research/catalogue/spectral-data.json",
+        "role": "certified exponent multiplicities and exact matrix ratios",
+        "sha256": "fb64bd1cab92b318556018e560026f65924e42310880cb4c2785a01474cf263b"
+      },
+      {
+        "path": "research/catalogue/family-notes.json",
+        "role": "named family matches",
+        "sha256": "8082d2f552a687182b9013eeef3a3154abd2026cc12df3b20d8a7a25f94553e1"
+      },
+      {
+        "path": "research/catalogue/quiver-data.json",
+        "role": "quiver mutation-class certificates",
+        "sha256": "f96488a43d2a8535d8a9d4794a0019327f373506e41c350d02a4af4342b08489"
+      },
+      {
+        "path": "research/catalogue/enrichment-verification.json",
+        "role": "independent exact-path replay and interval Jacobian verification",
+        "sha256": "cbef6493121b1053343bcbd3712cf73459c0619d37c45eb06e65660f5374cc01"
+      },
+      {
+        "path": "research/catalogue/sources/mizuno-thesis.pdf",
+        "role": "Mizuno thesis, equations (3.2.1), (3.4.1) and Definition 3.4.4",
+        "sha256": "7f323701bc113c469d041159ebb150ca6f683d9079d87ad5b3c1455fb10b88cb"
+      }
+    ]
+  },
+  "matrix_ratios": {
+    "A_plus_inverse_A_minus": [
+      [
+        "3/2",
+        "1"
+      ],
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "A_minus_inverse_A_plus": [
+      [
+        "1",
+        "-1/2"
+      ],
+      [
+        "-1/2",
+        "3/4"
+      ]
+    ]
+  },
+  "exponents": {
+    "status": "certified using interval arithmetic and recorded periodicity",
+    "source": "https://yuma-mizuno.github.io/thesis.pdf#page=56",
+    "formula": "bar_tau(z) = det(A_plus(z) diag(1-f) + A_minus(z) diag(f)); tau(z) = bar_tau(z^(1/t))",
+    "fixed_point_equation": "log(f) = (A_plus(1)^(-1) A_minus(1)) log(1-f)",
+    "cartan_like_centering_shifts": [
+      "0",
+      "0"
+    ],
+    "centering_integer_dilation": 1,
+    "components": 2,
+    "representative_period": 14,
+    "root_order": 7,
+    "degree": 4,
+    "values": [
+      1,
+      3,
+      4,
+      6
+    ],
+    "multiplicities": [
+      {
+        "m": 1,
+        "multiplicity": 1
+      },
+      {
+        "m": 3,
+        "multiplicity": 1
+      },
+      {
+        "m": 4,
+        "multiplicity": 1
+      },
+      {
+        "m": 6,
+        "multiplicity": 1
+      }
+    ],
+    "fixed_point_decimal": [
+      "0.356895867892209443894399510021300583399127186734624389483150814604022376798785292853560804220878917939127673056351328540895073011547403493488654913755807",
+      "0.307978528369904130372185102997930859802739400678105878644927090011450231029930792698952880130683343968389559900652035243040348739613983464241133803186802"
+    ],
+    "tau_coefficients_decimal": [
+      "1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "0.554958132087371191422194871006410481067288862470910089376025968205157535942905361850837894783854087302505744319001121261311807250387128985909929572314203",
+      "-0.246979603717467061050009768008479621264549461792804210731098878193707304912974569151885014653170743334116184418349086018271458510773145521668795769127401",
+      "0.554958132087371191422194871006410481067288862470910089376025968205157535942905361850837894783854087302505744319001121261311807250387128985909929572314203",
+      "1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    "tau_exact_cyclotomic_coefficients": [
+      "1",
+      "zeta7^5 + zeta7^2 + 1",
+      "zeta7^5 + zeta7^4 + zeta7^3 + zeta7^2 + 2",
+      "zeta7^5 + zeta7^2 + 1",
+      "1"
+    ],
+    "cyclotomic_generator": "zeta7 = exp(2*pi*i/7)",
+    "certificate": {
+      "fixed_point_box": {
+        "method": "Krawczyk strict interior inclusion",
+        "center_decimal": [
+          "0.356895867892209443894399510021300583399127186734624389483150814604022376798785292853560804220878917939127673056351328540895073011547403493488654913755806965676239144320259583680987",
+          "0.307978528369904130372185102997930859802739400678105878644927090011450231029930792698952880130683343968389559900652035243040348739613983464241133803186802025729240050813970098494754"
+        ],
+        "radius": "2^-350",
+        "arithmetic_bits": 512,
+        "maximum_image_radius": "4.28854592044011887739230505639118695649147113239523396420612304159361007141531802533830056198024598693286917187210575833571231865475454902977954477701545e-154"
+      },
+      "multiplicity_bounds": [
+        {
+          "m": 0,
+          "multiplicity": 0,
+          "real_lower": "-4.23423774188161963571484831206849921842284538100304022026403702763915931253920024276753213853676802140589354631711058494786992206783616628331154433508277e-105",
+          "real_upper": "4.23423774188161963571484831206849921842284538100304022026403702763915931253920024276753213853676802140589354631711058494786992206783616628331154433508277e-105",
+          "imag_lower": "0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "imag_upper": "-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "m": 1,
+          "multiplicity": 1,
+          "real_lower": "0.999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999997567858792521155988373406518646954752614452798736",
+          "real_upper": "1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000243214120747884401162659348135304524738554720127",
+          "imag_lower": "-3.16216351279175968903943619376123359613086824506460655256666659588710079016087412960114175449104275804924024662480878470979867257799610272852405776677131e-105",
+          "imag_upper": "3.16216351279175968903943619376123359613086824506463851688408602534457203715508325646044479651190533122164426741766538304573468737073154347805434531450000e-105"
+        },
+        {
+          "m": 2,
+          "multiplicity": 0,
+          "real_lower": "-2.30279076573054071116370626638074324055088478483184044365075381350807069041019215769809377286727143750055902334076202212408403773805394524886899049729706e-105",
+          "real_upper": "2.30279076573054071116370626638074324055088478483234920903634639903948803840135409354200052503266739382798968762706287897106560652242637717889273396531208e-105",
+          "imag_lower": "-3.18985250478259199053269614096970813627262198962502971736881401620784288286082045417562304725787560420025490730566258463467089245042288283562053611724412e-105",
+          "imag_upper": "3.18985250478259199053269614096970813627262198962490186009913629837795789488398394673841087917442531151063882413423619129092683327948111983749938592632935e-105"
+        },
+        {
+          "m": 3,
+          "multiplicity": 1,
+          "real_lower": "0.999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999997337805000851490270137333925190670348168120955987",
+          "real_upper": "1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000266219499914850972986266607480932965183187904402",
+          "imag_lower": "-2.92368781841744776446788181983673886337384155937148582031382118863647551346524723170505402216855862712715162894523186173190603346978104162249865410338334e-105",
+          "imag_upper": "2.92368781841744776446788181983673886337384155937183476411231662688053662648536353325244556422964171759256218926724972689920752829047626980487095983275490e-105"
+        },
+        {
+          "m": 4,
+          "multiplicity": 1,
+          "real_lower": "0.999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999997337805000851490270137333925190670348168120955983",
+          "real_upper": "1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000266219499914850972986266607480932965183187904402",
+          "imag_lower": "-2.92368781841744776446788181983673886337384155937522298175877614937248880787153098033856801844107447386738839331004915050842509632043298925508143989199627e-105",
+          "imag_upper": "2.92368781841744776446788181983673886337384155937544406828759386978666493291481077444874739241870727164318287046064062233198253197018645443933259543045306e-105"
+        },
+        {
+          "m": 5,
+          "multiplicity": 0,
+          "real_lower": "-2.30279076573054071116370626638074324055088478484235137669550953343986574367262670659891075739424758235941452739177344159104356874922471171941187910874868e-105",
+          "real_upper": "2.30279076573054071116370626638074324055088478484347012780518956445135938846994614667451722812443764339355525514175438334880408649496513795297194327925290e-105",
+          "imag_lower": "-3.18985250478259199053269614096970813627262198963616395460324861056032725251033297683284935119167192592098881681737767165238271191993474392200403190940523e-105",
+          "imag_upper": "3.18985250478259199053269614096970813627262198963547139439249430564845023430246856154795010740631617385223503297215137437376905807733352768218113504195023e-105"
+        },
+        {
+          "m": 6,
+          "multiplicity": 1,
+          "real_lower": "0.999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999997567858792521155988373406518646954752614452798718",
+          "real_upper": "1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000243214120747884401162659348135304524738554720129",
+          "imag_lower": "-3.16216351279175968903943619376123359613086824508275163008842938457827866720692181006550194166736346225058938336973777340947640325414796821188395569409224e-105",
+          "imag_upper": "3.16216351279175968903943619376123359613086824508327371393961339905030903477900421543411829467478549073318838965306221289643131153549350045421198564032755e-105"
+        }
+      ],
+      "method": "Interval Newton sums and discrete Fourier inversion on the exact period grid",
+      "dependency": "Thesis Theorem 3.4.5 and the record’s universal periodicity certificate guarantee integral multiplicities."
+    },
+    "plot_path": "research/catalogue/plots/r2-c02.svg"
+  },
+  "verification": {
+    "matrix_ratios": "exact",
+    "mutation_class_path": "exact replay",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "notes": {
+    "family": {
+      "identifications": [
+        {
+          "label": "Reduced sine-Gordon RSG(3, 1)",
+          "category": "RSG",
+          "parameters": [
+            3,
+            1
+          ],
+          "reference": "https://arxiv.org/abs/1212.6853",
+          "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+          "status": "exact-polynomial-match",
+          "transformation": {
+            "direction": "named constructor to displayed representative",
+            "sign_exchange": false,
+            "permutation": [
+              0,
+              1
+            ],
+            "lambda": "1",
+            "shifts": [
+              "0",
+              "0"
+            ]
+          }
+        }
+      ],
+      "status": "identified",
+      "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+      "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2].",
+      "literature_note": {
+        "title": "RSG continued fraction 3/4",
+        "text": "Remark 1.7 identifies the opposite pair with the reduced sine-Gordon system for 3/4 = [1,3].",
+        "reference": "https://arxiv.org/html/2301.13239v2#S1.ThmTheorem7"
+      }
+    },
+    "quiver": {
+      "software": "SageMath 10.8",
+      "recognition": "['A', 4]",
+      "vertices": 4,
+      "scope": "one connected component of the representative exchange quiver; this class does not specify its mutation loop",
+      "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html#sage.combinat.cluster_algebra_quiver.quiver.ClusterQuiver.mutation_type",
+      "status": "certified-dynkin",
+      "label": "A4",
+      "mutation_finite": true,
+      "cluster_finite": true,
+      "certificate": {
+        "mutation_path": [
+          1
+        ],
+        "target_B": [
+          [
+            0,
+            -1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            0
+          ]
+        ],
+        "target_graph": "A4"
+      }
+    }
+  }
+}

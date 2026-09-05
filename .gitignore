@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+_deps/
+.qa/
+.env
+.env.*
+*.log
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.toc
+*.synctex
+*.synctex.gz
+/tmp/

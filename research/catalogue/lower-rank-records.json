@@ -1,0 +1,2385 @@
+[
+  {
+    "schema_version": "2.0.0",
+    "id": "r1-c01",
+    "rank": 1,
+    "class_number": 1,
+    "constant_id": null,
+    "scope": {
+      "symmetrizer": "identity",
+      "leading_permutation": "identity",
+      "indecomposable": true
+    },
+    "index_base": 0,
+    "datum": {
+      "delays": [
+        1
+      ],
+      "N_plus": [
+        [
+          []
+        ]
+      ],
+      "N_minus": [
+        [
+          []
+        ]
+      ],
+      "A_plus_1": [
+        [
+          2
+        ]
+      ],
+      "A_minus_1": [
+        [
+          2
+        ]
+      ]
+    },
+    "family": {
+      "parameters": [
+        "lambda"
+      ],
+      "fixed_shift": {
+        "species": 0,
+        "value": "0"
+      },
+      "dimension": 1,
+      "rref": [],
+      "variable_names": [
+        "r0"
+      ],
+      "representative_values": [
+        1
+      ],
+      "coverage": {
+        "kind": "elementary-proof",
+        "reference": "research/catalogue/lower-ranks-proof.html",
+        "statement": "Scalar positivity, parity and reciprocity"
+      }
+    },
+    "periodicity": {
+      "time_coordinate": "displayed representative",
+      "h_plus": 1,
+      "h_minus": 1,
+      "labelled_period": 2,
+      "positive_negative_permutation": [
+        0
+      ],
+      "negative_negative_permutation": [
+        0
+      ]
+    },
+    "exchange": {
+      "vertices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "B": [
+        [
+          0
+        ]
+      ],
+      "mutation_vertices": [
+        0
+      ],
+      "relabel_old_to_new": [
+        0
+      ]
+    },
+    "slice": {
+      "components": 1,
+      "vertices": 1,
+      "B": [
+        [
+          0
+        ]
+      ],
+      "mutation_word": [
+        0
+      ],
+      "relabel_old_to_new": [
+        0
+      ],
+      "canonical_signature": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "signature_sha256": "c4b6eb04efb3f42ec2e9d8f1c791e2af10bfb9916c70dc12dfd08762d17cfa37",
+      "signature_convention": "Labelled slice encoding; the literature theorem supplies distinctness."
+    },
+    "provenance": {
+      "source_commit": null,
+      "verification_kind": "elementary proof and exact mutation check",
+      "sources": [],
+      "manuscript": "research/catalogue/lower-ranks-proof.html",
+      "pdf": null,
+      "query_path": null,
+      "query_member": null,
+      "classification_reference": "research/catalogue/lower-ranks-proof.html"
+    }
+  },
+  {
+    "schema_version": "2.0.0",
+    "id": "r1-c02",
+    "rank": 1,
+    "class_number": 2,
+    "constant_id": null,
+    "scope": {
+      "symmetrizer": "identity",
+      "leading_permutation": "identity",
+      "indecomposable": true
+    },
+    "index_base": 0,
+    "datum": {
+      "delays": [
+        2
+      ],
+      "N_plus": [
+        [
+          []
+        ]
+      ],
+      "N_minus": [
+        [
+          [
+            [
+              1,
+              1
+            ]
+          ]
+        ]
+      ],
+      "A_plus_1": [
+        [
+          2
+        ]
+      ],
+      "A_minus_1": [
+        [
+          1
+        ]
+      ]
+    },
+    "family": {
+      "parameters": [
+        "lambda"
+      ],
+      "fixed_shift": {
+        "species": 0,
+        "value": "0"
+      },
+      "dimension": 1,
+      "rref": [
+        [
+          "1",
+          "-2"
+        ]
+      ],
+      "variable_names": [
+        "r0",
+        "p1_00_0"
+      ],
+      "representative_values": [
+        2,
+        1
+      ],
+      "coverage": {
+        "kind": "elementary-proof",
+        "reference": "research/catalogue/lower-ranks-proof.html",
+        "statement": "Scalar positivity, parity and reciprocity"
+      }
+    },
+    "periodicity": {
+      "time_coordinate": "displayed representative",
+      "h_plus": 2,
+      "h_minus": 3,
+      "labelled_period": 5,
+      "positive_negative_permutation": [
+        0,
+        1
+      ],
+      "negative_negative_permutation": [
+        0,
+        1
+      ]
+    },
+    "exchange": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "B": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "mutation_vertices": [
+        0
+      ],
+      "relabel_old_to_new": [
+        1,
+        0
+      ]
+    },
+    "slice": {
+      "components": 1,
+      "vertices": 2,
+      "B": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "mutation_word": [
+        0
+      ],
+      "relabel_old_to_new": [
+        1,
+        0
+      ],
+      "canonical_signature": [
+        2,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "signature_sha256": "0c7726c11ba74468d4608d14344a0054ec7fc404af1d523ff9873e27bd133276",
+      "signature_convention": "Labelled slice encoding; the literature theorem supplies distinctness."
+    },
+    "provenance": {
+      "source_commit": null,
+      "verification_kind": "elementary proof and exact mutation check",
+      "sources": [],
+      "manuscript": "research/catalogue/lower-ranks-proof.html",
+      "pdf": null,
+      "query_path": null,
+      "query_member": null,
+      "classification_reference": "research/catalogue/lower-ranks-proof.html"
+    }
+  },
+  {
+    "schema_version": "2.0.0",
+    "id": "r2-c01",
+    "rank": 2,
+    "class_number": 1,
+    "constant_id": null,
+    "scope": {
+      "symmetrizer": "identity",
+      "leading_permutation": "identity",
+      "indecomposable": true
+    },
+    "index_base": 0,
+    "datum": {
+      "delays": [
+        2,
+        2
+      ],
+      "N_plus": [
+        [
+          [],
+          [
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1,
+              1
+            ]
+          ],
+          []
+        ]
+      ],
+      "N_minus": [
+        [
+          [],
+          []
+        ],
+        [
+          [],
+          []
+        ]
+      ],
+      "A_plus_1": [
+        [
+          2,
+          -1
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      "A_minus_1": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    "family": {
+      "parameters": [
+        "lambda",
+        "s1"
+      ],
+      "fixed_shift": {
+        "species": 1,
+        "value": "0"
+      },
+      "dimension": 2,
+      "rref": [
+        [
+          "1",
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "0",
+          "1",
+          "-1",
+          "-1"
+        ]
+      ],
+      "variable_names": [
+        "r0",
+        "r1",
+        "p0_01_0",
+        "p0_10_0"
+      ],
+      "representative_values": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "coverage": {
+        "kind": "literature",
+        "reference": "https://arxiv.org/html/2301.13239v2#S1.ThmTheorem5",
+        "statement": "Theorem 1.5 and Lemmas 3.6\u20133.9"
+      }
+    },
+    "periodicity": {
+      "time_coordinate": "displayed representative",
+      "h_plus": 3,
+      "h_minus": 2,
+      "labelled_period": 10,
+      "positive_negative_permutation": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "negative_negative_permutation": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "exchange": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "B": [
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "mutation_vertices": [
+        0,
+        2
+      ],
+      "relabel_old_to_new": [
+        1,
+        0,
+        3,
+        2
+      ]
+    },
+    "slice": {
+      "components": 2,
+      "vertices": 2,
+      "B": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "mutation_word": [
+        0,
+        1
+      ],
+      "relabel_old_to_new": [
+        0,
+        1
+      ],
+      "canonical_signature": [
+        2,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "signature_sha256": "3938b339444f76f902ae51f2a67e38dcaca6c5629ba2af799cb9188224f18e63",
+      "signature_convention": "Labelled slice encoding; the literature theorem supplies distinctness."
+    },
+    "provenance": {
+      "source_commit": null,
+      "verification_kind": "literature and exact mutation check",
+      "sources": [],
+      "manuscript": "research/catalogue/lower-ranks-proof.html",
+      "pdf": null,
+      "query_path": null,
+      "query_member": null,
+      "classification_reference": "https://arxiv.org/html/2301.13239v2#S1.T1"
+    }
+  },
+  {
+    "schema_version": "2.0.0",
+    "id": "r2-c02",
+    "rank": 2,
+    "class_number": 2,
+    "constant_id": null,
+    "scope": {
+      "symmetrizer": "identity",
+      "leading_permutation": "identity",
+      "indecomposable": true
+    },
+    "index_base": 0,
+    "datum": {
+      "delays": [
+        2,
+        6
+      ],
+      "N_plus": [
+        [
+          [],
+          [
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              5
+            ]
+          ],
+          []
+        ]
+      ],
+      "N_minus": [
+        [
+          [],
+          []
+        ],
+        [
+          [
+            [
+              1,
+              3
+            ]
+          ],
+          []
+        ]
+      ],
+      "A_plus_1": [
+        [
+          2,
+          -1
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "A_minus_1": [
+        [
+          2,
+          0
+        ],
+        [
+          -1,
+          2
+        ]
+      ]
+    },
+    "family": {
+      "parameters": [
+        "lambda",
+        "s1"
+      ],
+      "fixed_shift": {
+        "species": 1,
+        "value": "0"
+      },
+      "dimension": 2,
+      "rref": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "-3",
+          "3"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "-2",
+          "3"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "1",
+          "-2"
+        ]
+      ],
+      "variable_names": [
+        "r0",
+        "r1",
+        "p0_01_0",
+        "p0_10_0",
+        "p0_10_1",
+        "p1_10_0"
+      ],
+      "representative_values": [
+        2,
+        6,
+        1,
+        1,
+        5,
+        3
+      ],
+      "coverage": {
+        "kind": "literature",
+        "reference": "https://arxiv.org/html/2301.13239v2#S1.ThmTheorem5",
+        "statement": "Theorem 1.5 and Lemmas 3.6\u20133.9"
+      }
+    },
+    "periodicity": {
+      "time_coordinate": "displayed representative",
+      "h_plus": 8,
+      "h_minus": 6,
+      "labelled_period": 14,
+      "positive_negative_permutation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "negative_negative_permutation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "exchange": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "B": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "mutation_vertices": [
+        0,
+        2
+      ],
+      "relabel_old_to_new": [
+        1,
+        0,
+        7,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "slice": {
+      "components": 2,
+      "vertices": 4,
+      "B": [
+        [
+          0,
+          1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          -1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "mutation_word": [
+        0,
+        1
+      ],
+      "relabel_old_to_new": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "canonical_signature": [
+        4,
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        3,
+        1,
+        2
+      ],
+      "signature_sha256": "90d32067e88cbf52f6f844ddba3677593dbfbf4a1ee39c6b90f0c832a6963e43",
+      "signature_convention": "Labelled slice encoding; the literature theorem supplies distinctness."
+    },
+    "provenance": {
+      "source_commit": null,
+      "verification_kind": "literature and exact mutation check",
+      "sources": [],
+      "manuscript": "research/catalogue/lower-ranks-proof.html",
+      "pdf": null,
+      "query_path": null,
+      "query_member": null,
+      "classification_reference": "https://arxiv.org/html/2301.13239v2#S1.T1"
+    }
+  },
+  {
+    "schema_version": "2.0.0",
+    "id": "r2-c03",
+    "rank": 2,
+    "class_number": 3,
+    "constant_id": null,
+    "scope": {
+      "symmetrizer": "identity",
+      "leading_permutation": "identity",
+      "indecomposable": true
+    },
+    "index_base": 0,
+    "datum": {
+      "delays": [
+        2,
+        10
+      ],
+      "N_plus": [
+        [
+          [],
+          [
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          []
+        ]
+      ],
+      "N_minus": [
+        [
+          [],
+          []
+        ],
+        [
+          [
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              7
+            ]
+          ],
+          []
+        ]
+      ],
+      "A_plus_1": [
+        [
+          2,
+          -1
+        ],
+        [
+          -3,
+          2
+        ]
+      ],
+      "A_minus_1": [
+        [
+          2,
+          0
+        ],
+        [
+          -2,
+          2
+        ]
+      ]
+    },
+    "family": {
+      "parameters": [
+        "lambda",
+        "s1"
+      ],
+      "fixed_shift": {
+        "species": 1,
+        "value": "0"
+      },
+      "dimension": 2,
+      "rref": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/2",
+          "-1/2"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "5/2",
+          "-5/2"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "2",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "-3/2",
+          "1/2"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "-1/2",
+          "-1/2"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "1/2",
+          "-3/2"
+        ]
+      ],
+      "variable_names": [
+        "r0",
+        "r1",
+        "p0_01_0",
+        "p0_10_0",
+        "p0_10_1",
+        "p0_10_2",
+        "p1_10_0",
+        "p1_10_1"
+      ],
+      "representative_values": [
+        2,
+        10,
+        1,
+        1,
+        5,
+        9,
+        3,
+        7
+      ],
+      "coverage": {
+        "kind": "literature",
+        "reference": "https://arxiv.org/html/2301.13239v2#S1.ThmTheorem5",
+        "statement": "Theorem 1.5 and Lemmas 3.6\u20133.9"
+      }
+    },
+    "periodicity": {
+      "time_coordinate": "displayed representative",
+      "h_plus": 18,
+      "h_minus": 10,
+      "labelled_period": 28,
+      "positive_negative_permutation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "negative_negative_permutation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "exchange": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "B": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "mutation_vertices": [
+        0,
+        2
+      ],
+      "relabel_old_to_new": [
+        1,
+        0,
+        11,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "slice": {
+      "components": 2,
+      "vertices": 6,
+      "B": [
+        [
+          0,
+          1,
+          -1,
+          1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          -1,
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "mutation_word": [
+        0,
+        1
+      ],
+      "relabel_old_to_new": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4
+      ],
+      "canonical_signature": [
+        6,
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        5,
+        1,
+        2,
+        3,
+        4
+      ],
+      "signature_sha256": "dd3f6ddbeb17931452cf59b9419aa2522f543f27823d19dac52b76f3ee4bdc44",
+      "signature_convention": "Labelled slice encoding; the literature theorem supplies distinctness."
+    },
+    "provenance": {
+      "source_commit": null,
+      "verification_kind": "literature and exact mutation check",
+      "sources": [],
+      "manuscript": "research/catalogue/lower-ranks-proof.html",
+      "pdf": null,
+      "query_path": null,
+      "query_member": null,
+      "classification_reference": "https://arxiv.org/html/2301.13239v2#S1.T1"
+    }
+  },
+  {
+    "schema_version": "2.0.0",
+    "id": "r2-c04",
+    "rank": 2,
+    "class_number": 4,
+    "constant_id": null,
+    "scope": {
+      "symmetrizer": "identity",
+      "leading_permutation": "identity",
+      "indecomposable": true
+    },
+    "index_base": 0,
+    "datum": {
+      "delays": [
+        2,
+        2
+      ],
+      "N_plus": [
+        [
+          [],
+          [
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1,
+              1
+            ]
+          ],
+          []
+        ]
+      ],
+      "N_minus": [
+        [
+          [
+            [
+              1,
+              1
+            ]
+          ],
+          []
+        ],
+        [
+          [],
+          [
+            [
+              1,
+              1
+            ]
+          ]
+        ]
+      ],
+      "A_plus_1": [
+        [
+          2,
+          -1
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      "A_minus_1": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "family": {
+      "parameters": [
+        "lambda",
+        "s1"
+      ],
+      "fixed_shift": {
+        "species": 1,
+        "value": "0"
+      },
+      "dimension": 2,
+      "rref": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-2"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "-2"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "1",
+          "0",
+          "-2"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1"
+        ]
+      ],
+      "variable_names": [
+        "r0",
+        "r1",
+        "p0_01_0",
+        "p0_10_0",
+        "p1_00_0",
+        "p1_11_0"
+      ],
+      "representative_values": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coverage": {
+        "kind": "literature",
+        "reference": "https://arxiv.org/html/2301.13239v2#S1.ThmTheorem5",
+        "statement": "Theorem 1.5 and Lemmas 3.6\u20133.9"
+      }
+    },
+    "periodicity": {
+      "time_coordinate": "displayed representative",
+      "h_plus": 3,
+      "h_minus": 3,
+      "labelled_period": 12,
+      "positive_negative_permutation": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "negative_negative_permutation": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "exchange": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "B": [
+        [
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mutation_vertices": [
+        0,
+        2
+      ],
+      "relabel_old_to_new": [
+        1,
+        0,
+        3,
+        2
+      ]
+    },
+    "slice": {
+      "components": 1,
+      "vertices": 4,
+      "B": [
+        [
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mutation_word": [
+        0,
+        2
+      ],
+      "relabel_old_to_new": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "canonical_signature": [
+        4,
+        0,
+        -1,
+        0,
+        1,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        2,
+        1,
+        0,
+        3,
+        2
+      ],
+      "signature_sha256": "21c8ff9d18913f8c7341c63f92d5ba10fbabb9f306bcb25ea3b133cb6408aab0",
+      "signature_convention": "Labelled slice encoding; the literature theorem supplies distinctness."
+    },
+    "provenance": {
+      "source_commit": null,
+      "verification_kind": "literature and exact mutation check",
+      "sources": [],
+      "manuscript": "research/catalogue/lower-ranks-proof.html",
+      "pdf": null,
+      "query_path": null,
+      "query_member": null,
+      "classification_reference": "https://arxiv.org/html/2301.13239v2#S1.T1"
+    }
+  },
+  {
+    "schema_version": "2.0.0",
+    "id": "r2-c05",
+    "rank": 2,
+    "class_number": 5,
+    "constant_id": null,
+    "scope": {
+      "symmetrizer": "identity",
+      "leading_permutation": "identity",
+      "indecomposable": true
+    },
+    "index_base": 0,
+    "datum": {
+      "delays": [
+        2,
+        3
+      ],
+      "N_plus": [
+        [
+          [],
+          [
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          []
+        ]
+      ],
+      "N_minus": [
+        [
+          [
+            [
+              1,
+              1
+            ]
+          ],
+          []
+        ],
+        [
+          [],
+          []
+        ]
+      ],
+      "A_plus_1": [
+        [
+          2,
+          -1
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "A_minus_1": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    "family": {
+      "parameters": [
+        "lambda",
+        "s1"
+      ],
+      "fixed_shift": {
+        "species": 1,
+        "value": "0"
+      },
+      "dimension": 2,
+      "rref": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-2"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "-3"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "1",
+          "-3"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "1"
+        ]
+      ],
+      "variable_names": [
+        "r0",
+        "r1",
+        "p0_01_0",
+        "p0_10_0",
+        "p0_10_1",
+        "p1_00_0"
+      ],
+      "representative_values": [
+        2,
+        3,
+        1,
+        1,
+        2,
+        1
+      ],
+      "coverage": {
+        "kind": "literature",
+        "reference": "https://arxiv.org/html/2301.13239v2#S1.ThmTheorem5",
+        "statement": "Theorem 1.5 and Lemmas 3.6\u20133.9"
+      }
+    },
+    "periodicity": {
+      "time_coordinate": "displayed representative",
+      "h_plus": 5,
+      "h_minus": 3,
+      "labelled_period": 8,
+      "positive_negative_permutation": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "negative_negative_permutation": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "exchange": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "B": [
+        [
+          0,
+          -1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "mutation_vertices": [
+        0,
+        2
+      ],
+      "relabel_old_to_new": [
+        1,
+        0,
+        4,
+        2,
+        3
+      ]
+    },
+    "slice": {
+      "components": 1,
+      "vertices": 5,
+      "B": [
+        [
+          0,
+          -1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "mutation_word": [
+        0,
+        2
+      ],
+      "relabel_old_to_new": [
+        1,
+        0,
+        4,
+        2,
+        3
+      ],
+      "canonical_signature": [
+        5,
+        0,
+        -1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        4,
+        2,
+        3
+      ],
+      "signature_sha256": "9892eea958380c28dc8779a06d53290c34c91dfe969a3cba9e099f9525e1c7b4",
+      "signature_convention": "Labelled slice encoding; the literature theorem supplies distinctness."
+    },
+    "provenance": {
+      "source_commit": null,
+      "verification_kind": "literature and exact mutation check",
+      "sources": [],
+      "manuscript": "research/catalogue/lower-ranks-proof.html",
+      "pdf": null,
+      "query_path": null,
+      "query_member": null,
+      "classification_reference": "https://arxiv.org/html/2301.13239v2#S1.T1"
+    }
+  },
+  {
+    "schema_version": "2.0.0",
+    "id": "r2-c06",
+    "rank": 2,
+    "class_number": 6,
+    "constant_id": null,
+    "scope": {
+      "symmetrizer": "identity",
+      "leading_permutation": "identity",
+      "indecomposable": true
+    },
+    "index_base": 0,
+    "datum": {
+      "delays": [
+        2,
+        2
+      ],
+      "N_plus": [
+        [
+          [],
+          [
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ]
+          ]
+        ]
+      ],
+      "N_minus": [
+        [
+          [],
+          []
+        ],
+        [
+          [],
+          []
+        ]
+      ],
+      "A_plus_1": [
+        [
+          2,
+          -1
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "A_minus_1": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    "family": {
+      "parameters": [
+        "lambda",
+        "s1"
+      ],
+      "fixed_shift": {
+        "species": 1,
+        "value": "0"
+      },
+      "dimension": 2,
+      "rref": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "-2"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "-2"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "1",
+          "-2"
+        ]
+      ],
+      "variable_names": [
+        "r0",
+        "r1",
+        "p0_01_0",
+        "p0_10_0",
+        "p0_11_0"
+      ],
+      "representative_values": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "coverage": {
+        "kind": "literature",
+        "reference": "https://arxiv.org/html/2301.13239v2#S1.ThmTheorem5",
+        "statement": "Theorem 1.5 and Lemmas 3.6\u20133.9"
+      }
+    },
+    "periodicity": {
+      "time_coordinate": "displayed representative",
+      "h_plus": 5,
+      "h_minus": 2,
+      "labelled_period": 7,
+      "positive_negative_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "negative_negative_permutation": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "exchange": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "B": [
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          0
+        ]
+      ],
+      "mutation_vertices": [
+        0,
+        2
+      ],
+      "relabel_old_to_new": [
+        1,
+        0,
+        3,
+        2
+      ]
+    },
+    "slice": {
+      "components": 1,
+      "vertices": 4,
+      "B": [
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          0
+        ]
+      ],
+      "mutation_word": [
+        0,
+        2
+      ],
+      "relabel_old_to_new": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "canonical_signature": [
+        4,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        2,
+        1,
+        0,
+        3,
+        2
+      ],
+      "signature_sha256": "dc3b09fe1f9d8331273b09464387b4a31b0737e1aaf1380dbdf31dadec0b5f12",
+      "signature_convention": "Labelled slice encoding; the literature theorem supplies distinctness."
+    },
+    "provenance": {
+      "source_commit": null,
+      "verification_kind": "literature and exact mutation check",
+      "sources": [],
+      "manuscript": "research/catalogue/lower-ranks-proof.html",
+      "pdf": null,
+      "query_path": null,
+      "query_member": null,
+      "classification_reference": "https://arxiv.org/html/2301.13239v2#S1.T1"
+    }
+  }
+]

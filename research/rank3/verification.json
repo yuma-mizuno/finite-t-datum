@@ -1,0 +1,1100 @@
+{
+  "all_180_unbounded_queries": "unsat",
+  "all_16_symbolic_families": "verified",
+  "all_16_two_sided_reddening_certificates": "verified",
+  "historical_rank3_mapping": {
+    "R3-1": 1,
+    "R3-2": 75,
+    "R3-3": 47,
+    "R3-4": 24,
+    "R3-5": 2,
+    "R3-6": 4,
+    "R3-7": 21
+  },
+  "python": "3.10.6",
+  "sympy": "1.14.0",
+  "numpy": "2.2.6",
+  "z3": "5.1.0",
+  "queries": [
+    {
+      "id": 1,
+      "file": "001_no_lift_outside_family.smt2",
+      "result": "unsat",
+      "sha256": "59f0dce8e1564afc7b9228291f41659c419421ce53140a408dcb7b175133dac0"
+    },
+    {
+      "id": 2,
+      "file": "002_no_lift_outside_family.smt2",
+      "result": "unsat",
+      "sha256": "e7d56f1b898dfa2a1ba64e78395fc9d63765a561637bee92ca6e8f432cfb0ed1"
+    },
+    {
+      "id": 3,
+      "file": "003_no_lift_outside_family.smt2",
+      "result": "unsat",
+      "sha256": "44e2c7e7c58744af777b27982e909aa6f920713f3f35e11af0449077ee3815f9"
+    },
+    {
+      "id": 4,
+      "file": "004_no_lift_outside_family.smt2",
+      "result": "unsat",
+      "sha256": "840e63d250e154ac603f865797ce564b37fe642ff51c3197437d42206e2162a5"
+    },
+    {
+      "id": 5,
+      "file": "005_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "c7d5f830dde09c2e175d768302f1e6239a1af8e419bb58107d564a220ce6c5e2"
+    },
+    {
+      "id": 6,
+      "file": "006_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "50347cd1ede83edae54013720a3cf732f2914e96977b8d7d1a35b23749b0f92c"
+    },
+    {
+      "id": 7,
+      "file": "007_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "2fff8666b20f21377f3b1b8cc9d920e0cfc9c0acc1ccb4f44977eae2d7d5d516"
+    },
+    {
+      "id": 8,
+      "file": "008_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "a144c4ac6cad17ff82f62f0a66b0979e00e3bd741680d4ed67ef3df2ab8ef457"
+    },
+    {
+      "id": 9,
+      "file": "009_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "0253ced5e768d382784bd628bda69d1a3c4377309b0a20b1dabbba3b293ff116"
+    },
+    {
+      "id": 10,
+      "file": "010_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "96c083f19fbb5d3af30f21ace9ac1c041b0353c68366db16bcf3c47f221a1e18"
+    },
+    {
+      "id": 11,
+      "file": "011_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "dffed0b1c9e99d152e4e0ec103129432efc30778991c6260c033feaa4618c52f"
+    },
+    {
+      "id": 12,
+      "file": "012_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "906e2edae228bfa26f0369099cddb1b64aa9943fca058eb87d586f9b4552a94d"
+    },
+    {
+      "id": 13,
+      "file": "013_no_lift_outside_family.smt2",
+      "result": "unsat",
+      "sha256": "4ae8df6134c88c77c5ac5d7ceb8233fab1cc2906c1fa0cb41859b76eaa3c6255"
+    },
+    {
+      "id": 14,
+      "file": "014_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "83d7dd5cd46a6ebb84d03cf56cf6d71c4561ae4b034fa792bfb3bd316d69c34d"
+    },
+    {
+      "id": 15,
+      "file": "015_no_lift_outside_family.smt2",
+      "result": "unsat",
+      "sha256": "0f5ea243a3f9a5752b10a024520462d6fc580ff29b719da57ec99db113c6c528"
+    },
+    {
+      "id": 16,
+      "file": "016_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "678242d28542aef2c5c3394c1e3651ca40932e350c774677056c08ac2cd96084"
+    },
+    {
+      "id": 17,
+      "file": "017_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "a1461ff2981bae67b51e3d90e3bf3a66a89211715e3fe70110c3dbb2de38c800"
+    },
+    {
+      "id": 18,
+      "file": "018_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "6dad531bcaaaddfc58bc7f9a585a68733df4adfbe454ce9e4d17130a410f02f6"
+    },
+    {
+      "id": 19,
+      "file": "019_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "f70a248dc00fd5f333542368290452425762fa82ed7d644f208a1ffee5c0172d"
+    },
+    {
+      "id": 20,
+      "file": "020_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "372502e6b1772268cfec2f433319bf7f159e9f26b4ac99047a5b38eded1cad62"
+    },
+    {
+      "id": 21,
+      "file": "021_no_lift_outside_family.smt2",
+      "result": "unsat",
+      "sha256": "4e67bb693423b5d2687ba0a5855f4ac35df82deba4f56e5b896985d31bc8df98"
+    },
+    {
+      "id": 22,
+      "file": "022_no_lift_outside_family.smt2",
+      "result": "unsat",
+      "sha256": "11bc352e21fa5571c17856702ffd50cc7ef8e09857513f81a9e9ecfbd0441239"
+    },
+    {
+      "id": 23,
+      "file": "023_no_lift_outside_family.smt2",
+      "result": "unsat",
+      "sha256": "8bacc9bd4c7603972afb10a691a5b24a380b81c37ed9f42e943cb7be2129837f"
+    },
+    {
+      "id": 24,
+      "file": "024_no_lift_outside_family.smt2",
+      "result": "unsat",
+      "sha256": "1328d19454417dc8e016990b54d98941e1a66b9fc6b484e4303e9a4eca7c47db"
+    },
+    {
+      "id": 25,
+      "file": "025_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "0cb4c3acdee824595963489edc7ae05363dae3c14568dfdc7469f60d3059bcea"
+    },
+    {
+      "id": 26,
+      "file": "026_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "8ddb53bd48797e6c352fbbcb27302377a39b16531fbaf4b2cdf605fcd81dee19"
+    },
+    {
+      "id": 27,
+      "file": "027_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "bf97da7cffa5e467717f8e4dae6e7cc57f66e08876472d0df020ac70798a6a44"
+    },
+    {
+      "id": 28,
+      "file": "028_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "635e81c61bd69bd47ab9e8e1df5807ba1353a829dee450bffc7fa61b0a8f15c5"
+    },
+    {
+      "id": 29,
+      "file": "029_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "3fc422a00d91276cab9a96d45f1a79c01d272a11d6632e33f2afe05b319b8e6c"
+    },
+    {
+      "id": 30,
+      "file": "030_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "5a4c65b6cb9840fb9f519329acfa43c12e71ca0a2c2c24845bcf9a845856a746"
+    },
+    {
+      "id": 31,
+      "file": "031_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "3f5bf1017059b1fb82de8db05a418d03d7cc6d322855a68e097f7246743a4f68"
+    },
+    {
+      "id": 32,
+      "file": "032_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "aefd9c08b6e525403ded32950b2e626875e9ccc5e52a0f5f42d18a5826727c7a"
+    },
+    {
+      "id": 33,
+      "file": "033_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "e269d7beba5ea494b228738fb2fe7e7ad8f640bc50c369c8b6e301d9b075a44f"
+    },
+    {
+      "id": 34,
+      "file": "034_no_lift_outside_family.smt2",
+      "result": "unsat",
+      "sha256": "604a0e3bf436c618a89a3e8a23a4d8ed553a51786dcdf855289f549d0eaca63b"
+    },
+    {
+      "id": 35,
+      "file": "035_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "ec21f1348571862e9f37c8c6ec5c95fc31d01d32aedd0f8a657083ced0cbf8f6"
+    },
+    {
+      "id": 36,
+      "file": "036_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "fc51e1a29406e2175755be324cae5079ac6a43a8ed627062f3ed0c7d885f4271"
+    },
+    {
+      "id": 37,
+      "file": "037_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "dd6f426818e30dff66b33470207ace577db771a6e02e9b121adeebd1f2edfd31"
+    },
+    {
+      "id": 38,
+      "file": "038_no_lift_outside_family.smt2",
+      "result": "unsat",
+      "sha256": "8b9aba5ac696f15fed54aac98e2784cc5da37ddaf4cded752feef8fb8e87b728"
+    },
+    {
+      "id": 39,
+      "file": "039_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "426416e578831d4037e633b79894cd0c378880fc0cc9c3496a3bab7bc679dc14"
+    },
+    {
+      "id": 40,
+      "file": "040_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "0cb32bb2a902375c377276fe75c71780639d8a4a383e55e5a4303e0f49569be0"
+    },
+    {
+      "id": 41,
+      "file": "041_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "7e239eaebf4010ac98f57e8935990aae49685eab1451414d8227d2ea995de18d"
+    },
+    {
+      "id": 42,
+      "file": "042_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "db7a1b17a2dc49b8ffa26aa99c054c09c88c55a02ada82b4248a3d110d2c3579"
+    },
+    {
+      "id": 43,
+      "file": "043_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "26b2856b297b738e6b1892657927020247f4d416f1759afc029c48d64a9d2b42"
+    },
+    {
+      "id": 44,
+      "file": "044_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "c9e2543f014fb4fcb86fdfc554e83a72def9d6ca7757158ef9d077ed6de8b56a"
+    },
+    {
+      "id": 45,
+      "file": "045_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "7ad3e268bf96c2b8c2e72da75c68e0b9c9faacdaa72a182fe5eef56a0ecf97b0"
+    },
+    {
+      "id": 46,
+      "file": "046_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "4269457646dfdb997e23d1e79e9ce512a9c1707af260a64866e66e94ad07c61c"
+    },
+    {
+      "id": 47,
+      "file": "047_no_lift_outside_family.smt2",
+      "result": "unsat",
+      "sha256": "cedef0549488c630c9b70a36bdf5aaf269aaf166eaf6465a6d1b7c9412487fa8"
+    },
+    {
+      "id": 48,
+      "file": "048_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "248e0168f7c607b3fdd3349d58b27f1a41137ad986819ebd689b5f90ec04f5c8"
+    },
+    {
+      "id": 49,
+      "file": "049_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "617967042db995adbf731cedb354edc931d0b86ba4a2b210346fd53857d09bc3"
+    },
+    {
+      "id": 50,
+      "file": "050_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "937cafd8cc5a5d715833f0dc4129f3b70d982ae5694ae7d71136d464fd291519"
+    },
+    {
+      "id": 51,
+      "file": "051_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "03f6436b1948b9d2d69c48d1c4e0027f58fff756b53dfea3129b14337f862e9d"
+    },
+    {
+      "id": 52,
+      "file": "052_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "120999e4f035957c2fdc6e6390a53dd556a796e11b8225741dce2d81473539c8"
+    },
+    {
+      "id": 53,
+      "file": "053_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "a99cca08510fadb42907606a58f0310e6596f785d95691caf762b4ad51545369"
+    },
+    {
+      "id": 54,
+      "file": "054_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "2db286a37dfa9fae5584275d6e8c1f696987a3bf67c2d14cec3a0b96b9449519"
+    },
+    {
+      "id": 55,
+      "file": "055_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "c157a1d8723505d5d2802033bd8204019aadebc04dfeefb837d0afa7129d1ae5"
+    },
+    {
+      "id": 56,
+      "file": "056_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "6d5e6a3247190eb5422c99aa2e57ac5e6c8a98933486d9faaec8faea4297d2b7"
+    },
+    {
+      "id": 57,
+      "file": "057_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "fe353e1da677adb52b1ca4007794648224d4b505e5dc9778af3c9ac4eb85347b"
+    },
+    {
+      "id": 58,
+      "file": "058_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "f28d92f281e15ad0715fbe199775c5a8a1884a1ee3a5019ed83cf71bc5ab1b44"
+    },
+    {
+      "id": 59,
+      "file": "059_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "6abaf63e2cfa4a68b35df3f52e8b11a433eae96f47baefcc97e4a5f628503ab4"
+    },
+    {
+      "id": 60,
+      "file": "060_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "97afbb4cc276274ece1597dcc6cc533ab509a75152bdc88ce12e8df89e5c24fa"
+    },
+    {
+      "id": 61,
+      "file": "061_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "43929a2e2a090dbc1a34de10a351315743edeca864f2ad5649bd53ef885d97ea"
+    },
+    {
+      "id": 62,
+      "file": "062_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "2616b0312ec161f10134032105156df0c64d547996d60cb6e74d30237a13ee68"
+    },
+    {
+      "id": 63,
+      "file": "063_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "9ec03df265102053b03afa2dd14739f319f4020a73bb45d4aa0ad98212099b3d"
+    },
+    {
+      "id": 64,
+      "file": "064_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "16e6aff4187a6580e151d7415c84ee5c805639f5bc25e4dbcdbd89ea1f252f20"
+    },
+    {
+      "id": 65,
+      "file": "065_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "ee414c9b6011f86a8a35a30645147f462e2b24bf114e34af61c218e6d5c760bc"
+    },
+    {
+      "id": 66,
+      "file": "066_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "c3fe7f0533c0f121bf10f0543f5a6d30086ca4455b7b267013d446212865d2c0"
+    },
+    {
+      "id": 67,
+      "file": "067_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "a28295863bf16fe0948de5413ea0daf4f8565cd873815c45d10b746f519ff077"
+    },
+    {
+      "id": 68,
+      "file": "068_no_lift_outside_family.smt2",
+      "result": "unsat",
+      "sha256": "db4a697ff83d490648347d26a4ed8a53e085a3b4decb3391c4664b59358dae71"
+    },
+    {
+      "id": 69,
+      "file": "069_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "e3b51142262440942926f3dde3a12449f5a8803dbae4ab7d4f8fc4f39b12c335"
+    },
+    {
+      "id": 70,
+      "file": "070_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "d89c3c8f425825dad96789cb25a7af189bf4add74765457620dd8444743f02de"
+    },
+    {
+      "id": 71,
+      "file": "071_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "b6c90faea2c8cd25d57e80691f1c7dbd22d3668135e5c57ccb4c2688ce98a730"
+    },
+    {
+      "id": 72,
+      "file": "072_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "9fe781771d902aabecd48ead2ff39087375530bee5b35053cdd6642a8619cca1"
+    },
+    {
+      "id": 73,
+      "file": "073_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "8d7cf8dc33611965bebaab71bbad9c583621c19a7665838e14910469f4eb8da2"
+    },
+    {
+      "id": 74,
+      "file": "074_no_lift_outside_family.smt2",
+      "result": "unsat",
+      "sha256": "3f1571311fa08e54bf4dca7efed8be8b8f7b05963cf856e21e5a63ae90fb50dc"
+    },
+    {
+      "id": 75,
+      "file": "075_no_lift_outside_family.smt2",
+      "result": "unsat",
+      "sha256": "2dbe908e7c9f534f954d4201319d517de949f56e9a8e770239c3f480f149e65d"
+    },
+    {
+      "id": 76,
+      "file": "076_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "2593135a56364fc4138621a87dd7fc76629da8d06ab9a52997a9302b619f653d"
+    },
+    {
+      "id": 77,
+      "file": "077_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "ae5f731d27ee8f930d4ee3297d633cac3849d55afc837084eca113482909a73c"
+    },
+    {
+      "id": 78,
+      "file": "078_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "ff917aff979ccc63ee26631d0d489b89add659757e27e67df431c68f9ab8d7f8"
+    },
+    {
+      "id": 79,
+      "file": "079_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "68b8db3a1297b9bec6839d8b87ae1e6156b5a769cb67c7f9effa44f46d72a655"
+    },
+    {
+      "id": 80,
+      "file": "080_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "87768fee54d3b468f8857c2e66bb4b07d599c5055ac09a108106ed459ddb3b6f"
+    },
+    {
+      "id": 81,
+      "file": "081_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "322feafe0ca2d442d2f7564f373f92488db381613c9f9b78ce2c14ff6664c7ff"
+    },
+    {
+      "id": 82,
+      "file": "082_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "e847218b7bba06eed0d977c4097ad03ddc40b4d0463934229469b428a711ab0c"
+    },
+    {
+      "id": 83,
+      "file": "083_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "3510d6d84fc57abe44c956440c2f0d01337d63e83744bcd33fb95c92dd4b2eeb"
+    },
+    {
+      "id": 84,
+      "file": "084_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "ad9136bcfbb5ff89e139a6d892a67442ca223f0b2f6c38d12867c85a8e86b2e7"
+    },
+    {
+      "id": 85,
+      "file": "085_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "ac991b25e5f0601afafc53e0c106647ab0401483902ddb8487d3c0d5f075bec5"
+    },
+    {
+      "id": 86,
+      "file": "086_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "f3829c4d2f0ac8c54e8afed004acd813cdff7a068f573ea7a682a8a087579dd5"
+    },
+    {
+      "id": 87,
+      "file": "087_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "24b437fd415c34fac074cf457e732f43743b762037b113dbdcd2e500c6a2d66a"
+    },
+    {
+      "id": 88,
+      "file": "088_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "ab1009418ba7886a9fe7534670c2aa05cb9b011a617daa532bb5d3c31d760598"
+    },
+    {
+      "id": 89,
+      "file": "089_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "dd5d2b8c0b1fbc3711e06f8220b1340a5fb820a1f931e9be57f415f614cf5092"
+    },
+    {
+      "id": 90,
+      "file": "090_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "057ee45a2a23b88e34fc7b9890fb727bf8ba7b28e6da5eaf1f705b7f8cb9104e"
+    },
+    {
+      "id": 91,
+      "file": "091_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "ac414e0584df6fc5c68454cf76c43e82af05e5335c1a08f26ecef7a1ed15101a"
+    },
+    {
+      "id": 92,
+      "file": "092_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "400d2d180c55b8e439c6099eaac0086fdc47df0ee799b609f7d537ccc148d27e"
+    },
+    {
+      "id": 93,
+      "file": "093_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "6a5fbed003b31dec15fa65da9a883dc212d514e88b2ee9448c4dd3860d164d02"
+    },
+    {
+      "id": 94,
+      "file": "094_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "00b3d58671ee63ef20a6dc85d4fa9e7e07fb9aa546d83e88f1f3e833c023ea30"
+    },
+    {
+      "id": 95,
+      "file": "095_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "3724416cabe3ddcb496334773efd6b7ffe42fa3d54e3439c746340fef0058750"
+    },
+    {
+      "id": 96,
+      "file": "096_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "e4d714914f0314231cdb1ce32433730179f380100838752c1a8d9751e86911e4"
+    },
+    {
+      "id": 97,
+      "file": "097_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "9dcc4a9384e00c0d9f2f824c4292909ff9bdadbdc52b27df75533c603bd95423"
+    },
+    {
+      "id": 98,
+      "file": "098_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "c8e67d69c3756b5d1078eca293cab664c894afb97b10c18c74c91149b89db757"
+    },
+    {
+      "id": 99,
+      "file": "099_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "cf0637e27e6aa8203c78c7e5dbc1f59e17f5822cad2bef65aea7164fa32126d5"
+    },
+    {
+      "id": 100,
+      "file": "100_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "ed088203afaf40fd35e035be47c055c36ddc3c47db775440215de9cdba381489"
+    },
+    {
+      "id": 101,
+      "file": "101_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "c5cef4a22bfe134c50596bff4c29f90effdfa17814613fa6f61770571d335adb"
+    },
+    {
+      "id": 102,
+      "file": "102_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "1d785db8b890ee8473b75e8c2e6b55d4dc1c615b45a03b37ae2dfb4a2c77fba7"
+    },
+    {
+      "id": 103,
+      "file": "103_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "c6fca2e985788b13a3b96774efe15cb64cf6c680f627e29911e179b3321dadfa"
+    },
+    {
+      "id": 104,
+      "file": "104_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "be1566de6038858f71efe0d0ff5cee33db70b141384b580b24ad379009093850"
+    },
+    {
+      "id": 105,
+      "file": "105_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "b1aa50da6d8bbff59c22fe8563639f30b9f1fbdbdc5d87a090a103593ffc51ee"
+    },
+    {
+      "id": 106,
+      "file": "106_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "b405b5ebd8d810b60c871dd2aa0d852e0d860c97e59a0a0ad98a7821b73db270"
+    },
+    {
+      "id": 107,
+      "file": "107_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "f1249784b79e081aa9c8d0058cbf1d215ae53f0d6f8e632a8e8b5f3d4ee40f2d"
+    },
+    {
+      "id": 108,
+      "file": "108_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "3da611ee4b5b4a6fc1cee73467feeabb4c82555e5d4c4e8ce921b0abeebea689"
+    },
+    {
+      "id": 109,
+      "file": "109_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "fcc847df0bee78a4ed8b094599aade51725f88cc66d3f2d9477966ebbc22f8e2"
+    },
+    {
+      "id": 110,
+      "file": "110_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "ca65048864713aa5d759d502327319f666cb9de9d155e50a1d24f22f21498592"
+    },
+    {
+      "id": 111,
+      "file": "111_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "06092e3ff2d736108c9dec4acf04c6b963e9dce09159c4889fef0b9f16d8810c"
+    },
+    {
+      "id": 112,
+      "file": "112_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "e52fc7d27987952e38b3439d9c5ea252e2d43c5385eab0fafec05e365b2266c8"
+    },
+    {
+      "id": 113,
+      "file": "113_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "88982f5c32cd33904b7a55cc47552a2f89c2f9cc777dac53ed0345dcb809a259"
+    },
+    {
+      "id": 114,
+      "file": "114_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "e7bed74a9ba1113d3148f9def1079cb27f92969f92d8404bcafebc0415543beb"
+    },
+    {
+      "id": 115,
+      "file": "115_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "dd2dc90348bb1400f3a89d0bf2c9b3831937e63ca7eaba5c615b70e01ef3386a"
+    },
+    {
+      "id": 116,
+      "file": "116_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "30ed33c853a8146cb6fc0afe77c23957561678ef8d6c4c343372d772e6ffdb73"
+    },
+    {
+      "id": 117,
+      "file": "117_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "c2b7e66c7d6e0740e7ac4351231b03b29b08f3cd31bb7cf08249b3e2eb543715"
+    },
+    {
+      "id": 118,
+      "file": "118_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "862f67b47964ad87326a7937ceb32092cbdbe79fb9e7c5c76766c0a765520e05"
+    },
+    {
+      "id": 119,
+      "file": "119_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "bfc95877518af9843f61a9963815035525f1af8406cbfd42810bc07895ae7adc"
+    },
+    {
+      "id": 120,
+      "file": "120_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "97e30aaf72c8f61198ffc4ba90eaa00e834d218f29873cce46fe9f44fd66d1ae"
+    },
+    {
+      "id": 121,
+      "file": "121_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "fb4281bdc15af7d1337829343d0b68fb61494d0adf3f20830d23eca745cec1d0"
+    },
+    {
+      "id": 122,
+      "file": "122_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "ef8b28f9a728a75350f2a95ef96c8c44c7329665931555cbe9fcba33ac1f70b3"
+    },
+    {
+      "id": 123,
+      "file": "123_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "2b54fd265febb1379d020a7d59306b1f241e19c2020d84a2a0ec0c0372cdb135"
+    },
+    {
+      "id": 124,
+      "file": "124_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "6aa66e271620a8e3d9d2374827d8d984798e02f97dd1a5d51c20dcaf120e0035"
+    },
+    {
+      "id": 125,
+      "file": "125_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "25f570ebb5591800c69d206e93d52614ff510cb52cae2e9dd69e3552361b27be"
+    },
+    {
+      "id": 126,
+      "file": "126_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "0d674187e33e3f3fd09d491385c9be6a0f8f6add2e83ef59a83d26c8b50fa4c7"
+    },
+    {
+      "id": 127,
+      "file": "127_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "d311bebc27d353a5ba87e9bf148cf6973567e452734f556f9d15c001e68eaca1"
+    },
+    {
+      "id": 128,
+      "file": "128_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "85bc121294eccb50feb2190d702d7e50ca58f792d2480b467898f505226f1296"
+    },
+    {
+      "id": 129,
+      "file": "129_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "d9dfa7f73533edc331abf1ee2daff5dae085678e8e2bbb4583852086504844ae"
+    },
+    {
+      "id": 130,
+      "file": "130_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "2828886d90b71b1e1ea64ffc39b5d00857556e10df6c779ba3c8866f65d95e66"
+    },
+    {
+      "id": 131,
+      "file": "131_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "783084adebec4fff1898c01d93bf4eec40c8a123f1ab3d36f219c679bc922aa7"
+    },
+    {
+      "id": 132,
+      "file": "132_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "6df7efb03ca959afc98906bab4a2aae3ad6d438508d71781d0f196ffe88b81bc"
+    },
+    {
+      "id": 133,
+      "file": "133_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "1da8c99495df8b26841e8675c7d0edfc731e12f5b1eef60875bbb47925163f61"
+    },
+    {
+      "id": 134,
+      "file": "134_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "d08c921a98d61acc6e4192410dcfa1d20b77f444b0b1ce36f7e1ba81cea60c8f"
+    },
+    {
+      "id": 135,
+      "file": "135_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "90f10f1c18334cf38659cab3fdde9273c313ba3d72f4064b90df4eec510b4161"
+    },
+    {
+      "id": 136,
+      "file": "136_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "66d7d1471df7e42d7189744e94b0a08d6272f9b9067e7f57e1b53e0114818079"
+    },
+    {
+      "id": 137,
+      "file": "137_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "67289139dea9654fba262979720db75323eeafbb40a60363f5e5990691befb02"
+    },
+    {
+      "id": 138,
+      "file": "138_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "0922edc77e577d8711ad80abe06cff85668d3a12a6a82ae97fd8af00f458ec9a"
+    },
+    {
+      "id": 139,
+      "file": "139_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "23088fc6fab551abb8e37565dbb3af768e6189898e9ef25603e8bb2511e761ad"
+    },
+    {
+      "id": 140,
+      "file": "140_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "cd2e1170307a3c0b2f81c16409373706a088307a72d8f5c17b986f774ff1757a"
+    },
+    {
+      "id": 141,
+      "file": "141_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "7c9215337d2676231d1c4a2fef30ad3f9d2782b0ce706db22e7f86982721a7f5"
+    },
+    {
+      "id": 142,
+      "file": "142_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "dca86ccbaf059adf312ae987f48f52c821d0494bac35feb051ac2b76d3a58435"
+    },
+    {
+      "id": 143,
+      "file": "143_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "9ff153e94a35d58e72a8017624ac1ef71c63d72677019fbcc810443c3a994d4c"
+    },
+    {
+      "id": 144,
+      "file": "144_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "ded96e4be883a4d4ca8c5063a6ac9fe88d000f7c530d5c177659efbfacab90de"
+    },
+    {
+      "id": 145,
+      "file": "145_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "47500f956b45bd512c1005a726528025c1161a88808bc5ea6eafc82af8821467"
+    },
+    {
+      "id": 146,
+      "file": "146_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "410e3f2e07091412708934b72c85785a64bf06d466b23549f2c530a3d8b40422"
+    },
+    {
+      "id": 147,
+      "file": "147_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "318dd2b5d577a5dbac8a9cfb8a582e16bcd5641630aec4387dd8a79c7048331b"
+    },
+    {
+      "id": 148,
+      "file": "148_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "435ab6c3e975b992cbb1a00ba2e6dcfb6d6d5a9273b71e8dc013ee117d94ebd2"
+    },
+    {
+      "id": 149,
+      "file": "149_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "731aa718d9771d98dbc59b669f4a55626e670f79eed0e547ecb21d628876b5b3"
+    },
+    {
+      "id": 150,
+      "file": "150_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "5492cffd86ecad2d94b40e153cb94224cca8765e058fc3bd83f524ba8a15c01e"
+    },
+    {
+      "id": 151,
+      "file": "151_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "233b28f50d3e60ebe34bce54dc6f2fbcabd1af10d247ee0c410402eb82562a7c"
+    },
+    {
+      "id": 152,
+      "file": "152_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "2782d55ab38c8f3c7b68895c43ed118a77d706135ac964b16999d671fcd053e8"
+    },
+    {
+      "id": 153,
+      "file": "153_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "31dbb47ad22e964dfd670556d69f60721a5820dde41e069b8a046ecdc973fa97"
+    },
+    {
+      "id": 154,
+      "file": "154_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "9fb83a77f5cd7bd06a5b8718c1c81ed31c1be2ff17cab56ac855388b50fac3ce"
+    },
+    {
+      "id": 155,
+      "file": "155_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "fd60403a547899d1d54561717bfdd6fccf49ce8d91fae0852d650b9d6aa2dd2d"
+    },
+    {
+      "id": 156,
+      "file": "156_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "54bc1683029c24cc3ab6c967ee7fa8ccfed6ec74976d3548a3b76ff75bf70fce"
+    },
+    {
+      "id": 157,
+      "file": "157_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "24d2a586da4a4a9ac7cc147b5e6564d153aeeeb492ab0267526c9fc4c7e5bf15"
+    },
+    {
+      "id": 158,
+      "file": "158_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "e5118ebe501cf84a98b2275d46997d5ea29e459c99f15ae33fda0c39a55f608c"
+    },
+    {
+      "id": 159,
+      "file": "159_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "7ef613ada7c1988f39a6769cedfbcc43748d4f15fe59b3ec5f2ac8903c6dc934"
+    },
+    {
+      "id": 160,
+      "file": "160_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "22d0708bf330cfb26cae2b230707250beba45caa2b1fcfec461db71b6fcca50d"
+    },
+    {
+      "id": 161,
+      "file": "161_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "338f17b39afee5f9322c2ffa8dcbb110f264b02bb8529742d190364c48f30a59"
+    },
+    {
+      "id": 162,
+      "file": "162_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "890273c388771591965dd4e2ace74b5ac0c03ddfcdeb1f511aff67cafc42d97f"
+    },
+    {
+      "id": 163,
+      "file": "163_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "40f1c5b6060bace9255f15956c9a4940ee0729a33d73a4a88a8c67f2391692e3"
+    },
+    {
+      "id": 164,
+      "file": "164_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "5958c6955630aa812af0a90ea3e27a19cc2a25b3127c5ae6be2175490b6b342f"
+    },
+    {
+      "id": 165,
+      "file": "165_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "23b8e0f40ec47dc7479b6492759101da240f254b53c5a3c405812fc184a0bbc9"
+    },
+    {
+      "id": 166,
+      "file": "166_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "5d761920f909b49535e167e88b065ebd4ee153fb8030a0bbad6ecad2fcd87124"
+    },
+    {
+      "id": 167,
+      "file": "167_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "746d665adce82caf906916eb2826c812c40c35aa61dfddfe37e96a762c6c7e34"
+    },
+    {
+      "id": 168,
+      "file": "168_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "2357c7d6af91597f971a2c93435e7907bbc889dc7bcae625a7754dbda1e90946"
+    },
+    {
+      "id": 169,
+      "file": "169_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "3a6e637898f0eddd1385bf3750c3344c289e665ce9e81c3cfe8325c50524d08c"
+    },
+    {
+      "id": 170,
+      "file": "170_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "7121abf71696a9c448317d192346f4359be1a55ca8b2ba3521984f524d3ece05"
+    },
+    {
+      "id": 171,
+      "file": "171_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "c8e85082faf08074df4022c55223e1dcb30af332666768a3ff3845df37ad1cfb"
+    },
+    {
+      "id": 172,
+      "file": "172_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "44c28689542e6d04718438ffac630b47876e703322aa2d34148907eda2799e32"
+    },
+    {
+      "id": 173,
+      "file": "173_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "1161266c86a3bb003db867d26207f5a373b406e47e997164bc4fae20443a595e"
+    },
+    {
+      "id": 174,
+      "file": "174_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "2f24b8b2e75050b1f41e16066f0af0c31beb84d57c607f44951a77d44e3c0f95"
+    },
+    {
+      "id": 175,
+      "file": "175_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "d19dfd12ae18a1d7b3786d5b1c15b42492fb61a837f7671abfe8d1a4e32923e0"
+    },
+    {
+      "id": 176,
+      "file": "176_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "da0dba465ff2c379458f9adcd174fc65a469f8e2f441a3595023bdea7da8e4a6"
+    },
+    {
+      "id": 177,
+      "file": "177_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "94299cd80ac82b2222752ec3d7e73436fd883f2432ccf433e1c886d8cd2e3473"
+    },
+    {
+      "id": 178,
+      "file": "178_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "dfe79ad07fe36a2ad91964d7eb0a6bb437b139d78fb2026c09f3ad7e84e53511"
+    },
+    {
+      "id": 179,
+      "file": "179_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "581c2405418202fbf26300e38863965e9154fdac3fd3699e6703251181da0f60"
+    },
+    {
+      "id": 180,
+      "file": "180_no_lift.smt2",
+      "result": "unsat",
+      "sha256": "245d541ffe91a27dbcf4c19f6a2674bb3555b8af6d2bbba0f64ee93ada62a9e4"
+    }
+  ]
+}

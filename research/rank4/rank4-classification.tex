@@ -1,0 +1,442 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=23mm,headheight=15pt,headsep=8mm,footskip=11mm]{geometry}
+\usepackage{amsmath,amsthm,fontspec,unicode-math}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{Latin Modern Mono}[Scale=MatchLowercase]
+\setmathfont{TeX Gyre Pagella Math}
+\usepackage{microtype,booktabs,array,enumitem,xcolor,fancyhdr,needspace,hyperref}
+\definecolor{inkblue}{HTML}{243F56}
+\definecolor{rulegray}{HTML}{AEB7BE}
+\hypersetup{colorlinks=true,linkcolor=inkblue,citecolor=inkblue,urlcolor=inkblue,
+  pdftitle={Rank-four finite T-data: a computer-assisted classification},
+  pdfsubject={Thirty-seven families, explicit matrices and exact certificates}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\sffamily Rank-four finite T-data}
+\fancyhead[R]{\small\sffamily Classification and certificates}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\parindent}{1.2em}
+\setlength{\parskip}{3pt plus 1pt}
+\setlength{\emergencystretch}{1em}
+\setlist{itemsep=3pt,topsep=5pt}
+\raggedbottom
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{computation}[theorem]{Exact computation}
+\DeclareMathOperator{\diag}{diag}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\R}{\mathbb R}
+\newcommand{\code}[1]{\texttt{\detokenize{#1}}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+{\LARGE\bfseries Rank-four finite T-data\par}
+\vspace{4pt}{\large A computer-assisted classification\par}
+\vspace{9pt}{\small 5 September 2026}
+\end{center}
+\begin{abstract}
+With identity symmetrizer and diagonal leading matrix, there are thirty-seven
+indecomposable rank-four families, up to rational rescaling of time, species
+shifts, index permutations and sign exchange. We give explicit representatives,
+their matrices at $z=1$, and exact periodicity certificates. A bound of $15$ on
+off-diagonal coefficient sums reduces necessity to a finite enumeration,
+followed by unbounded linear-arithmetic feasibility checks. A leading-term
+obstruction excludes a remaining chain pattern. All surviving lift spaces
+consist precisely of rescalings and shifts of their representatives.
+\end{abstract}
+
+\section{The classification}\label{sec:theorem}
+The scope is the identity-symmetrizer, diagonal-leading-matrix setting of
+Mizuno's rank-two paper \cite{Mizuno}. Throughout, the rank is the number of
+species in the difference equation; the reconstructed quiver can have more
+vertices.
+
+\begin{definition}\label{def:datum}
+Let $r_1,\ldots,r_4$ be positive integers and let
+\[
+ N_0(z)=\diag(1+z^{r_1},\ldots,1+z^{r_4}),\qquad
+ A_\pm(z)=N_0(z)-N_\pm(z).
+\]
+The entries of $N_\pm$ have nonnegative integer coefficients. In entry $(i,j)$,
+every exponent $p$ satisfies $0<p<r_i$, and the two signs have disjoint
+support. Require the symplectic identity
+\begin{equation}\label{eq:symplectic}
+ A_+(z)A_-(z^{-1})^{\mathsf T}
+ =A_-(z)A_+(z^{-1})^{\mathsf T}.
+\end{equation}
+The datum is indecomposable if no simultaneous index permutation makes both
+matrices block diagonal with two nonempty blocks. Finite type means periodicity
+of the associated universal $Y$-system, as in \cite[Definition 1.4]{Mizuno}.
+\end{definition}
+
+\begin{theorem}[Computer-assisted classification]\label{thm:classification}
+An indecomposable datum in Definition~\ref{def:datum} is of finite type if and
+only if, after an index permutation and possibly exchanging the signs,
+\begin{equation}\label{eq:family}
+ A_\pm(z)=E(z)B_\pm^{(k)}(z^\lambda)E(z)^{-1},\qquad
+ E(z)=\diag(z^{s_1},z^{s_2},z^{s_3},1),
+\end{equation}
+for exactly one of the thirty-seven representatives in
+Section~\ref{sec:catalogue}. Here $\lambda\in\Q_{>0}$ and
+$s_1,s_2,s_3\in\Q$. The parameters are precisely those for which all transformed
+exponents are integral and the support inequalities hold.
+\end{theorem}
+
+Thus a representative term $z^p$ in entry $(i,j)$ becomes
+$z^{\lambda p+s_i-s_j}$, and $r_i=\lambda r_i^{(k)}$, with $s_4=0$.
+This specifies all admissible polynomial lifts at arbitrarily large delays.
+The thirty-seven representatives also belong to distinct classes under change
+of slices in \cite[Section 3.1]{Mizuno}; see Section~\ref{sec:slices}.
+
+\begin{corollary}\label{cor:positivity}
+For the rank-four data of Definition~\ref{def:datum}, finite type is equivalent
+to the existence of a row vector $v>0$ with
+$vA_+(1)>0$ and $vA_-(1)>0$.
+\end{corollary}
+
+For decomposable data, apply the theorem blockwise. The remaining rank
+partitions are $3+1$, $2+2$, $2+1+1$ and $1+1+1+1$, using the rank-three,
+rank-two and rank-one classifications. Each component may have its own time
+scale; a common period is a common multiple of the component periods.
+The statements concern $D=I_4$ and diagonal $N_0$, rather than the full
+definition allowing other symmetrizers and leading permutations.
+
+\section{A finite reduction without a delay cutoff}\label{sec:reduction}
+Write $P=N_+(1)$ and $M=N_-(1)$, so that $A_\pm(1)=2I_4-P,2I_4-M$.
+The necessary simultaneous positivity theorem is
+\cite[Lemma 3.3]{Mizuno}, citing the arbitrary-rank theorem
+\cite[Theorem 5.5]{TData}. Hence a finite-type datum has a row vector $v>0$ with
+\begin{equation}\label{eq:positive}
+ v(2I_4-P)>0,\qquad v(2I_4-M)>0.
+\end{equation}
+In particular $P_{ii},M_{ii}\in\{0,1\}$, and both $2I_4-P$ and $2I_4-M$
+have positive principal minors. Indeed, scaling by $v$ makes their transposes
+strictly diagonally dominant Z-matrices. Every principal submatrix retains
+this property and has positive determinant.
+
+\begin{lemma}\label{lem:strong}
+For an indecomposable datum, the graph with arrows $i\to j$ when $i\ne j$ and
+$P_{ij}+M_{ij}>0$ is strongly connected.
+\end{lemma}
+\begin{proof}
+If the graph is reducible, order its strongly connected components so that
+$A_+$ and $A_-$ are block lower triangular. The matrices have constant term
+$I_4$. Thus $K=A_+^{-1}A_-$ exists over $\Q(z)$ and is regular at zero.
+Equation~\eqref{eq:symplectic} gives $K(z)=K(z^{-1})^{\mathsf T}$, so its
+block lower triangular form is block diagonal.
+
+Suppose that some entry between distinct blocks of $N_+$ or $N_-$ is nonzero,
+and let $h>0$ be the smallest degree of such an entry. In
+$K=I_4+A_+^{-1}(N_+-N_-)$, the coefficient of degree $h$ between blocks is
+the corresponding coefficient of $N_+-N_-$. Every other contribution has a
+crossing factor of degree at least $h$ and a further factor of positive
+degree. Disjoint support makes one degree-$h$ crossing coefficient nonzero,
+contradicting block diagonality of $K$.
+\end{proof}
+
+\begin{lemma}[Coefficient bound]\label{lem:bound}
+Every finite-type indecomposable datum satisfies $P_{ij},M_{ij}\le15$ for
+$i\ne j$.
+\end{lemma}
+\begin{proof}
+Let $w_{ij}=\max(P_{ij},M_{ij})$. Equation~\eqref{eq:positive} gives
+$w_{ij}v_i<2v_j$. Every arrow belongs to a simple directed cycle of length
+$\ell\le4$, by Lemma~\ref{lem:strong}. Multiplication along the cycle gives
+$\prod w_{ij}<2^\ell$. All its weights are positive integers, so each is
+at most $2^\ell-1\le15$.
+\end{proof}
+
+\begin{lemma}[Parity]\label{lem:parity}
+Each diagonal entry of $(2I_4-P)(2I_4-M)^{\mathsf T}$ is even.
+\end{lemma}
+\begin{proof}
+The diagonal Laurent polynomial $(A_+A_-^*)_{ii}$ is reciprocal, where
+$F^*(z)=F(z^{-1})^{\mathsf T}$. Its constant coefficient is $2$: the leading
+diagonal factors contribute $2$, the mixed leading/support terms contribute
+zero, and disjoint support gives
+$[z^0]\sum_j(N_+)_{ij}(z)(N_-)_{ij}(z^{-1})=0$.
+Every nonconstant coefficient of a reciprocal Laurent polynomial occurs in
+an equal pair. Evaluation at $1$ is therefore even.
+\end{proof}
+
+\subsection*{How the constants are enumerated}
+Relabel a vector in \eqref{eq:positive} so that $v_1\ge v_2\ge v_3\ge v_4$.
+For either $C=P$ or $C=M$, its $j$th column then satisfies
+\[
+ \sum_{i<j}C_{ij}\le 1-C_{jj}.
+\]
+Thus, above the diagonal, column $j$ is either zero or has a single $1$;
+the latter requires $C_{jj}=0$. There are
+$\prod_{j=1}^4(j+1)=120$ choices of the diagonal and strict upper triangle
+of each matrix. Exchanging the signs leaves $120\cdot121/2=7,260$ unordered
+pairs of these choices to process.
+
+The program completes the rows in order. When row $j$ is reached, it
+enumerates the unknown entries of $P$ in $\{0,\ldots,15\}$ and uses
+\[
+ (2I_4-P)(2I_4-M)^{\mathsf T}
+ =(2I_4-M)(2I_4-P)^{\mathsf T}
+\]
+to solve uniquely for the unknown entries of that row of $M$. The coefficient
+matrix is the already completed leading principal block of $2I_4-P$,
+whose determinant is positive. Adjugates, divisibility checks, cycle bounds
+and principal minors are computed with integers. No solution can be lost
+by solving this nonsingular linear system.
+
+Completed pairs are tested for strong connectivity and ordered simultaneous
+positivity, and then identified under all $24$ index permutations and sign
+exchange. For positivity, the C++ enumerator constructs extreme rays of
+\[
+ \{v:\ v\ge0,\ v(2I_4-P)\ge0,\ v(2I_4-M)\ge0,
+             \ v_i\ge v_{i+1}\}.
+\]
+Each extreme ray is obtained from three independent active constraint
+normals. The cone is pointed; the sum of its rays is strict in the required
+inequalities exactly when a suitable $v$ exists. A separate rational linear
+solver supplies and verifies an integer positive vector for every retained
+pair, without imposing the ordering on its canonical representative.
+
+\begin{computation}\label{comp:constants}
+The enumeration gives $4,865$ distinct constant pairs. The independent
+verifier checks their symplectic identities, all principal minors, strong
+connectivity, canonical forms and explicit simultaneous positive vectors.
+Lemma~\ref{lem:parity} excludes $4,405$ pairs, leaving $460$.
+\end{computation}
+
+As a control on completeness of the new enumeration method, its rank-three
+version reproduces exactly the entire set of $180$ constant pairs in the
+rank-three calculation, not merely its cardinality.
+
+\section{The chain obstruction}\label{sec:chain}
+The following elementary exclusion is used before the remaining feasibility
+checks. It also gives a direct proof for the largest surviving coefficient
+pattern in the constant enumeration.
+
+\begin{lemma}\label{lem:chain}
+No datum of Definition~\ref{def:datum} has $P,M$ of the form
+\[
+ P=\begin{pmatrix}0&0&0&0\\0&0&0&0\\0&0&0&0\\u&v&w&0\end{pmatrix},\qquad
+ M=\begin{pmatrix}0&1&0&1\\1&0&1&0\\0&1&0&0\\0&0&t&0\end{pmatrix},
+ \qquad u,v,w,t\in\Z_{\ge0}.
+\]
+\end{lemma}
+\begin{proof}
+The $(1,2)$ and $(2,3)$ symplectic equations first imply
+$r_1=r_2=r_3=R$ and
+\[
+ (N_-)_{12}=z^a,\quad (N_-)_{21}=z^{R-a},\quad
+ (N_-)_{23}=z^c,\quad (N_-)_{32}=z^{R-c}.
+\]
+For example, the first equation is equality of two translated binomials;
+their lowest and highest exponents give the asserted equalities.
+Write $(N_-)_{14}=z^b$, and define the Laurent polynomials
+\[
+ \begin{aligned}
+ q&=z^R,&F&=1+q,&H&=z^b(1+z^{-r_4}),\\
+ X&=(N_+)_{41}(z^{-1}),&
+ Y&=z^a(N_+)_{42}(z^{-1}),\\
+ Z&=z^{a+c}(N_+)_{43}(z^{-1}),&
+ W&=z^{a+c}(N_-)_{43}(z^{-1}).
+ \end{aligned}
+\]
+The $(1,4)$, $(2,4)$ and $(3,4)$ equations give, respectively,
+\begin{equation}\label{eq:chain}
+ Y=FX+H,\qquad FY=qX+Z,\qquad F(Z-W)=qY.
+\end{equation}
+Consequently $Z=(1+q+q^2)X+FH$. The polynomials $X,H$ have nonnegative
+coefficients and $H\ne0$. The first two expressions therefore show that
+$Y$ and $Z$ have the same lowest exponent $d$. Since $R>0$, the lowest
+exponent of $qY$ is $d+R>d$. The last equation in \eqref{eq:chain} forces
+$W$ to have lowest exponent $d$, with the same nonzero coefficient there
+as $Z$. This gives a common exponent in $(N_+)_{43}$ and $(N_-)_{43}$,
+contradicting disjoint support.
+\end{proof}
+
+The lemma applies to constant IDs $22,35,44$. ID $35$ has already been
+removed by parity. Thus $458$ pairs remain for the unbounded polynomial
+calculation.
+
+\section{All polynomial lifts and their periods}\label{sec:lifts}
+For each constant pair, introduce four delay variables and one exponent
+variable for every unit of coefficient mass. Equal exponents of the same
+sign are allowed, so coefficients greater than one are included. Exponents
+within an entry are ordered, opposite signs have distinct exponents, and
+every exponent is strictly between zero and its row delay.
+
+Expand $A_+A_-^*-A_-A_+^*$. In each entry, equality to zero is equality of
+two finite multisets of integral linear forms in these variables. The main
+encoding compares multiplicities at every positive-side exponent; equality
+of the total sizes follows from the constant-matrix identity. A second
+encoding sorts the two lists through exact comparison networks and equates
+them. Both describe the full polynomial identity, including coincident
+monomials. There is no upper bound on delays or exponents.
+
+Most queries use integer variables. A homogeneous query can also be solved
+over the reals with $\sum r_i=1$. Each Boolean branch is a rational linear
+system with strict inequalities. A nonempty such system has a rational
+point; clearing denominators yields an integer solution of the original
+homogeneous query. Conversely any integer solution can be normalized.
+This justifies the rational arithmetic used for the exclusion of ID $1117$.
+
+\begin{computation}\label{comp:lifts}
+Of the $458$ remaining constant pairs, $421$ have no polynomial lift and
+$37$ have a lift. For each survivor, all admissible lifts lie in a single
+four-dimensional rational linear subspace. Its generators are the
+representative's exponent vector and the three relative species shifts in
+\eqref{eq:family}. There are no unresolved solver answers.
+\end{computation}
+
+To obtain a subspace, match equal exponents on the two sides of each Laurent
+identity at a satisfying point. The matching imposes homogeneous linear
+equations that imply the entire identity. The verifier reduces the exponent
+forms modulo the resulting row-reduced matrix and checks equality of the
+two multisets symbolically. It also checks the dimension and the four
+generators, then asks whether any admissible lift lies outside that subspace.
+Every such coverage query is UNSAT. This proves necessity in
+Theorem~\ref{thm:classification} for every delay.
+
+\subsection*{Sufficiency}
+For each representative, reconstruct the skew-symmetric exchange matrix
+on $\{(i,p):1\le i\le4,\ 0\le p<r_i\}$ using
+\cite[equation (2.2)]{Mizuno}. A time step mutates the four vertices $(i,0)$
+and relabels $(i,p)\mapsto(i,p-1\bmod r_i)$. The verifier checks their
+commutativity, the return of the exchange matrix and inverse-step consistency.
+Starting from the identity principal C-matrix, integer mutation gives a
+negative permutation matrix in both directions for all $37$ representatives.
+Proposition 2.7 of \cite{Mizuno} then proves finite type in every semifield.
+The lengths $h_+,h_-$ and the first positive return $\Omega$ of the labelled
+C-matrix are listed in Section~\ref{sec:periods}. These are exact seed
+certificates, rather than numerical tests of a few initial values.
+
+Integral species shifts reindex solutions, and substituting $z^m$ splits
+time into $m$ independent residue classes. Both operations preserve finite
+type in both directions. For rational parameters in \eqref{eq:family}, clear
+their denominators by an integer $L$. The transformed datum at $z^L$ is an
+integral species shift of the representative at $z^{L\lambda}$. The integral
+argument therefore proves sufficiency throughout each family. Combined
+with \eqref{eq:positive} and Computation~\ref{comp:lifts}, this also proves
+Corollary~\ref{cor:positivity}.
+
+\section{Equivalences and the degree-two check}\label{sec:slices}
+Specialization at $z=1$ is invariant under rescaling and species shifts.
+The $37$ canonical constant pairs are distinct under index permutations
+and sign exchange. Thus the explicit families in \eqref{eq:family} do not
+overlap.
+
+For change of slices, integral dilations repeat a slice sequence, while
+species shifts move mutation events and the initial cut. The admissible
+shift domain is convex. Along a straight path of shifts, the event order
+changes only at coincident times; after clearing denominators these are
+simultaneous mutations in a valid datum and they commute. Moving the initial
+cut rotates the sequence. Rational rescalings and admissible shifts thus
+give changes of slices.
+
+Distinctness under this larger description is checked directly on connected
+quiver slices. For each representative, follow one connected component
+until the time-step permutation returns it. Its mutation word has four
+events. The canonical encoding records the exchange matrix and the cycles
+of the terminal permutation rooted at those events. The program exhausts
+cyclic rotations and adjacent commuting mutations, including the negated
+exchange matrix for sign exchange. All $37$ canonical minima are distinct.
+Full encodings are stored, together with hashes; distinctness is checked
+on the encodings themselves.
+
+\begin{computation}[All delays equal to two]\label{comp:degree2}
+The degree-two subcase has nine classes. Enumeration of all $3^{10}=59,049$
+symmetric signed matrices gives $190$ connected labelled pairs satisfying
+commutation and positive principal minors, and nine orbits. Each has an
+exact two-sided reddening certificate. They occur in the full catalogue
+as classes $1,2,3,28,29,30,31,34,35$.
+\end{computation}
+
+For this subcase $N_\pm(z)=zC_\pm$. Comparing Laurent coefficients forces
+$C_+-C_-$ to be symmetric; disjoint support then makes each $C_\pm$
+symmetric. The remaining identity is $C_+C_-=C_-C_+$. Positivity bounds
+every entry by one, so the signed symmetric matrix has ten independent
+entries in $\{-1,0,1\}$. This proves that the degree-two check is exhaustive.
+
+\clearpage
+\section{Periods and slice sizes}\label{sec:periods}
+The class number is used throughout the catalogue; ID is the index in the
+exhaustive constant enumeration. The period $\Omega$ is measured in the
+displayed time coordinate. A slice is one connected component of the
+reconstructed exchange matrix.
+\begin{center}\small\renewcommand{\arraystretch}{1.1}
+\input{rank4-overview.tex}
+\end{center}
+\vfill
+
+\clearpage
+\section{The thirty-seven representatives}\label{sec:catalogue}
+Each class displays $N_+^{(k)}(z),N_-^{(k)}(z)$ and the full constant matrices
+\[
+ A_\pm(1)=B_\pm^{(k)}(1)=2I_4-N_\pm^{(k)}(1).
+\]
+These constants are unchanged throughout the corresponding family;
+relabelling simultaneously permutes rows and columns, and sign exchange
+interchanges the pair. All entries below are generated from the checked
+integer witnesses.
+\input{rank4-catalogue.tex}
+
+\clearpage
+\appendix
+\section{Reproducibility and proof dependencies}
+This classification uses exact arithmetic and symbolic feasibility checks.
+The finite-type implication from simultaneous positivity, the coefficient
+bound, the enumeration scheme and the chain obstruction are proved above.
+The finite enumeration and the remaining feasibility and coverage statements
+are supported by executable exact-arithmetic checks. The computation trusts
+the C++ and Python implementations, SymPy rational arithmetic and Z3's UNSAT
+answers; it is not a proof-assistant formalization.
+
+The checked runtime is Python 3.10.6, SymPy 1.14.0 and Z3 5.1.0. The
+source files are under \code{research/rank4/}. The mutation routines and
+installed Z3 package are reused from \code{research/rank3/}.
+
+\begin{center}\small\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}p{0.44\linewidth}p{0.51\linewidth}@{}}
+\toprule
+File & Content\\\midrule
+\code{enumerate_constants.cpp} & Exhaustive ordered-vector enumeration.\\
+\code{constant_candidates.json} & The $4,865$ canonical constant pairs.\\
+\code{constant_verification.json} & Integer positive vectors and parity exclusions.\\
+\code{lift_feasibility.jsonl} & All lift decisions and the $37$ witnesses.\\
+\code{families.jsonl} & Linear equations and exact periodicity certificates.\\
+\code{smt_queries.zip} & Complete exclusion and coverage formulas.\\
+\code{verification.json} & Replayed answers, encodings, versions and hashes.\\
+\code{slice_signatures.json} & Full canonical slice encodings.\\
+\code{classification.json} & The catalogue, including both matrices at $1$.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Run the commands in \code{REPRODUCE.md} from the repository root. The
+enumerator has no delay parameter. The lift solver preserves UNKNOWN
+answers and the verifier refuses a complete classification while any remain.
+The final replay contains $4,865$ UNSAT answers: $4,407$ have elementary
+parity or chain exclusions, $421$ exclude the remaining impossible lifts,
+and $37$ exclude lifts outside the displayed families.
+
+\paragraph{Building this document.}
+Run \code{python research/rank4/make_pdf_tables.py}, then build
+\code{rank4-classification.tex} with LuaLaTeX and \code{latexmk}, writing
+to \code{output/pdf/}. The generator evaluates every polynomial matrix at
+$1$ and checks it against the separately enumerated constants.
+
+\begin{thebibliography}{9}
+\bibitem{Mizuno}
+Y.~Mizuno, \emph{Periodic Y-systems and Nahm sums: the rank 2 case},
+SIGMA \textbf{21} (2025), 094, 17 pp.
+\href{https://doi.org/10.3842/SIGMA.2025.094}{doi:10.3842/SIGMA.2025.094}.
+\href{https://arxiv.org/abs/2301.13239v2}{arXiv:2301.13239v2}.
+\bibitem{TData}
+Y.~Mizuno, \emph{Difference equations arising from cluster algebras},
+\href{https://arxiv.org/abs/1912.05710v2}{arXiv:1912.05710v2} (2020).
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,1946 @@
+{
+  "r1-c01": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(3)",
+        "category": "RSG",
+        "parameters": [
+          3
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0
+          ],
+          "lambda": "1/2",
+          "shifts": [
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Zamolodchikov (A1, A1)",
+        "category": "Zamolodchikov",
+        "parameters": [
+          "A1",
+          "A1"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0
+          ],
+          "lambda": "1/2",
+          "shifts": [
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r1-c02": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(2, 1)",
+        "category": "RSG",
+        "parameters": [
+          2,
+          1
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            0
+          ],
+          "lambda": "1/2",
+          "shifts": [
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Zamolodchikov (A1, T1) · tadpole extension",
+        "category": "Zamolodchikov",
+        "parameters": [
+          "A1",
+          "T1"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Commuting Cartan / tadpole construction",
+        "category": "Commuting Cartan",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±, where C± are symmetric nonnegative integral matrices and C₊C₋ = C₋C₊. The two matrices 2I − C± have positive principal minors."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r2-c01": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(4)",
+        "category": "RSG",
+        "parameters": [
+          4
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            0,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Zamolodchikov (A1, A2)",
+        "category": "Zamolodchikov",
+        "parameters": [
+          "A1",
+          "A2"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            0,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Commuting Cartan / tadpole construction",
+        "category": "Commuting Cartan",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±, where C± are symmetric nonnegative integral matrices and C₊C₋ = C₋C₊. The two matrices 2I − C± have positive principal minors."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2].",
+    "literature_note": {
+      "title": "Zamolodchikov A2",
+      "text": "The opposite pair is the Zamolodchikov A2 Y-system.",
+      "reference": "https://arxiv.org/html/2301.13239v2#S1.ThmTheorem7"
+    }
+  },
+  "r2-c02": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(3, 1)",
+        "category": "RSG",
+        "parameters": [
+          3,
+          1
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2].",
+    "literature_note": {
+      "title": "RSG continued fraction 3/4",
+      "text": "Remark 1.7 identifies the opposite pair with the reduced sine-Gordon system for 3/4 = [1,3].",
+      "reference": "https://arxiv.org/html/2301.13239v2#S1.ThmTheorem7"
+    }
+  },
+  "r2-c03": {
+    "identifications": [],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "literature_note": {
+      "title": "Mizuno’s nonstandard rank-two family",
+      "text": "Remark 1.7 describes this system as apparently new there, and notes its earlier implicit appearance in arXiv:1912.05710, Table 2.",
+      "reference": "https://arxiv.org/html/2301.13239v2#S1.ThmTheorem7"
+    }
+  },
+  "r2-c04": {
+    "identifications": [
+      {
+        "label": "Zamolodchikov (A2, T1) · tadpole extension",
+        "category": "Zamolodchikov",
+        "parameters": [
+          "A2",
+          "T1"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Commuting Cartan / tadpole construction",
+        "category": "Commuting Cartan",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±, where C± are symmetric nonnegative integral matrices and C₊C₋ = C₋C₊. The two matrices 2I − C± have positive principal minors."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "literature_note": {
+      "title": "Half of the (A2,A2) system",
+      "text": "Remark 1.7 identifies this pair as half of the Y-system associated with (A2,A2). It also has the exact tadpole tensor description recorded below.",
+      "reference": "https://arxiv.org/html/2301.13239v2#S1.ThmTheorem7"
+    }
+  },
+  "r2-c05": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(2, 1, 1)",
+        "category": "RSG",
+        "parameters": [
+          2,
+          1,
+          1
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            0,
+            1
+          ],
+          "lambda": "1/2",
+          "shifts": [
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2].",
+    "literature_note": {
+      "title": "RSG continued fraction 3/5",
+      "text": "Remark 1.7 identifies the opposite pair after z ↦ z² with RSG for 3/5 = [1,1,2].",
+      "reference": "https://arxiv.org/html/2301.13239v2#S1.ThmTheorem7"
+    }
+  },
+  "r2-c06": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(2, 2)",
+        "category": "RSG",
+        "parameters": [
+          2,
+          2
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            1,
+            0
+          ],
+          "lambda": "1/2",
+          "shifts": [
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Zamolodchikov (A1, T2) · tadpole extension",
+        "category": "Zamolodchikov",
+        "parameters": [
+          "A1",
+          "T2"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            0,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Commuting Cartan / tadpole construction",
+        "category": "Commuting Cartan",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±, where C± are symmetric nonnegative integral matrices and C₊C₋ = C₋C₊. The two matrices 2I − C± have positive principal minors."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2].",
+    "literature_note": {
+      "title": "Zamolodchikov tadpole T2",
+      "text": "The opposite pair is the tadpole T2 Y-system, by Remark 1.7.",
+      "reference": "https://arxiv.org/html/2301.13239v2#S1.ThmTheorem7"
+    }
+  },
+  "r3-c01": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(5)",
+        "category": "RSG",
+        "parameters": [
+          5
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            2,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Zamolodchikov (A1, A3)",
+        "category": "Zamolodchikov",
+        "parameters": [
+          "A1",
+          "A3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            2,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Sine-Gordon SG(2)",
+        "category": "SG",
+        "parameters": [
+          2
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            1,
+            2
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Mizuno 1912.05710, Table 2, row 1",
+        "category": "Literature example",
+        "reference": "https://arxiv.org/abs/1912.05710",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            0,
+            2,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Commuting Cartan / tadpole construction",
+        "category": "Commuting Cartan",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±, where C± are symmetric nonnegative integral matrices and C₊C₋ = C₋C₊. The two matrices 2I − C± have positive principal minors."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r3-c02": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(2, 3)",
+        "category": "RSG",
+        "parameters": [
+          2,
+          3
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            2,
+            0,
+            1
+          ],
+          "lambda": "1/2",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Zamolodchikov (A1, T3) · tadpole extension",
+        "category": "Zamolodchikov",
+        "parameters": [
+          "A1",
+          "T3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            2,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Mizuno 1912.05710, Table 2, row 5",
+        "category": "Literature example",
+        "reference": "https://arxiv.org/abs/1912.05710",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            0,
+            2,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Commuting Cartan / tadpole construction",
+        "category": "Commuting Cartan",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±, where C± are symmetric nonnegative integral matrices and C₊C₋ = C₋C₊. The two matrices 2I − C± have positive principal minors."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r3-c03": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(2, 1, 2)",
+        "category": "RSG",
+        "parameters": [
+          2,
+          1,
+          2
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            2,
+            1,
+            0
+          ],
+          "lambda": "1/2",
+          "shifts": [
+            "-1/2",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r3-c04": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(3, 2)",
+        "category": "RSG",
+        "parameters": [
+          3,
+          2
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            2,
+            0,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "-2",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Mizuno 1912.05710, Table 2, row 6",
+        "category": "Literature example",
+        "reference": "https://arxiv.org/abs/1912.05710",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            2,
+            0,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "-2",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r3-c05": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r3-c06": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r3-c07": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(2, 2, 1)",
+        "category": "RSG",
+        "parameters": [
+          2,
+          2,
+          1
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            2,
+            1,
+            0
+          ],
+          "lambda": "1/2",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Mizuno 1912.05710, Table 2, row 7",
+        "category": "Literature example",
+        "reference": "https://arxiv.org/abs/1912.05710",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            2,
+            1,
+            0
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r3-c08": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(3, 1, 1)",
+        "category": "RSG",
+        "parameters": [
+          3,
+          1,
+          1
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            2,
+            0,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "-2",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r3-c09": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(2, 1, 1, 1)",
+        "category": "RSG",
+        "parameters": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            2,
+            0,
+            1
+          ],
+          "lambda": "1/2",
+          "shifts": [
+            "-1/2",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r3-c10": {
+    "identifications": [
+      {
+        "label": "Mizuno 1912.05710, Table 2, row 4",
+        "category": "Literature example",
+        "reference": "https://arxiv.org/abs/1912.05710",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            2,
+            0,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r3-c11": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(4, 1)",
+        "category": "RSG",
+        "parameters": [
+          4,
+          1
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            1,
+            2
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r3-c12": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r3-c13": {
+    "identifications": [
+      {
+        "label": "Mizuno 1912.05710, Table 2, row 3",
+        "category": "Literature example",
+        "reference": "https://arxiv.org/abs/1912.05710",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            2,
+            0,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r3-c14": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r3-c15": {
+    "identifications": [
+      {
+        "label": "Commuting Cartan / tadpole construction",
+        "category": "Commuting Cartan",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±, where C± are symmetric nonnegative integral matrices and C₊C₋ = C₋C₊. The two matrices 2I − C± have positive principal minors."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r3-c16": {
+    "identifications": [
+      {
+        "label": "Zamolodchikov (A3, T1) · tadpole extension",
+        "category": "Zamolodchikov",
+        "parameters": [
+          "A3",
+          "T1"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            2,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Mizuno 1912.05710, Table 2, row 2",
+        "category": "Literature example",
+        "reference": "https://arxiv.org/abs/1912.05710",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            2,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Commuting Cartan / tadpole construction",
+        "category": "Commuting Cartan",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±, where C± are symmetric nonnegative integral matrices and C₊C₋ = C₋C₊. The two matrices 2I − C± have positive principal minors."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c01": {
+    "identifications": [
+      {
+        "label": "Zamolodchikov (A1, D4)",
+        "category": "Zamolodchikov",
+        "parameters": [
+          "A1",
+          "D4"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Sine-Gordon SG(3)",
+        "category": "SG",
+        "parameters": [
+          3
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Commuting Cartan / tadpole construction",
+        "category": "Commuting Cartan",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±, where C± are symmetric nonnegative integral matrices and C₊C₋ = C₋C₊. The two matrices 2I − C± have positive principal minors."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c02": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(6)",
+        "category": "RSG",
+        "parameters": [
+          6
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Zamolodchikov (A1, A4)",
+        "category": "Zamolodchikov",
+        "parameters": [
+          "A1",
+          "A4"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Commuting Cartan / tadpole construction",
+        "category": "Commuting Cartan",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±, where C± are symmetric nonnegative integral matrices and C₊C₋ = C₋C₊. The two matrices 2I − C± have positive principal minors."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r4-c03": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(2, 4)",
+        "category": "RSG",
+        "parameters": [
+          2,
+          4
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            3,
+            1,
+            0,
+            2
+          ],
+          "lambda": "1/2",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Zamolodchikov (A1, T4) · tadpole extension",
+        "category": "Zamolodchikov",
+        "parameters": [
+          "A1",
+          "T4"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Commuting Cartan / tadpole construction",
+        "category": "Commuting Cartan",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±, where C± are symmetric nonnegative integral matrices and C₊C₋ = C₋C₊. The two matrices 2I − C± have positive principal minors."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r4-c04": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(2, 1, 3)",
+        "category": "RSG",
+        "parameters": [
+          2,
+          1,
+          3
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            3,
+            1,
+            2,
+            0
+          ],
+          "lambda": "1/2",
+          "shifts": [
+            "-1",
+            "0",
+            "-1/2",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r4-c05": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(3, 3)",
+        "category": "RSG",
+        "parameters": [
+          3,
+          3
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            3,
+            2,
+            0,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "-4",
+            "-2",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r4-c06": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c07": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(2, 2, 2)",
+        "category": "RSG",
+        "parameters": [
+          2,
+          2,
+          2
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "lambda": "1/2",
+          "shifts": [
+            "-3/2",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r4-c08": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(3, 1, 2)",
+        "category": "RSG",
+        "parameters": [
+          3,
+          1,
+          2
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            3,
+            2,
+            0,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "1",
+            "-2",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r4-c09": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(2, 1, 1, 2)",
+        "category": "RSG",
+        "parameters": [
+          2,
+          1,
+          1,
+          2
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            3,
+            2,
+            0,
+            1
+          ],
+          "lambda": "1/2",
+          "shifts": [
+            "1",
+            "-1/2",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r4-c10": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(4, 1, 1)",
+        "category": "RSG",
+        "parameters": [
+          4,
+          1,
+          1
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "lambda": "1",
+          "shifts": [
+            "-3",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r4-c11": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(2, 2, 1, 1)",
+        "category": "RSG",
+        "parameters": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "lambda": "1/2",
+          "shifts": [
+            "-3/2",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r4-c12": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c13": {
+    "identifications": [
+      {
+        "label": "Sine-Gordon SG(2, 1)",
+        "category": "SG",
+        "parameters": [
+          2,
+          1
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c14": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(5, 1)",
+        "category": "RSG",
+        "parameters": [
+          5,
+          1
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r4-c15": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(2, 3, 1)",
+        "category": "RSG",
+        "parameters": [
+          2,
+          3,
+          1
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            1,
+            0,
+            2,
+            3
+          ],
+          "lambda": "1/2",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r4-c16": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c17": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c18": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(3, 1, 1, 1)",
+        "category": "RSG",
+        "parameters": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "lambda": "1",
+          "shifts": [
+            "-3",
+            "2",
+            "2",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r4-c19": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c20": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(4, 2)",
+        "category": "RSG",
+        "parameters": [
+          4,
+          2
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "lambda": "1",
+          "shifts": [
+            "-3",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r4-c21": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(3, 2, 1)",
+        "category": "RSG",
+        "parameters": [
+          3,
+          2,
+          1
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            3,
+            2,
+            0,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "-4",
+            "-2",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r4-c22": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(2, 1, 2, 1)",
+        "category": "RSG",
+        "parameters": [
+          2,
+          1,
+          2,
+          1
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            3,
+            2,
+            0,
+            1
+          ],
+          "lambda": "1/2",
+          "shifts": [
+            "-1",
+            "-1/2",
+            "0",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r4-c23": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c24": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c25": {
+    "identifications": [
+      {
+        "label": "Reduced sine-Gordon RSG(2, 1, 1, 1, 1)",
+        "category": "RSG",
+        "parameters": [
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            3,
+            1,
+            0,
+            2
+          ],
+          "lambda": "1/2",
+          "shifts": [
+            "-3/2",
+            "1/2",
+            "1/2",
+            "0"
+          ]
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+    "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+  },
+  "r4-c26": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c27": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c28": {
+    "identifications": [
+      {
+        "label": "Commuting Cartan / tadpole construction",
+        "category": "Commuting Cartan",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±, where C± are symmetric nonnegative integral matrices and C₊C₋ = C₋C₊. The two matrices 2I − C± have positive principal minors."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c29": {
+    "identifications": [
+      {
+        "label": "Zamolodchikov (D4, T1) · tadpole extension",
+        "category": "Zamolodchikov",
+        "parameters": [
+          "D4",
+          "T1"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Commuting Cartan / tadpole construction",
+        "category": "Commuting Cartan",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±, where C± are symmetric nonnegative integral matrices and C₊C₋ = C₋C₊. The two matrices 2I − C± have positive principal minors."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c30": {
+    "identifications": [
+      {
+        "label": "Zamolodchikov (A2, A2)",
+        "category": "Zamolodchikov",
+        "parameters": [
+          "A2",
+          "A2"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Commuting Cartan / tadpole construction",
+        "category": "Commuting Cartan",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±, where C± are symmetric nonnegative integral matrices and C₊C₋ = C₋C₊. The two matrices 2I − C± have positive principal minors."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c31": {
+    "identifications": [
+      {
+        "label": "Zamolodchikov (A2, T2) · tadpole extension",
+        "category": "Zamolodchikov",
+        "parameters": [
+          "A2",
+          "T2"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Commuting Cartan / tadpole construction",
+        "category": "Commuting Cartan",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±, where C± are symmetric nonnegative integral matrices and C₊C₋ = C₋C₊. The two matrices 2I − C± have positive principal minors."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c32": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c33": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c34": {
+    "identifications": [
+      {
+        "label": "Commuting Cartan / tadpole construction",
+        "category": "Commuting Cartan",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±, where C± are symmetric nonnegative integral matrices and C₊C₋ = C₋C₊. The two matrices 2I − C± have positive principal minors."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c35": {
+    "identifications": [
+      {
+        "label": "Zamolodchikov (A4, T1) · tadpole extension",
+        "category": "Zamolodchikov",
+        "parameters": [
+          "A4",
+          "T1"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      {
+        "label": "Commuting Cartan / tadpole construction",
+        "category": "Commuting Cartan",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±, where C± are symmetric nonnegative integral matrices and C₊C₋ = C₋C₊. The two matrices 2I − C± have positive principal minors."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c36": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  },
+  "r4-c37": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty."
+  }
+}

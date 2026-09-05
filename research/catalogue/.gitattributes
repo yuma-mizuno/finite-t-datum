@@ -1,0 +1,3 @@
+* text eol=lf
+sources/* -text -whitespace
+plots/*.svg -whitespace

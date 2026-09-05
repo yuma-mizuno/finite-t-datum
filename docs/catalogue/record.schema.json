@@ -1,0 +1,423 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:t-datum:record:2.0.0",
+  "title": "Finite T-datum catalogue record",
+  "description": "Exact polynomial data with source-linked family and periodicity certificates. All array indices are zero-based; the reader displays one-based labels.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "rank",
+    "class_number",
+    "constant_id",
+    "scope",
+    "index_base",
+    "datum",
+    "family",
+    "periodicity",
+    "exchange",
+    "slice",
+    "provenance",
+    "matrix_ratios",
+    "notes",
+    "exponents",
+    "verification"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^r[1-4]-c[0-9]{2}$"
+    },
+    "rank": {
+      "enum": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "class_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "constant_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "scope": {
+      "type": "object",
+      "required": [
+        "symmetrizer",
+        "leading_permutation",
+        "indecomposable"
+      ],
+      "properties": {
+        "symmetrizer": {
+          "const": "identity"
+        },
+        "leading_permutation": {
+          "const": "identity"
+        },
+        "indecomposable": {
+          "const": true
+        }
+      }
+    },
+    "index_base": {
+      "const": 0
+    },
+    "datum": {
+      "type": "object",
+      "required": [
+        "delays",
+        "N_plus",
+        "N_minus",
+        "A_plus_1",
+        "A_minus_1"
+      ],
+      "properties": {
+        "delays": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "N_plus": {
+          "$ref": "#/$defs/polynomialMatrix"
+        },
+        "N_minus": {
+          "$ref": "#/$defs/polynomialMatrix"
+        },
+        "A_plus_1": {
+          "$ref": "#/$defs/integerMatrix"
+        },
+        "A_minus_1": {
+          "$ref": "#/$defs/integerMatrix"
+        }
+      }
+    },
+    "family": {
+      "type": "object",
+      "required": [
+        "parameters",
+        "fixed_shift",
+        "dimension",
+        "rref",
+        "variable_names",
+        "representative_values",
+        "coverage"
+      ],
+      "properties": {
+        "dimension": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "rref": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^-?[0-9]+(/[1-9][0-9]*)?$"
+            }
+          }
+        }
+      }
+    },
+    "periodicity": {
+      "type": "object",
+      "required": [
+        "time_coordinate",
+        "h_plus",
+        "h_minus",
+        "labelled_period",
+        "positive_negative_permutation",
+        "negative_negative_permutation"
+      ],
+      "properties": {
+        "time_coordinate": {
+          "const": "displayed representative"
+        },
+        "h_plus": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "h_minus": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "labelled_period": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "exchange": {
+      "type": "object",
+      "required": [
+        "vertices",
+        "B",
+        "mutation_vertices",
+        "relabel_old_to_new"
+      ],
+      "properties": {
+        "B": {
+          "$ref": "#/$defs/integerMatrix"
+        }
+      }
+    },
+    "slice": {
+      "type": "object",
+      "required": [
+        "components",
+        "vertices",
+        "B",
+        "mutation_word",
+        "relabel_old_to_new",
+        "canonical_signature",
+        "signature_sha256"
+      ],
+      "properties": {
+        "B": {
+          "$ref": "#/$defs/integerMatrix"
+        },
+        "vertices": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "components": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "signature_sha256": {
+          "$ref": "#/$defs/hash"
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "source_commit",
+        "verification_kind",
+        "sources",
+        "manuscript",
+        "pdf",
+        "query_path",
+        "query_member"
+      ],
+      "properties": {
+        "source_commit": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "verification_kind": {
+          "type": "string"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "path",
+              "role",
+              "sha256"
+            ],
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "role": {
+                "type": "string"
+              },
+              "sha256": {
+                "$ref": "#/$defs/hash"
+              }
+            }
+          }
+        }
+      }
+    },
+    "matrix_ratios": {
+      "type": "object",
+      "required": [
+        "A_plus_inverse_A_minus",
+        "A_minus_inverse_A_plus"
+      ],
+      "properties": {
+        "A_plus_inverse_A_minus": {
+          "$ref": "#/$defs/rationalMatrix"
+        },
+        "A_minus_inverse_A_plus": {
+          "$ref": "#/$defs/rationalMatrix"
+        }
+      }
+    },
+    "notes": {
+      "type": "object",
+      "required": [
+        "family",
+        "quiver"
+      ],
+      "properties": {
+        "family": {
+          "type": "object",
+          "required": [
+            "identifications",
+            "status",
+            "search_scope"
+          ]
+        },
+        "quiver": {
+          "type": "object",
+          "required": [
+            "label",
+            "status",
+            "certificate",
+            "mutation_finite",
+            "cluster_finite"
+          ]
+        }
+      }
+    },
+    "exponents": {
+      "type": "object",
+      "required": [
+        "status",
+        "root_order",
+        "degree",
+        "values",
+        "multiplicities",
+        "fixed_point_equation",
+        "formula",
+        "cartan_like_centering_shifts",
+        "certificate",
+        "plot_path"
+      ],
+      "properties": {
+        "root_order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "degree": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "values": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "plot_path": {
+          "type": "string",
+          "pattern": "^research/catalogue/plots/r[1-4]-c[0-9]{2}\\.svg$"
+        },
+        "multiplicities": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "m",
+              "multiplicity"
+            ],
+            "properties": {
+              "m": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "multiplicity": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "matrix_ratios",
+        "mutation_class_path",
+        "jacobian_spectrum"
+      ],
+      "properties": {
+        "matrix_ratios": {
+          "const": "exact"
+        },
+        "mutation_class_path": {
+          "const": "exact replay"
+        },
+        "jacobian_spectrum": {
+          "const": "independent interval-certified match"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "term": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "integer",
+          "minimum": 1
+        },
+        {
+          "type": "integer",
+          "minimum": 1
+        }
+      ],
+      "items": false,
+      "minItems": 2
+    },
+    "polynomialMatrix": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/term"
+          }
+        }
+      }
+    },
+    "integerMatrix": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        }
+      }
+    },
+    "rationalMatrix": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^-?[0-9]+(/[1-9][0-9]*)?$"
+        }
+      }
+    }
+  },
+  "$comment": "The builder and tests additionally enforce dimensions equal to rank, ordered distinct exponents, positivity and disjoint support, the exact symplectic identity, specialization at 1, and permutation validity. Those algebraic conditions are not expressible by JSON Schema alone."
+}

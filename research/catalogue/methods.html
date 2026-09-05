@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Finite T-data: exponents and exact certificates</title>
+<style>body{max-width:900px;margin:3em auto;padding:0 1.4em;font:18px/1.7 Georgia,serif;color:#243b33;background:#fcfbf8}h1,h2{font-weight:500;line-height:1.2}h2{margin-top:2em}a{color:#146452}.formula{padding:1.2em;background:#edf4ee;text-align:center;overflow:auto}code{font-size:.85em}li{margin:.6em 0}details{padding:1em;border:1px solid #cedbd2;border-radius:10px;margin:1em 0}summary{cursor:pointer}table{border-collapse:collapse;width:100%}td,th{text-align:left;padding:.6em;border-bottom:1px solid #cedbd2}</style></head><body>
+<a href="../../docs/catalogue/index.html#r4-c01/exponents">← Interactive catalogue</a>
+<h1>Exponents and exact certificates</h1>
+<p>Each of the 61 entries has an exact rational pair of matrix ratios, a certified list of exponents with multiplicities, and a replayable quiver mutation-class witness. The exponent convention below is that of <a href="https://yuma-mizuno.github.io/thesis.pdf#page=56">Mizuno’s thesis, §3.4</a>.</p>
+<h2>The formula and its clock</h2>
+<p>Let t be the number of connected components of the full reconstructed exchange quiver, and Ω the recorded labelled period in the representative’s time coordinate. Write</p>
+<div class="formula">K = A<sub>+</sub>(1)<sup>−1</sup>A<sub>−</sub>(1),<br>
+log f = K log(1 − f), &nbsp; 0 &lt; fᵢ &lt; 1,<br>
+τ̄(z) = det(A<sub>+</sub>(z) diag(1 − f) + A<sub>−</sub>(z) diag(f)),<br>
+τ(z) = τ̄(z<sup>1/t</sup>), &nbsp; N = Ω/t.</div>
+<p>The fixed-point equation is (3.2.1) on printed page 48. The determinant is (3.4.1) on page 55; the normalization is Definition 3.4.4 on page 58. Theorem 3.4.5 puts the roots on the N-th roots of unity. An exponent m denotes exp(2πim/N), with 0 ≤ m &lt; N. The sum of the multiplicities is the number of vertices in one connected slice, namely (Σᵢrᵢ)/t. It need not equal the rank of the T-datum.</p>
+<p>Both K and K<sup>−1</sup> are stored as rational matrices. Their defining products are checked exactly. The convention uses the signs of the displayed record; each named-family identification specifies any exchange of those signs.</p>
+<details open><summary>Why the Cartan-like hypothesis applies</summary>
+<p>The script solves for rational species shifts sᵢ such that the support in row i is invariant under p ↦ rᵢ − p after replacing p by p + sᵢ − sⱼ. It checks every coefficient and every strict support inequality. This makes z<sup>−rᵢ/2</sup>A±(z) invariant under z ↦ z<sup>−1</sup>, as in Definition 3.2.1.</p>
+<p>The shift is diagonal conjugation by E(z) = diag(z<sup>sᵢ</sup>). It commutes with diag(f) and diag(1 − f), so it preserves τ̄. Clearing denominators by a positive integer L produces an ordinary polynomial datum: its determinant is τ̄(z<sup>L</sup>), and both the period and number of components scale by L. The normalized τ and N are therefore unchanged. The reader records the shifts and L for each entry.</p></details>
+<h2>How multiplicities are certified</h2>
+<ol>
+<li>The rational matrix K is checked to be symmetric positive definite. The positive solution of the Nahm equation is unique.</li>
+<li>A high-precision Newton iteration finds a candidate f. Its decimal coordinates are then treated as exact rational centers, enclosed in a box of radius 2<sup>−350</sup>. A Krawczyk operator maps this box strictly into its interior, using 512-bit interval arithmetic. This certifies a solution in the box.</li>
+<li>Interval polynomial arithmetic expands the determinant. Newton identities enclose the power sums pₖ of the roots of τ, including p₀ = deg τ.</li>
+<li>For ζ = exp(2πi/N), the multiplicity aₘ is enclosed by Fourier inversion:</li>
+</ol>
+<div class="formula">aₘ = (1/N) Σ<sub>k=0</sub><sup>N−1</sup> pₖ ζ<sup>−mk</sup>.</div>
+<p>The periodicity theorem ensures that aₘ is a nonnegative integer. Each computed real interval contains exactly one such integer, and the imaginary interval contains zero. The multiplicities sum to the degree. Thus the result uses interval bounds and the period theorem, rather than rounding approximate eigenvalues. The exact product ∏ₘ(z − ζ<sup>m</sup>)<sup>aₘ</sup> is recorded over the cyclotomic field ℚ(ζ).</p>
+<details><summary>Independent check from the mutation Jacobian</summary>
+<p>A separate verifier uses equation (3.4.2) on printed page 56. In logarithmic coordinates, mutation at vertex k of species a has diagonal entries 1 except Lₖₖ = −1; its additional entries in column k are Lᵢₖ = [Bₖᵢ]<sub>+</sub>(1 − fₐ) + [−Bₖᵢ]<sub>+</sub>fₐ for i ≠ k. All other off-diagonal entries vanish.</p>
+<p>The verifier multiplies these matrices along one full time step and applies its recorded relabelling. Raising this matrix to the t-th power and restricting to a connected component gives the connected-slice Jacobian. Interval traces of its powers and Fourier inversion certify exactly the same exponent multiplicities for all 61 records.</p></details>
+<h2>Reading the quiver notes</h2>
+<table><thead><tr><th>Label</th><th>Saved witness</th></tr></thead><tbody>
+<tr><td>Dynkin A, D, E</td><td>A mutation path to an orientation of the indicated Dynkin tree.</td></tr>
+<tr><td>Exceptional elliptic type</td><td>A mutation path and a directed weighted graph isomorphism to SageMath’s standard representative.</td></tr>
+<tr><td>Punctured sphere</td><td>A mutation path and vertex bijection to the signed adjacency quiver of the stored oriented triangulation.</td></tr>
+<tr><td>Mutation-infinite</td><td>A mutation path to an edge with at least three arrows in a connected skew-symmetric quiver on at least three vertices.</td></tr>
+</tbody></table>
+<p>Every saved path is replayed using exact integer mutation. A finite-type T-datum specifies a periodic loop, even when its quiver has an infinite mutation class. Quiver class and loop exponents describe different information.</p>
+<h2>Files and sources</h2>
+<p><a href="enrichment-verification.json">Independent verification report</a> · <a href="exponents.py">Determinant calculation</a> · <a href="verify_enrichment.py">Independent verifier</a> · <a href="family_notes.py">Named-family identity checks</a> · <a href="lower-ranks-proof.html">Ranks one and two</a></p>
+<p>All calculations are computer-assisted certificates, with their inputs and scripts preserved in Git. The structured records include source hashes. See <a href="README.md">the reproduction instructions</a> for the command sequence and constructor provenance.</p>
+<p>Quiver sources: <a href="https://arxiv.org/abs/0811.1703">Felikson–Shapiro–Tumarkin</a>; <a href="https://arxiv.org/abs/math/0608367">Fomin–Shapiro–Thurston</a>. Named systems: <a href="https://arxiv.org/abs/1212.6853">Nakanishi–Stella</a>; <a href="https://arxiv.org/html/2301.13239v2#S1.ThmTheorem7">Mizuno, Remark 1.7</a>.</p>
+</body></html>

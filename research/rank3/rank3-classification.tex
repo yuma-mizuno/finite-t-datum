@@ -1,0 +1,469 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=23mm,headheight=15pt,headsep=8mm,footskip=11mm]{geometry}
+\usepackage{amsmath,amsthm}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{Latin Modern Mono}[Scale=MatchLowercase]
+\setmathfont{TeX Gyre Pagella Math}
+\usepackage{microtype,booktabs,array,enumitem,xcolor,fancyhdr,needspace}
+\usepackage{hyperref}
+\definecolor{inkblue}{HTML}{243F56}
+\definecolor{rulegray}{HTML}{AEB7BE}
+\hypersetup{colorlinks=true,linkcolor=inkblue,citecolor=inkblue,urlcolor=inkblue,
+  pdftitle={Rank-three finite T-data: a computer-assisted classification},
+  pdfsubject={Sixteen classes, explicit matrices, proofs and exact certificates},
+  pdfauthor={}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\sffamily Rank-three finite T-data}
+\fancyhead[R]{\small\sffamily Classification and certificates}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\parindent}{1.2em}
+\setlength{\parskip}{3pt plus 1pt}
+\setlength{\emergencystretch}{1em}
+\setlist{itemsep=3pt,topsep=5pt}
+\raggedbottom
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{computation}[theorem]{Exact computation}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\Trop}{Trop}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\R}{\mathbb R}
+\newcommand{\code}[1]{\texttt{\detokenize{#1}}}
+
+\title{\vspace{-12mm}\textbf{Rank-three finite T-data}\\[4pt]
+  \large A computer-assisted classification}
+\author{}
+\date{5 September 2026}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+{\LARGE\bfseries Rank-three finite T-data\par}
+\vspace{4pt}
+{\large A computer-assisted classification\par}
+\vspace{9pt}
+{\small 5 September 2026}
+\end{center}
+\begin{abstract}
+In the setting of identity symmetrizer and diagonal leading matrix, the
+classification consists of sixteen indecomposable families. Every finite-type
+datum is obtained from one of sixteen explicit representatives by an admissible
+rational rescaling of time and shifts of the three species, together with
+relabelling and sign exchange. The completeness argument combines a
+delay-independent bound on coefficient sums with exact integer feasibility
+checks. Two-sided reddening certificates establish periodicity of all
+representatives. In this setting, simultaneous positivity is both necessary
+and sufficient for finite type in rank three.
+\end{abstract}
+
+\section{Statement of the classification}\label{sec:statement}
+
+The scope is the one used in Mizuno's rank-two classification
+\cite{MizunoRankTwo}: the symmetrizer is $D=I_3$, and the leading matrix is
+diagonal. The general definition of T-data in \cite{MizunoTData} also permits
+nontrivial symmetrizers and non-diagonal leading matrices.
+
+\begin{definition}\label{def:datum}
+Let $r_1,r_2,r_3$ be positive integers, and let $N_+(z),N_-(z)$ be
+$3\times3$ matrices over $\N[z]$. Set
+\begin{equation}\label{eq:leading}
+ N_0(z)=\diag(1+z^{r_1},1+z^{r_2},1+z^{r_3}),\qquad
+ A_\pm(z)=N_0(z)-N_\pm(z).
+\end{equation}
+In entry $(i,j)$, all nonzero coefficients of $N_\pm$ occur at exponents
+$0<p<r_i$, and the supports of the two signs are disjoint. The pair is a
+T-datum in the present setting if
+\begin{equation}\label{eq:symplectic}
+ A_+(z)A_-(z^{-1})^{\mathsf T}
+ =A_-(z)A_+(z^{-1})^{\mathsf T}.
+\end{equation}
+It is \emph{indecomposable} if no simultaneous permutation of the indices
+makes both matrices block diagonal with two nonempty blocks.
+\end{definition}
+
+Write $n_{ij;p}=[z^p](N_+-N_-)_{ij}$ and $[a]_+=\max(a,0)$.
+The associated Y-system is
+\begin{equation}\label{eq:ysystem}
+ Y_i(u)Y_i(u-r_i)=
+ \prod_{j=1}^{3}\prod_{p=1}^{r_i-1}
+ Y_j(u-p)^{[n_{ij;p}]_+}(1+Y_j(u-p))^{-n_{ij;p}}.
+\end{equation}
+Finite type means periodicity of this system in the universal semifield,
+equivalently the condition in \cite[Definition 1.4]{MizunoRankTwo}.
+
+\begin{theorem}[Computer-assisted classification]\label{thm:classification}
+An indecomposable T-datum in Definition~\ref{def:datum} is of finite type if
+and only if, after relabelling the indices and possibly exchanging the signs,
+it has the form
+\begin{equation}\label{eq:normal-form}
+ A_\pm(z)=E(z)B_\pm^{(k)}(z^\lambda)E(z)^{-1},\qquad
+ E(z)=\diag(z^{s_1},z^{s_2},1),
+\end{equation}
+for exactly one of the sixteen representatives in
+Section~\ref{sec:catalogue}. Here $\lambda\in\Q_{>0}$ and $s_1,s_2\in\Q$;
+the parameters must make every exponent integral and satisfy the support
+conditions in Definition~\ref{def:datum}.
+\end{theorem}
+
+The expression in \eqref{eq:normal-form} is first interpreted in the group
+algebra of rational powers of $z$. If a representative has delay $r_i^{(k)}$
+and a term $z^p$ in entry $(i,j)$, the transformed delay and exponent are
+\begin{equation}\label{eq:parameters}
+ r_i=\lambda r_i^{(k)},\qquad p'=\lambda p+s_i-s_j,\qquad s_3=0.
+\end{equation}
+Thus the statement gives all polynomial lifts, including arbitrarily large
+delays. Admissible rescalings and shifts correspond to changes of slices;
+the sixteen slice classes are distinct, as discussed in
+Section~\ref{sec:slices}.
+
+\begin{corollary}\label{cor:positivity}
+An indecomposable rank-three T-datum in this setting is of finite type if
+and only if there is a row vector $v\in\R^3$ such that
+\begin{equation}\label{eq:positivity}
+ v>0,\qquad vA_+(1)>0,\qquad vA_-(1)>0.
+\end{equation}
+All inequalities are componentwise.
+\end{corollary}
+
+Necessity is the simultaneous positivity theorem
+\cite[Theorem 5.5]{MizunoTData}, recalled in
+\cite[Lemma 3.3]{MizunoRankTwo}. Sufficiency follows from the exhaustive
+reduction and the periodicity certificates below. Decomposable rank-three
+data are direct sums with rank partitions $2+1$ or $1+1+1$, using the
+rank-two and rank-one classifications.
+
+\paragraph{Proof status.}
+The proof uses exact integer and rational arithmetic and the UNSAT results
+of Z3. All 180 unbounded solver queries are saved and replayed. The
+certificate computation is reproducible; it has not been formalized in a
+proof assistant. The source data and runtime details are given in
+Appendix~\ref{app:reproduce}.
+
+\section{Periods and the structure of the proof}\label{sec:overview}
+
+Table~\ref{tab:periods} records the reddening lengths $h_+,h_-$ in the
+displayed time coordinates, the labelled seed period $\Omega$, and the number of
+vertices in one slice. The period is the first return of the principal
+C-matrix to the identity in the exact calculation.
+
+\begin{table}[!ht]
+\centering\small\renewcommand{\arraystretch}{1.02}
+\input{rank3-overview.tex}
+\caption{Periods of the sixteen representatives.}\label{tab:periods}
+\end{table}
+
+The proof has three parts. First, positivity bounds each off-diagonal
+coefficient sum by $7$, reducing the problem to $180$ constant-matrix pairs
+up to relabelling and sign exchange. Second, exact linear integer constraints
+exclude $164$ pairs and classify every lift of the remaining $16$ pairs.
+Third, positive and negative reddening sequences prove finite type for
+each representative, and rescaling and shifting transfer periodicity to
+its entire family.
+
+\section{The reduction to finitely many constant pairs}\label{sec:constants}
+
+Throughout this section write $P=N_+(1)$ and $M=N_-(1)$. If the datum is of
+finite type, \eqref{eq:positivity} gives
+\begin{equation}\label{eq:pm-positive}
+ v(2I-P)>0,\qquad v(2I-M)>0.
+\end{equation}
+The diagonal entries of $2I-P$ and $2I-M$ are positive integers at most $2$.
+Hence $P_{ii},M_{ii}\in\{0,1\}$. Both Z-matrices are nonsingular M-matrices,
+so all their principal minors are positive; this also follows by diagonal
+scaling using $v$.
+
+\begin{lemma}[Strong connectivity]\label{lem:strong}
+For every indecomposable datum in Definition~\ref{def:datum}, the directed
+graph with an arrow $i\to j$ when $i\ne j$ and $P_{ij}+M_{ij}>0$ is strongly
+connected. This assertion does not require finite type.
+\end{lemma}
+\begin{proof}
+Suppose a cut makes both $A_+$ and $A_-$ block lower triangular. Their
+constant terms are identity matrices. Thus $K=A_+^{-1}A_-$ exists over
+$\Q(z)$ and is regular at zero. The symplectic identity implies
+\[
+ K(z)=K(z^{-1})^{\mathsf T}.
+\]
+The block lower triangular matrix $K$ is therefore block diagonal.
+
+If a crossing block were nonzero, let $h>0$ be the smallest degree of
+an entry crossing the cut. The identity
+\[
+ K=I+A_+^{-1}(N_+-N_-)
+\]
+shows that the degree-$h$ crossing coefficient of $K$ equals the degree-$h$
+crossing coefficient of $N_+-N_-$. A term involving a nonconstant factor
+of $A_+^{-1}$ has larger degree, since a crossing factor already has degree
+at least $h$. Disjoint support makes this coefficient nonzero, a
+contradiction. A reducible support graph consequently has no edges between
+its strongly connected components, and the datum is decomposable.
+\end{proof}
+
+\begin{lemma}[Coefficient bound]\label{lem:bound}
+For an indecomposable finite-type datum, set
+$w_{ij}=\max(P_{ij},M_{ij})$ for $i\ne j$. Then
+\begin{align}
+ w_{ij}w_{ji}&<4,\label{eq:two-cycle}\\
+ w_{12}w_{23}w_{31}&<8,\qquad w_{13}w_{32}w_{21}<8.\label{eq:three-cycle}
+\end{align}
+In particular, $0\le P_{ij},M_{ij}\le7$ for $i\ne j$.
+\end{lemma}
+\begin{proof}
+For every nonzero $w_{ij}$, \eqref{eq:pm-positive} gives
+$w_{ij}v_i<2v_j$. Each arrow in a strongly connected three-vertex graph
+belongs to a simple directed cycle of length two or three. Multiplication
+along that cycle proves the displayed inequalities. The other factors in
+a nonzero cycle product are positive integers, giving the bound $7$.
+\end{proof}
+
+The program \code{enumerate_constants.py} exhausts the resulting finite
+set. It enumerates the six maxima $w_{ij}$, every ordered split
+$(P_{ij},M_{ij})$ with that maximum, and all $64$ choices of the diagonal
+entries. It imposes
+\[
+ (2I-P)(2I-M)^{\mathsf T}=(2I-M)(2I-P)^{\mathsf T},
+\]
+positive principal minors and exact simultaneous positivity. The counts are
+shown in Table~\ref{tab:counts}. The bounds restrict coefficient sums;
+no upper bound is imposed on the delays.
+
+\begin{table}[ht]
+\centering\small\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}p{0.79\linewidth}r@{}}
+\toprule
+Stage & Count\\\midrule
+Strongly connected maxima satisfying the cycle inequalities & 1,134\\
+Ordered off-diagonal splits & 1,474,290\\
+Labelled pairs after symplectic and principal-minor tests & 1,835\\
+Orbits under relabelling and sign exchange & 180\\
+Orbits satisfying simultaneous positivity & 180\\
+\bottomrule
+\end{tabular}
+\caption{The exhaustive constant-matrix reduction.}\label{tab:counts}
+\end{table}
+
+For the positivity test, the program considers the cone given by the nine
+weak inequalities $v\ge0$, $v(2I-P)\ge0$ and $v(2I-M)\ge0$. It is pointed
+because it lies in the nonnegative orthant. In dimension three its extreme
+rays arise from cross products of two constraint normals. Summing the
+admissible rays and testing the sum against the strict inequalities is an
+exact feasibility test. An explicit positive integer vector is saved for
+every retained pair.
+
+\section{All polynomial lifts, with unbounded delays}\label{sec:lifts}
+
+For each of the $180$ constant pairs, introduce an integer variable for
+every delay and for each unit of coefficient mass in every entry.
+Units of the same sign may have equal exponents, so coefficients greater
+than one are included. Exponents of opposite signs in the same entry must
+differ. Ordering exponents within each sign and entry removes duplicate
+labellings.
+
+For a matrix $F$ over $\Q(z)$, write $F^*(z)=F(z^{-1})^{\mathsf T}$.
+Each entry of $A_+A_-^*-A_-A_+^*$ expands as a difference of two finite
+multisets of Laurent monomials. Each exponent is an integral linear form
+in the delay and exponent variables. The polynomial identity is exactly
+equality of these exponent multisets.
+
+The solver equates multiplicities at every exponent appearing on the
+positive side. Equality of the total multiplicities follows from the
+constant-matrix identity. This encoding is exact even when monomials
+coalesce. The resulting formulas belong to linear integer arithmetic with
+Boolean combinations of equalities, with no delay or exponent cutoff.
+
+\begin{computation}\label{comp:lifts}
+Of the $180$ constant pairs, $164$ have no admissible polynomial lift.
+The remaining $16$ are the pairs in Section~\ref{sec:catalogue}. For each
+survivor, all admissible lifts lie in one three-dimensional rational linear
+subspace generated by its representative's exponent vector and the two
+relative species shifts in \eqref{eq:normal-form}.
+\end{computation}
+
+For each survivor, \code{classify_lift_spaces.py} pairs equal exponents
+in a satisfying solution. This matching gives a homogeneous rational
+linear subspace on which the entire Laurent identity holds. The program
+then asks whether an admissible solution exists outside that subspace.
+All sixteen answers are UNSAT, and each subspace has dimension exactly
+three. Its independent generators are the representative's exponent
+vector and the two shifts $s_1,s_2$.
+
+The verifier separately reduces every exponent modulo the row-reduced
+linear equations and checks equality of the resulting monomial multisets.
+Thus the symplectic identities hold symbolically throughout the families.
+It also replays all $164$ exclusion queries and all $16$ queries for a
+solution outside the family. The complete SMT-LIB2 formulas and their
+SHA-256 hashes are saved. Every replayed answer is UNSAT.
+
+This proves necessity in Theorem~\ref{thm:classification}: finite type
+implies one of $180$ constant pairs, and every admissible symplectic lift
+of such a pair belongs to one of the sixteen families.
+
+\section{Periodicity of the representatives and their families}\label{sec:periodicity}
+
+For a delay tuple $\symbf{r}$, the reconstructed exchange matrix has
+vertex set
+\[
+ R=\{(i,p):1\le i\le3,\ 0\le p<r_i\}.
+\]
+It is constructed from \cite[equation (2.2)]{MizunoRankTwo}. A time step
+mutates the three vertices $(i,0)$ and then relabels
+$(i,p)\mapsto(i,p-1\bmod r_i)$. The implementation checks skew-symmetry,
+commutativity of these mutations, return of the exchange matrix after
+every step, and inverse-step consistency.
+
+\begin{computation}\label{comp:reddening}
+Starting from the identity principal C-matrix, every representative
+reaches a negative permutation matrix in each time direction, at the
+lengths $h_+$ and $h_-$ in Table~\ref{tab:periods}. Exact integer mutation
+also gives the identity returns recorded in that table.
+\end{computation}
+
+The two-sided reddening criterion
+\cite[Proposition 2.7]{MizunoRankTwo} proves finite type for each
+representative in every semifield. The five examples in the earlier
+rank-two table and the sixth rank-two tadpole case reproduce the
+reddening lengths of the rank-two classification as controls.
+
+\begin{lemma}\label{lem:invariance}
+Finite type is invariant under the admissible transformations
+in \eqref{eq:normal-form}.
+\end{lemma}
+\begin{proof}
+For integral species shifts, the transformation is the bijection of
+solutions $Y'_i(u)=Y_i(u-s_i)$. Replacing $z$ by $z^m$, for a positive
+integer $m$, splits the system into $m$ independent residue classes of
+time. It therefore preserves finite type in both directions.
+
+For rational $\lambda,s_1,s_2$, choose a positive integer $L$ clearing
+their denominators. The transformed datum at $z^L$ is an integral
+species shift of the representative at $z^{L\lambda}$. Apply the integral
+argument to both sides.
+\end{proof}
+
+The exact reddening certificates and Lemma~\ref{lem:invariance} prove
+sufficiency in Theorem~\ref{thm:classification} for every admissible
+parameter value. Together with the constant-matrix reduction they also
+prove Corollary~\ref{cor:positivity}.
+
+\section{Change of slices and distinctness}\label{sec:slices}
+
+The sixteen constant pairs are distinct under relabelling and sign
+exchange. Specialization at $z=1$ is invariant under
+\eqref{eq:normal-form}, so its sixteen families do not overlap.
+
+For the slice equivalence of \cite[Section 3.1]{MizunoRankTwo}, integral
+time dilations repeat the same slice sequence. Species shifts change
+the placement of mutation events and the initial cut. They are connected
+by a straight path of admissible rational shifts, since the support
+inequalities define a convex domain. The event order changes only at
+coincident event times. Clearing denominators makes such a coincidence
+a simultaneous mutation in a valid T-datum, so the relevant exchange
+entry is zero and the mutations commute. Moving the initial cut rotates
+the cyclic sequence. Thus admissible rational rescalings and shifts
+give changes of slices.
+
+Distinctness is checked directly on the cyclic mutation sequences.
+For each representative, \code{slice_equivalence.py} follows one
+connected component through the cyclic permutation of components.
+The returning loop has three mutation events and a terminal vertex
+permutation. Each event roots one orbit of that permutation, and these
+three orbits cover the vertices. Ordering each orbit from its root gives
+a canonical vertex labelling. The three orbit lengths and the exchange
+matrix in this labelling encode the loop completely.
+
+The program exhausts cyclic rotations and adjacent commuting mutations
+until closure. For a loop encoded by $(B,(a,b,c),\pi)$, rotation gives
+\[
+ (\mu_aB,(b,c,\pi^{-1}a),\pi).
+\]
+Adjacent events can be exchanged when their exchange entry at that
+point vanishes. Sign exchange is $B\mapsto-B$, with the word and
+permutation unchanged. The sixteen resulting sets of canonical
+encodings are disjoint. The full minimal encoding, as well as its hash,
+is saved for every class.
+
+\clearpage
+\section{The sixteen representatives}\label{sec:catalogue}
+For each class, the constant matrices displayed below are
+$A_\pm(1)=B_\pm^{(k)}(1)=2I_3-N_\pm^{(k)}(1)$.
+They are unchanged by the admissible rescalings and species shifts in
+\eqref{eq:normal-form}; relabelling permutes their rows and columns,
+and sign exchange interchanges the pair.
+\input{rank3-catalogue.tex}
+
+\clearpage
+\appendix
+\section{Reproduction and certificate files}\label{app:reproduce}
+
+The classification programs and certificates are under
+\code{research/rank3/}. The checked runtime is Python 3.10.6,
+SymPy 1.14.0, NumPy 2.2.6 and Z3 5.1.0. Z3 is installed locally under
+the ignored \code{_deps/} directory.
+
+Run the following commands from the repository root:
+\begin{quote}\small\ttfamily
+python -m pip install --target research/rank3/\_deps\\
+\hspace*{1em}z3-solver==5.1.0.0\quad\normalfont(on the same command line)\ttfamily\\[3pt]
+python research/rank3/classify\_rank3.py\\
+python research/rank3/enumerate\_constants.py\\
+python research/rank3/solve\_lifts.py --timeout 2000\\
+\hspace*{1em}--optimize --dynamics\quad\normalfont(on the same command line)\ttfamily\\[3pt]
+python research/rank3/classify\_lift\_spaces.py\\
+python research/rank3/verify\_classification.py\\
+python research/rank3/slice\_equivalence.py
+\end{quote}
+
+A timeout is reported as UNKNOWN and cannot pass the verifier as an
+exclusion. The successful run has no UNKNOWN results. Table~\ref{tab:files}
+describes the certificate files.
+
+\begin{table}[ht]
+\centering\small\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}p{0.45\linewidth}p{0.50\linewidth}@{}}
+\toprule
+File & Content\\\midrule
+\code{constant_candidates.json} & All 180 constant pairs and positive vectors.\\
+\code{lift_feasibility.jsonl} & Solver outcomes, sixteen witnesses and periodicity certificates.\\
+\code{lift_spaces.json} & Exact row-reduced equations of all sixteen families.\\
+\code{verification.json} & The replayed UNSAT answers, query hashes and runtime versions.\\
+\code{smt_queries/} & All 180 unbounded SMT-LIB2 formulas.\\
+\code{slice_signatures.json} & Complete encodings distinguishing the slice classes.\\
+\bottomrule
+\end{tabular}
+\caption{Certificate files under \code{research/rank3/}.}\label{tab:files}
+\end{table}
+
+The earlier paper \cite[Table 3]{MizunoTData} gives seven rank-three
+examples. In their original order, they correspond to classes
+$1,16,13,10,2,4,7$ here. The other nine classes are additional to that
+table.
+
+\paragraph{Building this document.}
+The overview and matrix catalogue are generated directly from the
+verified JSON by \code{make_pdf_tables.py}. The source is
+\code{rank3-classification.tex}; the PDF is built with LuaLaTeX and
+\code{latexmk}. All matrix coefficients in the catalogue are generated
+from the exact witnesses.
+
+\begin{thebibliography}{9}
+\bibitem{MizunoRankTwo}
+Y.~Mizuno, \emph{Periodic Y-systems and Nahm sums: the rank 2 case},
+SIGMA \textbf{21} (2025), 094, 17 pp.
+\href{https://doi.org/10.3842/SIGMA.2025.094}{doi:10.3842/SIGMA.2025.094}.
+\href{https://arxiv.org/abs/2301.13239v2}{arXiv:2301.13239v2}.
+
+\bibitem{MizunoTData}
+Y.~Mizuno, \emph{Difference equations arising from cluster algebras},
+\href{https://arxiv.org/abs/1912.05710v2}{arXiv:1912.05710v2} (2020).
+\end{thebibliography}
+\end{document}

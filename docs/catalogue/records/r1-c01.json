@@ -1,0 +1,318 @@
+{
+  "schema_version": "2.0.0",
+  "id": "r1-c01",
+  "rank": 1,
+  "class_number": 1,
+  "constant_id": null,
+  "scope": {
+    "symmetrizer": "identity",
+    "leading_permutation": "identity",
+    "indecomposable": true
+  },
+  "index_base": 0,
+  "datum": {
+    "delays": [
+      1
+    ],
+    "N_plus": [
+      [
+        []
+      ]
+    ],
+    "N_minus": [
+      [
+        []
+      ]
+    ],
+    "A_plus_1": [
+      [
+        2
+      ]
+    ],
+    "A_minus_1": [
+      [
+        2
+      ]
+    ]
+  },
+  "family": {
+    "parameters": [
+      "lambda"
+    ],
+    "fixed_shift": {
+      "species": 0,
+      "value": "0"
+    },
+    "dimension": 1,
+    "rref": [],
+    "variable_names": [
+      "r0"
+    ],
+    "representative_values": [
+      1
+    ],
+    "coverage": {
+      "kind": "elementary-proof",
+      "reference": "research/catalogue/lower-ranks-proof.html",
+      "statement": "Scalar positivity, parity and reciprocity"
+    }
+  },
+  "periodicity": {
+    "time_coordinate": "displayed representative",
+    "h_plus": 1,
+    "h_minus": 1,
+    "labelled_period": 2,
+    "positive_negative_permutation": [
+      0
+    ],
+    "negative_negative_permutation": [
+      0
+    ]
+  },
+  "exchange": {
+    "vertices": [
+      [
+        0,
+        0
+      ]
+    ],
+    "B": [
+      [
+        0
+      ]
+    ],
+    "mutation_vertices": [
+      0
+    ],
+    "relabel_old_to_new": [
+      0
+    ]
+  },
+  "slice": {
+    "components": 1,
+    "vertices": 1,
+    "B": [
+      [
+        0
+      ]
+    ],
+    "mutation_word": [
+      0
+    ],
+    "relabel_old_to_new": [
+      0
+    ],
+    "canonical_signature": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "signature_sha256": "c4b6eb04efb3f42ec2e9d8f1c791e2af10bfb9916c70dc12dfd08762d17cfa37",
+    "signature_convention": "Labelled slice encoding; the literature theorem supplies distinctness."
+  },
+  "provenance": {
+    "source_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+    "verification_kind": "elementary proof and exact mutation check",
+    "sources": [
+      {
+        "path": "research/catalogue/lower_ranks.py",
+        "role": "exact lower-rank representatives and mutation certificates",
+        "sha256": "ff5c74fb0be3d765df5c3dc372831208876d2570537b85715e91944dfdd7cd96"
+      },
+      {
+        "path": "research/catalogue/lower-ranks-proof.html",
+        "role": "rank-one proof and rank-two literature reference",
+        "sha256": "70405502648decbaa7de281917bec5a9f0155bf67fb8abf4625ce889ed319597"
+      }
+    ],
+    "manuscript": "research/catalogue/lower-ranks-proof.html",
+    "pdf": null,
+    "query_path": null,
+    "query_member": null,
+    "classification_reference": "research/catalogue/lower-ranks-proof.html",
+    "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+    "enrichment_sources": [
+      {
+        "path": "research/catalogue/spectral-data.json",
+        "role": "certified exponent multiplicities and exact matrix ratios",
+        "sha256": "fb64bd1cab92b318556018e560026f65924e42310880cb4c2785a01474cf263b"
+      },
+      {
+        "path": "research/catalogue/family-notes.json",
+        "role": "named family matches",
+        "sha256": "8082d2f552a687182b9013eeef3a3154abd2026cc12df3b20d8a7a25f94553e1"
+      },
+      {
+        "path": "research/catalogue/quiver-data.json",
+        "role": "quiver mutation-class certificates",
+        "sha256": "f96488a43d2a8535d8a9d4794a0019327f373506e41c350d02a4af4342b08489"
+      },
+      {
+        "path": "research/catalogue/enrichment-verification.json",
+        "role": "independent exact-path replay and interval Jacobian verification",
+        "sha256": "cbef6493121b1053343bcbd3712cf73459c0619d37c45eb06e65660f5374cc01"
+      },
+      {
+        "path": "research/catalogue/sources/mizuno-thesis.pdf",
+        "role": "Mizuno thesis, equations (3.2.1), (3.4.1) and Definition 3.4.4",
+        "sha256": "7f323701bc113c469d041159ebb150ca6f683d9079d87ad5b3c1455fb10b88cb"
+      }
+    ]
+  },
+  "matrix_ratios": {
+    "A_plus_inverse_A_minus": [
+      [
+        "1"
+      ]
+    ],
+    "A_minus_inverse_A_plus": [
+      [
+        "1"
+      ]
+    ]
+  },
+  "exponents": {
+    "status": "certified using interval arithmetic and recorded periodicity",
+    "source": "https://yuma-mizuno.github.io/thesis.pdf#page=56",
+    "formula": "bar_tau(z) = det(A_plus(z) diag(1-f) + A_minus(z) diag(f)); tau(z) = bar_tau(z^(1/t))",
+    "fixed_point_equation": "log(f) = (A_plus(1)^(-1) A_minus(1)) log(1-f)",
+    "cartan_like_centering_shifts": [
+      "0"
+    ],
+    "centering_integer_dilation": 1,
+    "components": 1,
+    "representative_period": 2,
+    "root_order": 2,
+    "degree": 1,
+    "values": [
+      1
+    ],
+    "multiplicities": [
+      {
+        "m": 1,
+        "multiplicity": 1
+      }
+    ],
+    "fixed_point_decimal": [
+      "0.500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    "tau_coefficients_decimal": [
+      "1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    "tau_exact_cyclotomic_coefficients": [
+      "1",
+      "1"
+    ],
+    "cyclotomic_generator": "zeta2 = exp(2*pi*i/2)",
+    "certificate": {
+      "fixed_point_box": {
+        "method": "Krawczyk strict interior inclusion",
+        "center_decimal": [
+          "0.5"
+        ],
+        "radius": "2^-350",
+        "arithmetic_bits": 512,
+        "maximum_image_radius": "2.61041925592007236015183786041202684308176503711014241299503141662219743477454140672766121164014973117652906113954263550869445483332885593117015769035723e-154"
+      },
+      "multiplicity_bounds": [
+        {
+          "m": 0,
+          "multiplicity": 0,
+          "real_lower": "0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "real_upper": "-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "imag_lower": "0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "imag_upper": "-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "m": 1,
+          "multiplicity": 1,
+          "real_lower": "1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "real_upper": "1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "imag_lower": "0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "imag_upper": "-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "method": "Interval Newton sums and discrete Fourier inversion on the exact period grid",
+      "dependency": "Thesis Theorem 3.4.5 and the record’s universal periodicity certificate guarantee integral multiplicities."
+    },
+    "plot_path": "research/catalogue/plots/r1-c01.svg"
+  },
+  "verification": {
+    "matrix_ratios": "exact",
+    "mutation_class_path": "exact replay",
+    "jacobian_spectrum": "independent interval-certified match"
+  },
+  "notes": {
+    "family": {
+      "identifications": [
+        {
+          "label": "Reduced sine-Gordon RSG(3)",
+          "category": "RSG",
+          "parameters": [
+            3
+          ],
+          "reference": "https://arxiv.org/abs/1212.6853",
+          "source": "research/catalogue/sources/rsg_constructor_snapshot.py",
+          "status": "exact-polynomial-match",
+          "transformation": {
+            "direction": "named constructor to displayed representative",
+            "sign_exchange": false,
+            "permutation": [
+              0
+            ],
+            "lambda": "1/2",
+            "shifts": [
+              "0"
+            ]
+          }
+        },
+        {
+          "label": "Zamolodchikov (A1, A1)",
+          "category": "Zamolodchikov",
+          "parameters": [
+            "A1",
+            "A1"
+          ],
+          "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+          "status": "exact-polynomial-match",
+          "transformation": {
+            "direction": "named constructor to displayed representative",
+            "sign_exchange": false,
+            "permutation": [
+              0
+            ],
+            "lambda": "1/2",
+            "shifts": [
+              "0"
+            ]
+          }
+        }
+      ],
+      "status": "identified",
+      "search_scope": "Exact affine-gauge matching against RSG lists of this rank, the rank-at-most-four SG constructors, ADE/tadpole tensor pairs and the seven rank-three examples in Mizuno’s Table 2; also checked for the commuting Cartan construction. Absence of a match is not a claim of novelty.",
+      "parameter_convention": "RSG parameters are in generation order in the saved constructor. This reverses the continued-fraction list in Remark 1.7: RSG(3, 1) corresponds to 3/4 = [1,3], and RSG(2, 1, 1) to 3/5 = [1,1,2]."
+    },
+    "quiver": {
+      "software": "SageMath 10.8",
+      "recognition": "['A', 1]",
+      "vertices": 1,
+      "scope": "one connected component of the representative exchange quiver; this class does not specify its mutation loop",
+      "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html#sage.combinat.cluster_algebra_quiver.quiver.ClusterQuiver.mutation_type",
+      "status": "certified-dynkin",
+      "label": "A1",
+      "mutation_finite": true,
+      "cluster_finite": true,
+      "certificate": {
+        "mutation_path": [],
+        "target_B": [
+          [
+            0
+          ]
+        ],
+        "target_graph": "A1"
+      }
+    }
+  }
+}

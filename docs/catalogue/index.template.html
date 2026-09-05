@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="An offline catalogue of finite T-data in ranks one through four, with exact matrices, named families, quiver classes and certified exponent plots.">
+<title>Finite T-data · Interactive catalogue</title>
+<style>/*__CSS__*/</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to datum</a>
+<header class="masthead"><a class="brand" href="#r4-c01/matrices"><span class="brand-symbol">T</span><span>Finite T-data<small>Interactive research catalogue</small></span></a><div class="header-actions"><span class="scope">D = I · diagonal N₀</span><button id="download-all">Export catalogue</button></div></header>
+<div class="layout">
+<aside class="sidebar" aria-label="Catalogue navigator">
+  <div class="sidebar-head"><h1>Catalogue</h1><span id="total" class="count"></span></div>
+  <div class="rank-picker" role="group" aria-label="Rank"><button data-rank="4" aria-pressed="true">Rank 4 <span>37</span></button><button data-rank="3" aria-pressed="false">Rank 3 <span>16</span></button><button data-rank="2" aria-pressed="false">Rank 2 <span>6</span></button><button data-rank="1" aria-pressed="false">Rank 1 <span>2</span></button><button data-rank="all" aria-pressed="false">All ranks</button></div>
+  <label class="field">Find a datum<input id="search" type="search" placeholder="Class, ID, period, delay…" autocomplete="off"></label>
+  <div class="filter-grid"><label class="field">Order by<select id="sort"><option value="class">Class number</option><option value="period">Period</option><option value="size">Slice size</option><option value="delay">Total delay</option></select></label><label class="field">Form<select id="form"><option value="all">All representatives</option><option value="degree2">All delays = 2</option></select></label></div>
+  <div class="filter-grid"><label class="field">Family<select id="family-filter"><option value="all">All families</option><option value="RSG">RSG</option><option value="SG">Sine-Gordon</option><option value="Zamolodchikov">Zamolodchikov</option><option value="Commuting Cartan">Commuting Cartan</option><option value="Literature example">Literature example</option><option value="unidentified">Unidentified</option></select></label><label class="field">Quiver class<select id="quiver-filter"><option value="all">All classes</option><option value="certified-dynkin">Dynkin</option><option value="certified-exceptional">Exceptional</option><option value="certified-surface">Surface</option><option value="certified-mutation-infinite">Mutation-infinite</option></select></label></div>
+  <p class="list-legend"><span id="result-count"></span><span>Period / slice size</span></p>
+  <nav id="record-list" aria-label="Data records"></nav>
+  <div class="sidebar-foot"><span class="small-label">Record structure</span><p>Exact coefficients, family equations, periodicity and source hashes.</p><a href="record.schema.json">JSON schema ↗</a></div>
+</aside>
+<main id="main" tabindex="-1">
+  <div id="record-header"></div>
+  <nav class="tabs" role="tablist" aria-label="Datum views">
+    <button id="tab-matrices" role="tab" aria-controls="panel-matrices" data-tab="matrices" aria-selected="true">Matrices</button>
+    <button id="tab-notes" role="tab" aria-controls="panel-notes" data-tab="notes" aria-selected="false">Notes</button>
+    <button id="tab-exponents" role="tab" aria-controls="panel-exponents" data-tab="exponents" aria-selected="false">Exponents</button>
+    <button id="tab-family" role="tab" aria-controls="panel-family" data-tab="family" aria-selected="false">Admissible lifts</button>
+    <button id="tab-mutation" role="tab" aria-controls="panel-mutation" data-tab="mutation" aria-selected="false">Mutation loop</button>
+    <button id="tab-evidence" role="tab" aria-controls="panel-evidence" data-tab="evidence" aria-selected="false">Certificates</button>
+    <button id="tab-proof" role="tab" aria-controls="panel-proof" data-tab="proof" aria-selected="false">Classification</button>
+  </nav>
+  <section id="panel-matrices" class="panel" role="tabpanel" aria-labelledby="tab-matrices"></section>
+  <section id="panel-notes" class="panel" role="tabpanel" aria-labelledby="tab-notes" hidden></section>
+  <section id="panel-exponents" class="panel" role="tabpanel" aria-labelledby="tab-exponents" hidden></section>
+  <section id="panel-family" class="panel" role="tabpanel" aria-labelledby="tab-family" hidden></section>
+  <section id="panel-mutation" class="panel" role="tabpanel" aria-labelledby="tab-mutation" hidden></section>
+  <section id="panel-evidence" class="panel" role="tabpanel" aria-labelledby="tab-evidence" hidden></section>
+  <section id="panel-proof" class="panel" role="tabpanel" aria-labelledby="tab-proof" hidden></section>
+  <footer class="document-foot"><span id="source-version"></span><span>Exact records · available offline</span></footer>
+</main>
+</div>
+<div id="notice" class="notice" role="status" aria-live="polite"></div>
+<noscript><p class="noscript">This interactive reader needs JavaScript. The structured records are also available in <a href="catalogue.json">catalogue.json</a>.</p></noscript>
+<script id="catalogue-data" type="application/json">/*__DATA__*/</script>
+<script>/*__CORE__*/</script>
+<script>/*__APP__*/</script>
+</body></html>
