@@ -9,7 +9,7 @@
     "sign exchange"
   ],
   "scope": "Identity symmetrizer and diagonal N0; indecomposable data of ranks 1 through 4.",
-  "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+  "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
   "records": [
     {
       "schema_version": "2.0.0",
@@ -125,7 +125,7 @@
         "signature_convention": "Labelled slice encoding; the literature theorem supplies distinctness."
       },
       "provenance": {
-        "source_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "elementary proof and exact mutation check",
         "sources": [
           {
@@ -144,7 +144,7 @@
         "query_path": null,
         "query_member": null,
         "classification_reference": "research/catalogue/lower-ranks-proof.html",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -477,7 +477,7 @@
         "signature_convention": "Labelled slice encoding; the literature theorem supplies distinctness."
       },
       "provenance": {
-        "source_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "elementary proof and exact mutation check",
         "sources": [
           {
@@ -496,7 +496,7 @@
         "query_path": null,
         "query_member": null,
         "classification_reference": "research/catalogue/lower-ranks-proof.html",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -945,7 +945,7 @@
         "signature_convention": "Labelled slice encoding; the literature theorem supplies distinctness."
       },
       "provenance": {
-        "source_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "literature and exact mutation check",
         "sources": [
           {
@@ -964,7 +964,7 @@
         "query_path": null,
         "query_member": null,
         "classification_reference": "https://arxiv.org/html/2301.13239v2#S1.T1",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -1583,7 +1583,7 @@
         "signature_convention": "Labelled slice encoding; the literature theorem supplies distinctness."
       },
       "provenance": {
-        "source_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "literature and exact mutation check",
         "sources": [
           {
@@ -1602,7 +1602,7 @@
         "query_path": null,
         "query_member": null,
         "classification_reference": "https://arxiv.org/html/2301.13239v2#S1.T1",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -2444,7 +2444,7 @@
         "signature_convention": "Labelled slice encoding; the literature theorem supplies distinctness."
       },
       "provenance": {
-        "source_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "literature and exact mutation check",
         "sources": [
           {
@@ -2463,7 +2463,7 @@
         "query_path": null,
         "query_member": null,
         "classification_reference": "https://arxiv.org/html/2301.13239v2#S1.T1",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -3088,7 +3088,7 @@
         "signature_convention": "Labelled slice encoding; the literature theorem supplies distinctness."
       },
       "provenance": {
-        "source_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "literature and exact mutation check",
         "sources": [
           {
@@ -3107,7 +3107,7 @@
         "query_path": null,
         "query_member": null,
         "classification_reference": "https://arxiv.org/html/2301.13239v2#S1.T1",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -3747,7 +3747,7 @@
         "signature_convention": "Labelled slice encoding; the literature theorem supplies distinctness."
       },
       "provenance": {
-        "source_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "literature and exact mutation check",
         "sources": [
           {
@@ -3766,7 +3766,7 @@
         "query_path": null,
         "query_member": null,
         "classification_reference": "https://arxiv.org/html/2301.13239v2#S1.T1",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -4330,7 +4330,7 @@
         "signature_convention": "Labelled slice encoding; the literature theorem supplies distinctness."
       },
       "provenance": {
-        "source_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "literature and exact mutation check",
         "sources": [
           {
@@ -4349,7 +4349,7 @@
         "query_path": null,
         "query_member": null,
         "classification_reference": "https://arxiv.org/html/2301.13239v2#S1.T1",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -4987,7 +4987,7 @@
         "signature_sha256": "ecbedc2647cb5e9ba73f1c62bd99e470decf6eccc560efadcc84a4c3b48c2dbd"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -5020,7 +5020,7 @@
         "pdf": "output/pdf/rank3-classification.pdf",
         "query_path": "research/rank3/smt_queries/001_no_lift_outside_family.smt2",
         "query_member": "001_no_lift_outside_family.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -5779,7 +5779,7 @@
         "signature_sha256": "4e5742a81ad081493d5b6294ac0fc8096f3dfabec916bc9d5ab022f73a0c9995"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -5812,7 +5812,7 @@
         "pdf": "output/pdf/rank3-classification.pdf",
         "query_path": "research/rank3/smt_queries/002_no_lift_outside_family.smt2",
         "query_member": "002_no_lift_outside_family.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -6755,7 +6755,7 @@
         "signature_sha256": "bff6c8b12fc96afd6e012d3ff05f3f2992330c910bda9892ffa40eaac13fe347"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -6788,7 +6788,7 @@
         "pdf": "output/pdf/rank3-classification.pdf",
         "query_path": "research/rank3/smt_queries/003_no_lift_outside_family.smt2",
         "query_member": "003_no_lift_outside_family.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -7897,7 +7897,7 @@
         "signature_sha256": "d8960bb15eeda7ad3ef41f5b5c7278f370ffcef191f023f60967c226d6cadce7"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -7930,7 +7930,7 @@
         "pdf": "output/pdf/rank3-classification.pdf",
         "query_path": "research/rank3/smt_queries/004_no_lift_outside_family.smt2",
         "query_member": "004_no_lift_outside_family.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -9008,7 +9008,7 @@
         "signature_sha256": "9fed26fbb466b88515a1050e27fecb1b7a6b0195639abefe0ee871479ebc0925"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -9041,7 +9041,7 @@
         "pdf": "output/pdf/rank3-classification.pdf",
         "query_path": "research/rank3/smt_queries/013_no_lift_outside_family.smt2",
         "query_member": "013_no_lift_outside_family.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -10414,7 +10414,7 @@
         "signature_sha256": "c58e785276bf8967353223a25f6b999423ee929a0aa04f1d248058f9df3933ff"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -10447,7 +10447,7 @@
         "pdf": "output/pdf/rank3-classification.pdf",
         "query_path": "research/rank3/smt_queries/015_no_lift_outside_family.smt2",
         "query_member": "015_no_lift_outside_family.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -11563,7 +11563,7 @@
         "signature_sha256": "7916efbd114448e903d5bb4397b1bd8b477a2bd7031e1e3c35aff8db929d82e1"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -11596,7 +11596,7 @@
         "pdf": "output/pdf/rank3-classification.pdf",
         "query_path": "research/rank3/smt_queries/021_no_lift_outside_family.smt2",
         "query_member": "021_no_lift_outside_family.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -12923,7 +12923,7 @@
         "signature_sha256": "9cc7a437df264f1fb9a78f150791be3bc3e5a472408d9363ed36f3382e4dcdbd"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -12956,7 +12956,7 @@
         "pdf": "output/pdf/rank3-classification.pdf",
         "query_path": "research/rank3/smt_queries/022_no_lift_outside_family.smt2",
         "query_member": "022_no_lift_outside_family.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -14096,7 +14096,7 @@
         "signature_sha256": "ec5b3c5cd5f1bb51abb1b3cede9bb862adf2140ca1e9dbc4810d30feebc3e35b"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -14129,7 +14129,7 @@
         "pdf": "output/pdf/rank3-classification.pdf",
         "query_path": "research/rank3/smt_queries/023_no_lift_outside_family.smt2",
         "query_member": "023_no_lift_outside_family.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -15501,7 +15501,7 @@
         "signature_sha256": "158b685631166cbcd0568e5721dd8c4d3cdef00a27deab53c769a918bc8952b9"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -15534,7 +15534,7 @@
         "pdf": "output/pdf/rank3-classification.pdf",
         "query_path": "research/rank3/smt_queries/024_no_lift_outside_family.smt2",
         "query_member": "024_no_lift_outside_family.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -16611,7 +16611,7 @@
         "signature_sha256": "0a6a4dce1c23c85b49db7de00517139da941c29b635db4ce2012a5ca54f82db4"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -16644,7 +16644,7 @@
         "pdf": "output/pdf/rank3-classification.pdf",
         "query_path": "research/rank3/smt_queries/034_no_lift_outside_family.smt2",
         "query_member": "034_no_lift_outside_family.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -17943,7 +17943,7 @@
         "signature_sha256": "d978627bb01d2a9d2e1bb04f3ce0579c63872af70608e06244ea969a59523edc"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -17976,7 +17976,7 @@
         "pdf": "output/pdf/rank3-classification.pdf",
         "query_path": "research/rank3/smt_queries/038_no_lift_outside_family.smt2",
         "query_member": "038_no_lift_outside_family.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -18917,7 +18917,7 @@
         "signature_sha256": "ca9200c43490ff1846a31c89a9d83c917da1dc2b1b95a27dd7ea53191cc806ff"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -18950,7 +18950,7 @@
         "pdf": "output/pdf/rank3-classification.pdf",
         "query_path": "research/rank3/smt_queries/047_no_lift_outside_family.smt2",
         "query_member": "047_no_lift_outside_family.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -20841,7 +20841,7 @@
         "signature_sha256": "5d1d0ba1fd36efffbafc583d8066d8b90c9fb46572cc9c7756d2040685b3857e"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -20874,7 +20874,7 @@
         "pdf": "output/pdf/rank3-classification.pdf",
         "query_path": "research/rank3/smt_queries/068_no_lift_outside_family.smt2",
         "query_member": "068_no_lift_outside_family.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -22064,7 +22064,7 @@
         "signature_sha256": "2f5fcb1298d5b7ae488cba1f34bdb6c356a19a93844eae4fc7697824d2e8bb48"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -22097,7 +22097,7 @@
         "pdf": "output/pdf/rank3-classification.pdf",
         "query_path": "research/rank3/smt_queries/074_no_lift_outside_family.smt2",
         "query_member": "074_no_lift_outside_family.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -22867,7 +22867,7 @@
         "signature_sha256": "c5f55a580d73029de15e9989fe21e6a9ebff8c53934c1270fc84447717cb5c45"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -22900,7 +22900,7 @@
         "pdf": "output/pdf/rank3-classification.pdf",
         "query_path": "research/rank3/smt_queries/075_no_lift_outside_family.smt2",
         "query_member": "075_no_lift_outside_family.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -23806,7 +23806,7 @@
         "signature_sha256": "42a8ba7e50e2c50f17a70437aab01922161111d6f4a98f950b69af05ae393122"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -23839,7 +23839,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0001_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -24646,7 +24646,7 @@
         "signature_sha256": "4cd63f74df16458a3d2a989b0472656c923a8b725461678c774982aa651798cd"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -24679,7 +24679,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0002_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -25649,7 +25649,7 @@
         "signature_sha256": "61d0552f4a0f03f515e6c74bf2381f010e1f91c966a56a5252bd7f0c94690b70"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -25682,7 +25682,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0003_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -27003,7 +27003,7 @@
         "signature_sha256": "13adb004cce966a6036ac0e06e96d6e56a774c88e5afa232842168363a9aeac7"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -27036,7 +27036,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0004_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -28751,7 +28751,7 @@
         "signature_sha256": "a2f013690f1c71b72b8d79172eb19905c4910f3e33fbe6b7eaec1f603781f13c"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -28784,7 +28784,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0005_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -30667,7 +30667,7 @@
         "signature_sha256": "25ef7f00e3db1753a3e6c41c1cd0fd3dd497ce4c05c14be13c792164091c039c"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -30700,7 +30700,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0036_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -32448,7 +32448,7 @@
         "signature_sha256": "45e4cd5a388bb9956989d56e1975c93e50a4a1d969dfbf43adab6bbc0410189b"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -32481,7 +32481,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0046_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -34692,7 +34692,7 @@
         "signature_sha256": "16b2fc405e7d4fe4a0ef2cb418beeb471a5b18ac220e7228b7df3edb86039322"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -34725,7 +34725,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0047_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -36588,7 +36588,7 @@
         "signature_sha256": "84e4d5331af3693914999a880d883a57e18f618e999cdad6e2e809a5a183ae20"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -36621,7 +36621,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0048_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -38790,7 +38790,7 @@
         "signature_sha256": "ad0ec9e3fd85080cae6d5fc8e623fa7c671d955685ec3a855e294e8ee0ed10be"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -38823,7 +38823,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0056_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -40820,7 +40820,7 @@
         "signature_sha256": "620fe2a4f5ffbd84b6f9be0e59b857c8ed4002d1d607b59b22ed3909c555f4e8"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -40853,7 +40853,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0057_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -43108,7 +43108,7 @@
         "signature_sha256": "eab39c17ee502c0470b7445af88213996b85a8174a32353e23a08ff87273ec88"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -43141,7 +43141,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0058_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -44369,7 +44369,7 @@
         "signature_sha256": "38c8c6b589538d8cca22784c110a8626bca099c1892a308c56703b1e3365c204"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -44402,7 +44402,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0065_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -45803,7 +45803,7 @@
         "signature_sha256": "b302202b96a5bb36c8737d9f7cd03040061f98e1bdc9a883c5cba3205d64133b"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -45836,7 +45836,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0079_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -47425,7 +47425,7 @@
         "signature_sha256": "cd638aa1bd60e889921e60238c3a2e68f9c246ad918123622321ede08fca71e5"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -47458,7 +47458,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0082_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -48897,7 +48897,7 @@
         "signature_sha256": "ecf1100bd9e84e51bb6fdfc4e46846b90a6874ec9ef69fcc7607c58b2d648d15"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -48930,7 +48930,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0122_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -50772,7 +50772,7 @@
         "signature_sha256": "7ccc5fefa2d80bc012d00755e8906b711e5ca7b1289003d09fca7f63e72aa5f3"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -50805,7 +50805,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0136_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -53531,7 +53531,7 @@
         "signature_sha256": "2fa3de96f42b71a2904db898b32faa81af2df6eb8066304da8a1d50ca8c9f3ed"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -53564,7 +53564,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0207_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -56905,7 +56905,7 @@
         "signature_sha256": "135ff3c81d67c194d77f875c935ef9747b58b5a2e7f3b8b8ab2798bd8ad42ead"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -56938,7 +56938,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0413_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -59076,7 +59076,7 @@
         "signature_sha256": "73737046a52a374ad875b6be156d91e94f27f00c3993838440e442747a1a8b70"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -59109,7 +59109,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0432_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -61576,7 +61576,7 @@
         "signature_sha256": "6975e65672d98fffa8d5fb7f38dc9ab1c652f6b96bac1b9abfbedadbdf9bd08d"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -61609,7 +61609,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0436_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -63735,7 +63735,7 @@
         "signature_sha256": "40def147b8475e80fc151f4726cbf7fd534daa0a3751e780a00bea401415d872"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -63768,7 +63768,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0437_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -66577,7 +66577,7 @@
         "signature_sha256": "0061c3303dcc53f66f806d794b508215f602a1fbac982f2d9b261b20a26a6083"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -66610,7 +66610,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0453_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -68711,7 +68711,7 @@
         "signature_sha256": "5d102e50a9feee4d9a9bac2d3730926ffd80d6ebf612b2e77017f5d060fa549f"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -68744,7 +68744,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0456_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -71161,7 +71161,7 @@
         "signature_sha256": "d6bff16953fb5365154dccd84dce94833b2ef8684f4c9038d7876dc43679e7ad"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -71194,7 +71194,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0469_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -74960,7 +74960,7 @@
         "signature_sha256": "afff3f18f7049f4d6f1eb605271184057c08a69ba63b332069b4dc03ab70e64b"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -74993,7 +74993,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "0949_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -76740,7 +76740,7 @@
         "signature_sha256": "01be205be74d35d69d388b60b1a106984ba825539438e5451c23fc2c1aa799fe"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -76773,7 +76773,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "1262_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -77945,7 +77945,7 @@
         "signature_sha256": "b68f3f53ee36ed6908886ea63382eb1bee298ddf8cf9d9fc557f513142f80f5a"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -77978,7 +77978,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "1493_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -79178,7 +79178,7 @@
         "signature_sha256": "c3be5cf3787016e526dbc9f8cdbc06fa779a7bcfbb3c1f7a6de797dcbd532ff6"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -79211,7 +79211,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "1494_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -80188,7 +80188,7 @@
         "signature_sha256": "3cb3dd57a37900d7aafc690f0b6b364266595240f0dd40e1eb0da9f4a80585fd"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -80221,7 +80221,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "1834_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -81244,7 +81244,7 @@
         "signature_sha256": "0718a3b4f7f6b8288ca5f915e729a2685e5ba7ff08b50b1a7a393af2069fe392"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -81277,7 +81277,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "1836_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -82598,7 +82598,7 @@
         "signature_sha256": "58e97d53735e73836f6c24966e6fe3f71879fbcc1770942d5fc993993f418df3"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -82631,7 +82631,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "1844_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -84274,7 +84274,7 @@
         "signature_sha256": "11b610a68f650d8852efff7c1a6bf7ed46d1d90151fb7c382a7604d36e0369dc"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -84307,7 +84307,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "1848_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -85553,7 +85553,7 @@
         "signature_sha256": "c3f93e260c6649a9496250e6a504ad7255cfee2394af270d102a14445ddf2101"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -85586,7 +85586,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "1852_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -86781,7 +86781,7 @@
         "signature_sha256": "241f1f503b3363dfff3eed5f1694a46776904a2773ddfc2121a8f2de6d849589"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -86814,7 +86814,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "1853_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -88144,7 +88144,7 @@
         "signature_sha256": "0c773d45ae1393671aee7d8a25635475ec7981db5feae2fb969a9faa7a45416f"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -88177,7 +88177,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "1902_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",
@@ -89983,7 +89983,7 @@
         "signature_sha256": "0b74fbcc6e136c5b382757779169b8ab706d577228aca6cca53e9965563b0915"
       },
       "provenance": {
-        "source_commit": "a8bf0579d7a3e05566589449ac8b01bd0eabe8d1",
+        "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "verification_kind": "computer-assisted",
         "sources": [
           {
@@ -90016,7 +90016,7 @@
         "pdf": "output/pdf/rank4-classification.pdf",
         "query_path": "research/rank4/smt_queries.zip",
         "query_member": "2614_coverage.smt2",
-        "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+        "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
         "enrichment_sources": [
           {
             "path": "research/catalogue/spectral-data.json",

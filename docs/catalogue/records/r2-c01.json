@@ -218,7 +218,7 @@
     "signature_convention": "Labelled slice encoding; the literature theorem supplies distinctness."
   },
   "provenance": {
-    "source_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+    "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
     "verification_kind": "literature and exact mutation check",
     "sources": [
       {
@@ -237,7 +237,7 @@
     "query_path": null,
     "query_member": null,
     "classification_reference": "https://arxiv.org/html/2301.13239v2#S1.T1",
-    "enrichment_commit": "908a69aa4cb14661d3b2cc82ed272aa3129365a0",
+    "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
     "enrichment_sources": [
       {
         "path": "research/catalogue/spectral-data.json",
