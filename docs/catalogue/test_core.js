@@ -4,9 +4,10 @@ const C=require('./core.js'),data=JSON.parse(fs.readFileSync(path.join(__dirname
 const frozen=JSON.stringify(data);
 const strMatrix=a=>a.map(row=>row.map(terms=>terms.map(([c,p])=>[c,String(p)])));
 const isPermutation=p=>assert.deepEqual([...p].sort((a,b)=>a-b),p.map((_,i)=>i));
-assert.equal(data.records.length,61);
-assert.equal(new Set(data.records.map(r=>r.id)).size,61);
+assert.equal(data.records.length,116);
+assert.equal(new Set(data.records.map(r=>r.id)).size,116);
 assert.deepEqual([1,2,3,4].map(rank=>data.records.filter(r=>r.rank===rank).length),[2,6,16,37]);
+assert.equal(data.records.filter(r=>r.rank===5).length,55);
 for(const r of data.records){
   const d=r.datum;
   assert.equal(d.delays.length,r.rank);
@@ -54,4 +55,4 @@ assert(C.transform(r,'9007199254740993',['0','0','0']).valid);
 assert.equal(C.latexPolynomial([[1,2],[-1,1],[1,0]]),'z^{2} - z + 1');
 assert.deepEqual(data.records.filter(r=>r.rank===4&&r.datum.delays.every(x=>x===2)).map(r=>r.class_number),[1,2,3,28,29,30,31,34,35]);
 assert.equal(JSON.stringify(data),frozen,'The reader must not mutate the source records.');
-console.log('PASS: 61 exact records; specializations, admissible lifts, RREF witnesses, slice loops, permutations and arithmetic edge cases.');
+console.log(`PASS: ${data.records.length} exact records; specializations, admissible lifts, RREF witnesses, slice loops, permutations and arithmetic edge cases.`);

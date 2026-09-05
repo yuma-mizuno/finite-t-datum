@@ -18,8 +18,8 @@ const url=pathToFileURL(path.join(root,'index.html')).href;
     await page.selectOption('#form','degree2');assert.equal(await page.locator('.record-link').count(),9);
     await page.click('[data-rank="3"]');await page.waitForFunction(()=>document.querySelector('#record-header .eyebrow').textContent.endsWith('r3-c01'));
     assert.equal(await page.locator('.record-link').count(),16);
-    await page.click('[data-rank="all"]');assert.equal(await page.locator('.record-link').count(),61);
-    for(const [rank,count] of [[1,2],[2,6]]){
+    await page.click('[data-rank="all"]');assert.equal(await page.locator('.record-link').count(),data.records.length);
+    for(const [rank,count] of [[1,2],[2,6],[5,55]]){
       await page.click(`[data-rank="${rank}"]`);
       await page.waitForFunction(rank=>document.querySelector('#record-header .eyebrow').textContent.startsWith('Rank '+rank),rank);
       assert.equal(await page.locator('.record-link').count(),count);
@@ -30,7 +30,7 @@ const url=pathToFileURL(path.join(root,'index.html')).href;
       assert.equal(await page.locator('.record-link').count(),data.records.filter(r=>r.notes.family.identifications.some(x=>x.category===family)).length);
     }
     await page.selectOption('#family-filter','all');
-    await page.selectOption('#quiver-filter','certified-surface');assert.equal(await page.locator('.record-link').count(),3);
+    await page.selectOption('#quiver-filter','certified-surface');assert.equal(await page.locator('.record-link').count(),data.records.filter(r=>r.notes.quiver.status==='certified-surface').length);
     await page.selectOption('#quiver-filter','all');
     await page.fill('#search','r4-c19');assert.equal(await page.locator('.record-link').count(),1);
     await page.click('[data-record="r4-c19"]');await page.waitForFunction(()=>document.title.includes('Class 19'));
@@ -54,7 +54,7 @@ const url=pathToFileURL(path.join(root,'index.html')).href;
     assert.match(await page.locator('#panel-notes').textContent(),/RSG\(3, 1\)/);
     assert.match(await page.locator('#panel-notes').textContent(),/generation order/);
     await page.screenshot({path:path.join(qa,'rank2-family-notes.png'),fullPage:true});
-    for(const id of ['r1-c01','r2-c03','r3-c06','r4-c32','r4-c19']){
+    for(const id of ['r1-c01','r2-c03','r3-c06','r4-c32','r4-c19','r5-c16','r5-c31','r5-c54','r5-c16','r5-c31','r5-c54','r5-c16','r5-c31','r5-c54']){
       await route(id,'notes');await page.click('#replay-class');
       await page.waitForFunction(()=>document.querySelector('#tab-mutation').getAttribute('aria-selected')==='true');
       assert.equal(await page.locator('#mutation-mode').inputValue(),'certificate');
@@ -125,6 +125,6 @@ const url=pathToFileURL(path.join(root,'index.html')).href;
     await page.screenshot({path:path.join(qa,'mobile-exponents.png'),fullPage:true});
     assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
     assert.deepEqual(errors,[],'No browser exceptions');assert.deepEqual(requests,[],'No HTTP requests from the document');
-    console.log('PASS: offline browser; all 61 specializations, ratios and exponent tables; lower ranks, family/quiver filters, witness replay, multiplicities, exports, lifts, loop steps, keyboard tabs and mobile layout.');
+    console.log('PASS: offline browser; all 116 specializations, ratios and exponent tables; lower ranks, family/quiver filters, witness replay, multiplicities, exports, lifts, loop steps, keyboard tabs and mobile layout.');
   } finally {await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

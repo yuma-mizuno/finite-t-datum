@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import re
 import zipfile
+import gzip
 
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[1]
@@ -20,14 +21,15 @@ if jsonschema is not None:
     validator=jsonschema.Draft202012Validator(local_schema)
     validator.check_schema(local_schema)
     for record in data['records']:validator.validate(record)
-    print('PASS: JSON Schema draft 2020-12 validation for all 61 records.')
+    print(f'PASS: JSON Schema draft 2020-12 validation for all {len(data["records"])} records.')
 html=(HERE/'index.html').read_text(encoding='utf-8')
 embedded=re.search(r'<script id="catalogue-data" type="application/json">(.*?)</script>',html,re.S).group(1)
 assert json.loads(embedded)==data
 assert not re.search(r'<script[^>]+src=|<link[^>]+href=',html)
 assert not re.search(r'/\*__[A-Z]+__\*/',html)
 files=list((HERE/'records').glob('*.json'))
-assert len(files)==len(data['records'])==61
+assert len(files)==len(data['records'])
+assert [sum(r['rank']==rank for r in data['records']) for rank in (1,2,3,4,5)]==[2,6,16,37,55]
 hashes={}
 with zipfile.ZipFile(ROOT/'research/rank4/smt_queries.zip') as archive:
     archive_names=archive.namelist()
@@ -49,7 +51,11 @@ with zipfile.ZipFile(ROOT/'research/rank4/smt_queries.zip') as archive:
             names=[x for x in archive_names if x==member or x.endswith('/'+member)]
             assert len(names)==1,(member,names)
             query=archive.read(names[0])
+        elif r['rank']>=5:
+            with zipfile.ZipFile(ROOT/r['provenance']['query_path']) as higher_archive:
+                query=gzip.decompress(higher_archive.read(r['provenance']['query_member']))
         else:
             query=(ROOT/r['provenance']['query_path']).read_bytes()
+            if r['provenance']['query_path'].endswith('.gz'):query=gzip.decompress(query)
         assert hashlib.sha256(query).hexdigest()==r['family']['coverage']['sha256']
-print('PASS: 61 standalone records, embedded catalogue, source links and SHA-256 provenance, including every coverage query.')
+print(f'PASS: {len(files)} standalone records, embedded catalogue, source links and SHA-256 provenance, including every coverage query.')

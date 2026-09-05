@@ -6,7 +6,7 @@ renderer is needed. A fragment such as `#r4-c19/mutation` addresses a particular
 record and view. Keep it in this repository if you want the relative links to
 research sources and the optional print editions to work.
 
-The catalogue contains 2 rank-one, 6 rank-two, 16 rank-three and 37 rank-four
+The catalogue contains 2 rank-one, 6 rank-two, 16 rank-three, 37 rank-four and 55 rank-five
 indecomposable families, with identity symmetrizer and diagonal leading
 matrix. Rank two follows the six rows of Mizuno's published Table 1; the
 rank-one argument is included. The higher ranks retain their original class
@@ -22,7 +22,7 @@ numbers and constant IDs.
 - **Exponents:** Mizuno's thesis determinant formula, certified root-of-unity
   multiplicities, an interactive unit-disk plot, an exact table, a standalone
   SVG figure and an exportable interval certificate. A separate Jacobian
-  calculation independently checks all 61 spectra.
+  calculation independently checks all 116 spectra.
 - **Admissible lifts:** rational time rescaling and species shifts, checked
   with reduced BigInt fractions; export the transformed datum.
 - **Mutation loop:** step through the stored connected-slice mutation word
@@ -71,7 +71,7 @@ relabel operation from its exact integer exchange matrix.
 ## Regeneration and checks
 
 The source of truth is the committed JSON/JSONL under `research/rank3`,
-`research/rank4` and `research/catalogue`. Do not edit the generated records
+`research/rank4`, `research/catalogue` and `research/higher_rank/rank5`. Do not edit the generated records
 by hand. [Methods and conventions](../../research/catalogue/methods.html)
 explains the new certificates; the [research package](../../research/catalogue/README.md)
 gives their reproduction commands. The build uses
@@ -85,7 +85,7 @@ node docs/catalogue/test_core.js
 
 The builder verifies support, sign disjointness, the full symplectic identity
 and the constants at 1 using symbolic arithmetic. The tests check package
-consistency, source and query hashes, all 61 slice-loop returns, the RREF
+consistency, source and query hashes, all 116 slice-loop returns, the RREF
 witnesses, permutations, rational lift examples and arithmetic edge cases.
 Source provenance records the latest commit affecting the original research
 directories, with a separate enrichment commit and source hashes. A
@@ -99,3 +99,8 @@ For browser regression checks, install Playwright (or point `PLAYWRIGHT_MODULE`
 to an existing installation) and optionally set `BROWSER_EXECUTABLE` to Chrome
 or Edge. Run `node docs/catalogue/test_browser.js`. The test opens the document
 from disk with networking disabled and saves screenshots in ignored `.qa/`.
+
+Rank-five proof reductions and reproduction commands are in
+[the rank-five guide](../../research/higher_rank/rank5/README.md).
+Run `node docs/catalogue/test_rank5_browser.js` for the additional rank-five
+proof, source-link and mobile checks.

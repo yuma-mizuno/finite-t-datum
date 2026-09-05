@@ -1,0 +1,103 @@
+{
+  "family_source_sha256": "64ef2f5b669a44fc984ebd2c1dc7d7c1df65b842ee74b9ff9dd6fbe87ef034ba",
+  "slice": {
+    "components": 2,
+    "vertices": 6,
+    "B": [
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        -1,
+        -1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      1,
+      2,
+      4,
+      3
+    ],
+    "relabel_old_to_new": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      4
+    ],
+    "canonical_signature": {
+      "terminal_cycle_lengths": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "9d5984e1cc97e3206e929b486cf035b1b319ddd009216acc4334597a7f6cf98a",
+    "signature_convention": "Catalogue distinctness: terminal cycle lengths; exhaustive cyclic-loop minimum within repeated length classes.",
+    "id": 95,
+    "space_index": 0,
+    "equivalent_canonical_states_including_sign_exchange": null,
+    "distinctness": {
+      "terminal_cycle_lengths": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "records_with_same_lengths": [
+        [
+          95,
+          0
+        ]
+      ],
+      "method": "unique invariant terminal cycle lengths"
+    }
+  }
+}

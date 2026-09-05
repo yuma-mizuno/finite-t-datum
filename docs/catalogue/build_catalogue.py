@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 from pathlib import Path
 import subprocess
 
@@ -130,17 +131,27 @@ def main():
             [('spectral-data.json','certified exponent multiplicities and exact matrix ratios'),('family-notes.json','named family matches'),
              ('quiver-data.json','quiver mutation-class certificates'),('enrichment-verification.json','independent exact-path replay and interval Jacobian verification'),
              ('sources/mizuno-thesis.pdf','Mizuno thesis, equations (3.2.1), (3.4.1) and Definition 3.4.4')]]
+    higher=[]
+    for path in sorted((ROOT/'research/higher_rank').glob('rank*/catalogue-records.json')):
+        classification=json.loads((path.parent/'classification.json').read_text())
+        assert classification['complete'], path
+        extra=json.loads(path.read_text(encoding='utf8'))
+        assert len(extra)==classification['families']
+        records.extend(extra);higher.append(classification)
     records.sort(key=lambda x:(x['rank'],x['class_number']))
     dataset={'schema_version':'2.0.0','title':'Finite T-data catalogue',
              'polynomial_encoding':'Each entry is a list of [coefficient, exponent] pairs, with ascending exponents.',
              'equivalence':['admissible rational time rescaling','species shifts','simultaneous index permutations','sign exchange'],
-             'scope':'Identity symmetrizer and diagonal N0; indecomposable data of ranks 1 through 4.',
+             'scope':f'Identity symmetrizer and diagonal N0; indecomposable data of ranks 1 through {max(r["rank"] for r in records)}.',
+             'higher_rank_classifications':higher,
              'source_commit':commit,'records':records,'proofs':json.loads((HERE/'proofs.json').read_text(encoding='utf-8'))}
     (HERE/'records').mkdir(exist_ok=True)
     for record in records:
         (HERE/'records'/f'{record["id"]}.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
     (HERE/'catalogue.json').write_text(json.dumps(dataset,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
     html=(HERE/'index.template.html').read_text(encoding='utf-8')
+    buttons=''.join(f'<button data-rank="{rank}" aria-pressed="{str(rank==4).lower()}">Rank {rank} <span>{sum(r["rank"]==rank for r in records)}</span></button>' for rank in sorted({r['rank'] for r in records},reverse=True))
+    html=re.sub(r'(<div class="rank-picker"[^>]*>).*?(</div>)',lambda m:m[1]+buttons+'<button data-rank="all" aria-pressed="false">All ranks</button>'+m[2],html,count=1)
     for name,path in [('CSS','catalogue.css'),('CORE','core.js'),('APP','app.js')]:
         html=html.replace('/*__'+name+'__*/',(HERE/path).read_text(encoding='utf-8'))
     packed=json.dumps(dataset,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')

@@ -29,15 +29,11 @@
     },
     "id": {
       "type": "string",
-      "pattern": "^r[1-4]-c[0-9]{2}$"
+      "pattern": "^r[1-9][0-9]*-c[0-9]{2,}$"
     },
     "rank": {
-      "enum": [
-        1,
-        2,
-        3,
-        4
-      ]
+      "type": "integer",
+      "minimum": 1
     },
     "class_number": {
       "type": "integer",
@@ -116,12 +112,8 @@
       ],
       "properties": {
         "dimension": {
-          "enum": [
-            1,
-            2,
-            3,
-            4
-          ]
+          "type": "integer",
+          "minimum": 1
         },
         "rref": {
           "type": "array",
@@ -322,7 +314,7 @@
         },
         "plot_path": {
           "type": "string",
-          "pattern": "^research/catalogue/plots/r[1-4]-c[0-9]{2}\\.svg$"
+          "pattern": "^research/(catalogue|higher_rank/rank[1-9][0-9]*)/plots/r[1-9][0-9]*-c[0-9]{2,}\\.svg$"
         },
         "multiplicities": {
           "type": "array",

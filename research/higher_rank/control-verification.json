@@ -1,0 +1,8 @@
+{
+  "rank": 4,
+  "complete_upper_tasks": 120,
+  "expected_count": 460,
+  "actual_count": 460,
+  "exact_set_equality": true,
+  "enumeration_seconds": 2.3323663489999995
+}

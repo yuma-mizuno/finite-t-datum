@@ -1,0 +1,8 @@
+{
+  "rank": 5,
+  "complete_upper_tasks": 720,
+  "candidate_count": 4697,
+  "rank_four_control": "exact equality of all 460 parity-compatible reference candidates",
+  "source_sha256": "91177c2280e139aa24016a44240b9ff89ea20674e4bc8f62b46b39a12fc3ef57",
+  "constant_file_sha256": "470ad8137b2fbd4faf58f15c3cfb2246d1db099302bb0c11ac6d80706e64d845"
+}

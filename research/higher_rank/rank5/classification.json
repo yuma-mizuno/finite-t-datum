@@ -1,0 +1,11 @@
+{
+  "rank": 5,
+  "complete": true,
+  "constant_candidates": 4697,
+  "families": 55,
+  "unresolved_lifts": [],
+  "unresolved_replays": [],
+  "slice_distinctness": "all distinct by terminal cycle lengths and exhaustive orbits within repeated length classes",
+  "scope": "Identity symmetrizer, diagonal leading matrix, indecomposable; rational time rescaling, species shifts, relabeling, sign exchange and slice changes.",
+  "computation_seconds": 3204.0588341510006
+}
