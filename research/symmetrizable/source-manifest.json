@@ -40,7 +40,7 @@
     },
     {
       "path": "docs/catalogue/test_rank6_browser.js",
-      "sha256": "23d5b293affed2a6153819bce484e4ef2f459aced3d0bbefc30b5036588ab4ec"
+      "sha256": "e73268ae96a052ab4393e7dd1d34f3f3b426f52120bd7624ee77eccf7751b9e3"
     },
     {
       "path": "docs/catalogue/test_records.py",
@@ -460,7 +460,7 @@
     },
     {
       "path": "tools/archive_sources.py",
-      "sha256": "df32ad94c01e6782d85e46585291624642f758e155d8e6229d03ed413a6f2f7e"
+      "sha256": "0af891a4ef5d47bfb547af69a82c2aa881b291160a360b879514f22c2c16a519"
     },
     {
       "path": "tools/check_package.py",
@@ -565,5 +565,5 @@
       "complete": true
     }
   },
-  "archive_sha256": "c7d9a3262d3db5831f4e397749b2eaf9ef16cc410df7d01dbde540f55690b59c"
+  "archive_sha256": "f22bacdf315cda0d33c62bd89f0f0d8b5ba915cabd4c155475a424c3b8247bdf"
 }
