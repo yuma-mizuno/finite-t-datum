@@ -14,8 +14,8 @@ import sys
 import sympy as sp
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT))
-from audit_mizuno_finite_type_clocks import DATA, z
+sys.path.insert(0, str(ROOT/'research/catalogue'))
+from literature_data import DATA, z
 
 
 def determinant(a):

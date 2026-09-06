@@ -56,7 +56,11 @@
     },
     {
       "path": "research/catalogue/family_notes.py",
-      "sha256": "91d76d7e2aa986f12ba9588c6ad25b23c6980eaae807f85c598e52b6f69edc3a"
+      "sha256": "960fde16331f9684ef2176d865fe608e9e5035ce2fedfcaadc3ea58c48cc2737"
+    },
+    {
+      "path": "research/catalogue/literature_data.py",
+      "sha256": "be028621aefa64a22163961ed8276bfd4fa70322c2952d31df994ae7b0df4351"
     },
     {
       "path": "research/catalogue/lower_ranks.py",
@@ -216,7 +220,7 @@
     },
     {
       "path": "research/rank3/classify_rank3.py",
-      "sha256": "9706d3f7c5ba80025f0c5d220aec70f60863d40f791d45fb9364d5308cbdbe15"
+      "sha256": "9f0259dc76c5e73bab02c5309517a8f8a95b3a72fa52d11a20ccb8ebd3469958"
     },
     {
       "path": "research/rank3/enumerate_constants.py",
@@ -456,7 +460,7 @@
     },
     {
       "path": "tools/archive_sources.py",
-      "sha256": "9bb8870ae1cb75a3c189b5f0f5bbd1f2e3d9e89530bb4633db72bdab6e535f5f"
+      "sha256": "df32ad94c01e6782d85e46585291624642f758e155d8e6229d03ed413a6f2f7e"
     },
     {
       "path": "tools/check_package.py",
@@ -561,5 +565,5 @@
       "complete": true
     }
   },
-  "archive_sha256": "798d87e8a9266e1415ab149c13fa75234927f972db041b6aa653240161e7ba5c"
+  "archive_sha256": "c7d9a3262d3db5831f4e397749b2eaf9ef16cc410df7d01dbde540f55690b59c"
 }

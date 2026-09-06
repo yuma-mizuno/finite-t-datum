@@ -1494,7 +1494,7 @@
     "signature_sha256": "eab39c17ee502c0470b7445af88213996b85a8174a32353e23a08ff87273ec88"
   },
   "provenance": {
-    "source_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
+    "source_commit": "e58113b0c8e5d6e60c89f3a54ee6a3f080d9affc",
     "verification_kind": "computer-assisted",
     "sources": [
       {
@@ -1527,7 +1527,7 @@
     "pdf": "docs/proofs/rank4-classification.pdf",
     "query_path": "research/rank4/smt_queries.zip",
     "query_member": "0058_coverage.smt2",
-    "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
+    "enrichment_commit": "e58113b0c8e5d6e60c89f3a54ee6a3f080d9affc",
     "enrichment_sources": [
       {
         "path": "research/catalogue/spectral-data.json",

@@ -18,5 +18,5 @@ with zipfile.ZipFile(old,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) a
     for name,raw in historical.items():z.writestr(name,raw)
     z.writestr('manifest.json',json.dumps(manifest,indent=2)+'\n')
 manifest['archive_sha256']=hashlib.sha256(old.read_bytes()).hexdigest()
-(P/'research/symmetrizable/source-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf8')
+(P/'research/symmetrizable/source-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf8',newline='\n')
 print('Archived',len(sources),'distributed verification sources')

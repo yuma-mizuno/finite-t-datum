@@ -121,8 +121,8 @@ def main():
   check_pair(ap,am)
   named[n].append({'label':'Sine-Gordon SG('+', '.join(map(str,ns))+')','category':'SG','parameters':ns,
                     'reference':NS,'source':'research/catalogue/sources/rsg_constructor_snapshot.py','pair':(ap,am)})
- sys.path.insert(0,str(ROOT))
- from audit_mizuno_finite_type_clocks import DATA
+ sys.path.insert(0,str(ROOT/'research/catalogue'))
+ from literature_data import DATA
  for example in DATA:
   if example.a_plus.rows==3:
    named[3].append({'label':'Mizuno 1912.05710, Table 2, row '+example.label.split('-')[-1],
