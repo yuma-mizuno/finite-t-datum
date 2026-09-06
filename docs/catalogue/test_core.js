@@ -4,20 +4,21 @@ const C=require('./core.js'),data=JSON.parse(fs.readFileSync(path.join(__dirname
 const frozen=JSON.stringify(data);
 const strMatrix=a=>a.map(row=>row.map(terms=>terms.map(([c,p])=>[c,String(p)])));
 const isPermutation=p=>assert.deepEqual([...p].sort((a,b)=>a-b),p.map((_,i)=>i));
-assert.equal(data.records.length,224);
-assert.equal(new Set(data.records.map(r=>r.id)).size,224);
-assert.deepEqual([1,2,3,4].map(rank=>data.records.filter(r=>r.rank===rank).length),[2,6,16,37]);
-assert.equal(data.records.filter(r=>r.rank===5).length,55);
-assert.equal(data.records.filter(r=>r.rank===6).length,108);
+const identity=data.records.filter(r=>r.scope.symmetrizer==='identity');
+assert.equal(identity.length,224);
+assert.equal(data.records.length,224+data.symmetrizable_classifications.reduce((s,r)=>s+r.new_nonidentity_families,0));
+assert.equal(new Set(data.records.map(r=>r.id)).size,data.records.length);
+assert.deepEqual([1,2,3,4,5,6].map(rank=>identity.filter(r=>r.rank===rank).length),[2,6,16,37,55,108]);
 for(const r of data.records){
   const d=r.datum;
+  const weights=d.symmetrizer||Array(r.rank).fill(1),sliceWeights=r.slice.symmetrizer||Array(r.slice.vertices).fill(1);
   assert.equal(d.delays.length,r.rank);
   for(const sign of ['plus','minus']){
     assert.equal(d['N_'+sign].length,r.rank);
     assert.deepEqual(C.atOne(d,sign),d['A_'+sign+'_1'],r.id+' specialization');
     d['N_'+sign].forEach((row,i)=>{
       assert.equal(row.length,r.rank);
-      row.forEach(entry=>{let last=0;for(const [c,p] of entry){assert(Number.isSafeInteger(c)&&c>0);assert(Number.isSafeInteger(p)&&last<p&&p<d.delays[i]);last=p;}});
+      row.forEach((entry,j)=>{let last=0;for(const [c,p] of entry){assert(Number.isSafeInteger(c)&&c>0);assert.equal(c*weights[j]%weights[i],0,r.id+' dual integrality');assert(Number.isSafeInteger(p)&&last<p&&p<d.delays[i]);last=p;}});
     });
   }
   const base=C.transform(r,'1',Array(r.rank-1).fill('0'));
@@ -31,7 +32,7 @@ for(const r of data.records){
   assert.deepEqual(frames.at(-1),r.slice.B,r.id+' slice loop');
   assert.equal(r.slice.B.length,r.slice.vertices);
   for(const b of frames){
-    b.forEach((row,i)=>{assert.equal(row.length,b.length);row.forEach((x,j)=>{assert(Number.isSafeInteger(x));assert(x===-b[j][i]);});});
+    b.forEach((row,i)=>{assert.equal(row.length,b.length);row.forEach((x,j)=>{assert(Number.isSafeInteger(x));assert(x*sliceWeights[j]===-b[j][i]*sliceWeights[i]);});});
     for(let k=0;k<b.length;k++)assert.deepEqual(C.mutate(C.mutate(b,k),k),b);
   }
   for(const p of [r.slice.relabel_old_to_new,r.exchange.relabel_old_to_new,r.periodicity.positive_negative_permutation,r.periodicity.negative_negative_permutation])isPermutation(p);
@@ -39,6 +40,11 @@ for(const r of data.records){
   for(const v of r.exchange.mutation_vertices)assert(Number.isInteger(v)&&v>=0&&v<r.exchange.vertices.length);
   assert(r.family.rref.every(row=>row.length===r.family.variable_names.length));
   assert.equal(r.family.representative_values.length,r.family.variable_names.length);
+  if(r.scope.symmetrizer!=='identity')r.family.variable_names.forEach((name,k)=>{
+    if(name.startsWith('r'))assert.equal(r.family.representative_values[k],d.delays[Number(name.slice(1))]);
+    else {const [,s,i,j,a]=name.match(/^p([01])_(\d)(\d)_(\d+)$/).map(Number);const unit=r.family.coefficient_units[i][j];
+      const atoms=d[s?'N_minus':'N_plus'][i][j].flatMap(([c,p])=>Array(c/unit).fill(p));assert.equal(r.family.representative_values[k],atoms[a],r.id+' weighted atom');}
+  });
   for(const row of r.family.rref)assert.equal(row.reduce((s,a,i)=>s.add(C.Rational.parse(a).mul(r.family.representative_values[i])),C.Rational.parse(0)).toString(),'0');
   if(r.rank>=3)assert.equal(r.family.coverage.result,'unsat');
 }
@@ -54,6 +60,6 @@ assert.equal(C.Rational.parse('-0.125').toString(),'-1/8');
 assert.equal(C.Rational.parse('9007199254740993').add(1).toString(),'9007199254740994');
 assert(C.transform(r,'9007199254740993',['0','0','0']).valid);
 assert.equal(C.latexPolynomial([[1,2],[-1,1],[1,0]]),'z^{2} - z + 1');
-assert.deepEqual(data.records.filter(r=>r.rank===4&&r.datum.delays.every(x=>x===2)).map(r=>r.class_number),[1,2,3,28,29,30,31,34,35]);
+assert.deepEqual(identity.filter(r=>r.rank===4&&r.datum.delays.every(x=>x===2)).map(r=>r.class_number),[1,2,3,28,29,30,31,34,35]);
 assert.equal(JSON.stringify(data),frozen,'The reader must not mutate the source records.');
 console.log(`PASS: ${data.records.length} exact records; specializations, admissible lifts, RREF witnesses, slice loops, permutations and arithmetic edge cases.`);

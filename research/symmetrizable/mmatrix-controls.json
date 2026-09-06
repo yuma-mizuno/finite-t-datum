@@ -1,0 +1,20 @@
+{
+  "rank_two_all_4096_pairs": 4096,
+  "independent_random_linear_solver_controls": 80,
+  "complete_reference_comparisons": [
+    {
+      "rank": 4,
+      "original_candidates": 1040,
+      "all_subset_survivors": 513,
+      "complete_union_equal": true
+    },
+    {
+      "rank": 5,
+      "original_candidates": 9867,
+      "all_subset_survivors": 8657,
+      "complete_union_equal": true
+    }
+  ],
+  "source_sha256": "0b8ead396816c08d29409f079ef054796938ff934950928b3e0b9b8dad4cc1ca",
+  "weighted_table_sha256": "ab1548959e49d6a5531f9162ff4ce43a9b769f2c40442ea3e7987917293c0de9"
+}

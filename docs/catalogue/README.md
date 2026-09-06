@@ -6,23 +6,30 @@ renderer is needed. A fragment such as `#r4-c19/mutation` addresses a particular
 record and view. Keep it in this repository if you want the relative links to
 research sources and the optional print editions to work.
 
-The catalogue contains 2 rank-one, 6 rank-two, 16 rank-three, 37 rank-four, 55 rank-five and 108 rank-six
-indecomposable families, with identity symmetrizer and diagonal leading
-matrix. Rank two follows the six rows of Mizuno's published Table 1; the
-rank-one argument is included. The higher ranks retain their original class
-numbers and constant IDs.
+The catalogue contains 385 indecomposable scale-and-shift families with primitive
+positive diagonal symmetrizer and diagonal leading matrix: 2, 10, 24, 66, 95
+and 188 in ranks one through six. The 224 identity-symmetrizer records retain
+their original IDs and class numbers; `s` IDs add 161 nonidentity families.
+The six identity-symmetrizer rank-two records follow Mizuno's published Table 1.
+Scalar multiples of primitive symmetrizers and decomposable direct sums are
+described in the [classification document](../../research/symmetrizable/methods.html).
+General leading permutations and automatic Langlands-dual identification are
+outside the scope.
 
 - **Matrices:** exact polynomial representatives, switching between A and N,
-  both A+(1) and A−(1), and the exact rational matrices A+(1)⁻¹A−(1) and
+  the primitive diagonal D, both A+(1) and A−(1), and the exact rational matrices A+(1)⁻¹A−(1) and
   A−(1)⁻¹A+(1).
 - **Notes:** RSG, SG, Zamolodchikov and other identifications, with the exact
   changes of variables and source conventions. Quiver notes have exact
   mutation paths to Dynkin, exceptional or surface representatives, or a
-  witness proving mutation-infinite type.
-- **Exponents:** Mizuno's thesis determinant formula, certified root-of-unity
+  witness proving mutation-infinite type. Valued finite classes may instead
+  have a complete orbit, with explicit relabellings on every transition.
+  Exact equitable SG/RSG folds retain their parent and partition.
+- **Exponents:** the determinant formula for the mutation spectrum, certified root-of-unity
   multiplicities, an interactive unit-disk plot, an exact table, a standalone
   SVG figure and an exportable interval certificate. A separate Jacobian
-  calculation independently checks all 224 spectra.
+  calculation independently checks all 385 spectra. For nonidentity D the
+  fixed-point equation uses D⁻¹A+(1)⁻¹A−(1)D.
 - **Admissible lifts:** rational time rescaling and species shifts, checked
   with reduced BigInt fractions; export the transformed datum.
 - **Mutation loop:** step through the stored connected-slice mutation word
@@ -37,7 +44,7 @@ numbers and constant IDs.
 
 `catalogue.json` holds the entire document's records and structured proof
 outline. `records/` provides each datum separately, using stable IDs such as
-`r4-c19`. `record.schema.json` specifies the base record format.
+`r4-c19` or `s6-c80`. `record.schema.json` specifies the base record format.
 
 `datum.N_plus[i][j]` and `datum.N_minus[i][j]` store an entry as a list of
 `[coefficient, exponent]` pairs, in increasing exponent order. Zero is `[]`.
@@ -71,21 +78,30 @@ relabel operation from its exact integer exchange matrix.
 ## Regeneration and checks
 
 The source of truth is the committed JSON/JSONL under `research/rank3`,
-`research/rank4`, `research/catalogue` and `research/higher_rank/rank5` and `research/higher_rank/rank6`. Do not edit the generated records
+`research/rank4`, `research/catalogue`, `research/higher_rank/rank*/` and
+`research/symmetrizable/rank*/`.
+Do not edit the generated records
 by hand. [Methods and conventions](../../research/catalogue/methods.html)
 explains the new certificates; the [research package](../../research/catalogue/README.md)
-gives their reproduction commands. The build uses
+gives their reproduction commands. The [higher-rank methods](../../research/higher_rank/methods.html)
+include the rank-six finite pulse bound, independent replay and slice comparison.
+The [symmetrizable methods](../../research/symmetrizable/methods.html) include
+the finite weight bounds, complete lift coverage, valued slice comparisons,
+source archive and final completion audit.
+The build uses
 Python 3.10+ and SymPy; the core tests use Node.js 18+.
 
 ```text
+python tools/prepare_verification.py
 python docs/catalogue/build_catalogue.py
 python docs/catalogue/test_records.py
 node docs/catalogue/test_core.js
+python research/symmetrizable/audit_completion.py
 ```
 
-The builder verifies support, sign disjointness, the full symplectic identity
-and the constants at 1 using symbolic arithmetic. The tests check package
-consistency, source and query hashes, all 224 slice-loop returns, the RREF
+The research pipeline verifies support, sign disjointness, the full weighted
+symplectic identity and the constants at 1 using exact arithmetic. The tests check package
+consistency, source and query hashes, all 385 slice-loop returns, the RREF
 witnesses, permutations, rational lift examples and arithmetic edge cases.
 Source provenance records the latest commit affecting the original research
 directories, with a separate enrichment commit and source hashes. A
@@ -97,15 +113,11 @@ are generated and committed. No external runtime is needed to read them.
 
 For browser regression checks, install Playwright (or point `PLAYWRIGHT_MODULE`
 to an existing installation) and optionally set `BROWSER_EXECUTABLE` to Chrome
-or Edge. Run `node docs/catalogue/test_browser.js`. The test opens the document
+or Edge. Run `node docs/catalogue/test_browser.js` and
+`node docs/catalogue/test_rank6_browser.js`. These tests include the 570-mutation
+rank-six Dynkin certificate and the eight-punctured-sphere certificate.
+Run `node docs/catalogue/test_weighted_browser.js` for all 161 nonidentity
+records, edge valuations, the dual fixed-point convention, finite orbit notes,
+fold links, exports and mobile layout.
+The main test opens the document
 from disk with networking disabled and saves screenshots in ignored `.qa/`.
-
-Rank-five proof reductions and reproduction commands are in
-[the rank-five guide](../../research/higher_rank/rank5/README.md).
-Run `node docs/catalogue/test_rank5_browser.js` for the additional rank-five
-proof, source-link and mobile checks.
-
-Rank-six proof reductions, the three query archives and reproduction commands
-are described in [the rank-six guide](../../research/higher_rank/rank6/README.md).
-Run `node docs/catalogue/test_rank6_browser.js` for three-digit class navigation,
-long mutation certificates, source links and mobile checks.

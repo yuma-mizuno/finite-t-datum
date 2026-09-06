@@ -1,0 +1,962 @@
+{
+  "s3-c01": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (A1, B3)",
+        "parameters": [
+          "A1",
+          "B3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          1,
+          1,
+          2
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            1,
+            2
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      },
+      {
+        "category": "Fold",
+        "label": "Fold of Sine-Gordon SG(3) · Langlands dual",
+        "status": "exact-fold-and-polynomial-match",
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/symmetrizable/folded_families.py",
+        "description": "An exact equitable polynomial fold of r4-c01. Row and column equitability, dual integrality, strict support, disjoint signs and the weighted symplectic identity were checked. This records a structural relation to the named family; it is not asserted to be a published name for the folded datum.",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            1,
+            2,
+            0
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "folding": {
+          "parent_record": "r4-c01",
+          "parent_centering_shifts": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "parent_integer_dilation": 1,
+          "partition_zero_based": [
+            [
+              0,
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "block_sizes": [
+            2,
+            1,
+            1
+          ],
+          "quotient_symmetrizer": [
+            1,
+            2,
+            2
+          ],
+          "langlands_dual": true,
+          "folded_datum": {
+            "delays": [
+              2,
+              2,
+              2
+            ],
+            "symmetrizer": [
+              2,
+              1,
+              1
+            ],
+            "N_plus": [
+              [
+                [],
+                [],
+                []
+              ],
+              [
+                [],
+                [],
+                []
+              ],
+              [
+                [],
+                [],
+                []
+              ]
+            ],
+            "N_minus": [
+              [
+                [],
+                [],
+                [
+                  [
+                    2,
+                    1
+                  ]
+                ]
+              ],
+              [
+                [],
+                [],
+                [
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                []
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "category": "Fold",
+        "label": "Fold of Reduced sine-Gordon RSG(7)",
+        "status": "exact-fold-and-polynomial-match",
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/symmetrizable/folded_families.py",
+        "description": "An exact equitable polynomial fold of r5-c02. Row and column equitability, dual integrality, strict support, disjoint signs and the weighted symplectic identity were checked. This records a structural relation to the named family; it is not asserted to be a published name for the folded datum.",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            2,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "folding": {
+          "parent_record": "r5-c02",
+          "parent_centering_shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "parent_integer_dilation": 1,
+          "partition_zero_based": [
+            [
+              0,
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "block_sizes": [
+            2,
+            1,
+            2
+          ],
+          "quotient_symmetrizer": [
+            1,
+            2,
+            1
+          ],
+          "langlands_dual": false,
+          "folded_datum": {
+            "delays": [
+              2,
+              2,
+              2
+            ],
+            "symmetrizer": [
+              1,
+              2,
+              1
+            ],
+            "N_plus": [
+              [
+                [],
+                [],
+                []
+              ],
+              [
+                [],
+                [],
+                []
+              ],
+              [
+                [],
+                [],
+                []
+              ]
+            ],
+            "N_minus": [
+              [
+                [],
+                [],
+                [
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ],
+              [
+                [],
+                [],
+                [
+                  [
+                    2,
+                    1
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                []
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s3-c02": {
+    "identifications": [
+      {
+        "category": "Fold",
+        "label": "Fold of Sine-Gordon SG(2, 1) · Langlands dual",
+        "status": "exact-fold-and-polynomial-match",
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/symmetrizable/folded_families.py",
+        "description": "An exact equitable polynomial fold of r4-c13. Row and column equitability, dual integrality, strict support, disjoint signs and the weighted symplectic identity were checked. This records a structural relation to the named family; it is not asserted to be a published name for the folded datum.",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            2,
+            1,
+            0
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "folding": {
+          "parent_record": "r4-c13",
+          "parent_centering_shifts": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "parent_integer_dilation": 1,
+          "partition_zero_based": [
+            [
+              0,
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "block_sizes": [
+            2,
+            1,
+            1
+          ],
+          "quotient_symmetrizer": [
+            1,
+            2,
+            2
+          ],
+          "langlands_dual": true,
+          "folded_datum": {
+            "delays": [
+              2,
+              2,
+              4
+            ],
+            "symmetrizer": [
+              2,
+              1,
+              1
+            ],
+            "N_plus": [
+              [
+                [],
+                [],
+                []
+              ],
+              [
+                [],
+                [],
+                [
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    1,
+                    2
+                  ]
+                ],
+                [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    3
+                  ]
+                ],
+                []
+              ]
+            ],
+            "N_minus": [
+              [
+                [],
+                [
+                  [
+                    2,
+                    1
+                  ]
+                ],
+                []
+              ],
+              [
+                [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                [],
+                []
+              ],
+              [
+                [],
+                [],
+                []
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s3-c03": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (T1, B3) · tadpole extension",
+        "parameters": [
+          "T1",
+          "B3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          1,
+          1,
+          2
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            0,
+            1,
+            2
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s3-c04": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s3-c05": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (A1, C3)",
+        "parameters": [
+          "A1",
+          "C3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          2,
+          2,
+          1
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            2,
+            0,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      },
+      {
+        "category": "Fold",
+        "label": "Fold of Sine-Gordon SG(3)",
+        "status": "exact-fold-and-polynomial-match",
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/symmetrizable/folded_families.py",
+        "description": "An exact equitable polynomial fold of r4-c01. Row and column equitability, dual integrality, strict support, disjoint signs and the weighted symplectic identity were checked. This records a structural relation to the named family; it is not asserted to be a published name for the folded datum.",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            1,
+            2
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "folding": {
+          "parent_record": "r4-c01",
+          "parent_centering_shifts": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "parent_integer_dilation": 1,
+          "partition_zero_based": [
+            [
+              0,
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "block_sizes": [
+            2,
+            1,
+            1
+          ],
+          "quotient_symmetrizer": [
+            1,
+            2,
+            2
+          ],
+          "langlands_dual": false,
+          "folded_datum": {
+            "delays": [
+              2,
+              2,
+              2
+            ],
+            "symmetrizer": [
+              1,
+              2,
+              2
+            ],
+            "N_plus": [
+              [
+                [],
+                [],
+                []
+              ],
+              [
+                [],
+                [],
+                []
+              ],
+              [
+                [],
+                [],
+                []
+              ]
+            ],
+            "N_minus": [
+              [
+                [],
+                [],
+                [
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ],
+              [
+                [],
+                [],
+                [
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    2,
+                    1
+                  ]
+                ],
+                [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                []
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "category": "Fold",
+        "label": "Fold of Reduced sine-Gordon RSG(7) · Langlands dual",
+        "status": "exact-fold-and-polynomial-match",
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/symmetrizable/folded_families.py",
+        "description": "An exact equitable polynomial fold of r5-c02. Row and column equitability, dual integrality, strict support, disjoint signs and the weighted symplectic identity were checked. This records a structural relation to the named family; it is not asserted to be a published name for the folded datum.",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            1,
+            0,
+            2
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "folding": {
+          "parent_record": "r5-c02",
+          "parent_centering_shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "parent_integer_dilation": 1,
+          "partition_zero_based": [
+            [
+              0,
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "block_sizes": [
+            2,
+            1,
+            2
+          ],
+          "quotient_symmetrizer": [
+            1,
+            2,
+            1
+          ],
+          "langlands_dual": true,
+          "folded_datum": {
+            "delays": [
+              2,
+              2,
+              2
+            ],
+            "symmetrizer": [
+              2,
+              1,
+              2
+            ],
+            "N_plus": [
+              [
+                [],
+                [],
+                []
+              ],
+              [
+                [],
+                [],
+                []
+              ],
+              [
+                [],
+                [],
+                []
+              ]
+            ],
+            "N_minus": [
+              [
+                [],
+                [],
+                [
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ],
+              [
+                [],
+                [],
+                [
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                [
+                  [
+                    2,
+                    1
+                  ]
+                ],
+                []
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s3-c06": {
+    "identifications": [
+      {
+        "category": "Fold",
+        "label": "Fold of Sine-Gordon SG(2, 1)",
+        "status": "exact-fold-and-polynomial-match",
+        "reference": "https://arxiv.org/abs/1212.6853",
+        "source": "research/symmetrizable/folded_families.py",
+        "description": "An exact equitable polynomial fold of r4-c13. Row and column equitability, dual integrality, strict support, disjoint signs and the weighted symplectic identity were checked. This records a structural relation to the named family; it is not asserted to be a published name for the folded datum.",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            1,
+            2
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "folding": {
+          "parent_record": "r4-c13",
+          "parent_centering_shifts": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "parent_integer_dilation": 1,
+          "partition_zero_based": [
+            [
+              0,
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "block_sizes": [
+            2,
+            1,
+            1
+          ],
+          "quotient_symmetrizer": [
+            1,
+            2,
+            2
+          ],
+          "langlands_dual": false,
+          "folded_datum": {
+            "delays": [
+              2,
+              2,
+              4
+            ],
+            "symmetrizer": [
+              1,
+              2,
+              2
+            ],
+            "N_plus": [
+              [
+                [],
+                [],
+                []
+              ],
+              [
+                [],
+                [],
+                [
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    3
+                  ]
+                ],
+                []
+              ]
+            ],
+            "N_minus": [
+              [
+                [],
+                [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                []
+              ],
+              [
+                [
+                  [
+                    2,
+                    1
+                  ]
+                ],
+                [],
+                []
+              ],
+              [
+                [],
+                [],
+                []
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s3-c07": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (T1, C3) · tadpole extension",
+        "parameters": [
+          "T1",
+          "C3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          2,
+          2,
+          1
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            2,
+            0,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s3-c08": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  }
+}

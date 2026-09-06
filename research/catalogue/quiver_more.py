@@ -28,10 +28,12 @@ def main():
     targets[f'D{n-1}^(1)']=ClusterQuiver(['D',n-1,1]).digraph();types[f'D{n-1}^(1)']=['D',n-1,1]
    if n in (7,8,9):
     targets[f'E{n-1}^(1)']=ClusterQuiver(['E',n-1,1]).digraph();types[f'E{n-1}^(1)']=['E',n-1,1]
-   if n in (6,9):
+   if n>=6 and n%3==0:
     punctures=n//3+2
+    equator=punctures-2
     faces=([(0,1,2),(0,3,1),(0,2,3),(1,3,2)] if n==6 else
-           [(0,2,3),(0,3,4),(0,4,2),(1,3,2),(1,4,3),(1,2,4)])
+           [(0,2+i,2+(i+1)%equator) for i in range(equator)]+
+           [(1,2+(i+1)%equator,2+i) for i in range(equator)])
     edges=sorted({tuple(sorted((f[i],f[(i+1)%3]))) for f in faces for i in range(3)})
     sb=matrix(ZZ,n)
     for face in faces:

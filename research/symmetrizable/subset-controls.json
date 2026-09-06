@@ -1,0 +1,9 @@
+{
+  "rank4_reference_constants": 1040,
+  "rank4_all_subset_survivors": 513,
+  "rank4_three_algorithms_equal": true,
+  "rank5_upper_122_survivors": 283,
+  "rank5_exact_filtered_reference_match": true,
+  "source_sha256": "58f3cca79884192ee6dddae2c0e706873d049a46349fcfc0e15eaef683fbde07",
+  "table_sha256": "c5a2aa52d98a55d4b4e7178a45bd44b416e8a2f4b6762275c58a43cf0c5173f9"
+}

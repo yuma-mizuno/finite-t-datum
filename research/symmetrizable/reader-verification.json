@@ -1,0 +1,34 @@
+{
+  "records": 385,
+  "primitive_nonidentity_records": 161,
+  "rank_counts": [
+    2,
+    10,
+    24,
+    66,
+    95,
+    188
+  ],
+  "checks": {
+    "completion_audit": "passed for every rank 2 through 6, including every archived query hash",
+    "constant_archive_audit": "5040 upper tasks and 52040 partner blocks cover rank six exactly",
+    "JSON_Schema_draft_2020_12": "385 records passed",
+    "standalone_and_embedded_records": "385 passed",
+    "exact_browser_core": "385 passed",
+    "offline_browser": "385 rendered constants, rational ratios and exponent tables passed",
+    "weighted_browser": "161 passed, including edge valuations, dual Nahm convention, class replay, fold links, exports and mobile layout",
+    "final_layout": "sidebar bounds, weighted orbifold reference and multiplicity-four plot passed"
+  },
+  "visual_review": [
+    "rank-six exponent plot with multiplicity four",
+    "largest weighted spectrum on mobile",
+    "weighted orbifold note"
+  ],
+  "files": {
+    "docs/catalogue/catalogue.json": "d83cc97f5a7f92fa78e162035ee5e7035ffeb5b8a32732c92928a74efecab9cc",
+    "docs/catalogue/index.html": "22f9ffc30253def9395e39f5d3702096bd6f4f381910a4a95800a743b944b133",
+    "docs/catalogue/record.schema.json": "e4602b1cf97a910fff3a9297a8ed0b4274c60508965310bc669dabc920994adc",
+    "docs/catalogue/app.js": "af11eebb7cbcd72d10ea4b7f5cf1373be044769926f8a4371ca4b84c3a6a8c15",
+    "docs/catalogue/catalogue.css": "6625744574d43ef4e65116abce12acd1bea8e5916c363cff5d15c5ed7103819f"
+  }
+}

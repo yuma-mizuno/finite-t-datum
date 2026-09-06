@@ -32,7 +32,7 @@
       return [c,t];
     })));
     const plus=convert(record.datum.N_plus,'+'),minus=convert(record.datum.N_minus,'−');
-    return {valid:errors.length===0,errors:[...new Set(errors)],lambda,shifts:s,delays,N_plus:plus,N_minus:minus};
+    return {valid:errors.length===0,errors:[...new Set(errors)],lambda,shifts:s,delays,symmetrizer:record.datum.symmetrizer||Array(record.rank).fill(1),N_plus:plus,N_minus:minus};
   }
   function normalize(terms) {
     const map=new Map();for(const [c,p] of terms){const k=Rational.parse(p).toString();map.set(k,(map.get(k)||0)+c);}

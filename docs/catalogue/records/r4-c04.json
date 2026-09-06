@@ -895,7 +895,7 @@
       }
     ],
     "manuscript": "research/rank4/rank4-classification.tex",
-    "pdf": "output/pdf/rank4-classification.pdf",
+    "pdf": "docs/proofs/rank4-classification.pdf",
     "query_path": "research/rank4/smt_queries.zip",
     "query_member": "0004_coverage.smt2",
     "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",

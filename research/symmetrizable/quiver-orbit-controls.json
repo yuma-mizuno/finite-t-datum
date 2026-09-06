@@ -1,0 +1,30 @@
+[
+  {
+    "record": "s4-c05",
+    "labelled_matrices": 54,
+    "matrices_up_to_relabelling": 4,
+    "equal_after_independent_canonicalization": true,
+    "every_integer_transition_replayed": true
+  },
+  {
+    "record": "s4-c12",
+    "labelled_matrices": 6,
+    "matrices_up_to_relabelling": 3,
+    "equal_after_independent_canonicalization": true,
+    "every_integer_transition_replayed": true
+  },
+  {
+    "record": "s4-c22",
+    "labelled_matrices": 54,
+    "matrices_up_to_relabelling": 4,
+    "equal_after_independent_canonicalization": true,
+    "every_integer_transition_replayed": true
+  },
+  {
+    "record": "s4-c26",
+    "labelled_matrices": 6,
+    "matrices_up_to_relabelling": 4,
+    "equal_after_independent_canonicalization": true,
+    "every_integer_transition_replayed": true
+  }
+]

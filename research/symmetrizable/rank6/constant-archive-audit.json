@@ -1,0 +1,12 @@
+{
+  "rank": 6,
+  "complete_upper_tasks": 5040,
+  "replayed_partner_blocks": 52040,
+  "canonical_union": 152874,
+  "all_partner_intervals_cover_their_full_range": true,
+  "archived_task_union_equals_final_candidates": true,
+  "archives": {
+    "constant_tasks.zip": "d790f7fe03637641a28b45e28fe6c98f0af117eb3f0fd8d2f38b0347a14420e8",
+    "constant_parts.zip": "f30cb2617ba7993a86e00383a129ec6c7c1347cb71ebc9bdf37cd2a7d1205462"
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "common": {
+    "scope": "Positive diagonal symmetrizers, recorded primitively, and diagonal N₀. The rank is the number of species.",
+    "theorem": "Every finite datum in the stated scope belongs to one recorded admissible scale-and-shift family, up to species permutations, sign exchange and the recorded slice equivalences. Scalar multiples of primitive D are recovered separately.",
+    "definition": "<p>A± = diag(1+zʳⁱ)−N± have nonnegative integral N±, strict row support and disjoint opposite signs. D is positive diagonal; D⁻¹N±D is integral and A₊DA₋† = A₋DA₊†. Primitive normalization means gcd(d₁,…,dₙ)=1. General leading permutations and automatic Langlands-dual identification are outside this scope.</p>",
+    "status": "Computer-assisted classification with finite coefficient and symmetrizer bounds, exact lift coverage, periodicity and weighted slice certificates.",
+    "references": [
+      {
+        "title": "Mizuno: Difference equations arising from cluster algebras",
+        "url": "https://arxiv.org/abs/1912.05710",
+        "use": "General symmetrizable T-data, reconstruction, positivity and periodicity."
+      },
+      {
+        "title": "Mizuno: periodic Y-systems of rank two",
+        "url": "https://arxiv.org/abs/2301.13239",
+        "use": "Published identity-symmetrizer rank-two subcatalogue."
+      },
+      {
+        "title": "Mizuno thesis",
+        "url": "https://yuma-mizuno.github.io/thesis.pdf",
+        "use": "Dual Nahm fixed point and the determinant formula for exponents."
+      }
+    ]
+  },
+  "2": {
+    "count": 10,
+    "status": "computer-assisted-complete",
+    "statistics": [
+      [
+        11,
+        "retained necessary constant triples"
+      ],
+      [
+        1,
+        "no polynomial lift"
+      ],
+      [
+        10,
+        "complete periodic families"
+      ],
+      [
+        4,
+        "with nonidentity primitive D"
+      ]
+    ],
+    "decomposable": "Take direct sums of indecomposable blocks with independent time scales, sign choices and positive integer scalar factors on block symmetrizers.",
+    "steps": [
+      {
+        "title": "1. Bound both coefficients and the symmetrizer",
+        "kind": "Necessary positivity and integrality",
+        "html": "<p>Original and dual off-diagonal coefficient sums are at most 3. A directed spanning tree bounds every primitive weight by 3. There are 6 upper-triangle possibilities per sign. The exact enumeration leaves 11 necessary triples, retaining D in every equivalence comparison.</p>"
+      },
+      {
+        "title": "2. Exhaust all polynomial lifts",
+        "kind": "Unbounded linear arithmetic",
+        "html": "<p>Entry (i,j) uses atoms of coefficient dᵢ/gcd(dᵢ,dⱼ). Strict support, dual integrality and weighted Laurent identities are encoded exactly. Every exclusion and outside-space query is resolved and replayed. Each of the 10 surviving spaces has dimension 2, spanned by scaling and relative shifts.</p><p>Eligible lower-rank principal data supply necessary equations and exclusions; the original identity-only obstructions are used only for D = I.</p>"
+      },
+      {
+        "title": "3. Verify periodicity and slice distinctness",
+        "kind": "Exact weighted mutation certificates",
+        "html": "<p>The reconstructed exchange matrix satisfies BD = −DBᵀ with the stored vertex weights. Every representative has a labelled tropical return and two-sided negative permutation C-matrices. Weighted terminal cycles distinguish singleton groups; complete cyclic-loop orbits resolve every collision group.</p>"
+      },
+      {
+        "title": "4. Record names, valued quivers and exponents",
+        "kind": "Independent enrichment certificates",
+        "html": "<p>Family notes retain exact constructor transformations. Quiver notes contain mutation paths or complete finite orbits. The thesis fixed-point equation uses K∨ = D⁻¹A₊(1)⁻¹A₋(1)D, while the determinant uses the original A matrices. Interval-certified multiplicities agree with an independent mutation-Jacobian calculation.</p>"
+      }
+    ]
+  },
+  "3": {
+    "count": 24,
+    "status": "computer-assisted-complete",
+    "statistics": [
+      [
+        86,
+        "retained necessary constant triples"
+      ],
+      [
+        62,
+        "no polynomial lift"
+      ],
+      [
+        24,
+        "complete periodic families"
+      ],
+      [
+        8,
+        "with nonidentity primitive D"
+      ]
+    ],
+    "decomposable": "Take direct sums of indecomposable blocks with independent time scales, sign choices and positive integer scalar factors on block symmetrizers.",
+    "steps": [
+      {
+        "title": "1. Bound both coefficients and the symmetrizer",
+        "kind": "Necessary positivity and integrality",
+        "html": "<p>Original and dual off-diagonal coefficient sums are at most 7. A directed spanning tree bounds every primitive weight by 49. There are 24 upper-triangle possibilities per sign. The exact enumeration leaves 86 necessary triples, retaining D in every equivalence comparison.</p>"
+      },
+      {
+        "title": "2. Exhaust all polynomial lifts",
+        "kind": "Unbounded linear arithmetic",
+        "html": "<p>Entry (i,j) uses atoms of coefficient dᵢ/gcd(dᵢ,dⱼ). Strict support, dual integrality and weighted Laurent identities are encoded exactly. Every exclusion and outside-space query is resolved and replayed. Each of the 24 surviving spaces has dimension 3, spanned by scaling and relative shifts.</p><p>Eligible lower-rank principal data supply necessary equations and exclusions; the original identity-only obstructions are used only for D = I.</p>"
+      },
+      {
+        "title": "3. Verify periodicity and slice distinctness",
+        "kind": "Exact weighted mutation certificates",
+        "html": "<p>The reconstructed exchange matrix satisfies BD = −DBᵀ with the stored vertex weights. Every representative has a labelled tropical return and two-sided negative permutation C-matrices. Weighted terminal cycles distinguish singleton groups; complete cyclic-loop orbits resolve every collision group.</p>"
+      },
+      {
+        "title": "4. Record names, valued quivers and exponents",
+        "kind": "Independent enrichment certificates",
+        "html": "<p>Family notes retain exact constructor transformations. Quiver notes contain mutation paths or complete finite orbits. The thesis fixed-point equation uses K∨ = D⁻¹A₊(1)⁻¹A₋(1)D, while the determinant uses the original A matrices. Interval-certified multiplicities agree with an independent mutation-Jacobian calculation.</p>"
+      }
+    ]
+  },
+  "4": {
+    "count": 66,
+    "status": "computer-assisted-complete",
+    "statistics": [
+      [
+        1040,
+        "retained necessary constant triples"
+      ],
+      [
+        974,
+        "no polynomial lift"
+      ],
+      [
+        66,
+        "complete periodic families"
+      ],
+      [
+        29,
+        "with nonidentity primitive D"
+      ]
+    ],
+    "decomposable": "Take direct sums of indecomposable blocks with independent time scales, sign choices and positive integer scalar factors on block symmetrizers.",
+    "steps": [
+      {
+        "title": "1. Bound both coefficients and the symmetrizer",
+        "kind": "Necessary positivity and integrality",
+        "html": "<p>Original and dual off-diagonal coefficient sums are at most 15. A directed spanning tree bounds every primitive weight by 3375. There are 120 upper-triangle possibilities per sign. The exact enumeration leaves 1040 necessary triples, retaining D in every equivalence comparison.</p>"
+      },
+      {
+        "title": "2. Exhaust all polynomial lifts",
+        "kind": "Unbounded linear arithmetic",
+        "html": "<p>Entry (i,j) uses atoms of coefficient dᵢ/gcd(dᵢ,dⱼ). Strict support, dual integrality and weighted Laurent identities are encoded exactly. Every exclusion and outside-space query is resolved and replayed. Each of the 66 surviving spaces has dimension 4, spanned by scaling and relative shifts.</p><p>Eligible lower-rank principal data supply necessary equations and exclusions; the original identity-only obstructions are used only for D = I.</p>"
+      },
+      {
+        "title": "3. Verify periodicity and slice distinctness",
+        "kind": "Exact weighted mutation certificates",
+        "html": "<p>The reconstructed exchange matrix satisfies BD = −DBᵀ with the stored vertex weights. Every representative has a labelled tropical return and two-sided negative permutation C-matrices. Weighted terminal cycles distinguish singleton groups; complete cyclic-loop orbits resolve every collision group.</p>"
+      },
+      {
+        "title": "4. Record names, valued quivers and exponents",
+        "kind": "Independent enrichment certificates",
+        "html": "<p>Family notes retain exact constructor transformations. Quiver notes contain mutation paths or complete finite orbits. The thesis fixed-point equation uses K∨ = D⁻¹A₊(1)⁻¹A₋(1)D, while the determinant uses the original A matrices. Interval-certified multiplicities agree with an independent mutation-Jacobian calculation.</p>"
+      }
+    ]
+  },
+  "5": {
+    "count": 95,
+    "status": "computer-assisted-complete",
+    "statistics": [
+      [
+        9867,
+        "retained necessary constant triples"
+      ],
+      [
+        9772,
+        "no polynomial lift"
+      ],
+      [
+        95,
+        "complete periodic families"
+      ],
+      [
+        40,
+        "with nonidentity primitive D"
+      ]
+    ],
+    "decomposable": "Take direct sums of indecomposable blocks with independent time scales, sign choices and positive integer scalar factors on block symmetrizers.",
+    "steps": [
+      {
+        "title": "1. Bound both coefficients and the symmetrizer",
+        "kind": "Necessary positivity and integrality",
+        "html": "<p>Original and dual off-diagonal coefficient sums are at most 31. A directed spanning tree bounds every primitive weight by 923521. There are 720 upper-triangle possibilities per sign. The exact enumeration leaves 9867 necessary triples, retaining D in every equivalence comparison.</p>"
+      },
+      {
+        "title": "2. Exhaust all polynomial lifts",
+        "kind": "Unbounded linear arithmetic",
+        "html": "<p>Entry (i,j) uses atoms of coefficient dᵢ/gcd(dᵢ,dⱼ). Strict support, dual integrality and weighted Laurent identities are encoded exactly. Every exclusion and outside-space query is resolved and replayed. Each of the 95 surviving spaces has dimension 5, spanned by scaling and relative shifts.</p><p>Eligible lower-rank principal data supply necessary equations and exclusions; the original identity-only obstructions are used only for D = I.</p>"
+      },
+      {
+        "title": "3. Verify periodicity and slice distinctness",
+        "kind": "Exact weighted mutation certificates",
+        "html": "<p>The reconstructed exchange matrix satisfies BD = −DBᵀ with the stored vertex weights. Every representative has a labelled tropical return and two-sided negative permutation C-matrices. Weighted terminal cycles distinguish singleton groups; complete cyclic-loop orbits resolve every collision group.</p>"
+      },
+      {
+        "title": "4. Record names, valued quivers and exponents",
+        "kind": "Independent enrichment certificates",
+        "html": "<p>Family notes retain exact constructor transformations. Quiver notes contain mutation paths or complete finite orbits. The thesis fixed-point equation uses K∨ = D⁻¹A₊(1)⁻¹A₋(1)D, while the determinant uses the original A matrices. Interval-certified multiplicities agree with an independent mutation-Jacobian calculation.</p>"
+      }
+    ]
+  },
+  "6": {
+    "count": 188,
+    "status": "computer-assisted-complete",
+    "statistics": [
+      [
+        152874,
+        "retained necessary constant triples"
+      ],
+      [
+        152686,
+        "no polynomial lift"
+      ],
+      [
+        188,
+        "complete periodic families"
+      ],
+      [
+        80,
+        "with nonidentity primitive D"
+      ]
+    ],
+    "decomposable": "Take direct sums of indecomposable blocks with independent time scales, sign choices and positive integer scalar factors on block symmetrizers.",
+    "steps": [
+      {
+        "title": "1. Bound both coefficients and the symmetrizer",
+        "kind": "Necessary positivity and integrality",
+        "html": "<p>Original and dual off-diagonal coefficient sums are at most 63. A directed spanning tree bounds every primitive weight by 992436543. There are 5040 upper-triangle possibilities per sign. The exact enumeration leaves 152874 necessary triples, retaining D in every equivalence comparison.</p>"
+      },
+      {
+        "title": "2. Exhaust all polynomial lifts",
+        "kind": "Unbounded linear arithmetic",
+        "html": "<p>Entry (i,j) uses atoms of coefficient dᵢ/gcd(dᵢ,dⱼ). Strict support, dual integrality and weighted Laurent identities are encoded exactly. Every exclusion and outside-space query is resolved and replayed. Each of the 188 surviving spaces has dimension 6, spanned by scaling and relative shifts.</p><p>Eligible lower-rank principal data supply necessary equations and exclusions; the original identity-only obstructions are used only for D = I.</p>"
+      },
+      {
+        "title": "3. Verify periodicity and slice distinctness",
+        "kind": "Exact weighted mutation certificates",
+        "html": "<p>The reconstructed exchange matrix satisfies BD = −DBᵀ with the stored vertex weights. Every representative has a labelled tropical return and two-sided negative permutation C-matrices. Weighted terminal cycles distinguish singleton groups; complete cyclic-loop orbits resolve every collision group.</p>"
+      },
+      {
+        "title": "4. Record names, valued quivers and exponents",
+        "kind": "Independent enrichment certificates",
+        "html": "<p>Family notes retain exact constructor transformations. Quiver notes contain mutation paths or complete finite orbits. The thesis fixed-point equation uses K∨ = D⁻¹A₊(1)⁻¹A₋(1)D, while the determinant uses the original A matrices. Interval-certified multiplicities agree with an independent mutation-Jacobian calculation.</p>"
+      }
+    ]
+  }
+}

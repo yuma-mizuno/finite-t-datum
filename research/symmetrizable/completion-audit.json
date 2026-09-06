@@ -1,0 +1,47 @@
+[
+  {
+    "rank": 2,
+    "constant_triples": 11,
+    "complete_families": 10,
+    "identity_families_exactly_recovered": 6,
+    "new_primitive_nonidentity_families": 4,
+    "unresolved_lifts_or_replays": 0,
+    "archived_query_hashes_checked": 11
+  },
+  {
+    "rank": 3,
+    "constant_triples": 86,
+    "complete_families": 24,
+    "identity_families_exactly_recovered": 16,
+    "new_primitive_nonidentity_families": 8,
+    "unresolved_lifts_or_replays": 0,
+    "archived_query_hashes_checked": 86
+  },
+  {
+    "rank": 4,
+    "constant_triples": 1040,
+    "complete_families": 66,
+    "identity_families_exactly_recovered": 37,
+    "new_primitive_nonidentity_families": 29,
+    "unresolved_lifts_or_replays": 0,
+    "archived_query_hashes_checked": 1040
+  },
+  {
+    "rank": 5,
+    "constant_triples": 9867,
+    "complete_families": 95,
+    "identity_families_exactly_recovered": 55,
+    "new_primitive_nonidentity_families": 40,
+    "unresolved_lifts_or_replays": 0,
+    "archived_query_hashes_checked": 9867
+  },
+  {
+    "rank": 6,
+    "constant_triples": 152874,
+    "complete_families": 188,
+    "identity_families_exactly_recovered": 108,
+    "new_primitive_nonidentity_families": 80,
+    "unresolved_lifts_or_replays": 0,
+    "archived_query_hashes_checked": 152874
+  }
+]

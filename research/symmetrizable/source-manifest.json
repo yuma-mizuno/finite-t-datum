@@ -1,0 +1,565 @@
+{
+  "source_commit": "65dc86d582cf16c38def03233f4ac2baba1b4acf",
+  "scope": "Distributed verification sources and original historical constant-enumerator sources. The imported revision identifies the research origin; current source bytes are identified by their hashes. External SageMath, SymPy and Z3 runtimes are separate dependencies.",
+  "files": [
+    {
+      "path": "docs/catalogue/app.js",
+      "sha256": "c74cf9431a43525fe0f85155aff9c7a6117675f2788babb8daec1fde3ab558ce"
+    },
+    {
+      "path": "docs/catalogue/build_catalogue.py",
+      "sha256": "c7a06a3d48393546b5f7d2d0826c9c454e344e2b1ee96958060ab4e786f71e8e"
+    },
+    {
+      "path": "docs/catalogue/catalogue.css",
+      "sha256": "0102e0904c34e767d0c5a8e97758e3796b697e6f594cc977a3f38f5aeecd1da4"
+    },
+    {
+      "path": "docs/catalogue/core.js",
+      "sha256": "c9fa76956097f7d9e4c9799f234610026d8aa499364e315c5c32d9040a9dae31"
+    },
+    {
+      "path": "docs/catalogue/index.template.html",
+      "sha256": "3c3318313ecd26b668cda2b0f8f2fcd850fc744f1fedb62e5337d72c03ca097c"
+    },
+    {
+      "path": "docs/catalogue/proofs.json",
+      "sha256": "b9dd8b123705dc67547da31f1a7432fb3bd7818046fb77ffbfd14e10e419e505"
+    },
+    {
+      "path": "docs/catalogue/test_browser.js",
+      "sha256": "d4ec527d0801b077fc9bf303b7d473d107869fa3b8324546a8d9ae76726aa469"
+    },
+    {
+      "path": "docs/catalogue/test_core.js",
+      "sha256": "f5772db279e30c4b5fc994fd1cfe8a5ab1f5de263457566023ea5655c4046897"
+    },
+    {
+      "path": "docs/catalogue/test_rank5_browser.js",
+      "sha256": "30393f2ed164b4a6bf1e1dd05754db96c22b1694960dc82901bd725eb40895cc"
+    },
+    {
+      "path": "docs/catalogue/test_rank6_browser.js",
+      "sha256": "23d5b293affed2a6153819bce484e4ef2f459aced3d0bbefc30b5036588ab4ec"
+    },
+    {
+      "path": "docs/catalogue/test_records.py",
+      "sha256": "e84b25fc5a8df39c1367a1521ac51390a89bd84a43383897f7edcef9a9b7cb9d"
+    },
+    {
+      "path": "docs/catalogue/test_weighted_browser.js",
+      "sha256": "e31cf206c00faf3affcfcf7f637a3e490b37c27495d6097441a2c0c415d46ff9"
+    },
+    {
+      "path": "research/catalogue/exponents.py",
+      "sha256": "edb097794f9b101078f9329002015e04c750c300b3cac627cb8af48e0bef524c"
+    },
+    {
+      "path": "research/catalogue/family_notes.py",
+      "sha256": "91d76d7e2aa986f12ba9588c6ad25b23c6980eaae807f85c598e52b6f69edc3a"
+    },
+    {
+      "path": "research/catalogue/lower_ranks.py",
+      "sha256": "ff5c74fb0be3d765df5c3dc372831208876d2570537b85715e91944dfdd7cd96"
+    },
+    {
+      "path": "research/catalogue/plot_exponents.py",
+      "sha256": "656ee87164e58bbb3422c614ba5417ae9856d7904cd2d79417722ba1de6a64d0"
+    },
+    {
+      "path": "research/catalogue/quiver_more.py",
+      "sha256": "6a3883a37a14ce630f8d48f52296c0e4f6bfbc11e476cace6808a070ce4e3f81"
+    },
+    {
+      "path": "research/catalogue/quiver_types.py",
+      "sha256": "f0bcf88ec41def47f82eeb399568924ab321054e0980e46156ee67878c9f0494"
+    },
+    {
+      "path": "research/catalogue/sources/rsg_constructor_snapshot.py",
+      "sha256": "d8068387034e7ceba2509983f6b9a034aa4d7c761ae1f898168e30ca9d9d0689"
+    },
+    {
+      "path": "research/catalogue/verify_enrichment.py",
+      "sha256": "218043fdeadcc88498cd6469c4a5ef264e5760e8284714135e9a965e3b3e6ee0"
+    },
+    {
+      "path": "research/higher_rank/budget.py",
+      "sha256": "5ded931a0d2451426d4fbc946b30c53965e2d3342e94966429bff6db569670ee"
+    },
+    {
+      "path": "research/higher_rank/build_records.py",
+      "sha256": "34b29a85fa2933150476b4095c1f5e8a656014a72ca5e06f40ca7148ac63a5c4"
+    },
+    {
+      "path": "research/higher_rank/enrich_sage.py",
+      "sha256": "d4f3db908d41be72d37fd2675312a2e706f106e08736e0b4202913e1d16a3f15"
+    },
+    {
+      "path": "research/higher_rank/enumerate_constants.cpp",
+      "sha256": "58c8b5edea7757a20731a8b4436925a8ae85a1262adae943077b2323a3efd978"
+    },
+    {
+      "path": "research/higher_rank/export_principal_constants.py",
+      "sha256": "0ede5935cb12eb3ab8aba67e6ef5e5b5d8649c32c7761a53d7840988053828de"
+    },
+    {
+      "path": "research/higher_rank/family_notes.py",
+      "sha256": "5d7ee572af9358583c11480027c1db8b11fde8bebced97684d650f72a4b47e4e"
+    },
+    {
+      "path": "research/higher_rank/finish_enrichment.py",
+      "sha256": "322bb5d24c43c022df024bde6e186eb8120e01940f2ef42707d5db7f5a7fe68b"
+    },
+    {
+      "path": "research/higher_rank/finite_extension.py",
+      "sha256": "2df457284b64e66a858103993d424539861505c0a304895af354396fda457451"
+    },
+    {
+      "path": "research/higher_rank/lifts.py",
+      "sha256": "036dcb548f5f312c5d8aef9db2e504cec6ef2affa79a5ed604d7e52c8d435d64"
+    },
+    {
+      "path": "research/higher_rank/obstructions.py",
+      "sha256": "0d3acfc0cd2a2873a4828a0d3a6049b6a3bafcb39af9b80f8d969e2dfd5ddf2e"
+    },
+    {
+      "path": "research/higher_rank/package_checkpoints.py",
+      "sha256": "6a65e5ad30d1bad59ffe65e50f0c2d924cb0a0a6931596254a32dc017c094ab9"
+    },
+    {
+      "path": "research/higher_rank/principal_relations.py",
+      "sha256": "6daf4aa13f01d429a8f0bd0b9b645aa6df73372aa0136ee4962c5a4ded24c970"
+    },
+    {
+      "path": "research/higher_rank/query_archives.py",
+      "sha256": "91285b8013db90c733f326e66afb5b55bd180824dad71312ec92053da240c76a"
+    },
+    {
+      "path": "research/higher_rank/quiver_exceptional.py",
+      "sha256": "91db201ab2d0f6f6681ec95b5282a3c86c1ce2ede870b1338fac323a11ba050b"
+    },
+    {
+      "path": "research/higher_rank/quiver_fast.py",
+      "sha256": "f7d010766c08cd878177a5228ecd3276cfcc8eb1e88535d87355b33b7bab962e"
+    },
+    {
+      "path": "research/higher_rank/quiver_walk.py",
+      "sha256": "5bf5df05f1c80fff4a847d4990a67a8dfcfa7cb84ba570eb7dceb4d758d8c2ab"
+    },
+    {
+      "path": "research/higher_rank/reduced_encoding.py",
+      "sha256": "bc0018f42ed4a7b21c5123efbad2e54d7333aa6cbf80d42a02e05af785de2f3d"
+    },
+    {
+      "path": "research/higher_rank/run_constants.py",
+      "sha256": "3c076ae14d584fd3d77a2e2e1548725549d8487e36e3515e36f5a300cd249f79"
+    },
+    {
+      "path": "research/higher_rank/run_lifts.py",
+      "sha256": "08eeace7afcaf2d0582a9d19ce8981769eca7fac8e749eaf20d4f4aba0582e98"
+    },
+    {
+      "path": "research/higher_rank/run_stage.py",
+      "sha256": "ebc10ce4f45045b1be89058281db2de82d20c6592e8a28dd91b57546cea97ec1"
+    },
+    {
+      "path": "research/higher_rank/slice_cpp.py",
+      "sha256": "be96a73cfd2f8b5ef4e5b17425402c427330946892388b88f7a97cca75d89c1c"
+    },
+    {
+      "path": "research/higher_rank/slice_orbit.cpp",
+      "sha256": "7f060f5c8480c02d106edf2bcabc28bf3fe9218ec12b9f6b0dcd7e55a2577ea2"
+    },
+    {
+      "path": "research/higher_rank/slices.py",
+      "sha256": "fb39bc92aa05cc1d8d0b39189be83f899003489d77e3a7f4be3ee8c779c24e5d"
+    },
+    {
+      "path": "research/higher_rank/surface_walk.py",
+      "sha256": "0c974ca5fbb2a79aa618e076bea31696bcddbec21c1bdf65fdfebfc7af29df28"
+    },
+    {
+      "path": "research/higher_rank/verify_enumeration.py",
+      "sha256": "935fb0b0464c3dd3c475ad4ab3a8e9df62660d414bc4f1a952b03583dd322d27"
+    },
+    {
+      "path": "research/higher_rank/verify_finite_extension.py",
+      "sha256": "e4973d61bc5b3242ed8840c4c6d7877ebc3ae2ebe8131f446397d8bc045cffda"
+    },
+    {
+      "path": "research/higher_rank/verify_pruning_controls.py",
+      "sha256": "56b8b7881730231161d278786b179d90d0ad95abc7cce85c180d493fccd37ec9"
+    },
+    {
+      "path": "research/higher_rank/verify_pulse_exclusions.py",
+      "sha256": "81a9699a8901e281b01ee9e422ec3eb43d72d76dd8d3f385df484b7c29b1c9c2"
+    },
+    {
+      "path": "research/higher_rank/verify_pulses.cpp",
+      "sha256": "a5ff248471f8a510535ee3fd22447d996cac802d32706d63e8afd27650ac2956"
+    },
+    {
+      "path": "research/higher_rank/verify_slice_cpp.py",
+      "sha256": "59cb7bc4fb25293ec2acd19718b99d34b53614d1b8fb6a7328c7353c294007f7"
+    },
+    {
+      "path": "research/higher_rank/verify_spectral.py",
+      "sha256": "7a99073a234e952c7078ae9ded2b8547afc5cbf77fc84f9bb4e557b665eb16ba"
+    },
+    {
+      "path": "research/rank3/build_report.py",
+      "sha256": "0f9b367d786886d32f6832dd6d1c1bdd1eaac7264e05feee8eca83818b952f32"
+    },
+    {
+      "path": "research/rank3/classify_lift_spaces.py",
+      "sha256": "ef2af007fca68e4800d59d9dff4a4df2cf57b72605ce1a87f67c5bdea1c048c4"
+    },
+    {
+      "path": "research/rank3/classify_rank3.py",
+      "sha256": "9706d3f7c5ba80025f0c5d220aec70f60863d40f791d45fb9364d5308cbdbe15"
+    },
+    {
+      "path": "research/rank3/enumerate_constants.py",
+      "sha256": "a6cb48645b3725d13c9a9be4ee1e73627d50a1ed21730acd27bf7db1268ab4b2"
+    },
+    {
+      "path": "research/rank3/make_pdf_tables.py",
+      "sha256": "7b855318f9f2303664cebf0edb1c1856081e1adbde1aba9df26e3b9682e6a35e"
+    },
+    {
+      "path": "research/rank3/slice_equivalence.py",
+      "sha256": "9ffcc64bcf9a9cee9089546a3ec93d4a8c1707622451cc95cf977585b2157339"
+    },
+    {
+      "path": "research/rank3/solve_lifts.py",
+      "sha256": "a007749c130cd8e61aba55c6e4e006af21a17bf9d6947135a44b9f381ed55751"
+    },
+    {
+      "path": "research/rank3/verify_classification.py",
+      "sha256": "9de770e38373e5c36cb5107ce1a743224b6c89edd4ceebace3887b52c1d5ac5b"
+    },
+    {
+      "path": "research/rank4/audit_delivery.py",
+      "sha256": "c96222527390476f94ec8debc590d00922ee591f9a80c3b3a66acf5eee194c8a"
+    },
+    {
+      "path": "research/rank4/check_smt.py",
+      "sha256": "058f694cdafd6e96b658b2d4b5fd9b5a8f4d796fff1cc70e883c3b1316a7466e"
+    },
+    {
+      "path": "research/rank4/classify_families.py",
+      "sha256": "2c11cb912d9d6cd82ed3294d8c18771e8c80afbf35055a8b369d8d958ddaea9d"
+    },
+    {
+      "path": "research/rank4/degree_two.py",
+      "sha256": "40ed0dd451d70bb405193ddcb5b6b1ddd6d4b34cc8fb56f82320f73b34bce38a"
+    },
+    {
+      "path": "research/rank4/enumerate_constants.cpp",
+      "sha256": "460dee472cc28fe95a5b89b60961ece83b94c8bb738541a60929db88a204fab3"
+    },
+    {
+      "path": "research/rank4/make_pdf_tables.py",
+      "sha256": "941f8d7f2cb04a3b3f90bbcb0047fbdaaad1de3734b28c42cc538ce2f7e64a93"
+    },
+    {
+      "path": "research/rank4/package_certificates.py",
+      "sha256": "29fef0ce2e9f812e650b50a600ef107ae3d74518398ea6692297fa09bc91224c"
+    },
+    {
+      "path": "research/rank4/prepare_constants.py",
+      "sha256": "b5ce6abc021c68b9444488b9812ec67edcab59da133ca4ab5d558b0de08d9525"
+    },
+    {
+      "path": "research/rank4/rank4_lifts.py",
+      "sha256": "a38f217fc75e61fc37e0b6e8f1fbf27f568bc6fc253c7f9627d8e45ee6495ed7"
+    },
+    {
+      "path": "research/rank4/rank4_slices.py",
+      "sha256": "2a0d7c0efdbf48dbd28cd89af18a0569ca63adc70f5a1268bc51044aee6c43dc"
+    },
+    {
+      "path": "research/rank4/run_lifts.py",
+      "sha256": "f02a334e5a8d345a0dcf1ed744a12d891900b3b4b5735185ac9dd0b7e28f07b5"
+    },
+    {
+      "path": "research/rank4/verify_rank4.py",
+      "sha256": "ed76003cf684b8d7e7819386c2d2e6d4a35f0b52c23dbce23cf33e4efd85021e"
+    },
+    {
+      "path": "research/symmetrizable/audit_completion.py",
+      "sha256": "b824f777451fde00d7d4c035002b2cda898baf8d9f600d5d3d3d9350c08a6b4a"
+    },
+    {
+      "path": "research/symmetrizable/audit_constant_archives.py",
+      "sha256": "2e0363bb99ed092a27fcddf92ad22589558aec900fc5c2834b9a23f745ce7b3f"
+    },
+    {
+      "path": "research/symmetrizable/build_document.py",
+      "sha256": "e92b6149189c807c6d3f156be831b175c7f96b617168b71229d6bf31a01105af"
+    },
+    {
+      "path": "research/symmetrizable/build_records.py",
+      "sha256": "99e0848837a536b22fd915ce4b710c99d76c886a6847e085c78967f035a3e9a6"
+    },
+    {
+      "path": "research/symmetrizable/collect_constants.py",
+      "sha256": "262b5185b5df225ae00fb12439f110af89c1c59be693dd74c45f8dee5f220098"
+    },
+    {
+      "path": "research/symmetrizable/constant_rows.inc",
+      "sha256": "3b0d6e03836e5e7e70c04ea10da5f3d4d413b8190de67ee6fff18d6cb989a8ac"
+    },
+    {
+      "path": "research/symmetrizable/enumerate_constants.cpp",
+      "sha256": "20fbd48568ccbdc952ae80a68772c3d0da2fbfb47882d9ab0946fc9074128570"
+    },
+    {
+      "path": "research/symmetrizable/family_notes.py",
+      "sha256": "4d756c003da478f0f6fb6b36df716d34b2f7e162f980111b14f980ad66611bdd"
+    },
+    {
+      "path": "research/symmetrizable/finish_enrichment.py",
+      "sha256": "a3dce759ad0a7bcc54fc0db94f2db6f2da31f33e49d297291590ea0be72b777b"
+    },
+    {
+      "path": "research/symmetrizable/finite_quiver_orbits.py",
+      "sha256": "ef5f708bc8d4c75dcd9ced5d02d1f7b3a1ab0b11d7e37d82e55dd4a5e31cdea2"
+    },
+    {
+      "path": "research/symmetrizable/folded_families.py",
+      "sha256": "34a19c321433dfdd7145367d79b5def03f348a6c27171e5d7295c8146e7de244"
+    },
+    {
+      "path": "research/symmetrizable/make_enumerator.py",
+      "sha256": "fc35d892172b4a81389931074a6874a4c62fccf2cd5e4c18dcd7d17818e108e6"
+    },
+    {
+      "path": "research/symmetrizable/methods.template.html",
+      "sha256": "1054b71266b3ba0b14420bb0e1bf6767046930e68eab04be95375b5ecba6c514"
+    },
+    {
+      "path": "research/symmetrizable/pending_quivers.py",
+      "sha256": "3a6ecb05179c9bf6c3d7047d3e09ff172d4b3c153b874f83e804ae2d475e0815"
+    },
+    {
+      "path": "research/symmetrizable/principal-constants-rank6.txt",
+      "sha256": "604a4f61632eb45b581047bb79cc680354d58cb47dfb4c389a0a097fd79c9aaf"
+    },
+    {
+      "path": "research/symmetrizable/principal-constants-rank6.txt.weights",
+      "sha256": "ab1548959e49d6a5531f9162ff4ce43a9b769f2c40442ea3e7987917293c0de9"
+    },
+    {
+      "path": "research/symmetrizable/principal-constants.txt",
+      "sha256": "c5a2aa52d98a55d4b4e7178a45bd44b416e8a2f4b6762275c58a43cf0c5173f9"
+    },
+    {
+      "path": "research/symmetrizable/principal-constants.txt.weights",
+      "sha256": "ab1548959e49d6a5531f9162ff4ce43a9b769f2c40442ea3e7987917293c0de9"
+    },
+    {
+      "path": "research/symmetrizable/principal.py",
+      "sha256": "ce6027bff423582c98caee9ac2fb9b4129b3baa972466074cabaaf9ce0b34a5e"
+    },
+    {
+      "path": "research/symmetrizable/proofs.json",
+      "sha256": "1927b150ffedf288c58bda24c68aba8248b14a7b8cb40cb081f0c652dce7cd2d"
+    },
+    {
+      "path": "research/symmetrizable/quiver_context.py",
+      "sha256": "8f8782b244216c9f4dabdab81317b0a129ede3b2f2b64ca2a1cbf26868cc0ed8"
+    },
+    {
+      "path": "research/symmetrizable/quiver_types.py",
+      "sha256": "0a02a90cd4e7990999d13e20f31d95020b06a618920a4956b1335e2625a1e944"
+    },
+    {
+      "path": "research/symmetrizable/run_constants.py",
+      "sha256": "03e3b2e07560b2688f50b50e46dabf7356114c4250397762334fcd0d8744d224"
+    },
+    {
+      "path": "research/symmetrizable/run_lifts.py",
+      "sha256": "e5505ed651dab8d72889d09e56e3d35cc64da2b0be1b2bfbd95a37cdee2e1381"
+    },
+    {
+      "path": "research/symmetrizable/run_pending_families.py",
+      "sha256": "67a159f72025eb7e8a336d7c04f09180c42320acfb85158119e74cbb3434d30a"
+    },
+    {
+      "path": "research/symmetrizable/run_pending_lifts.py",
+      "sha256": "ebf9e2751b3bab30d64d22f1ffcfa0b3bc6a3f7a77daa080e476bb6eeb74dc9d"
+    },
+    {
+      "path": "research/symmetrizable/run_pending_verification.py",
+      "sha256": "a4e5ac07296e2aacd42592ff5495f67aba53434197ccb156af884550024fc067"
+    },
+    {
+      "path": "research/symmetrizable/run_split_constants.py",
+      "sha256": "80c26e1e5636e3f7cccad329f6ac400b649cbaa9558ff8da0073421c1ca1e97f"
+    },
+    {
+      "path": "research/symmetrizable/slice_orbit.cpp",
+      "sha256": "129018f3937db0f28d85e4056a01a0833a87430d9d5e15ed7f2cd0141957bf96"
+    },
+    {
+      "path": "research/symmetrizable/slices.py",
+      "sha256": "efa1b5207ce83f2d3119f999c1abbddd7e805b6bb3e56c7b208c28abe050f05d"
+    },
+    {
+      "path": "research/symmetrizable/unlabelled_quiver_orbits.py",
+      "sha256": "20a809e4645dab4eec4cca85326f1817a7486344bf3761cf5342f3c50d965ec8"
+    },
+    {
+      "path": "research/symmetrizable/verify_branch_cost_control.py",
+      "sha256": "857bb645edb69584a4a632762669be2fb53ce9c825f81ac64c2e9c9a024ab2e7"
+    },
+    {
+      "path": "research/symmetrizable/verify_completion_controls.py",
+      "sha256": "c1767a9b9f1a1ac1105e0a752335ce1c0e648260c8b24484c0652627bcf3399f"
+    },
+    {
+      "path": "research/symmetrizable/verify_constant_controls.py",
+      "sha256": "96244b78d8e99f2bfcae1a26d8481936439bb6f65771c37d98521d78fc2bdb9a"
+    },
+    {
+      "path": "research/symmetrizable/verify_mmatrix_controls.py",
+      "sha256": "f6a961984362e0f87564134ffaa733a53160f2fb64c97a9e6097414165bf298c"
+    },
+    {
+      "path": "research/symmetrizable/verify_overlap_controls.py",
+      "sha256": "5be8f515a60b8af6685ddc736344f752c1fe6f735aabdd80b6f761018621af1d"
+    },
+    {
+      "path": "research/symmetrizable/verify_partition_controls.py",
+      "sha256": "c6e87342cd377344d1acfe9627a6ce58aac2912f7248656ff0e0dc4d2ce208a6"
+    },
+    {
+      "path": "research/symmetrizable/verify_quiver_orbit_controls.py",
+      "sha256": "e89cceb5f272ca393f44c0354e0fd0bf4e7bcf402c0424c9079806cc63962fce"
+    },
+    {
+      "path": "research/symmetrizable/verify_spectra.py",
+      "sha256": "713953963be3755dc71161a8c2797cc17ca9201fb39b5f8697aa5ef58c031b69"
+    },
+    {
+      "path": "research/symmetrizable/verify_subset_controls.py",
+      "sha256": "578b9325c0fae317e262e62726e6f80e1db7ed4ebee06b8a4dfdea6d0e34017e"
+    },
+    {
+      "path": "research/symmetrizable/weighted_exponents.py",
+      "sha256": "bf6b97a4d17a8f124fdad676fd92d839f4872a30e0acb969fe4bbd08fae48593"
+    },
+    {
+      "path": "research/symmetrizable/weighted_lifts.py",
+      "sha256": "7d85cf4a9ede17f3437b994ea96aeecf7c92861c174a252cd74455cc212aec9d"
+    },
+    {
+      "path": "tools/archive_sources.py",
+      "sha256": "9bb8870ae1cb75a3c189b5f0f5bbd1f2e3d9e89530bb4633db72bdab6e535f5f"
+    },
+    {
+      "path": "tools/check_package.py",
+      "sha256": "0bed51b7c2d306089fa920c7bf802a4b5a8cf593dd0a0efa5cd8b550b47ec8b1"
+    },
+    {
+      "path": "tools/prepare_verification.py",
+      "sha256": "eca46f38440733d696dca6c07c8d22f662696879170d3e7607ff77a2a41450b1"
+    }
+  ],
+  "historical_enumerators": [
+    {
+      "source_sha256": "0b8ead396816c08d29409f079ef054796938ff934950928b3e0b9b8dad4cc1ca",
+      "git_commit": "1d974a664abbc07df81221c766c179d4167ab9c7",
+      "archive_member": "historical/0b8ead396816c08d29409f079ef054796938ff934950928b3e0b9b8dad4cc1ca.cpp"
+    },
+    {
+      "source_sha256": "0db241c8263795f2746fd240c72375e556cb997666097c9fa40fd7d8e7aaf209",
+      "git_commit": "bcaa604cd7c4d8338e44230b153606a5b2d9fb81",
+      "archive_member": "historical/0db241c8263795f2746fd240c72375e556cb997666097c9fa40fd7d8e7aaf209.cpp"
+    },
+    {
+      "source_sha256": "110f9858c686d66fcfbf36931949dddf0c955a96235c06a3bddb8a0bc0dd0216",
+      "git_commit": "72754731c3f925627b2b506358680922cd96336b",
+      "archive_member": "historical/110f9858c686d66fcfbf36931949dddf0c955a96235c06a3bddb8a0bc0dd0216.cpp"
+    },
+    {
+      "source_sha256": "20fbd48568ccbdc952ae80a68772c3d0da2fbfb47882d9ab0946fc9074128570",
+      "git_commit": "12ca0702cdaf05dbcce29784f33f457984b2d326",
+      "archive_member": "historical/20fbd48568ccbdc952ae80a68772c3d0da2fbfb47882d9ab0946fc9074128570.cpp"
+    },
+    {
+      "source_sha256": "31966000fd907aa27326abe2c40935d261410b0e0a5155650e997d0ebadd80ad",
+      "git_commit": "b6a65eeb849d87b5d5ef52e6e55a54b57ea32dd5",
+      "archive_member": "historical/31966000fd907aa27326abe2c40935d261410b0e0a5155650e997d0ebadd80ad.cpp"
+    },
+    {
+      "source_sha256": "88e8e8ddfe66a54338cbba6e5ed1f29f43786369dee07101c33158bb1fdf11c9",
+      "git_commit": "883aff0c2766066ca54cc30615e148fbf31e1d87",
+      "archive_member": "historical/88e8e8ddfe66a54338cbba6e5ed1f29f43786369dee07101c33158bb1fdf11c9.cpp"
+    },
+    {
+      "source_sha256": "f0665caa7d8935a1f03db05e5fef2a00adc3958a2626196ca528c40dae7f923a",
+      "git_commit": "9ef2542d0ab5d0bf8e0aae9e86d35914a110f437",
+      "archive_member": "historical/f0665caa7d8935a1f03db05e5fef2a00adc3958a2626196ca528c40dae7f923a.cpp"
+    }
+  ],
+  "rank_reports": {
+    "2": {
+      "rank": 2,
+      "constant_candidates": 11,
+      "polynomial_families": 10,
+      "identity_families": 6,
+      "new_nonidentity_families": 4,
+      "lift_classification_complete": true,
+      "slice_distinctness_complete": true,
+      "enrichment_complete": true,
+      "complete": true
+    },
+    "3": {
+      "rank": 3,
+      "constant_candidates": 86,
+      "polynomial_families": 24,
+      "identity_families": 16,
+      "new_nonidentity_families": 8,
+      "lift_classification_complete": true,
+      "slice_distinctness_complete": true,
+      "enrichment_complete": true,
+      "complete": true
+    },
+    "4": {
+      "rank": 4,
+      "constant_candidates": 1040,
+      "polynomial_families": 66,
+      "identity_families": 37,
+      "new_nonidentity_families": 29,
+      "lift_classification_complete": true,
+      "slice_distinctness_complete": true,
+      "enrichment_complete": true,
+      "complete": true
+    },
+    "5": {
+      "rank": 5,
+      "constant_candidates": 9867,
+      "polynomial_families": 95,
+      "identity_families": 55,
+      "new_nonidentity_families": 40,
+      "lift_classification_complete": true,
+      "slice_distinctness_complete": true,
+      "enrichment_complete": true,
+      "complete": true
+    },
+    "6": {
+      "rank": 6,
+      "constant_candidates": 152874,
+      "polynomial_families": 188,
+      "identity_families": 108,
+      "new_nonidentity_families": 80,
+      "lift_classification_complete": true,
+      "slice_distinctness_complete": true,
+      "enrichment_complete": true,
+      "complete": true
+    }
+  },
+  "archive_sha256": "798d87e8a9266e1415ab149c13fa75234927f972db041b6aa653240161e7ba5c"
+}

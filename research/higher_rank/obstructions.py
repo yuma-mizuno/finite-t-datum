@@ -16,6 +16,7 @@ def lower_keys():
     records=json.loads((HERE.parents[1]/'docs/catalogue/catalogue.json').read_text(encoding='utf8'))['records']
     valid={n:set() for n in range(1,6)}
     for r in records:
+        if r['scope']['symmetrizer']!='identity':continue
         n=r['rank']
         if n>5:continue
         p,m=([[(2 if i==j else 0)-r['datum'][a][i][j] for j in range(n)] for i in range(n)] for a in ('A_plus_1','A_minus_1'))

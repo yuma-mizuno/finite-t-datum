@@ -1,0 +1,19 @@
+{
+  "comparisons": [
+    {
+      "rank": 4,
+      "full_upper_tasks": 120,
+      "filtered_constants": 274,
+      "equal_to_independently_filtered_reference": true
+    },
+    {
+      "rank": 5,
+      "full_upper_tasks": 720,
+      "filtered_constants": 1997,
+      "equal_to_independently_filtered_reference": true
+    }
+  ],
+  "all_verified_families_retained": 305,
+  "signed_positive_negative_mass_checked_on_polynomials": true,
+  "source_sha256": "31966000fd907aa27326abe2c40935d261410b0e0a5155650e997d0ebadd80ad"
+}

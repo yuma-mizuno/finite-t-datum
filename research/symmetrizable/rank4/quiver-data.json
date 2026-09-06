@@ -1,0 +1,2234 @@
+{
+  "s4-c01": {
+    "vertices": 4,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "status": "certified-dynkin",
+    "label": "B4",
+    "mutation_finite": true,
+    "cluster_finite": true,
+    "certificate": {
+      "mutation_path": [],
+      "target_B": [
+        [
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0
+        ]
+      ],
+      "target_graph": "B4"
+    },
+    "certificate_replayed": true
+  },
+  "s4-c02": {
+    "vertices": 6,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "status": "certified-dynkin",
+    "label": "B6",
+    "mutation_finite": true,
+    "cluster_finite": true,
+    "certificate": {
+      "mutation_path": [
+        0,
+        2,
+        0
+      ],
+      "target_B": [
+        [
+          0,
+          0,
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -2,
+          0,
+          0,
+          0
+        ]
+      ],
+      "target_graph": "B6"
+    },
+    "certificate_replayed": true
+  },
+  "s4-c03": {
+    "vertices": 6,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "status": "certified-dynkin",
+    "label": "B6",
+    "mutation_finite": true,
+    "cluster_finite": true,
+    "certificate": {
+      "mutation_path": [
+        1,
+        2
+      ],
+      "target_B": [
+        [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0
+        ],
+        [
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -2,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "target_graph": "B6"
+    },
+    "certificate_replayed": true
+  },
+  "s4-c04": {
+    "vertices": 7,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "status": "certified-dynkin",
+    "label": "B7",
+    "mutation_finite": true,
+    "cluster_finite": true,
+    "certificate": {
+      "mutation_path": [
+        1,
+        2,
+        4,
+        2
+      ],
+      "target_B": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      ],
+      "target_graph": "B7"
+    },
+    "certificate_replayed": true
+  },
+  "s4-c05": {
+    "vertices": 5,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "recognition": "undetermined finite mutation type",
+    "status": "certified-finite-orbit",
+    "label": "Finite valued mutation class d21c079839",
+    "mutation_finite": true,
+    "cluster_finite": false,
+    "search_note": "All labelled mutations were exhausted; the orbit contains no finite Dynkin representative. No standard name is assigned.",
+    "certificate_replayed": true,
+    "certificate": {
+      "mutation_path": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "target_B": [
+        [
+          0,
+          -2,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          -2,
+          2,
+          0,
+          0,
+          0
+        ]
+      ],
+      "orbit_archive": "research/symmetrizable/rank4/quiver_orbits/s4-c05.json.gz",
+      "archive_sha256": "e3820ac263441f4577f8f7df33030b284d09279bb4280e6b3319919daef289fc",
+      "labelled_orbit_size": 54,
+      "canonical_class_sha256": "d21c079839b726034429c64991d2d7ae654812a8ec27971a8d14574e8a6cc105",
+      "complete_transition_closure": true
+    }
+  },
+  "s4-c06": {
+    "vertices": 8,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://arxiv.org/abs/1006.4276",
+    "status": "certified-mutation-infinite",
+    "label": "Mutation-infinite",
+    "mutation_finite": false,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [
+        4,
+        7,
+        1,
+        0,
+        2,
+        6,
+        0,
+        6,
+        0,
+        6,
+        1,
+        0,
+        2,
+        0,
+        3,
+        2,
+        4,
+        1,
+        6,
+        0,
+        2,
+        5
+      ],
+      "target_B": [
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1,
+          0,
+          0,
+          2,
+          -2,
+          0
+        ],
+        [
+          1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -2,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          -2,
+          4,
+          0,
+          -2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          -1,
+          0
+        ]
+      ],
+      "edge_product_greater_than_four": [
+        3,
+        6,
+        2,
+        4
+      ]
+    },
+    "certificate_replayed": true
+  },
+  "s4-c07": {
+    "vertices": 6,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://arxiv.org/abs/1006.4276",
+    "status": "certified-mutation-infinite",
+    "label": "Mutation-infinite",
+    "mutation_finite": false,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [
+        0,
+        4,
+        2,
+        1,
+        5
+      ],
+      "target_B": [
+        [
+          0,
+          0,
+          -1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          -1,
+          0
+        ],
+        [
+          1,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          -1,
+          0,
+          0,
+          3,
+          -1
+        ],
+        [
+          0,
+          1,
+          0,
+          -3,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          -3,
+          0
+        ]
+      ],
+      "edge_product_greater_than_four": [
+        3,
+        4,
+        3,
+        3
+      ]
+    },
+    "certificate_replayed": true
+  },
+  "s4-c08": {
+    "vertices": 4,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "status": "certified-dynkin",
+    "label": "F4",
+    "mutation_finite": true,
+    "cluster_finite": true,
+    "certificate": {
+      "mutation_path": [],
+      "target_B": [
+        [
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -2,
+          -1,
+          0
+        ]
+      ],
+      "target_graph": "F4"
+    },
+    "certificate_replayed": true
+  },
+  "s4-c09": {
+    "vertices": 6,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "recognition": "['F', 4, [1, 1]]",
+    "status": "certified-standard",
+    "label": "['F', 4, [1, 1]]",
+    "mutation_finite": true,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [
+        2,
+        5,
+        1,
+        0
+      ],
+      "target_B": [
+        [
+          0,
+          -1,
+          0,
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          0,
+          -2
+        ],
+        [
+          -2,
+          0,
+          -1,
+          0,
+          2,
+          0
+        ]
+      ],
+      "standard_B": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          1,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          2,
+          -2,
+          0
+        ],
+        [
+          0,
+          1,
+          -2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "standard_type": "['F', 4, [1, 1]]",
+      "comparison": "valued directed graph isomorphism"
+    },
+    "certificate_replayed": true
+  },
+  "s4-c10": {
+    "vertices": 6,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "recognition": "['F', 4, [1, 2]]",
+    "status": "certified-standard",
+    "label": "['F', 4, [1, 2]]",
+    "mutation_finite": true,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "target_B": [
+        [
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          2,
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          -2,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          -2,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "standard_B": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          2,
+          -2,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          0,
+          2,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          -2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "standard_type": "['F', 4, [1, 2]]",
+      "comparison": "valued directed graph isomorphism"
+    },
+    "certificate_replayed": true
+  },
+  "s4-c11": {
+    "vertices": 6,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "recognition": "['F', 4, [2, 2]]",
+    "status": "certified-standard",
+    "label": "['F', 4, [2, 2]]",
+    "mutation_finite": true,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [
+        2,
+        0,
+        5
+      ],
+      "target_B": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          -1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -2,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          -2,
+          0,
+          -1,
+          0
+        ]
+      ],
+      "standard_B": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          1,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          2,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          -2,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          -2,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "standard_type": "['F', 4, [2, 2]]",
+      "comparison": "valued directed graph isomorphism"
+    },
+    "certificate_replayed": true
+  },
+  "s4-c12": {
+    "vertices": 4,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "recognition": "undetermined finite mutation type",
+    "status": "certified-finite-orbit",
+    "label": "Finite valued mutation class e71526ec20",
+    "mutation_finite": true,
+    "cluster_finite": false,
+    "search_note": "All labelled mutations were exhausted; the orbit contains no finite Dynkin representative. No standard name is assigned.",
+    "certificate_replayed": true,
+    "certificate": {
+      "mutation_path": [
+        2
+      ],
+      "target_B": [
+        [
+          0,
+          -2,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -2,
+          2,
+          0,
+          0
+        ],
+        [
+          -2,
+          2,
+          0,
+          0
+        ]
+      ],
+      "orbit_archive": "research/symmetrizable/rank4/quiver_orbits/s4-c12.json.gz",
+      "archive_sha256": "f197dc3ded17104b508f33fba52fbcc2e4f6796e9275e19bbbd1bd6da975b4af",
+      "labelled_orbit_size": 6,
+      "canonical_class_sha256": "e71526ec20943323c7dbe6cf7e774f9d6118761a49498a2e937cf147170d643f",
+      "complete_transition_closure": true
+    }
+  },
+  "s4-c13": {
+    "vertices": 4,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "status": "certified-dynkin",
+    "label": "F4",
+    "mutation_finite": true,
+    "cluster_finite": true,
+    "certificate": {
+      "mutation_path": [
+        0,
+        1,
+        2
+      ],
+      "target_B": [
+        [
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "target_graph": "F4"
+    },
+    "certificate_replayed": true
+  },
+  "s4-c14": {
+    "vertices": 8,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://arxiv.org/abs/1006.4276",
+    "status": "certified-mutation-infinite",
+    "label": "Mutation-infinite",
+    "mutation_finite": false,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [
+        7,
+        6,
+        2,
+        0,
+        5,
+        0,
+        3,
+        2,
+        1,
+        3,
+        0,
+        1,
+        2,
+        6
+      ],
+      "target_B": [
+        [
+          0,
+          -1,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          -1,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          -4,
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          -1,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -2,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "edge_product_greater_than_four": [
+        3,
+        4,
+        2,
+        4
+      ]
+    },
+    "certificate_replayed": true
+  },
+  "s4-c15": {
+    "vertices": 8,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://arxiv.org/abs/1006.4276",
+    "status": "certified-mutation-infinite",
+    "label": "Mutation-infinite",
+    "mutation_finite": false,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [
+        2,
+        5,
+        6,
+        4,
+        3,
+        0,
+        5,
+        4,
+        6,
+        2
+      ],
+      "target_B": [
+        [
+          0,
+          0,
+          2,
+          -3,
+          -1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -2,
+          0,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          0
+        ],
+        [
+          3,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          -1,
+          1
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          1
+        ],
+        [
+          0,
+          -2,
+          2,
+          -2,
+          -1,
+          0,
+          -1,
+          0
+        ],
+        [
+          2,
+          0,
+          -2,
+          2,
+          1,
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          -2,
+          -1,
+          0,
+          1,
+          0
+        ]
+      ],
+      "edge_product_greater_than_four": [
+        0,
+        3,
+        3,
+        3
+      ]
+    },
+    "certificate_replayed": true
+  },
+  "s4-c16": {
+    "vertices": 4,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://arxiv.org/abs/1006.4276",
+    "status": "certified-mutation-infinite",
+    "label": "Mutation-infinite",
+    "mutation_finite": false,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [
+        0
+      ],
+      "target_B": [
+        [
+          0,
+          0,
+          1,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1
+        ],
+        [
+          -3,
+          -3,
+          0,
+          3
+        ],
+        [
+          3,
+          3,
+          -3,
+          0
+        ]
+      ],
+      "edge_product_greater_than_four": [
+        2,
+        3,
+        3,
+        3
+      ]
+    },
+    "certificate_replayed": true
+  },
+  "s4-c17": {
+    "vertices": 4,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "recognition": "['G', 2, [1, 3]]",
+    "status": "certified-standard",
+    "label": "['G', 2, [1, 3]]",
+    "mutation_finite": true,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [
+        0,
+        3
+      ],
+      "target_B": [
+        [
+          0,
+          -2,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          -3,
+          3,
+          -1,
+          0
+        ]
+      ],
+      "standard_B": [
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          3,
+          -3
+        ],
+        [
+          0,
+          -1,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          -2,
+          0
+        ]
+      ],
+      "standard_type": "['G', 2, [1, 3]]",
+      "comparison": "valued directed graph isomorphism"
+    },
+    "certificate_replayed": true
+  },
+  "s4-c18": {
+    "vertices": 8,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://arxiv.org/abs/1006.4276",
+    "status": "certified-mutation-infinite",
+    "label": "Mutation-infinite",
+    "mutation_finite": false,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [
+        0,
+        7,
+        0,
+        7,
+        3,
+        2
+      ],
+      "target_B": [
+        [
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -3,
+          3,
+          0,
+          1,
+          0,
+          1,
+          -3
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -3,
+          0,
+          1,
+          3,
+          0,
+          0
+        ]
+      ],
+      "edge_product_greater_than_four": [
+        5,
+        7,
+        3,
+        3
+      ]
+    },
+    "certificate_replayed": true
+  },
+  "s4-c19": {
+    "vertices": 6,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://arxiv.org/abs/1006.4276",
+    "status": "certified-mutation-infinite",
+    "label": "Mutation-infinite",
+    "mutation_finite": false,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [
+        1,
+        2,
+        4
+      ],
+      "target_B": [
+        [
+          0,
+          1,
+          1,
+          -1,
+          1,
+          -2
+        ],
+        [
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -3,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          6,
+          0,
+          -3,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "edge_product_greater_than_four": [
+        0,
+        5,
+        2,
+        6
+      ]
+    },
+    "certificate_replayed": true
+  },
+  "s4-c20": {
+    "vertices": 4,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "status": "certified-dynkin",
+    "label": "C4",
+    "mutation_finite": true,
+    "cluster_finite": true,
+    "certificate": {
+      "mutation_path": [],
+      "target_B": [
+        [
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          -1
+        ],
+        [
+          2,
+          0,
+          1,
+          0
+        ]
+      ],
+      "target_graph": "C4"
+    },
+    "certificate_replayed": true
+  },
+  "s4-c21": {
+    "vertices": 7,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "status": "certified-dynkin",
+    "label": "C7",
+    "mutation_finite": true,
+    "cluster_finite": true,
+    "certificate": {
+      "mutation_path": [
+        1,
+        6,
+        3
+      ],
+      "target_B": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "target_graph": "C7"
+    },
+    "certificate_replayed": true
+  },
+  "s4-c22": {
+    "vertices": 5,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "recognition": "undetermined finite mutation type",
+    "status": "certified-finite-orbit",
+    "label": "Finite valued mutation class 2c4399253b",
+    "mutation_finite": true,
+    "cluster_finite": false,
+    "search_note": "All labelled mutations were exhausted; the orbit contains no finite Dynkin representative. No standard name is assigned.",
+    "certificate_replayed": true,
+    "certificate": {
+      "mutation_path": [
+        4,
+        1,
+        4
+      ],
+      "target_B": [
+        [
+          0,
+          -1,
+          -1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          0,
+          -1,
+          -1
+        ],
+        [
+          2,
+          0,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -2,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          -2,
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "orbit_archive": "research/symmetrizable/rank4/quiver_orbits/s4-c22.json.gz",
+      "archive_sha256": "80b2c91432cd7bb2b1d8d0e17bf8e884297a3a260bc9385dddac8367a3dea533",
+      "labelled_orbit_size": 54,
+      "canonical_class_sha256": "2c4399253b01b58e405b1f66698bf551e2924c189569e644b1c691a13cf4db44",
+      "complete_transition_closure": true
+    }
+  },
+  "s4-c23": {
+    "vertices": 6,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "status": "certified-dynkin",
+    "label": "C6",
+    "mutation_finite": true,
+    "cluster_finite": true,
+    "certificate": {
+      "mutation_path": [
+        4,
+        3
+      ],
+      "target_B": [
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "target_graph": "C6"
+    },
+    "certificate_replayed": true
+  },
+  "s4-c24": {
+    "vertices": 6,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "status": "certified-dynkin",
+    "label": "C6",
+    "mutation_finite": true,
+    "cluster_finite": true,
+    "certificate": {
+      "mutation_path": [
+        5,
+        1
+      ],
+      "target_B": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "target_graph": "C6"
+    },
+    "certificate_replayed": true
+  },
+  "s4-c25": {
+    "vertices": 8,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://arxiv.org/abs/1006.4276",
+    "status": "certified-mutation-infinite",
+    "label": "Mutation-infinite",
+    "mutation_finite": false,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [
+        2,
+        4,
+        0,
+        3,
+        2,
+        7,
+        2,
+        7,
+        1,
+        2,
+        4,
+        7,
+        2,
+        4,
+        3,
+        4,
+        0,
+        1,
+        4,
+        3,
+        7,
+        1,
+        6,
+        2,
+        4,
+        2,
+        7,
+        0,
+        5,
+        0,
+        3,
+        5,
+        6,
+        3,
+        0,
+        4,
+        3,
+        0,
+        2,
+        1,
+        3,
+        1,
+        4,
+        6,
+        4,
+        0,
+        3,
+        1,
+        5,
+        2,
+        1,
+        2,
+        1,
+        6
+      ],
+      "target_B": [
+        [
+          0,
+          1,
+          0,
+          2,
+          0,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          -4,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          -1,
+          1,
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -2,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "edge_product_greater_than_four": [
+        0,
+        3,
+        2,
+        4
+      ]
+    },
+    "certificate_replayed": true
+  },
+  "s4-c26": {
+    "vertices": 4,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "recognition": "undetermined finite mutation type",
+    "status": "certified-finite-orbit",
+    "label": "Finite valued mutation class e59e04f630",
+    "mutation_finite": true,
+    "cluster_finite": false,
+    "search_note": "All labelled mutations were exhausted; the orbit contains no finite Dynkin representative. No standard name is assigned.",
+    "certificate_replayed": true,
+    "certificate": {
+      "mutation_path": [
+        2
+      ],
+      "target_B": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          2,
+          0,
+          0,
+          -1
+        ],
+        [
+          2,
+          0,
+          0,
+          -1
+        ],
+        [
+          -4,
+          2,
+          2,
+          0
+        ]
+      ],
+      "orbit_archive": "research/symmetrizable/rank4/quiver_orbits/s4-c26.json.gz",
+      "archive_sha256": "2af39d9bd2858be4116865f31c9e58432929c422b16d2a74ae12445287c56762",
+      "labelled_orbit_size": 6,
+      "canonical_class_sha256": "e59e04f630f88cc1ed37b452d56e6a3e75215b54f0dc36b6a465eb1d18516412",
+      "complete_transition_closure": true
+    }
+  },
+  "s4-c27": {
+    "vertices": 4,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://arxiv.org/abs/1006.4276",
+    "status": "certified-mutation-infinite",
+    "label": "Mutation-infinite",
+    "mutation_finite": false,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [
+        0
+      ],
+      "target_B": [
+        [
+          0,
+          1,
+          -1,
+          0
+        ],
+        [
+          -2,
+          0,
+          2,
+          -1
+        ],
+        [
+          3,
+          -3,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          -2,
+          0
+        ]
+      ],
+      "edge_product_greater_than_four": [
+        1,
+        2,
+        2,
+        3
+      ]
+    },
+    "certificate_replayed": true
+  },
+  "s4-c28": {
+    "vertices": 6,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://arxiv.org/abs/1006.4276",
+    "status": "certified-mutation-infinite",
+    "label": "Mutation-infinite",
+    "mutation_finite": false,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [
+        2,
+        5,
+        1,
+        2,
+        0
+      ],
+      "target_B": [
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          3,
+          0,
+          1,
+          1,
+          0,
+          -3
+        ],
+        [
+          -3,
+          0,
+          -1,
+          0,
+          3,
+          0
+        ]
+      ],
+      "edge_product_greater_than_four": [
+        4,
+        5,
+        3,
+        3
+      ]
+    },
+    "certificate_replayed": true
+  },
+  "s4-c29": {
+    "vertices": 4,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://arxiv.org/abs/1006.4276",
+    "status": "certified-mutation-infinite",
+    "label": "Mutation-infinite",
+    "mutation_finite": false,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [
+        0
+      ],
+      "target_B": [
+        [
+          0,
+          1,
+          -1,
+          0
+        ],
+        [
+          -3,
+          0,
+          3,
+          -1
+        ],
+        [
+          3,
+          -3,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          -3,
+          0
+        ]
+      ],
+      "edge_product_greater_than_four": [
+        1,
+        2,
+        3,
+        3
+      ]
+    },
+    "certificate_replayed": true
+  }
+}

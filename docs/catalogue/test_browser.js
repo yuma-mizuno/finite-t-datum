@@ -13,20 +13,23 @@ const url=pathToFileURL(path.join(root,'index.html')).href;
     page.on('pageerror',e=>errors.push(String(e)));page.on('request',r=>{if(/^https?:/.test(r.url()))requests.push(r.url());});
     const route=async(id,tab='matrices')=>{await page.goto(url+'#'+id+'/'+tab);await page.waitForFunction(([id,tab])=>document.querySelector('#record-header .eyebrow').textContent.endsWith(id)&&document.querySelector('#tab-'+tab).getAttribute('aria-selected')==='true',[id,tab]);};
     await route('r4-c01');
-    assert.equal(await page.locator('.record-link').count(),37);
+    assert.equal(await page.locator('.record-link').count(),data.records.filter(r=>r.rank===4).length);
     await page.screenshot({path:path.join(qa,'rank4-matrices.png'),fullPage:true});
     await page.locator('#navigator-filters summary').click();
-    await page.selectOption('#form','degree2');assert.equal(await page.locator('.record-link').count(),9);
+    await page.selectOption('#form','degree2');assert.equal(await page.locator('.record-link').count(),data.records.filter(r=>r.rank===4&&r.datum.delays.every(x=>x===2)).length);
     await page.click('[data-rank="3"]');await page.waitForFunction(()=>document.querySelector('#record-header .eyebrow').textContent.endsWith('r3-c01'));
-    assert.equal(await page.locator('.record-link').count(),16);
+    assert.equal(await page.locator('.record-link').count(),data.records.filter(r=>r.rank===3).length);
     await page.click('[data-rank="all"]');assert.equal(await page.locator('.record-link').count(),data.records.length);
     for(const [rank,count] of [[1,2],[2,6],[5,55],[6,108]]){
       await page.click(`[data-rank="${rank}"]`);
       await page.waitForFunction(rank=>document.querySelector('#record-header .eyebrow').textContent.startsWith('Rank '+rank),rank);
-      assert.equal(await page.locator('.record-link').count(),count);
+      assert.equal(await page.locator('.record-link').count(),data.records.filter(r=>r.rank===rank).length);
     }
     await page.click('[data-rank="all"]');
-    for(const family of ['RSG','SG','Zamolodchikov','Commuting Cartan','Literature example']){
+    await page.selectOption('#symmetrizer-filter','identity');assert.equal(await page.locator('.record-link').count(),224);
+    await page.selectOption('#symmetrizer-filter','positive_diagonal');assert.equal(await page.locator('.record-link').count(),data.records.length-224);
+    await page.selectOption('#symmetrizer-filter','all');
+    for(const family of ['RSG','SG','Zamolodchikov','Commuting Cartan','Fold','Literature example']){
       await page.selectOption('#family-filter',family);
       assert.equal(await page.locator('.record-link').count(),data.records.filter(r=>r.notes.family.identifications.some(x=>x.category===family)).length);
     }
@@ -99,7 +102,7 @@ const url=pathToFileURL(path.join(root,'index.html')).href;
     await page.fill('#scale','9007199254740993');assert.match(await page.locator('.transformed-delays').textContent(),/18014398509481986/);
     await route('r4-c19','mutation');
     const word=data.records.find(r=>r.id==='r4-c19').slice.mutation_word;
-    await page.locator('[data-vertex="0"]').click();assert.match(await page.locator('#graph-caption').textContent(),/Vertex 1:/);
+    await page.locator('[data-vertex="0"]').click();assert.match(await page.locator('#graph-caption').textContent(),/Vertex 1, weight 1:/);
     await page.click('#loop-next');await page.screenshot({path:path.join(qa,'mutation-loop.png'),fullPage:true});
     for(let i=0;i<word.length;i++)await page.click('#loop-next');
     assert.match(await page.locator('#step-label').textContent(),/Loop closed/);assert(await page.locator('#loop-next').isDisabled());
@@ -126,6 +129,6 @@ const url=pathToFileURL(path.join(root,'index.html')).href;
     await page.screenshot({path:path.join(qa,'mobile-exponents.png'),fullPage:true});
     assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
     assert.deepEqual(errors,[],'No browser exceptions');assert.deepEqual(requests,[],'No HTTP requests from the document');
-    console.log('PASS: offline browser; all 224 specializations, ratios and exponent tables; rank filters, family/quiver filters, witness replay, multiplicities, exports, lifts, loop steps, keyboard tabs and mobile layout.');
+    console.log(`PASS: offline browser; all ${data.records.length} specializations, ratios and exponent tables; rank and symmetrizer filters, witness replay, exports, lifts, loops, keyboard tabs and mobile layout.`);
   } finally {await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

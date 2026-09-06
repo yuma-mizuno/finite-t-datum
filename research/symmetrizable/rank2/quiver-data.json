@@ -1,0 +1,165 @@
+{
+  "s2-c01": {
+    "vertices": 2,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "status": "certified-dynkin",
+    "label": "B2",
+    "mutation_finite": true,
+    "cluster_finite": true,
+    "certificate": {
+      "mutation_path": [],
+      "target_B": [
+        [
+          0,
+          -1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "target_graph": "B2"
+    },
+    "certificate_replayed": true
+  },
+  "s2-c02": {
+    "vertices": 4,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "status": "certified-dynkin",
+    "label": "F4",
+    "mutation_finite": true,
+    "cluster_finite": true,
+    "certificate": {
+      "mutation_path": [
+        0,
+        1,
+        2
+      ],
+      "target_B": [
+        [
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "target_graph": "F4"
+    },
+    "certificate_replayed": true
+  },
+  "s2-c03": {
+    "vertices": 2,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "status": "certified-dynkin",
+    "label": "G2",
+    "mutation_finite": true,
+    "cluster_finite": true,
+    "certificate": {
+      "mutation_path": [],
+      "target_B": [
+        [
+          0,
+          -1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "target_graph": "G2"
+    },
+    "certificate_replayed": true
+  },
+  "s2-c04": {
+    "vertices": 4,
+    "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+    "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+    "recognition": "['G', 2, [1, 3]]",
+    "status": "certified-standard",
+    "label": "['G', 2, [1, 3]]",
+    "mutation_finite": true,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [
+        0,
+        3
+      ],
+      "target_B": [
+        [
+          0,
+          -2,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          -3,
+          3,
+          -1,
+          0
+        ]
+      ],
+      "standard_B": [
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          3,
+          -3
+        ],
+        [
+          0,
+          -1,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          -2,
+          0
+        ]
+      ],
+      "standard_type": "['G', 2, [1, 3]]",
+      "comparison": "valued directed graph isomorphism"
+    },
+    "certificate_replayed": true
+  }
+}

@@ -1,0 +1,3783 @@
+{
+  "s4-c01": {
+    "components": 2,
+    "vertices": 4,
+    "B": [
+      [
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "relabel_old_to_new": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "c864e937ffdb9f9bccca18dfafe0840278e327985337343b171eef658f1e307a",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      1,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c01"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": 48
+  },
+  "s4-c02": {
+    "components": 2,
+    "vertices": 6,
+    "B": [
+      [
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        -2,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      4,
+      2,
+      5
+    ],
+    "relabel_old_to_new": [
+      1,
+      0,
+      3,
+      2,
+      4,
+      5
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "0f35f001244fb61ec4624f5237c2593e99abd2aba933807e2ffea80af9b64124",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c02"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": 96
+  },
+  "s4-c03": {
+    "components": 2,
+    "vertices": 6,
+    "B": [
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ],
+      [
+        0,
+        0,
+        0,
+        -1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        -1,
+        -1,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        -2,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      4,
+      3,
+      5
+    ],
+    "relabel_old_to_new": [
+      2,
+      0,
+      1,
+      3,
+      4,
+      5
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "06e9aa0a069c6adde7e5ce487c4a4af1ecf7c36087bd678b67dd6afa5ba41804",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c03"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": 48
+  },
+  "s4-c04": {
+    "components": 2,
+    "vertices": 7,
+    "B": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0,
+        1,
+        1,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        -2,
+        0,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      3,
+      4,
+      6
+    ],
+    "relabel_old_to_new": [
+      2,
+      0,
+      1,
+      3,
+      5,
+      4,
+      6
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "750ca6dbcdbbcf6757ee79e5d6e6536d5e26a1f844889ae651861844ac56d32c",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c04"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": null
+  },
+  "s4-c05": {
+    "components": 2,
+    "vertices": 5,
+    "B": [
+      [
+        0,
+        -1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        -1,
+        -1,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        1,
+        1,
+        0,
+        -1
+      ],
+      [
+        0,
+        -2,
+        0,
+        2,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      2,
+      4,
+      1
+    ],
+    "relabel_old_to_new": [
+      0,
+      1,
+      3,
+      2,
+      4
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "425c5341139199a0c1f1595d96a272edfb86bfe5d6d81c203885df743f0dc228",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      1,
+      1,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c05"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": null
+  },
+  "s4-c06": {
+    "components": 1,
+    "vertices": 8,
+    "B": [
+      [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "relabel_old_to_new": [
+      1,
+      0,
+      3,
+      2,
+      5,
+      4,
+      7,
+      6
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "03b504ad8979e77509e0348f38b2075a26c79dcf8098db4e873ef51e9108e358",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c06"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": null
+  },
+  "s4-c07": {
+    "components": 2,
+    "vertices": 6,
+    "B": [
+      [
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        1,
+        -1,
+        0
+      ],
+      [
+        1,
+        1,
+        -1,
+        0,
+        1,
+        -1
+      ],
+      [
+        1,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ],
+      [
+        -3,
+        0,
+        0,
+        3,
+        0,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "relabel_old_to_new": [
+      0,
+      2,
+      1,
+      4,
+      3,
+      5
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "262394a681128da57f6e5303ca02db6412f34b48346d568c166c68f3981f05fe",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      3
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c07"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": null
+  },
+  "s4-c08": {
+    "components": 2,
+    "vertices": 4,
+    "B": [
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        -2,
+        -1,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "relabel_old_to_new": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "orbit_minimum": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        0,
+        -1,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    "signature_sha256": "1e3605396ad7d3018233f23e71e3dcac1d2d433d62924d8181b6c2287bc75c3f",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      2,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c08",
+        "s4-c12",
+        "s4-c13"
+      ],
+      "method": "exhaustive weighted cyclic-loop orbit"
+    },
+    "equivalent_canonical_states_including_sign_exchange": 48
+  },
+  "s4-c09": {
+    "components": 2,
+    "vertices": 6,
+    "B": [
+      [
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        -1,
+        -1,
+        0
+      ],
+      [
+        0,
+        -2,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        2,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        -2,
+        2,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "relabel_old_to_new": [
+      0,
+      1,
+      2,
+      5,
+      3,
+      4
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "259a79bd790a054cf3e8afc4cebd86a81d249623653d8e23172c6ba5531564c9",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c09"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": null
+  },
+  "s4-c10": {
+    "components": 2,
+    "vertices": 6,
+    "B": [
+      [
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -2,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        -2,
+        2,
+        -1,
+        -1,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      5,
+      2,
+      3
+    ],
+    "relabel_old_to_new": [
+      1,
+      0,
+      2,
+      4,
+      3,
+      5
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "3a7682bd7e27e142c66522d5eb13a3f401191df7c5fd7e69204e5435bf5dfd25",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      1,
+      2,
+      2,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c10"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": null
+  },
+  "s4-c11": {
+    "components": 2,
+    "vertices": 6,
+    "B": [
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        -2,
+        -2,
+        2,
+        1,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      5,
+      3,
+      4
+    ],
+    "relabel_old_to_new": [
+      2,
+      0,
+      1,
+      3,
+      4,
+      5
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "8f880ba6d13d722dfb02a5301373741a22bd569d98c7603d4374d03b63354ac7",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c11"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": null
+  },
+  "s4-c12": {
+    "components": 2,
+    "vertices": 4,
+    "B": [
+      [
+        0,
+        0,
+        -1,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        -1
+      ],
+      [
+        2,
+        -2,
+        0,
+        0
+      ],
+      [
+        -2,
+        2,
+        0,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "relabel_old_to_new": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "orbit_minimum": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        -1,
+        2,
+        -2,
+        0,
+        0,
+        -2,
+        2,
+        0,
+        0
+      ]
+    },
+    "signature_sha256": "fbbafcf0d60059c896005e7e7c05b6edda4fef03bd907422b948478db0cbcc7e",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      2,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c08",
+        "s4-c12",
+        "s4-c13"
+      ],
+      "method": "exhaustive weighted cyclic-loop orbit"
+    },
+    "equivalent_canonical_states_including_sign_exchange": 8
+  },
+  "s4-c13": {
+    "components": 2,
+    "vertices": 4,
+    "B": [
+      [
+        0,
+        -1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        -1
+      ],
+      [
+        -2,
+        0,
+        1,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "relabel_old_to_new": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "orbit_minimum": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        0,
+        -1,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        1,
+        -2,
+        2,
+        0,
+        -1,
+        0,
+        -2,
+        1,
+        0
+      ]
+    },
+    "signature_sha256": "9d7f439828ac104bacb84fd42792847e310e875e260ef8f2e8da777eee042e6e",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      2,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c08",
+        "s4-c12",
+        "s4-c13"
+      ],
+      "method": "exhaustive weighted cyclic-loop orbit"
+    },
+    "equivalent_canonical_states_including_sign_exchange": 16
+  },
+  "s4-c14": {
+    "components": 1,
+    "vertices": 8,
+    "B": [
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -2,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        -2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "relabel_old_to_new": [
+      1,
+      0,
+      3,
+      2,
+      5,
+      4,
+      7,
+      6
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "orbit_minimum": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -2,
+        2,
+        2,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        -2,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    "signature_sha256": "db43849baa25ebeac2da1fa01e21a11e8350bd4e273f12785f2bac501fe47d9e",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c14",
+        "s4-c15"
+      ],
+      "method": "exhaustive weighted cyclic-loop orbit"
+    },
+    "equivalent_canonical_states_including_sign_exchange": 256
+  },
+  "s4-c15": {
+    "components": 1,
+    "vertices": 8,
+    "B": [
+      [
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0,
+        1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -2,
+        0,
+        -1,
+        0,
+        1,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "relabel_old_to_new": [
+      1,
+      0,
+      3,
+      2,
+      5,
+      4,
+      7,
+      6
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "orbit_minimum": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        -2,
+        0,
+        -1,
+        0,
+        1,
+        0
+      ]
+    },
+    "signature_sha256": "69cb3eef661953f2849b3499a082292f9e2134a54441897aa2b58c9dafdbf3ce",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c14",
+        "s4-c15"
+      ],
+      "method": "exhaustive weighted cyclic-loop orbit"
+    },
+    "equivalent_canonical_states_including_sign_exchange": 384
+  },
+  "s4-c16": {
+    "components": 2,
+    "vertices": 4,
+    "B": [
+      [
+        0,
+        0,
+        -1,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        -1
+      ],
+      [
+        3,
+        -3,
+        0,
+        0
+      ],
+      [
+        -3,
+        3,
+        0,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "relabel_old_to_new": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "orbit_minimum": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        3,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        -1,
+        3,
+        -3,
+        0,
+        0,
+        -3,
+        3,
+        0,
+        0
+      ]
+    },
+    "signature_sha256": "849553316f495de6bd4c55400eda9dfb1789d6a1ebaec4ad419afba98cd6cee3",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      3,
+      3
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c16",
+        "s4-c17"
+      ],
+      "method": "exhaustive weighted cyclic-loop orbit"
+    },
+    "equivalent_canonical_states_including_sign_exchange": 8
+  },
+  "s4-c17": {
+    "components": 2,
+    "vertices": 4,
+    "B": [
+      [
+        0,
+        -1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        -1
+      ],
+      [
+        -3,
+        0,
+        1,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "relabel_old_to_new": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "orbit_minimum": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        3,
+        0,
+        -1,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        1,
+        -3,
+        3,
+        0,
+        -1,
+        0,
+        -3,
+        1,
+        0
+      ]
+    },
+    "signature_sha256": "20e3218c7fcf2ed039b0e227adb8a07617ed689cf8f192463e3d86586c501ecd",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      3,
+      3
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c16",
+        "s4-c17"
+      ],
+      "method": "exhaustive weighted cyclic-loop orbit"
+    },
+    "equivalent_canonical_states_including_sign_exchange": 16
+  },
+  "s4-c18": {
+    "components": 1,
+    "vertices": 8,
+    "B": [
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -3,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        -3,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "relabel_old_to_new": [
+      1,
+      0,
+      3,
+      2,
+      5,
+      4,
+      7,
+      6
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "a78b0674123562db6ded324723669d406f54d0b809bc4d9993971660b1bf57b9",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      1,
+      1,
+      3,
+      3,
+      3,
+      3
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c18"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": null
+  },
+  "s4-c19": {
+    "components": 2,
+    "vertices": 6,
+    "B": [
+      [
+        0,
+        -1,
+        -1,
+        0,
+        -1,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        0,
+        -1
+      ],
+      [
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ],
+      [
+        3,
+        0,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      [
+        -3,
+        3,
+        0,
+        1,
+        1,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      3,
+      1,
+      5
+    ],
+    "relabel_old_to_new": [
+      0,
+      2,
+      1,
+      4,
+      3,
+      5
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "44d77bbe2806a4a2dfaaaa806e55c93fc22bf291e47710e05e60bfac916932c9",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      1,
+      3,
+      3,
+      3
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c19"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": null
+  },
+  "s4-c20": {
+    "components": 2,
+    "vertices": 4,
+    "B": [
+      [
+        0,
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        -1
+      ],
+      [
+        2,
+        0,
+        1,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "relabel_old_to_new": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "09a46f89d90f124be57a75c6785c79d728ef91747c2ce36fb2ee90b29d30cb3c",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      2,
+      2,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c20"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": null
+  },
+  "s4-c21": {
+    "components": 2,
+    "vertices": 7,
+    "B": [
+      [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        -1
+      ],
+      [
+        0,
+        -1,
+        -1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        -2,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      5,
+      1,
+      4
+    ],
+    "relabel_old_to_new": [
+      0,
+      3,
+      1,
+      2,
+      4,
+      6,
+      5
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "78362debd2b3fef917b2d275ac553038a38208fd668dbf750f0a8e0ae42d9a97",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c21"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": null
+  },
+  "s4-c22": {
+    "components": 2,
+    "vertices": 5,
+    "B": [
+      [
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        0,
+        -1,
+        -1
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        -1
+      ],
+      [
+        -2,
+        -1,
+        1,
+        1,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      1,
+      3,
+      2
+    ],
+    "relabel_old_to_new": [
+      0,
+      1,
+      2,
+      4,
+      3
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "e4481376d37e56648c8fb591358f7cb06f843750e7735eda56fa397d75ce8efb",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c22"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": null
+  },
+  "s4-c23": {
+    "components": 2,
+    "vertices": 6,
+    "B": [
+      [
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        2,
+        0,
+        1,
+        -1,
+        -1,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        -2,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "relabel_old_to_new": [
+      0,
+      1,
+      2,
+      5,
+      3,
+      4
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "d711514b26c5d5495709e30d47101784ee7dd474a6b71549b01b9798b3507fb8",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c23"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": null
+  },
+  "s4-c24": {
+    "components": 2,
+    "vertices": 6,
+    "B": [
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        -1,
+        -1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        -2,
+        -1,
+        0,
+        1,
+        0,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      4,
+      1,
+      3
+    ],
+    "relabel_old_to_new": [
+      0,
+      2,
+      1,
+      3,
+      5,
+      4
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "47ed7ed523d6f5ead1da700419257c4b3a09ba680a877db4d0ae12bc43134033",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c24"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": null
+  },
+  "s4-c25": {
+    "components": 1,
+    "vertices": 8,
+    "B": [
+      [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ],
+      [
+        -2,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "relabel_old_to_new": [
+      1,
+      0,
+      3,
+      2,
+      5,
+      4,
+      7,
+      6
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "1a0601ef384db2385ee26f55026ed8ec9e457255be18703e6ebcc65f208357af",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c25"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": null
+  },
+  "s4-c26": {
+    "components": 2,
+    "vertices": 4,
+    "B": [
+      [
+        0,
+        -1,
+        1,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        -1
+      ],
+      [
+        -2,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        2,
+        -2,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "relabel_old_to_new": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "f898198357cf7fb22c4fe700a5e9be4c458b53e23d3c1930c64386eee7d56af9",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      2,
+      2,
+      4
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c26"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": null
+  },
+  "s4-c27": {
+    "components": 2,
+    "vertices": 4,
+    "B": [
+      [
+        0,
+        -1,
+        1,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        -1
+      ],
+      [
+        -3,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        3,
+        -2,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "relabel_old_to_new": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "6d4f5f7bb553d24596743026ac781159d314e5e2f7bc37b4e4290525fa2e8c08",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      2,
+      3,
+      6
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c27"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": null
+  },
+  "s4-c28": {
+    "components": 2,
+    "vertices": 6,
+    "B": [
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        -1,
+        -1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        -1
+      ],
+      [
+        -3,
+        -1,
+        0,
+        1,
+        1,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      4,
+      1,
+      3
+    ],
+    "relabel_old_to_new": [
+      0,
+      2,
+      1,
+      3,
+      5,
+      4
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "788a28d76d452c6e65186c94eb943ed019e1299e30ee531973b4020b7c8c3cc1",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c28"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": null
+  },
+  "s4-c29": {
+    "components": 2,
+    "vertices": 4,
+    "B": [
+      [
+        0,
+        -1,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        -1
+      ],
+      [
+        -3,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        3,
+        -3,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "relabel_old_to_new": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "63ea3ef8ad32cada697f3911992e6a3ee1edfd25e0765ffc5900375944324365",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      3,
+      3,
+      9
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s4-c29"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": null
+  }
+}

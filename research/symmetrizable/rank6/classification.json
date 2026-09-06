@@ -1,0 +1,11 @@
+{
+  "rank": 6,
+  "constant_candidates": 152874,
+  "polynomial_families": 188,
+  "identity_families": 108,
+  "new_nonidentity_families": 80,
+  "lift_classification_complete": true,
+  "slice_distinctness_complete": true,
+  "enrichment_complete": true,
+  "complete": true
+}

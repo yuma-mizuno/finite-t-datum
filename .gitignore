@@ -15,3 +15,12 @@ _deps/
 *.synctex
 *.synctex.gz
 /tmp/
+
+# Losslessly restored computational inputs
+/research/symmetrizable/rank6/constant_candidates.json
+/research/symmetrizable/rank6/lift_feasibility.jsonl
+/research/symmetrizable/rank6/verification.jsonl
+/research/symmetrizable/rank6/smt_queries.zip
+**/computation-runs.jsonl
+**/constant-running.json
+**/constant-split-running.json

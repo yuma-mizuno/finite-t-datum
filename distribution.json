@@ -1,0 +1,26 @@
+{
+  "format": 1,
+  "compressed_sources": [
+    {
+      "path": "research/symmetrizable/rank6/constant_candidates.json",
+      "sha256": "e52d8108f9c7836d73e0d3bcee280ba04a3c72ef241c7d1227d0ed24bbd76f3e",
+      "bytes": 208127220,
+      "archive": "research/symmetrizable/rank6/constant_candidates.json.gz",
+      "archive_sha256": "4692491d81ef0f7e10cd2ae6c8d44e8940d10ed58e7b129dbb8801122cdc5b1e"
+    },
+    {
+      "path": "research/symmetrizable/rank6/lift_feasibility.jsonl",
+      "sha256": "4a6a9501123208dfa78c342604098877700b8e425e997c238da2b7f31f9ed06e",
+      "bytes": 68100531,
+      "archive": "research/symmetrizable/rank6/lift_feasibility.jsonl.gz",
+      "archive_sha256": "fb61fc153de540d790e8ada3c828670b28ba877354a39360fedc849ba830006c"
+    },
+    {
+      "path": "research/symmetrizable/rank6/verification.jsonl",
+      "sha256": "dbbb05aad6d620edd89aafc21310413361cf07faabd7be4cf93b4ab07c981a37",
+      "bytes": 91427233,
+      "archive": "research/symmetrizable/rank6/verification.jsonl.gz",
+      "archive_sha256": "d5eaec72ff86ea7ca5221316abed885c775ff4295fe8e8ad8a9fc39c3934fc51"
+    }
+  ]
+}

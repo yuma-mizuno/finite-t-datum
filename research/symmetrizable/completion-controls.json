@@ -1,0 +1,9 @@
+{
+  "rank4_all_120_upper_tasks_equal": true,
+  "rank4_retained_constants": 643,
+  "rank5_upper_3_equal": true,
+  "rank5_upper_3_constants": 480,
+  "source_sha256": "f0665caa7d8935a1f03db05e5fef2a00adc3958a2626196ca528c40dae7f923a",
+  "reference_source_sha256": "110f9858c686d66fcfbf36931949dddf0c955a96235c06a3bddb8a0bc0dd0216",
+  "table_sha256": "c5a2aa52d98a55d4b4e7178a45bd44b416e8a2f4b6762275c58a43cf0c5173f9"
+}

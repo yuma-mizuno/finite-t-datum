@@ -1,0 +1,954 @@
+{
+  "schema_version": "2.1.0",
+  "id": "s3-c01",
+  "rank": 3,
+  "class_number": 1,
+  "constant_id": 45,
+  "scope": {
+    "symmetrizer": "positive_diagonal",
+    "leading_permutation": "identity",
+    "indecomposable": true
+  },
+  "index_base": 0,
+  "datum": {
+    "delays": [
+      2,
+      2,
+      2
+    ],
+    "symmetrizer": [
+      1,
+      1,
+      2
+    ],
+    "N_plus": [
+      [
+        [],
+        [],
+        []
+      ],
+      [
+        [],
+        [],
+        []
+      ],
+      [
+        [],
+        [],
+        []
+      ]
+    ],
+    "N_minus": [
+      [
+        [],
+        [
+          [
+            1,
+            1
+          ]
+        ],
+        []
+      ],
+      [
+        [
+          [
+            1,
+            1
+          ]
+        ],
+        [],
+        [
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      [
+        [],
+        [
+          [
+            2,
+            1
+          ]
+        ],
+        []
+      ]
+    ],
+    "A_plus_1": [
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        2
+      ]
+    ],
+    "A_minus_1": [
+      [
+        2,
+        -1,
+        0
+      ],
+      [
+        -1,
+        2,
+        -1
+      ],
+      [
+        0,
+        -2,
+        2
+      ]
+    ]
+  },
+  "family": {
+    "parameters": [
+      "lambda",
+      "s1",
+      "s2"
+    ],
+    "fixed_shift": {
+      "species": 2,
+      "value": "0"
+    },
+    "dimension": 3,
+    "rref": [
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "-1"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "-1"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "-1",
+        "-1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "1",
+        "-1",
+        "-1"
+      ]
+    ],
+    "variable_names": [
+      "r0",
+      "r1",
+      "r2",
+      "p1_01_0",
+      "p1_10_0",
+      "p1_12_0",
+      "p1_21_0"
+    ],
+    "representative_values": [
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "coefficient_units": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "coverage": {
+      "id": 45,
+      "status": "verified",
+      "symmetrizer": [
+        1,
+        1,
+        2
+      ],
+      "positive_left_vector": [
+        3,
+        5,
+        3
+      ],
+      "seconds": 0.031000000002677552,
+      "result": "unsat",
+      "arithmetic": "integer",
+      "encoding": "reduced",
+      "query_file": "000045_coverage.smt2.gz",
+      "sha256": "a0f18e28da55fd581487db785cd94135601dc95ed4415781fe223528f7ac933d"
+    }
+  },
+  "periodicity": {
+    "time_coordinate": "displayed representative",
+    "h_plus": 2,
+    "h_minus": 6,
+    "labelled_period": 8,
+    "positive_negative_permutation": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "negative_negative_permutation": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "exchange": {
+    "vertices": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "B": [
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ]
+    ],
+    "mutation_vertices": [
+      0,
+      2,
+      4
+    ],
+    "relabel_old_to_new": [
+      1,
+      0,
+      3,
+      2,
+      5,
+      4
+    ],
+    "symmetrizer": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2
+    ]
+  },
+  "slice": {
+    "components": 2,
+    "vertices": 3,
+    "B": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        -2,
+        0
+      ]
+    ],
+    "mutation_word": [
+      0,
+      2,
+      1
+    ],
+    "relabel_old_to_new": [
+      0,
+      1,
+      2
+    ],
+    "canonical_signature": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "orbit_minimum": null
+    },
+    "signature_sha256": "c1b95f22fcf00e0f174c7e123de49751d70392202bf0ca355ca4a2cab29d84eb",
+    "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+    "symmetrizer": [
+      1,
+      1,
+      2
+    ],
+    "distinctness": {
+      "weighted_terminal_cycle_lengths": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "records_with_same_invariant": [
+        "s3-c01"
+      ],
+      "method": "unique weighted terminal cycle lengths"
+    },
+    "equivalent_canonical_states_including_sign_exchange": 12
+  },
+  "provenance": {
+    "verification_kind": "computer-assisted",
+    "source_commit": "b6a65eeb849d87b5d5ef52e6e55a54b57ea32dd5",
+    "sources": [
+      {
+        "path": "research/symmetrizable/rank3/constant_candidates.json",
+        "role": "complete primitive weighted constants",
+        "sha256": "47b18450d05566b9b52196f32de2184ac34f7fa7b481ca0feed10f7be5cf1e2a"
+      },
+      {
+        "path": "research/symmetrizable/rank3/families.jsonl",
+        "role": "complete polynomial lift spaces and periodicity",
+        "sha256": "f73d3a1db6da94dd9b094690bccbe44493fa0aaaad618f3b2f6c672ca54c3e86"
+      },
+      {
+        "path": "research/symmetrizable/rank3/verification.jsonl",
+        "role": "exact exclusion and coverage replay",
+        "sha256": "727e3d9031d9ea7dd188e157bb879ad1f275e20ef1f2f8a93b69f44f66313db0"
+      },
+      {
+        "path": "research/symmetrizable/rank3/slice_signatures.json",
+        "role": "complete weighted slice distinctness",
+        "sha256": "2331e51533448352a6670eab3c4fc396731e79eb518108f16f63c0ca55dbdb93"
+      }
+    ],
+    "manuscript": "research/symmetrizable/methods.html",
+    "pdf": null,
+    "query_path": "research/symmetrizable/rank3/smt_queries.zip",
+    "query_member": "000045_coverage.smt2.gz",
+    "enrichment_sources": [
+      {
+        "path": "research/symmetrizable/rank3/spectral-data.json",
+        "role": "certified thesis spectra and rational matrix ratios",
+        "sha256": "2c743c0803c84227fe0613bd55754b0722849cd509904796e71f96f4d1e07781"
+      },
+      {
+        "path": "research/symmetrizable/rank3/family-notes.json",
+        "role": "weighted named-family matches",
+        "sha256": "4bb6aacd1fd77f6aac9d6d8a1d2efcd177b8febfc2d9599668200077a479ac61"
+      },
+      {
+        "path": "research/symmetrizable/rank3/quiver-data.json",
+        "role": "valued mutation-class witnesses",
+        "sha256": "ad7dc37df2a948c27f93495cbcca456b4d4bd6a1177f12c58a0c5f97ec3ecb1e"
+      },
+      {
+        "path": "research/symmetrizable/rank3/enrichment-verification.json",
+        "role": "independent Jacobian spectrum and mutation replay",
+        "sha256": "9c3fa5021c03c7d7bb2ae1fcda8cb6a399f357b6d2a22697f4f4b05b507a951c"
+      }
+    ]
+  },
+  "matrix_ratios": {
+    "A_plus_inverse_A_minus": [
+      [
+        "1",
+        "-1/2",
+        "0"
+      ],
+      [
+        "-1/2",
+        "1",
+        "-1/2"
+      ],
+      [
+        "0",
+        "-1",
+        "1"
+      ]
+    ],
+    "A_minus_inverse_A_plus": [
+      [
+        "2",
+        "2",
+        "1"
+      ],
+      [
+        "2",
+        "4",
+        "2"
+      ],
+      [
+        "2",
+        "4",
+        "3"
+      ]
+    ]
+  },
+  "exponents": {
+    "status": "certified using interval arithmetic and recorded periodicity",
+    "source": "https://yuma-mizuno.github.io/thesis.pdf#page=56",
+    "formula": "bar_tau(z) = det(A_plus(z) diag(1-f) + A_minus(z) diag(f)); tau(z) = bar_tau(z^(1/t))",
+    "fixed_point_equation": "log(f) = (D^(-1) A_plus(1)^(-1) A_minus(1) D) log(1-f)",
+    "fixed_point_matrix": [
+      [
+        "1",
+        "-1/2",
+        "0"
+      ],
+      [
+        "-1/2",
+        "1",
+        "-1"
+      ],
+      [
+        "0",
+        "-1/2",
+        "1"
+      ]
+    ],
+    "cartan_like_centering_shifts": [
+      "0",
+      "0",
+      "0"
+    ],
+    "centering_integer_dilation": 1,
+    "components": 2,
+    "representative_period": 8,
+    "root_order": 4,
+    "degree": 3,
+    "values": [
+      1,
+      2,
+      3
+    ],
+    "multiplicities": [
+      {
+        "m": 1,
+        "multiplicity": 1
+      },
+      {
+        "m": 2,
+        "multiplicity": 1
+      },
+      {
+        "m": 3,
+        "multiplicity": 1
+      }
+    ],
+    "fixed_point_decimal": [
+      "0.750000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "0.888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888889",
+      "0.750000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    "tau_coefficients_decimal": [
+      "1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    "tau_exact_cyclotomic_coefficients": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "cyclotomic_generator": "zeta4 = exp(2*pi*i/4)",
+    "certificate": {
+      "fixed_point_box": {
+        "method": "Krawczyk strict interior inclusion",
+        "center_decimal": [
+          "0.75",
+          "0.888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888889",
+          "0.75"
+        ],
+        "radius": "2^-350",
+        "arithmetic_bits": 512,
+        "maximum_image_radius": "7.45834073120020674329096531546293383737647153460040689427151833320627838507011830493617489040042780336151160325583610145341272809522530266048616482959208e-154"
+      },
+      "multiplicity_bounds": [
+        {
+          "m": 0,
+          "multiplicity": 0,
+          "real_lower": "-6.43122254234831084735214513301993528439165970750337557388837967319684626250936435201353606218922189318499541883225438502271120447492150635545254312517441e-105",
+          "real_upper": "6.43122254234831084735214513301993528439165970750356203240665967836542853664225092535947047397758690335735220679058454198233795743254491072771255382025845e-105",
+          "imag_lower": "0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "imag_upper": "-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "m": 1,
+          "multiplicity": 1,
+          "real_lower": "0.999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999997856259152550563050882618288993354905202780097498",
+          "real_upper": "1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000214374084744943694911738171100664509479721990251",
+          "imag_lower": "-4.28748169489887389823476342201329018959443980500253007036967312321743758620557276136125899247536211071519879449233149212124759908638277746202504479274233e-105",
+          "imag_upper": "4.28748169489887389823476342201329018959443980500273517473978112890287808775174799204178684544256362190479126124649466477683702733976852227151105655733477e-105"
+        },
+        {
+          "m": 2,
+          "multiplicity": 1,
+          "real_lower": "0.999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999993568777457651689152647854866980064715608340292495",
+          "real_upper": "1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000643122254234831084735214513301993528439165970751",
+          "imag_lower": "-1.65177599625003256523535984838804270547020401703416298732098902407206245967233543380568613063608385614798755032002245627137351549583257181197109814528022e-154",
+          "imag_upper": "2.82322844247009148073921934088971759695567890372608114924192197585170457136973554915601880360417282586896737788251821395397655998643058243147427746420103e-154"
+        },
+        {
+          "m": 3,
+          "multiplicity": 1,
+          "real_lower": "0.999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999997856259152550563050882618288993354905202780097498",
+          "real_upper": "1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000214374084744943694911738171100664509479721990251",
+          "imag_lower": "-4.28748169489887389823476342201329018959443980500321996688730914234119200049725308274121631609231264835291890993815307287186658502958937363938708436455327e-105",
+          "imag_upper": "4.28748169489887389823476342201329018959443980500327590444279314389176668273711905474499663962882215140462594632565211995975461091687639495106508757307848e-105"
+        }
+      ],
+      "method": "Interval Newton sums and discrete Fourier inversion on the exact period grid",
+      "dependency": "Thesis Theorem 3.4.5 and the record’s universal periodicity certificate guarantee integral multiplicities."
+    },
+    "plot_path": "research/symmetrizable/rank3/plots/s3-c01.svg"
+  },
+  "notes": {
+    "family": {
+      "identifications": [
+        {
+          "category": "Zamolodchikov",
+          "label": "Cartan tensor (A1, B3)",
+          "parameters": [
+            "A1",
+            "B3"
+          ],
+          "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+          "symmetrizer": [
+            1,
+            1,
+            2
+          ],
+          "status": "exact-polynomial-match",
+          "transformation": {
+            "direction": "named constructor to displayed representative",
+            "sign_exchange": false,
+            "permutation": [
+              0,
+              1,
+              2
+            ],
+            "lambda": "1",
+            "shifts": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "source": "research/symmetrizable/family_notes.py"
+        },
+        {
+          "category": "Commuting Cartan",
+          "label": "Commuting Cartan / tadpole construction",
+          "status": "exact-structural-check",
+          "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+          "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+        },
+        {
+          "category": "Fold",
+          "label": "Fold of Sine-Gordon SG(3) · Langlands dual",
+          "status": "exact-fold-and-polynomial-match",
+          "reference": "https://arxiv.org/abs/1212.6853",
+          "source": "research/symmetrizable/folded_families.py",
+          "description": "An exact equitable polynomial fold of r4-c01. Row and column equitability, dual integrality, strict support, disjoint signs and the weighted symplectic identity were checked. This records a structural relation to the named family; it is not asserted to be a published name for the folded datum.",
+          "transformation": {
+            "direction": "named constructor to displayed representative",
+            "sign_exchange": false,
+            "permutation": [
+              1,
+              2,
+              0
+            ],
+            "lambda": "1",
+            "shifts": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "folding": {
+            "parent_record": "r4-c01",
+            "parent_centering_shifts": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "parent_integer_dilation": 1,
+            "partition_zero_based": [
+              [
+                0,
+                1
+              ],
+              [
+                2
+              ],
+              [
+                3
+              ]
+            ],
+            "block_sizes": [
+              2,
+              1,
+              1
+            ],
+            "quotient_symmetrizer": [
+              1,
+              2,
+              2
+            ],
+            "langlands_dual": true,
+            "folded_datum": {
+              "delays": [
+                2,
+                2,
+                2
+              ],
+              "symmetrizer": [
+                2,
+                1,
+                1
+              ],
+              "N_plus": [
+                [
+                  [],
+                  [],
+                  []
+                ],
+                [
+                  [],
+                  [],
+                  []
+                ],
+                [
+                  [],
+                  [],
+                  []
+                ]
+              ],
+              "N_minus": [
+                [
+                  [],
+                  [],
+                  [
+                    [
+                      2,
+                      1
+                    ]
+                  ]
+                ],
+                [
+                  [],
+                  [],
+                  [
+                    [
+                      1,
+                      1
+                    ]
+                  ]
+                ],
+                [
+                  [
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  [
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  []
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "category": "Fold",
+          "label": "Fold of Reduced sine-Gordon RSG(7)",
+          "status": "exact-fold-and-polynomial-match",
+          "reference": "https://arxiv.org/abs/1212.6853",
+          "source": "research/symmetrizable/folded_families.py",
+          "description": "An exact equitable polynomial fold of r5-c02. Row and column equitability, dual integrality, strict support, disjoint signs and the weighted symplectic identity were checked. This records a structural relation to the named family; it is not asserted to be a published name for the folded datum.",
+          "transformation": {
+            "direction": "named constructor to displayed representative",
+            "sign_exchange": false,
+            "permutation": [
+              0,
+              2,
+              1
+            ],
+            "lambda": "1",
+            "shifts": [
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "folding": {
+            "parent_record": "r5-c02",
+            "parent_centering_shifts": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "parent_integer_dilation": 1,
+            "partition_zero_based": [
+              [
+                0,
+                1
+              ],
+              [
+                2
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "block_sizes": [
+              2,
+              1,
+              2
+            ],
+            "quotient_symmetrizer": [
+              1,
+              2,
+              1
+            ],
+            "langlands_dual": false,
+            "folded_datum": {
+              "delays": [
+                2,
+                2,
+                2
+              ],
+              "symmetrizer": [
+                1,
+                2,
+                1
+              ],
+              "N_plus": [
+                [
+                  [],
+                  [],
+                  []
+                ],
+                [
+                  [],
+                  [],
+                  []
+                ],
+                [
+                  [],
+                  [],
+                  []
+                ]
+              ],
+              "N_minus": [
+                [
+                  [],
+                  [],
+                  [
+                    [
+                      1,
+                      1
+                    ]
+                  ]
+                ],
+                [
+                  [],
+                  [],
+                  [
+                    [
+                      2,
+                      1
+                    ]
+                  ]
+                ],
+                [
+                  [
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  [
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  []
+                ]
+              ]
+            }
+          }
+        }
+      ],
+      "status": "identified",
+      "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+      "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+    },
+    "quiver": {
+      "vertices": 3,
+      "scope": "One connected component, with its edge valuations. The mutation class does not specify the mutation loop.",
+      "reference": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/cluster_algebra_quiver/quiver.html",
+      "status": "certified-dynkin",
+      "label": "B3",
+      "mutation_finite": true,
+      "cluster_finite": true,
+      "certificate": {
+        "mutation_path": [],
+        "target_B": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            -2,
+            0
+          ]
+        ],
+        "target_graph": "B3"
+      },
+      "certificate_replayed": true
+    }
+  },
+  "verification": {
+    "matrix_ratios": "exact",
+    "jacobian_spectrum": "independent interval-certified match",
+    "fixed_point_convention": "D^(-1) A_plus(1)^(-1) A_minus(1) D",
+    "mutation_class_path": "exact replay",
+    "exact_equitable_fold_replays": 2
+  }
+}

@@ -1,0 +1,692 @@
+[
+  {
+    "record": "s2-c01",
+    "parent": "r3-c01",
+    "dual": false,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ]
+    ]
+  },
+  {
+    "record": "s2-c01",
+    "parent": "r3-c01",
+    "dual": true,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ]
+    ]
+  },
+  {
+    "record": "s2-c03",
+    "parent": "r4-c01",
+    "dual": false,
+    "blocks": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        3
+      ]
+    ]
+  },
+  {
+    "record": "s2-c03",
+    "parent": "r4-c01",
+    "dual": true,
+    "blocks": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        3
+      ]
+    ]
+  },
+  {
+    "record": "s3-c05",
+    "parent": "r4-c01",
+    "dual": false,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ]
+    ]
+  },
+  {
+    "record": "s3-c01",
+    "parent": "r4-c01",
+    "dual": true,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ]
+    ]
+  },
+  {
+    "record": "s3-c06",
+    "parent": "r4-c13",
+    "dual": false,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ]
+    ]
+  },
+  {
+    "record": "s3-c02",
+    "parent": "r4-c13",
+    "dual": true,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ]
+    ]
+  },
+  {
+    "record": "s4-c20",
+    "parent": "r5-c01",
+    "dual": false,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ]
+    ]
+  },
+  {
+    "record": "s4-c01",
+    "parent": "r5-c01",
+    "dual": true,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ]
+    ]
+  },
+  {
+    "record": "s3-c01",
+    "parent": "r5-c02",
+    "dual": false,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3,
+        4
+      ]
+    ]
+  },
+  {
+    "record": "s3-c05",
+    "parent": "r5-c02",
+    "dual": true,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3,
+        4
+      ]
+    ]
+  },
+  {
+    "record": "s4-c21",
+    "parent": "r5-c12",
+    "dual": false,
+    "blocks": [
+      [
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ]
+    ]
+  },
+  {
+    "record": "s4-c04",
+    "parent": "r5-c12",
+    "dual": true,
+    "blocks": [
+      [
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ]
+    ]
+  },
+  {
+    "record": "s4-c23",
+    "parent": "r5-c17",
+    "dual": false,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ]
+    ]
+  },
+  {
+    "record": "s4-c03",
+    "parent": "r5-c17",
+    "dual": true,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ]
+    ]
+  },
+  {
+    "record": "s4-c24",
+    "parent": "r5-c23",
+    "dual": false,
+    "blocks": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4
+      ]
+    ]
+  },
+  {
+    "record": "s4-c02",
+    "parent": "r5-c23",
+    "dual": true,
+    "blocks": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4
+      ]
+    ]
+  },
+  {
+    "record": "s5-c24",
+    "parent": "r6-c01",
+    "dual": false,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ]
+  },
+  {
+    "record": "s5-c01",
+    "parent": "r6-c01",
+    "dual": true,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ]
+  },
+  {
+    "record": "s5-c25",
+    "parent": "r6-c13",
+    "dual": false,
+    "blocks": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ]
+  },
+  {
+    "record": "s5-c04",
+    "parent": "r6-c13",
+    "dual": true,
+    "blocks": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ]
+  },
+  {
+    "record": "s5-c26",
+    "parent": "r6-c16",
+    "dual": false,
+    "blocks": [
+      [
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ]
+  },
+  {
+    "record": "s5-c05",
+    "parent": "r6-c16",
+    "dual": true,
+    "blocks": [
+      [
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ]
+  },
+  {
+    "record": "s5-c27",
+    "parent": "r6-c20",
+    "dual": false,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ]
+  },
+  {
+    "record": "s5-c06",
+    "parent": "r6-c20",
+    "dual": true,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ]
+  },
+  {
+    "record": "s5-c31",
+    "parent": "r6-c26",
+    "dual": false,
+    "blocks": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5
+      ]
+    ]
+  },
+  {
+    "record": "s5-c02",
+    "parent": "r6-c26",
+    "dual": true,
+    "blocks": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5
+      ]
+    ]
+  },
+  {
+    "record": "s5-c28",
+    "parent": "r6-c31",
+    "dual": false,
+    "blocks": [
+      [
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ]
+  },
+  {
+    "record": "s5-c08",
+    "parent": "r6-c31",
+    "dual": true,
+    "blocks": [
+      [
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ]
+  },
+  {
+    "record": "s5-c30",
+    "parent": "r6-c35",
+    "dual": false,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ]
+  },
+  {
+    "record": "s5-c03",
+    "parent": "r6-c35",
+    "dual": true,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ]
+  },
+  {
+    "record": "s5-c32",
+    "parent": "r6-c68",
+    "dual": false,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ]
+  },
+  {
+    "record": "s5-c07",
+    "parent": "r6-c68",
+    "dual": true,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ]
+  }
+]

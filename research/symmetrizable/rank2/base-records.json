@@ -1,0 +1,1314 @@
+[
+  {
+    "schema_version": "2.1.0",
+    "id": "s2-c01",
+    "rank": 2,
+    "class_number": 1,
+    "constant_id": 7,
+    "scope": {
+      "symmetrizer": "positive_diagonal",
+      "leading_permutation": "identity",
+      "indecomposable": true
+    },
+    "index_base": 0,
+    "datum": {
+      "delays": [
+        2,
+        2
+      ],
+      "symmetrizer": [
+        1,
+        2
+      ],
+      "N_plus": [
+        [
+          [],
+          []
+        ],
+        [
+          [],
+          []
+        ]
+      ],
+      "N_minus": [
+        [
+          [],
+          [
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              2,
+              1
+            ]
+          ],
+          []
+        ]
+      ],
+      "A_plus_1": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "A_minus_1": [
+        [
+          2,
+          -1
+        ],
+        [
+          -2,
+          2
+        ]
+      ]
+    },
+    "family": {
+      "parameters": [
+        "lambda",
+        "s1"
+      ],
+      "fixed_shift": {
+        "species": 1,
+        "value": "0"
+      },
+      "dimension": 2,
+      "rref": [
+        [
+          "1",
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "0",
+          "1",
+          "-1",
+          "-1"
+        ]
+      ],
+      "variable_names": [
+        "r0",
+        "r1",
+        "p1_01_0",
+        "p1_10_0"
+      ],
+      "representative_values": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "coefficient_units": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "coverage": {
+        "id": 7,
+        "status": "verified",
+        "symmetrizer": [
+          1,
+          2
+        ],
+        "positive_left_vector": [
+          4,
+          3
+        ],
+        "seconds": 0.014999999999417923,
+        "result": "unsat",
+        "arithmetic": "integer",
+        "encoding": "reduced",
+        "query_file": "000007_coverage.smt2.gz",
+        "sha256": "c4effaabba99a8934b0826a9df3ce2dc71df78a76886c1c570445f3a69a820e8"
+      }
+    },
+    "periodicity": {
+      "time_coordinate": "displayed representative",
+      "h_plus": 2,
+      "h_minus": 4,
+      "labelled_period": 6,
+      "positive_negative_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "negative_negative_permutation": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "exchange": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "B": [
+        [
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          -2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ]
+      ],
+      "mutation_vertices": [
+        0,
+        2
+      ],
+      "relabel_old_to_new": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "symmetrizer": [
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    "slice": {
+      "components": 2,
+      "vertices": 2,
+      "B": [
+        [
+          0,
+          -1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "mutation_word": [
+        0,
+        1
+      ],
+      "relabel_old_to_new": [
+        0,
+        1
+      ],
+      "canonical_signature": {
+        "weighted_terminal_cycle_lengths": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "orbit_minimum": null
+      },
+      "signature_sha256": "521b021403b6793f17f2872e82c816c9039284e995005467e06bfbeb33abd7a9",
+      "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+      "symmetrizer": [
+        1,
+        2
+      ],
+      "distinctness": {
+        "weighted_terminal_cycle_lengths": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "records_with_same_invariant": [
+          "s2-c01"
+        ],
+        "method": "unique weighted terminal cycle lengths"
+      },
+      "equivalent_canonical_states_including_sign_exchange": 4
+    },
+    "provenance": {
+      "verification_kind": "computer-assisted",
+      "source_commit": "72754731c3f925627b2b506358680922cd96336b",
+      "sources": [
+        {
+          "path": "research/symmetrizable/rank2/constant_candidates.json",
+          "role": "complete primitive weighted constants",
+          "sha256": "b9db32a2ebffd0fc68ee10587be7528bad2eba1f135c63992fd898224909307e"
+        },
+        {
+          "path": "research/symmetrizable/rank2/families.jsonl",
+          "role": "complete polynomial lift spaces and periodicity",
+          "sha256": "a68f172fabdedf07e0d511645afa15696ae9df306a250543d14800947cddc3e3"
+        },
+        {
+          "path": "research/symmetrizable/rank2/verification.jsonl",
+          "role": "exact exclusion and coverage replay",
+          "sha256": "1c55d25b6deb5beda6de471fd429e4db72eb90ac0ae174e98e64eeaad9f1e73e"
+        }
+      ],
+      "manuscript": "research/symmetrizable/methods.html",
+      "pdf": null,
+      "query_path": "research/symmetrizable/rank2/smt_queries.zip",
+      "query_member": "000007_coverage.smt2.gz"
+    }
+  },
+  {
+    "schema_version": "2.1.0",
+    "id": "s2-c02",
+    "rank": 2,
+    "class_number": 2,
+    "constant_id": 9,
+    "scope": {
+      "symmetrizer": "positive_diagonal",
+      "leading_permutation": "identity",
+      "indecomposable": true
+    },
+    "index_base": 0,
+    "datum": {
+      "delays": [
+        2,
+        2
+      ],
+      "symmetrizer": [
+        1,
+        2
+      ],
+      "N_plus": [
+        [
+          [],
+          [
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              2,
+              1
+            ]
+          ],
+          []
+        ]
+      ],
+      "N_minus": [
+        [
+          [
+            [
+              1,
+              1
+            ]
+          ],
+          []
+        ],
+        [
+          [],
+          [
+            [
+              1,
+              1
+            ]
+          ]
+        ]
+      ],
+      "A_plus_1": [
+        [
+          2,
+          -1
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "A_minus_1": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "family": {
+      "parameters": [
+        "lambda",
+        "s1"
+      ],
+      "fixed_shift": {
+        "species": 1,
+        "value": "0"
+      },
+      "dimension": 2,
+      "rref": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-2"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "-2"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "1",
+          "0",
+          "-2"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1"
+        ]
+      ],
+      "variable_names": [
+        "r0",
+        "r1",
+        "p0_01_0",
+        "p0_10_0",
+        "p1_00_0",
+        "p1_11_0"
+      ],
+      "representative_values": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient_units": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "coverage": {
+        "id": 9,
+        "status": "verified",
+        "symmetrizer": [
+          1,
+          2
+        ],
+        "positive_left_vector": [
+          4,
+          3
+        ],
+        "seconds": 0.031000000002677552,
+        "result": "unsat",
+        "arithmetic": "integer",
+        "encoding": "reduced",
+        "query_file": "000009_coverage.smt2.gz",
+        "sha256": "059e50e114caa5f144352d80cdf111f9f6a538494b3b79150c3769c5c8cf0536"
+      }
+    },
+    "periodicity": {
+      "time_coordinate": "displayed representative",
+      "h_plus": 4,
+      "h_minus": 3,
+      "labelled_period": 7,
+      "positive_negative_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "negative_negative_permutation": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "exchange": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "B": [
+        [
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          -1
+        ],
+        [
+          -2,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mutation_vertices": [
+        0,
+        2
+      ],
+      "relabel_old_to_new": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "symmetrizer": [
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    "slice": {
+      "components": 1,
+      "vertices": 4,
+      "B": [
+        [
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          -1
+        ],
+        [
+          -2,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mutation_word": [
+        0,
+        2
+      ],
+      "relabel_old_to_new": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "canonical_signature": {
+        "weighted_terminal_cycle_lengths": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "orbit_minimum": null
+      },
+      "signature_sha256": "0e46d307b7f57b7cf4fb17a12a6425bd766db905826b382d5887d09f54fdbe59",
+      "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+      "symmetrizer": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "distinctness": {
+        "weighted_terminal_cycle_lengths": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "records_with_same_invariant": [
+          "s2-c02"
+        ],
+        "method": "unique weighted terminal cycle lengths"
+      },
+      "equivalent_canonical_states_including_sign_exchange": 8
+    },
+    "provenance": {
+      "verification_kind": "computer-assisted",
+      "source_commit": "72754731c3f925627b2b506358680922cd96336b",
+      "sources": [
+        {
+          "path": "research/symmetrizable/rank2/constant_candidates.json",
+          "role": "complete primitive weighted constants",
+          "sha256": "b9db32a2ebffd0fc68ee10587be7528bad2eba1f135c63992fd898224909307e"
+        },
+        {
+          "path": "research/symmetrizable/rank2/families.jsonl",
+          "role": "complete polynomial lift spaces and periodicity",
+          "sha256": "a68f172fabdedf07e0d511645afa15696ae9df306a250543d14800947cddc3e3"
+        },
+        {
+          "path": "research/symmetrizable/rank2/verification.jsonl",
+          "role": "exact exclusion and coverage replay",
+          "sha256": "1c55d25b6deb5beda6de471fd429e4db72eb90ac0ae174e98e64eeaad9f1e73e"
+        }
+      ],
+      "manuscript": "research/symmetrizable/methods.html",
+      "pdf": null,
+      "query_path": "research/symmetrizable/rank2/smt_queries.zip",
+      "query_member": "000009_coverage.smt2.gz"
+    }
+  },
+  {
+    "schema_version": "2.1.0",
+    "id": "s2-c03",
+    "rank": 2,
+    "class_number": 3,
+    "constant_id": 10,
+    "scope": {
+      "symmetrizer": "positive_diagonal",
+      "leading_permutation": "identity",
+      "indecomposable": true
+    },
+    "index_base": 0,
+    "datum": {
+      "delays": [
+        2,
+        2
+      ],
+      "symmetrizer": [
+        1,
+        3
+      ],
+      "N_plus": [
+        [
+          [],
+          []
+        ],
+        [
+          [],
+          []
+        ]
+      ],
+      "N_minus": [
+        [
+          [],
+          [
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              3,
+              1
+            ]
+          ],
+          []
+        ]
+      ],
+      "A_plus_1": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "A_minus_1": [
+        [
+          2,
+          -1
+        ],
+        [
+          -3,
+          2
+        ]
+      ]
+    },
+    "family": {
+      "parameters": [
+        "lambda",
+        "s1"
+      ],
+      "fixed_shift": {
+        "species": 1,
+        "value": "0"
+      },
+      "dimension": 2,
+      "rref": [
+        [
+          "1",
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "0",
+          "1",
+          "-1",
+          "-1"
+        ]
+      ],
+      "variable_names": [
+        "r0",
+        "r1",
+        "p1_01_0",
+        "p1_10_0"
+      ],
+      "representative_values": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "coefficient_units": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "coverage": {
+        "id": 10,
+        "status": "verified",
+        "symmetrizer": [
+          1,
+          3
+        ],
+        "positive_left_vector": [
+          5,
+          3
+        ],
+        "seconds": 0.01600000000325963,
+        "result": "unsat",
+        "arithmetic": "integer",
+        "encoding": "reduced",
+        "query_file": "000010_coverage.smt2.gz",
+        "sha256": "514ca0178e562031b1a8c16f04fe69e5e26dab6da97e2853c6a6e4c4f4a01008"
+      }
+    },
+    "periodicity": {
+      "time_coordinate": "displayed representative",
+      "h_plus": 2,
+      "h_minus": 6,
+      "labelled_period": 8,
+      "positive_negative_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "negative_negative_permutation": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "exchange": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "B": [
+        [
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          -3,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ]
+      ],
+      "mutation_vertices": [
+        0,
+        2
+      ],
+      "relabel_old_to_new": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "symmetrizer": [
+        1,
+        1,
+        3,
+        3
+      ]
+    },
+    "slice": {
+      "components": 2,
+      "vertices": 2,
+      "B": [
+        [
+          0,
+          -1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "mutation_word": [
+        0,
+        1
+      ],
+      "relabel_old_to_new": [
+        0,
+        1
+      ],
+      "canonical_signature": {
+        "weighted_terminal_cycle_lengths": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "orbit_minimum": null
+      },
+      "signature_sha256": "3a00f97c10b1ea05fa34766a412f43ce17aface1bbf940014c9ca9ca34b96ef7",
+      "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+      "symmetrizer": [
+        1,
+        3
+      ],
+      "distinctness": {
+        "weighted_terminal_cycle_lengths": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "records_with_same_invariant": [
+          "s2-c03"
+        ],
+        "method": "unique weighted terminal cycle lengths"
+      },
+      "equivalent_canonical_states_including_sign_exchange": 4
+    },
+    "provenance": {
+      "verification_kind": "computer-assisted",
+      "source_commit": "72754731c3f925627b2b506358680922cd96336b",
+      "sources": [
+        {
+          "path": "research/symmetrizable/rank2/constant_candidates.json",
+          "role": "complete primitive weighted constants",
+          "sha256": "b9db32a2ebffd0fc68ee10587be7528bad2eba1f135c63992fd898224909307e"
+        },
+        {
+          "path": "research/symmetrizable/rank2/families.jsonl",
+          "role": "complete polynomial lift spaces and periodicity",
+          "sha256": "a68f172fabdedf07e0d511645afa15696ae9df306a250543d14800947cddc3e3"
+        },
+        {
+          "path": "research/symmetrizable/rank2/verification.jsonl",
+          "role": "exact exclusion and coverage replay",
+          "sha256": "1c55d25b6deb5beda6de471fd429e4db72eb90ac0ae174e98e64eeaad9f1e73e"
+        }
+      ],
+      "manuscript": "research/symmetrizable/methods.html",
+      "pdf": null,
+      "query_path": "research/symmetrizable/rank2/smt_queries.zip",
+      "query_member": "000010_coverage.smt2.gz"
+    }
+  },
+  {
+    "schema_version": "2.1.0",
+    "id": "s2-c04",
+    "rank": 2,
+    "class_number": 4,
+    "constant_id": 11,
+    "scope": {
+      "symmetrizer": "positive_diagonal",
+      "leading_permutation": "identity",
+      "indecomposable": true
+    },
+    "index_base": 0,
+    "datum": {
+      "delays": [
+        2,
+        2
+      ],
+      "symmetrizer": [
+        1,
+        3
+      ],
+      "N_plus": [
+        [
+          [],
+          [
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              3,
+              1
+            ]
+          ],
+          []
+        ]
+      ],
+      "N_minus": [
+        [
+          [
+            [
+              1,
+              1
+            ]
+          ],
+          []
+        ],
+        [
+          [],
+          [
+            [
+              1,
+              1
+            ]
+          ]
+        ]
+      ],
+      "A_plus_1": [
+        [
+          2,
+          -1
+        ],
+        [
+          -3,
+          2
+        ]
+      ],
+      "A_minus_1": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "family": {
+      "parameters": [
+        "lambda",
+        "s1"
+      ],
+      "fixed_shift": {
+        "species": 1,
+        "value": "0"
+      },
+      "dimension": 2,
+      "rref": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-2"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "-2"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "1",
+          "0",
+          "-2"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1"
+        ]
+      ],
+      "variable_names": [
+        "r0",
+        "r1",
+        "p0_01_0",
+        "p0_10_0",
+        "p1_00_0",
+        "p1_11_0"
+      ],
+      "representative_values": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient_units": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "coverage": {
+        "id": 11,
+        "status": "verified",
+        "symmetrizer": [
+          1,
+          3
+        ],
+        "positive_left_vector": [
+          5,
+          3
+        ],
+        "seconds": 0.031000000002677552,
+        "result": "unsat",
+        "arithmetic": "integer",
+        "encoding": "reduced",
+        "query_file": "000011_coverage.smt2.gz",
+        "sha256": "9e3ee0048f04ea4f0577bbe47d187b1fd3c6db802cd8b1010aecae1f481ecbba"
+      }
+    },
+    "periodicity": {
+      "time_coordinate": "displayed representative",
+      "h_plus": 6,
+      "h_minus": 3,
+      "labelled_period": 9,
+      "positive_negative_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "negative_negative_permutation": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "exchange": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "B": [
+        [
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          -1
+        ],
+        [
+          -3,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mutation_vertices": [
+        0,
+        2
+      ],
+      "relabel_old_to_new": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "symmetrizer": [
+        1,
+        1,
+        3,
+        3
+      ]
+    },
+    "slice": {
+      "components": 1,
+      "vertices": 4,
+      "B": [
+        [
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          -1
+        ],
+        [
+          -3,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mutation_word": [
+        0,
+        2
+      ],
+      "relabel_old_to_new": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "canonical_signature": {
+        "weighted_terminal_cycle_lengths": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "orbit_minimum": null
+      },
+      "signature_sha256": "bd74689dac869ba06f2361f164266bbe9a61465cb45b978d79d43b4d4d7c42e6",
+      "signature_convention": "Weighted terminal cycle lengths and complete cyclic-loop minima within collision groups.",
+      "symmetrizer": [
+        1,
+        1,
+        3,
+        3
+      ],
+      "distinctness": {
+        "weighted_terminal_cycle_lengths": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "records_with_same_invariant": [
+          "s2-c04"
+        ],
+        "method": "unique weighted terminal cycle lengths"
+      },
+      "equivalent_canonical_states_including_sign_exchange": null
+    },
+    "provenance": {
+      "verification_kind": "computer-assisted",
+      "source_commit": "72754731c3f925627b2b506358680922cd96336b",
+      "sources": [
+        {
+          "path": "research/symmetrizable/rank2/constant_candidates.json",
+          "role": "complete primitive weighted constants",
+          "sha256": "b9db32a2ebffd0fc68ee10587be7528bad2eba1f135c63992fd898224909307e"
+        },
+        {
+          "path": "research/symmetrizable/rank2/families.jsonl",
+          "role": "complete polynomial lift spaces and periodicity",
+          "sha256": "a68f172fabdedf07e0d511645afa15696ae9df306a250543d14800947cddc3e3"
+        },
+        {
+          "path": "research/symmetrizable/rank2/verification.jsonl",
+          "role": "exact exclusion and coverage replay",
+          "sha256": "1c55d25b6deb5beda6de471fd429e4db72eb90ac0ae174e98e64eeaad9f1e73e"
+        }
+      ],
+      "manuscript": "research/symmetrizable/methods.html",
+      "pdf": null,
+      "query_path": "research/symmetrizable/rank2/smt_queries.zip",
+      "query_member": "000011_coverage.smt2.gz"
+    }
+  }
+]

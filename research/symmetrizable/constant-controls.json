@@ -1,0 +1,18 @@
+{
+  "rank_two_independent_brute_force": {
+    "integer_triples_tested": 28672,
+    "primitive_diagonal_bound": 3,
+    "exact_constant_triples": 11
+  },
+  "rank_four_exact_controls": [
+    {
+      "directory": "control-rank4-ratio",
+      "exact_equal_constant_triples": 1040
+    },
+    {
+      "directory": "control-rank4-ratio2",
+      "exact_equal_constant_triples": 1040
+    }
+  ],
+  "source_sha256": "110f9858c686d66fcfbf36931949dddf0c955a96235c06a3bddb8a0bc0dd0216"
+}

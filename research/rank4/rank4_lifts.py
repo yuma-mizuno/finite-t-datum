@@ -114,6 +114,8 @@ def build_problem(candidate, timeout, encoding="multiplicity", arithmetic="integ
             equations.append((positive, negative))
             left, right = list(map(expression, positive)), list(map(expression, negative))
             solver.add(z3.Sum(left) == z3.Sum(right))
+            if encoding == "structure":
+                continue
             # Equal multiplicities at every positive-side exponent, together
             # with equal total sizes, is exactly equality of the multisets.
             if encoding == "sort":

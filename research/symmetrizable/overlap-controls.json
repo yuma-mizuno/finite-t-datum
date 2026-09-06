@@ -1,0 +1,19 @@
+{
+  "comparisons": [
+    {
+      "rank": 4,
+      "full_upper_tasks": 120,
+      "filtered_constants": 296,
+      "equal_to_independently_filtered_reference": true
+    },
+    {
+      "rank": 5,
+      "full_upper_tasks": 720,
+      "filtered_constants": 2544,
+      "equal_to_independently_filtered_reference": true
+    }
+  ],
+  "rank6_upper3_exact_filtered_comparison": 2768,
+  "all_verified_families_retained": 305,
+  "source_sha256": "09b573afdbccb78304f45cba400d1e6ce88bb3d7d8e854b66535abf7d8b0bf99"
+}

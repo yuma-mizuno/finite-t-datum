@@ -15,9 +15,9 @@ try:
 except ImportError:
     jsonschema=None
 if jsonschema is not None:
-    # Older jsonschema releases cannot resolve nested fragment references under
-    # a URN base. A file URI gives the same local schema an offline-resolvable base.
-    local_schema=dict(schema, **{'$id':(HERE/'record.schema.json').as_uri()})
+    # All references are local fragments. Omitting the informational base URI
+    # also works with older offline jsonschema resolvers.
+    local_schema=dict(schema);local_schema.pop('$id',None)
     validator=jsonschema.Draft202012Validator(local_schema)
     validator.check_schema(local_schema)
     for record in data['records']:validator.validate(record)
@@ -29,7 +29,8 @@ assert not re.search(r'<script[^>]+src=|<link[^>]+href=',html)
 assert not re.search(r'/\*__[A-Z]+__\*/',html)
 files=list((HERE/'records').glob('*.json'))
 assert len(files)==len(data['records'])
-assert [sum(r['rank']==rank for r in data['records']) for rank in (1,2,3,4,5,6)]==[2,6,16,37,55,108]
+assert [sum(r['rank']==rank and r['scope']['symmetrizer']=='identity' for r in data['records']) for rank in (1,2,3,4,5,6)]==[2,6,16,37,55,108]
+assert len(data['records'])==224+sum(r['new_nonidentity_families'] for r in data['symmetrizable_classifications'])
 hashes={}
 with zipfile.ZipFile(ROOT/'research/rank4/smt_queries.zip') as archive:
     archive_names=archive.namelist()
@@ -45,13 +46,14 @@ with zipfile.ZipFile(ROOT/'research/rank4/smt_queries.zip') as archive:
         assert sum(x['multiplicity'] for x in r['exponents']['multiplicities'])==r['slice']['vertices']
         for key in ('manuscript','pdf','query_path'):
             if r['provenance'][key]:assert (ROOT/r['provenance'][key]).is_file(),r['provenance'][key]
-        if r['rank']<3:continue
-        if r['rank']==4:
+        weighted=r['scope']['symmetrizer']=='positive_diagonal'
+        if r['rank']<3 and not weighted:continue
+        if r['rank']==4 and not weighted:
             member=r['provenance']['query_member']
             names=[x for x in archive_names if x==member or x.endswith('/'+member)]
             assert len(names)==1,(member,names)
             query=archive.read(names[0])
-        elif r['rank']>=5:
+        elif weighted or r['rank']>=5:
             with zipfile.ZipFile(ROOT/r['provenance']['query_path']) as higher_archive:
                 query=gzip.decompress(higher_archive.read(r['provenance']['query_member']))
         else:

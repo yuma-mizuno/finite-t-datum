@@ -1,6 +1,6 @@
 # Reproducing the rank-four classification
 
-The readable report is `output/pdf/rank4-classification.pdf`, relative to the
+The readable report is `docs/proofs/rank4-classification.pdf`, relative to the
 repository root. Its theorem is
 restricted to identity symmetrizer and diagonal leading matrix.
 
@@ -55,5 +55,5 @@ copy; the extracted `smt_queries/` folder is ignored by Git.
 Build the PDF from `research/rank4/`:
 
 ```powershell
-latexmk -lualatex -synctex=-1 -interaction=nonstopmode -halt-on-error '-outdir=../../output/pdf' rank4-classification.tex
+latexmk -lualatex -synctex=-1 -interaction=nonstopmode -halt-on-error '-outdir=../../docs/proofs' rank4-classification.tex
 ```

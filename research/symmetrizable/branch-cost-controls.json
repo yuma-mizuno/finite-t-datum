@@ -1,0 +1,14 @@
+{
+  "rank": 5,
+  "full_upper_tasks": 720,
+  "canonical_constants": 1997,
+  "equal_to_partition_reference": true,
+  "source_sha256": "20fbd48568ccbdc952ae80a68772c3d0da2fbfb47882d9ab0946fc9074128570",
+  "rank6_full_upper_control": {
+    "upper_task": 3,
+    "reference_constants": 5963,
+    "filtered_constants": 2355,
+    "independently_filtered_reference_equal": true,
+    "output_sha256": "e0a1d3005314d2c6eae58ca571ff52d85fe7e74a547c30b1319586b444f8b642"
+  }
+}

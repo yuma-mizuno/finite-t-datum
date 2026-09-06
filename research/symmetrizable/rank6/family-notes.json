@@ -1,0 +1,1458 @@
+{
+  "s6-c01": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (A1, B6)",
+        "parameters": [
+          "A1",
+          "B6"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            4,
+            2,
+            3,
+            1,
+            5
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c02": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c03": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c04": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c05": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c06": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c07": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c08": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c09": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c10": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c11": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c12": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c13": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c14": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c15": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c16": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c17": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c18": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c19": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c20": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (T1, B6) · tadpole extension",
+        "parameters": [
+          "T1",
+          "B6"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            0,
+            4,
+            2,
+            3,
+            1,
+            5
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c21": {
+    "identifications": [
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c22": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c23": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c24": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c25": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c26": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c27": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c28": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (A2, B3)",
+        "parameters": [
+          "A2",
+          "B3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          2
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            4,
+            1,
+            3,
+            2,
+            5
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c29": {
+    "identifications": [
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c30": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (T2, B3) · tadpole extension",
+        "parameters": [
+          "T2",
+          "B3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          2
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            0,
+            3,
+            4,
+            1,
+            2,
+            5
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c31": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c32": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c33": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c34": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c35": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c36": {
+    "identifications": [
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c37": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (B2, A3)",
+        "parameters": [
+          "B2",
+          "A3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            2,
+            1,
+            4,
+            5,
+            3
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (C2, A3)",
+        "parameters": [
+          "C2",
+          "A3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            3,
+            5,
+            4,
+            1,
+            2,
+            0
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c38": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (B2, T3) · tadpole extension",
+        "parameters": [
+          "B2",
+          "T3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            2,
+            1,
+            4,
+            5,
+            3
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (C2, T3) · tadpole extension",
+        "parameters": [
+          "C2",
+          "T3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            3,
+            5,
+            4,
+            1,
+            2,
+            0
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c39": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c40": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (G2, A3)",
+        "parameters": [
+          "G2",
+          "A3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          3,
+          3,
+          3,
+          1,
+          1,
+          1
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            3,
+            5,
+            4,
+            1,
+            2,
+            0
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c41": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (G2, T3) · tadpole extension",
+        "parameters": [
+          "G2",
+          "T3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          3,
+          3,
+          3,
+          1,
+          1,
+          1
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            3,
+            5,
+            4,
+            1,
+            2,
+            0
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c42": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c43": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c44": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c45": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c46": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c47": {
+    "identifications": [
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c48": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (A2, C3)",
+        "parameters": [
+          "A2",
+          "C3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          1
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            2,
+            5,
+            0,
+            3,
+            4,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c49": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (T2, C3) · tadpole extension",
+        "parameters": [
+          "T2",
+          "C3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          1
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            2,
+            5,
+            0,
+            3,
+            4,
+            1
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c50": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c51": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c52": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (B2, B3)",
+        "parameters": [
+          "B2",
+          "B3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          4
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            0,
+            1,
+            2,
+            4,
+            3,
+            5
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (C2, B3)",
+        "parameters": [
+          "C2",
+          "B3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          2,
+          2,
+          4,
+          1,
+          1,
+          2
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            3,
+            4,
+            5,
+            1,
+            0,
+            2
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c53": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (G2, B3)",
+        "parameters": [
+          "G2",
+          "B3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          3,
+          3,
+          6,
+          1,
+          1,
+          2
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            3,
+            4,
+            5,
+            1,
+            0,
+            2
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c54": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c55": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (A1, C6)",
+        "parameters": [
+          "A1",
+          "C6"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            5,
+            0,
+            3,
+            2,
+            1,
+            4
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c56": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c57": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c58": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c59": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c60": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c61": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c62": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c63": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c64": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c65": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c66": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c67": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c68": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c69": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c70": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c71": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c72": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c73": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c74": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (T1, C6) · tadpole extension",
+        "parameters": [
+          "T1",
+          "C6"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": true,
+          "permutation": [
+            5,
+            0,
+            3,
+            2,
+            1,
+            4
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c75": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c76": {
+    "identifications": [
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c77": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (B2, C3)",
+        "parameters": [
+          "B2",
+          "C3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          2,
+          2,
+          1,
+          4,
+          4,
+          2
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            2,
+            0,
+            1,
+            5,
+            4,
+            3
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (C2, C3)",
+        "parameters": [
+          "C2",
+          "C3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          4,
+          4,
+          2,
+          2,
+          2,
+          1
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            5,
+            3,
+            4,
+            2,
+            1,
+            0
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c78": {
+    "identifications": [
+      {
+        "category": "Zamolodchikov",
+        "label": "Cartan tensor (G2, C3)",
+        "parameters": [
+          "G2",
+          "C3"
+        ],
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=37",
+        "symmetrizer": [
+          6,
+          6,
+          3,
+          2,
+          2,
+          1
+        ],
+        "status": "exact-polynomial-match",
+        "transformation": {
+          "direction": "named constructor to displayed representative",
+          "sign_exchange": false,
+          "permutation": [
+            5,
+            3,
+            4,
+            2,
+            1,
+            0
+          ],
+          "lambda": "1",
+          "shifts": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "source": "research/symmetrizable/family_notes.py"
+      },
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c79": {
+    "identifications": [],
+    "status": "not identified in the checked constructors",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  },
+  "s6-c80": {
+    "identifications": [
+      {
+        "category": "Commuting Cartan",
+        "label": "Commuting Cartan / tadpole construction",
+        "status": "exact-structural-check",
+        "reference": "https://yuma-mizuno.github.io/thesis.pdf#page=36",
+        "description": "N±(z) = z C±. The nonnegative matrices C± have disjoint support, commute, and share the displayed right symmetrizer D; (2I − C±)D is positive definite."
+      }
+    ],
+    "status": "identified",
+    "search_scope": "Exact weighted polynomial matching against finite Cartan A, B, C, D, E, F, G and tadpole tensor pairs, and the commuting Cartan construction. The RSG and SG constructors previously checked have identity symmetrizer. An unmatched record is not asserted to be new; folded identifications have not been exhausted. Equitable folds and their Langlands duals of the named SG/RSG identity representatives through rank six were also checked after their recorded Cartan-like centering. One witness per parent and dual choice is retained; this bounded parent library does not exhaust all possible unfoldings.",
+    "parameter_convention": "Cartan names and valuations follow Sage CartanMatrix. Source-to-record transformations retain D; Langlands duals are not identified automatically."
+  }
+}

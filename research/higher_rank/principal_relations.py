@@ -11,6 +11,7 @@ def labelled_records():
     records=json.loads((Path(__file__).resolve().parents[2]/'docs/catalogue/catalogue.json').read_text(encoding='utf8'))['records']
     lookup={n:{} for n in range(3,6)}
     for record in records:
+        if record['scope']['symmetrizer']!='identity':continue
         n=record['rank']
         if n not in lookup:continue
         for exchange in range(2):

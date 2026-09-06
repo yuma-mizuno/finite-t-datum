@@ -6,6 +6,10 @@ import json
 import re
 from pathlib import Path
 import subprocess
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[2]/"research/higher_rank"))
+from query_archives import archive_path
+from functools import lru_cache
 
 import sympy as sp
 
@@ -20,8 +24,21 @@ def read(path):
             if p.suffix=='.jsonl' else json.loads(p.read_text(encoding='utf-8')))
 
 
+@lru_cache(maxsize=2048)
+def source_hash(path,size,mtime_ns):
+    return hashlib.sha256((ROOT/path).read_bytes()).hexdigest()
+
+
 def source(path,role):
-    return {'path':path,'role':role,'sha256':hashlib.sha256((ROOT/path).read_bytes()).hexdigest()}
+    if (ROOT/(path+'.gz')).is_file(): path += '.gz'
+    stat=(ROOT/path).stat()
+    return {'path':path,'role':role,'sha256':source_hash(path,stat.st_size,stat.st_mtime_ns)}
+
+
+def write_atomic(path,text):
+    temporary=path.with_suffix(path.suffix+'.tmp')
+    temporary.write_text(text,encoding='utf8',newline='\n')
+    temporary.replace(path)
 
 
 def terms(a):
@@ -98,7 +115,7 @@ def main():
                                          source(base+'/verification.json','exclusion and coverage replay'),
                                          source(base+'/slice_signatures.json','slice equivalence certificates')],
                               'manuscript':base+f'/rank{rank}-classification.tex',
-                              'pdf':f'output/pdf/rank{rank}-classification.pdf',
+                              'pdf':f'docs/proofs/rank{rank}-classification.pdf',
                               'query_path':base+('/smt_queries/'+queries[cid]['file'] if rank==3 else '/smt_queries.zip'),
                               'query_member':queries[cid]['file']}}
             assert record['family']['dimension']==rank
@@ -138,17 +155,38 @@ def main():
         extra=json.loads(path.read_text(encoding='utf8'))
         assert len(extra)==classification['families']
         records.extend(extra);higher.append(classification)
-    records.sort(key=lambda x:(x['rank'],x['class_number']))
-    dataset={'schema_version':'2.0.0','title':'Finite T-data catalogue',
+    weighted=[]
+    for path in sorted((ROOT/'research/symmetrizable').glob('rank*/catalogue-records.json')):
+        classification=json.loads((path.parent/'classification.json').read_text())
+        assert classification['complete'] and classification['enrichment_complete'],path
+        extra=json.loads(path.read_text(encoding='utf8'));assert len(extra)==classification['new_nonidentity_families']
+        records.extend(extra);weighted.append(classification)
+    distribution=json.loads((ROOT/'distribution.json').read_text())
+    compressed={x['path']:x for x in distribution['compressed_sources']}
+    for record in records:
+        provenance=record['provenance']
+        for group in ('sources','enrichment_sources'):
+            for item in provenance[group]:
+                if item['path'] in compressed:
+                    packed=compressed[item['path']]
+                    assert item['sha256']==packed['sha256']
+                    item.update(path=packed['archive'],sha256=packed['archive_sha256'])
+        if provenance.get('query_member') and provenance['query_path'].endswith('.zip'):
+            directory=(ROOT/provenance['query_path']).parent
+            provenance['query_path']=archive_path(directory,provenance['query_member']).relative_to(ROOT).as_posix()
+    records.sort(key=lambda x:(x['rank'],x['scope']['symmetrizer']!='identity',x['class_number']))
+    dataset={'schema_version':'2.1.0','title':'Finite T-data catalogue',
              'polynomial_encoding':'Each entry is a list of [coefficient, exponent] pairs, with ascending exponents.',
              'equivalence':['admissible rational time rescaling','species shifts','simultaneous index permutations','sign exchange'],
-             'scope':f'Identity symmetrizer and diagonal N0; indecomposable data of ranks 1 through {max(r["rank"] for r in records)}.',
+             'scope':f'Diagonal N0, primitive positive diagonal symmetrizers, indecomposable data. Complete symmetrizable ranks 1 through {max((r["rank"] for r in weighted),default=1)}; identity subcatalogue through rank {max(r["rank"] for r in records)}.',
              'higher_rank_classifications':higher,
+             'symmetrizable_classifications':weighted,
+             'symmetrizable_proofs':read('research/symmetrizable/proofs.json'),
              'source_commit':commit,'records':records,'proofs':json.loads((HERE/'proofs.json').read_text(encoding='utf-8'))}
     (HERE/'records').mkdir(exist_ok=True)
     for record in records:
         (HERE/'records'/f'{record["id"]}.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
-    (HERE/'catalogue.json').write_text(json.dumps(dataset,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
+    write_atomic(HERE/'catalogue.json',json.dumps(dataset,ensure_ascii=False,indent=2)+'\n')
     html=(HERE/'index.template.html').read_text(encoding='utf-8')
     buttons=''.join(f'<button data-rank="{rank}" aria-pressed="{str(rank==4).lower()}">Rank {rank} <span>{sum(r["rank"]==rank for r in records)}</span></button>' for rank in sorted({r['rank'] for r in records},reverse=True))
     html=re.sub(r'(<div class="rank-picker"[^>]*>).*?(</div>)',lambda m:m[1]+buttons+'<button data-rank="all" aria-pressed="false">All ranks</button>'+m[2],html,count=1)
@@ -156,7 +194,7 @@ def main():
         html=html.replace('/*__'+name+'__*/',(HERE/path).read_text(encoding='utf-8'))
     packed=json.dumps(dataset,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')
     html=html.replace('/*__DATA__*/',packed)
-    (HERE/'index.html').write_text(html,encoding='utf-8',newline='\n')
+    write_atomic(HERE/'index.html',html)
     print(f'Built {len(records)} checked records and an offline document ({len(html.encode()):,} bytes).')
 
 

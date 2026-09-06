@@ -1,0 +1,878 @@
+{
+  "807078e4a41cebe07f1ea4c73119af645c791ef2d887621824c14e479a203e18": {
+    "status": "certified-finite-orbit",
+    "label": "Finite valued mutation class (24 diagrams)",
+    "vertices": 7,
+    "mutation_finite": true,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [],
+      "target_B": [
+        [
+          0,
+          -1,
+          0,
+          1,
+          1,
+          -1,
+          0
+        ],
+        [
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -1,
+          -1,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          -2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -2,
+          2,
+          0,
+          0,
+          0
+        ]
+      ],
+      "orbit_archive": "research/symmetrizable/rank6/quiver_orbits/orbit-807078e4a41cebe0.json.gz",
+      "archive_sha256": "7b1d7b0a8bb53d93a2a09af6a368dd3c816f262afe6cfb932be41a83d3e91550",
+      "orbit_modulo_relabeling": true,
+      "canonical_orbit_size": 24,
+      "labelled_orbit_upper_bound": 5760,
+      "initial_state": 0,
+      "initial_to_canonical": [
+        3,
+        1,
+        4,
+        2,
+        0,
+        5,
+        6
+      ],
+      "canonical_class_sha256": "f120e7b5de1d7e4528c6a2e593158da7bb5a18c6e0d0baae9477c7ac700c9bba",
+      "complete_transition_closure": true
+    },
+    "reference": "https://arxiv.org/abs/1006.4276",
+    "scope": "One connected valued mutation class. All transitions close in the stored finite set after explicitly certified vertex relabellings.",
+    "search_note": "Complete mutation orbit up to weight-preserving relabelling, with a permutation certificate on every transition. No finite Dynkin representative occurs.",
+    "certificate_replayed": true
+  },
+  "891599ea15384e145938c201e8363ff1dd3526ef3961650e370658f69db98588": {
+    "status": "certified-finite-orbit",
+    "label": "Finite valued mutation class (32 diagrams)",
+    "vertices": 8,
+    "mutation_finite": true,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [],
+      "target_B": [
+        [
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          0,
+          1,
+          -1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          1
+        ],
+        [
+          -1,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          -2,
+          0,
+          0
+        ]
+      ],
+      "orbit_archive": "research/symmetrizable/rank6/quiver_orbits/orbit-891599ea15384e14.json.gz",
+      "archive_sha256": "02335990ab19a4aca1b3cd18880230693cc8fb210c73064c4189654192fbd3c5",
+      "orbit_modulo_relabeling": true,
+      "canonical_orbit_size": 32,
+      "labelled_orbit_upper_bound": 161280,
+      "initial_state": 0,
+      "initial_to_canonical": [
+        2,
+        6,
+        1,
+        5,
+        0,
+        3,
+        4,
+        7
+      ],
+      "canonical_class_sha256": "bb01bbab9873269346c1e8bf229b52d3ac60c2e3d521b241ea78fe5afa1facea",
+      "complete_transition_closure": true
+    },
+    "reference": "https://arxiv.org/abs/1006.4276",
+    "scope": "One connected valued mutation class. All transitions close in the stored finite set after explicitly certified vertex relabellings.",
+    "search_note": "Complete mutation orbit up to weight-preserving relabelling, with a permutation certificate on every transition. No finite Dynkin representative occurs.",
+    "certificate_replayed": true
+  },
+  "e6cc0240037e3ed8f9c569b6a3e365c8f8ab4d6760ed67680c3acdce9178ab02": {
+    "status": "certified-finite-orbit",
+    "label": "Finite valued mutation class (24 diagrams)",
+    "vertices": 7,
+    "mutation_finite": true,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [],
+      "target_B": [
+        [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          -1,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1
+        ],
+        [
+          -2,
+          2,
+          0,
+          1,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          -2,
+          -1,
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "orbit_archive": "research/symmetrizable/rank6/quiver_orbits/orbit-e6cc0240037e3ed8.json.gz",
+      "archive_sha256": "76e70f461052e620ce60037cf13594845dd15578edcb2f8dd3fdd9ec5a244f8c",
+      "orbit_modulo_relabeling": true,
+      "canonical_orbit_size": 24,
+      "labelled_orbit_upper_bound": 5760,
+      "initial_state": 0,
+      "initial_to_canonical": [
+        1,
+        0,
+        3,
+        6,
+        2,
+        4,
+        5
+      ],
+      "canonical_class_sha256": "0e1d7f89585902b2fdb4f125fb5a882e87a5f6d3b0d75b49afde444f55c669a5",
+      "complete_transition_closure": true
+    },
+    "reference": "https://arxiv.org/abs/1006.4276",
+    "scope": "One connected valued mutation class. All transitions close in the stored finite set after explicitly certified vertex relabellings.",
+    "search_note": "Complete mutation orbit up to weight-preserving relabelling, with a permutation certificate on every transition. No finite Dynkin representative occurs.",
+    "certificate_replayed": true
+  },
+  "acb02d2a2a6b35de1b8e57d86b3679b6feab9f89c966a62ad5477edbc79f0114": {
+    "status": "certified-finite-orbit",
+    "label": "Finite valued mutation class (40 diagrams)",
+    "vertices": 7,
+    "mutation_finite": true,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [],
+      "target_B": [
+        [
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          -1,
+          -1,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          -2,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          0,
+          -2,
+          0
+        ]
+      ],
+      "orbit_archive": "research/symmetrizable/rank6/quiver_orbits/orbit-acb02d2a2a6b35de.json.gz",
+      "archive_sha256": "e24d2e7414fbe14badc6b9b0f03a28c0d07e2beb1f15b2cf8edec4776353d746",
+      "orbit_modulo_relabeling": true,
+      "canonical_orbit_size": 40,
+      "labelled_orbit_upper_bound": 4800,
+      "initial_state": 0,
+      "initial_to_canonical": [
+        0,
+        5,
+        2,
+        4,
+        1,
+        3,
+        6
+      ],
+      "canonical_class_sha256": "16db9881e566e70b49a1c4e7547392059179c7c55c245ad4eeb7ba38affb2a04",
+      "complete_transition_closure": true
+    },
+    "reference": "https://arxiv.org/abs/1006.4276",
+    "scope": "One connected valued mutation class. All transitions close in the stored finite set after explicitly certified vertex relabellings.",
+    "search_note": "Complete mutation orbit up to weight-preserving relabelling, with a permutation certificate on every transition. No finite Dynkin representative occurs.",
+    "certificate_replayed": true
+  },
+  "f392fd9c762aede345c41d1829d0cc78829c943eee74196abb25b47c08b42ef8": {
+    "status": "certified-finite-orbit",
+    "label": "Finite valued mutation class (336 diagrams)",
+    "vertices": 11,
+    "mutation_finite": true,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [],
+      "target_B": [
+        [
+          0,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          -1,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "orbit_archive": "research/symmetrizable/rank6/quiver_orbits/orbit-f392fd9c762aede3.json.gz",
+      "archive_sha256": "385612884b31d4df32075057b42e6b7608f4a7be28aea5c4e98a029e19b7d896",
+      "orbit_modulo_relabeling": true,
+      "canonical_orbit_size": 336,
+      "labelled_orbit_upper_bound": 1219276800,
+      "initial_state": 0,
+      "initial_to_canonical": [
+        5,
+        4,
+        7,
+        2,
+        0,
+        9,
+        8,
+        1,
+        6,
+        3,
+        10
+      ],
+      "canonical_class_sha256": "23d54090f7f25fcbf6f44f86dccef81fb53b3f1a9eac4a87998cdfb0c053a97e",
+      "complete_transition_closure": true
+    },
+    "reference": "https://arxiv.org/abs/1006.4276",
+    "scope": "One connected valued mutation class. All transitions close in the stored finite set after explicitly certified vertex relabellings.",
+    "search_note": "Complete mutation orbit up to weight-preserving relabelling, with a permutation certificate on every transition. No finite Dynkin representative occurs.",
+    "certificate_replayed": true
+  },
+  "8513dae63d9b5ff7a448acbc05b3e3a59015238327297050c0badff85413ac25": {
+    "status": "certified-finite-orbit",
+    "label": "Finite valued mutation class (32 diagrams)",
+    "vertices": 8,
+    "mutation_finite": true,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [],
+      "target_B": [
+        [
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          -1,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          -1
+        ],
+        [
+          0,
+          1,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          -2,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "orbit_archive": "research/symmetrizable/rank6/quiver_orbits/orbit-8513dae63d9b5ff7.json.gz",
+      "archive_sha256": "df38c322be9333b995c63da53bf506f973a9150d6c31309072cd10873aef1477",
+      "orbit_modulo_relabeling": true,
+      "canonical_orbit_size": 32,
+      "labelled_orbit_upper_bound": 161280,
+      "initial_state": 0,
+      "initial_to_canonical": [
+        0,
+        4,
+        6,
+        2,
+        7,
+        5,
+        3,
+        1
+      ],
+      "canonical_class_sha256": "9922d21c3becf9027ccec3ab99aefbe13d93af52066803c4c3a918b5e300d052",
+      "complete_transition_closure": true
+    },
+    "reference": "https://arxiv.org/abs/1006.4276",
+    "scope": "One connected valued mutation class. All transitions close in the stored finite set after explicitly certified vertex relabellings.",
+    "search_note": "Complete mutation orbit up to weight-preserving relabelling, with a permutation certificate on every transition. No finite Dynkin representative occurs.",
+    "certificate_replayed": true
+  },
+  "15b899e6e5a0809da2c68dcdbaffa803e07cd4ef0dc770555e67a86115979086": {
+    "status": "certified-finite-orbit",
+    "label": "Finite valued mutation class (336 diagrams)",
+    "vertices": 11,
+    "mutation_finite": true,
+    "cluster_finite": false,
+    "certificate": {
+      "mutation_path": [],
+      "target_B": [
+        [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          -2,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ]
+      ],
+      "orbit_archive": "research/symmetrizable/rank6/quiver_orbits/orbit-15b899e6e5a0809d.json.gz",
+      "archive_sha256": "6029258c69542c89d12f9198fe98601c61f9d1a0375f2379793d7f613f43c4f7",
+      "orbit_modulo_relabeling": true,
+      "canonical_orbit_size": 336,
+      "labelled_orbit_upper_bound": 1219276800,
+      "initial_state": 0,
+      "initial_to_canonical": [
+        0,
+        3,
+        4,
+        6,
+        9,
+        10,
+        7,
+        2,
+        1,
+        8,
+        5
+      ],
+      "canonical_class_sha256": "b44d28cc85f238a27af9d08a4b35eed5c05026162b0b949b3c5e3f86fe2686b8",
+      "complete_transition_closure": true
+    },
+    "reference": "https://arxiv.org/abs/1006.4276",
+    "scope": "One connected valued mutation class. All transitions close in the stored finite set after explicitly certified vertex relabellings.",
+    "search_note": "Complete mutation orbit up to weight-preserving relabelling, with a permutation certificate on every transition. No finite Dynkin representative occurs.",
+    "certificate_replayed": true
+  }
+}

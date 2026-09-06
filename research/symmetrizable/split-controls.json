@@ -1,0 +1,7 @@
+{
+  "rank4_all_120_upper_tasks_completed": true,
+  "rank4_union_exactly_equal": true,
+  "rank4_constants": 513,
+  "cache_note": "Splitting resets the successful-positivity cache. Some redundant appearances in individual upper tasks disappear; the complete canonical union agrees exactly. Every candidate with the ordered positive vector is checked regardless of the cache.",
+  "source_sha256": "0db241c8263795f2746fd240c72375e556cb997666097c9fa40fd7d8e7aaf209"
+}

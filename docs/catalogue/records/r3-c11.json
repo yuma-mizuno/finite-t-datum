@@ -688,7 +688,7 @@
       }
     ],
     "manuscript": "research/rank3/rank3-classification.tex",
-    "pdf": "output/pdf/rank3-classification.pdf",
+    "pdf": "docs/proofs/rank3-classification.pdf",
     "query_path": "research/rank3/smt_queries/034_no_lift_outside_family.smt2",
     "query_member": "034_no_lift_outside_family.smt2",
     "enrichment_commit": "61246b7ceb605003ff75e91c37a3b8072ff82a3f",
