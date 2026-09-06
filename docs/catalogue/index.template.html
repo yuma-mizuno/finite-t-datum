@@ -14,11 +14,15 @@
   <div class="sidebar-head"><h1>Catalogue</h1><span id="total" class="count"></span></div>
   <div class="rank-picker" role="group" aria-label="Rank"><button data-rank="4" aria-pressed="true">Rank 4 <span>37</span></button><button data-rank="3" aria-pressed="false">Rank 3 <span>16</span></button><button data-rank="2" aria-pressed="false">Rank 2 <span>6</span></button><button data-rank="1" aria-pressed="false">Rank 1 <span>2</span></button><button data-rank="all" aria-pressed="false">All ranks</button></div>
   <label class="field">Find a datum<input id="search" type="search" placeholder="Class, ID, period, delay…" autocomplete="off"></label>
+  <details id="navigator-filters" class="navigator-filters">
+    <summary>Filters and sorting<span id="active-filters"></span></summary>
   <div class="filter-grid"><label class="field">Order by<select id="sort"><option value="class">Class number</option><option value="period">Period</option><option value="size">Slice size</option><option value="delay">Total delay</option></select></label><label class="field">Form<select id="form"><option value="all">All representatives</option><option value="degree2">All delays = 2</option></select></label></div>
   <div class="filter-grid"><label class="field">Family<select id="family-filter"><option value="all">All families</option><option value="RSG">RSG</option><option value="SG">Sine-Gordon</option><option value="Zamolodchikov">Zamolodchikov</option><option value="Commuting Cartan">Commuting Cartan</option><option value="Literature example">Literature example</option><option value="unidentified">Unidentified</option></select></label><label class="field">Quiver class<select id="quiver-filter"><option value="all">All classes</option><option value="certified-dynkin">Dynkin</option><option value="certified-exceptional">Exceptional</option><option value="certified-surface">Surface</option><option value="certified-mutation-infinite">Mutation-infinite</option></select></label></div>
+    <button id="reset-filters" type="button">Reset filters</button>
+  </details>
   <p class="list-legend"><span id="result-count"></span><span>Period / slice size</span></p>
   <nav id="record-list" aria-label="Data records"></nav>
-  <div class="sidebar-foot"><span class="small-label">Record structure</span><p>Exact coefficients, family equations, periodicity and source hashes.</p><a href="record.schema.json">JSON schema ↗</a></div>
+  <div class="sidebar-foot"><a href="record.schema.json">JSON schema ↗</a></div>
 </aside>
 <main id="main" tabindex="-1">
   <div id="record-header"></div>

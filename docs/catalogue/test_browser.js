@@ -15,6 +15,7 @@ const url=pathToFileURL(path.join(root,'index.html')).href;
     await route('r4-c01');
     assert.equal(await page.locator('.record-link').count(),37);
     await page.screenshot({path:path.join(qa,'rank4-matrices.png'),fullPage:true});
+    await page.locator('#navigator-filters summary').click();
     await page.selectOption('#form','degree2');assert.equal(await page.locator('.record-link').count(),9);
     await page.click('[data-rank="3"]');await page.waitForFunction(()=>document.querySelector('#record-header .eyebrow').textContent.endsWith('r3-c01'));
     assert.equal(await page.locator('.record-link').count(),16);

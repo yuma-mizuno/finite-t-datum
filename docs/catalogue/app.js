@@ -40,10 +40,20 @@
     return list.sort((a,b)=>value(a)-value(b)||a.rank-b.rank||a.class_number-b.class_number);
   }
   function renderList(){
+    const focused=document.activeElement?.dataset.record;
+    const active=['form','family-filter','quiver-filter'].filter(id=>$(id).value!=='all').length+Number($('sort').value!=='class');
+    $('active-filters').textContent=active?` · ${active} active`:'';
     const list=visibleRecords();$('result-count').textContent=`${list.length} ${list.length===1?'entry':'entries'}`;
     document.querySelectorAll('[data-rank]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.rank===state.rank)));
     $('record-list').innerHTML=list.length?list.map(r=>`<button class="record-link" data-record="${r.id}" aria-current="${r.id===state.record.id}"><span><strong>${state.rank==='all'?`Rank ${r.rank} · `:''}Class ${r.class_number}</strong><small>${r.id} · r = ${tuple(r.datum.delays)}</small></span><span class="record-values">${r.periodicity.labelled_period} / ${r.slice.vertices}</span></button>`).join(''):'<p class="empty">No records match these filters.</p>';
     $('record-list').querySelectorAll('[data-record]').forEach(b=>b.onclick=()=>navigate(b.dataset.record,state.tab));
+    const current=$('record-list').querySelector('[aria-current="true"]');
+    if(current){
+      if(focused)current.focus({preventScroll:true});
+      const box=$('record-list').getBoundingClientRect(),row=current.getBoundingClientRect();
+      if(row.top<box.top)$('record-list').scrollTop+=row.top-box.top;
+      else if(row.bottom>box.bottom)$('record-list').scrollTop+=row.bottom-box.bottom;
+    }
   }
   function header(){
     const r=state.record,p=r.periodicity;
@@ -201,6 +211,10 @@
     b.onclick=()=>navigate(state.record.id,b.dataset.tab);
     b.onkeydown=e=>{const i=tabs.indexOf(b.dataset.tab);let j;if(e.key==='ArrowRight')j=(i+1)%tabs.length;else if(e.key==='ArrowLeft')j=(i+tabs.length-1)%tabs.length;else if(e.key==='Home')j=0;else if(e.key==='End')j=tabs.length-1;else return;e.preventDefault();$('tab-'+tabs[j]).focus();navigate(state.record.id,tabs[j]);};
   });
+  $('reset-filters').onclick=()=>{
+    for(const id of ['form','family-filter','quiver-filter'])$(id).value='all';
+    $('sort').value='class';renderList();
+  };
   $('download-all').onclick=()=>downloadJSON(data,'finite-t-data-catalogue.json');$('total').textContent=`${data.records.length} families`;
   window.addEventListener('hashchange',route);route();
 })();
